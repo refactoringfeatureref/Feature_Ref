@@ -1,0 +1,89 @@
+[ {
+  "solutionId" : "85b21247-daeb-4ca2-bf5b-4a27dc6b5f5a",
+  "objectives" : {
+    "NumberOfConcerns" : 1.0134228187919463,
+    "NumberOfRefactorings" : 14.0,
+    "LackOfCohesion" : 0.6820890222443363,
+    "MetricsIntensity" : 0.10495540179143499,
+    "Density" : 1.0077864293659622
+  },
+  "euclideanDistance" : 14.089674246322867,
+  "generation" : 1,
+  "numberOfRefactorings" : 14,
+  "additionalInformation" : {
+    "NumberOfConcerns" : 1.709433962264151,
+    "LackOfCohesion" : 0.6820890222443363,
+    "MetricsIntensity" : 0.10495540179143498,
+    "Density" : 3.525291828793774
+  },
+  "sequences" : [ {
+    "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+    "refactorings" : [ {
+      "refactoringKind" : "Move Method",
+      "change" : "method='okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted()', targetType='okhttp3.internal.ws.WebSocketWriter.FrameSink'"
+    } ]
+  }, {
+    "refactoredTypeName" : "okhttp3.RealCall",
+    "refactorings" : [ {
+      "refactoringKind" : "Move Method",
+      "change" : "method='okhttp3.RealCall.cancel()', targetType='okhttp3.internal.ws.RealWebSocket.CancelRunnable'"
+    }, {
+      "refactoringKind" : "Move Method",
+      "change" : "method='okhttp3.RealCall.timeout()', targetType='okhttp3.Cache.CacheResponseBody'"
+    }, {
+      "refactoringKind" : "Move Method",
+      "change" : "method='okhttp3.RealCall.redactedUrl()', targetType='okhttp3.tls.internal.TlsUtil'"
+    } ]
+  }, {
+    "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+    "refactorings" : [ {
+      "refactoringKind" : "Extract Class",
+      "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeoutEarlyExit, okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.request], extractedMethods=[okhttp3.internal.connection.Transmitter.createAddress(HttpUrl), okhttp3.internal.connection.Transmitter.canRetry(), okhttp3.internal.connection.Transmitter.isCanceled(), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.releaseConnectionNoEvents(), okhttp3.internal.connection.Transmitter.timeoutEnter(), okhttp3.internal.connection.Transmitter.prepareToConnect(Request), okhttp3.internal.connection.Transmitter.noMoreExchanges(IOException), okhttp3.internal.connection.Transmitter.callStart(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.cancel()]"
+    } ]
+  }, {
+    "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+    "refactorings" : [ {
+      "refactoringKind" : "Extract Class",
+      "change" : "extractedFields=[okhttp3.internal.platform.Platform.logger, okhttp3.internal.platform.Platform.WARN, okhttp3.internal.platform.Platform.INFO], extractedMethods=[okhttp3.internal.platform.Platform.getStackTraceForCloseable(String), okhttp3.internal.platform.Platform.logCloseableLeak(String, Object), okhttp3.internal.platform.Platform.log(int, String, Throwable), okhttp3.internal.platform.Platform.findPlatform(), okhttp3.internal.platform.Platform.isConscryptPreferred(), okhttp3.internal.platform.Platform.alpnProtocolNames(List<Protocol>), okhttp3.internal.platform.Platform.concatLengthPrefixed(List<Protocol>), okhttp3.internal.platform.Platform.getSSLContext(), okhttp3.internal.platform.Platform.afterHandshake(SSLSocket), okhttp3.internal.platform.Platform.connectSocket(Socket, InetSocketAddress, int), okhttp3.internal.platform.Platform.configureTlsExtensions(SSLSocket, String, List<Protocol>), okhttp3.internal.platform.Platform.<T>readFieldOrNull(Object, Class<T>, String), okhttp3.internal.platform.Platform.configureSslSocketFactory(SSLSocketFactory), okhttp3.internal.platform.Platform.isCleartextTrafficPermitted(String), okhttp3.internal.platform.Platform.getPrefix(), okhttp3.internal.platform.Platform.getSelectedProtocol(SSLSocket)]"
+    } ]
+  }, {
+    "refactoredTypeName" : "okhttp3.internal.http.RealInterceptorChain",
+    "refactorings" : [ {
+      "refactoringKind" : "Move Method",
+      "change" : "method='okhttp3.internal.http.RealInterceptorChain.exchange()', targetType='okhttp3.sample.Crawler'"
+    }, {
+      "refactoringKind" : "Move Method",
+      "change" : "method='okhttp3.internal.http.RealInterceptorChain.readTimeoutMillis()', targetType='okhttp3.internal.http1.Http1ExchangeCodec.ChunkedSource'"
+    }, {
+      "refactoringKind" : "Move Method",
+      "change" : "method='okhttp3.internal.http.RealInterceptorChain.proceed(Request)', targetType='okhttp3.recipes.PreemptiveAuth.BasicAuthInterceptor'"
+    }, {
+      "refactoringKind" : "Move Method",
+      "change" : "method='okhttp3.internal.http.RealInterceptorChain.request()', targetType='okhttp3.recipes.PreemptiveAuth.BasicAuthInterceptor'"
+    } ]
+  }, {
+    "refactoredTypeName" : "okhttp3.Response.Builder",
+    "refactorings" : [ {
+      "refactoringKind" : "Extract Class",
+      "change" : "extractedFields=[], extractedMethods=[okhttp3.Response.Builder.checkPriorResponse(Response), okhttp3.Response.Builder.checkSupportResponse(String, Response), okhttp3.Response.Builder.code(int), okhttp3.Response.Builder.handshake(Handshake), okhttp3.Response.Builder.receivedResponseAtMillis(long), okhttp3.Response.Builder.addHeader(String, String), okhttp3.Response.Builder.networkResponse(Response), okhttp3.Response.Builder.priorResponse(Response), okhttp3.Response.Builder.cacheResponse(Response), okhttp3.Response.Builder.sentRequestAtMillis(long), okhttp3.Response.Builder.protocol(Protocol), okhttp3.Response.Builder.request(Request), okhttp3.Response.Builder.initExchange(Exchange), okhttp3.Response.Builder.body(ResponseBody)]"
+    } ]
+  }, {
+    "refactoredTypeName" : "okhttp3.internal.connection.Exchange",
+    "refactorings" : [ {
+      "refactoringKind" : "Extract Class",
+      "change" : "extractedFields=[okhttp3.internal.connection.Exchange.codec, okhttp3.internal.connection.Exchange.eventListener, okhttp3.internal.connection.Exchange.call, okhttp3.internal.connection.Exchange.duplex], extractedMethods=[okhttp3.internal.connection.Exchange.bodyComplete(long, boolean, boolean, IOException), okhttp3.internal.connection.Exchange.trackFailure(IOException), okhttp3.internal.connection.Exchange.responseHeadersStart(), okhttp3.internal.connection.Exchange.timeoutEarlyExit(), okhttp3.internal.connection.Exchange.createRequestBody(Request, boolean), okhttp3.internal.connection.Exchange.readResponseHeaders(boolean), okhttp3.internal.connection.Exchange.openResponseBody(Response), okhttp3.internal.connection.Exchange.newWebSocketStreams(), okhttp3.internal.connection.Exchange.isDuplex(), okhttp3.internal.connection.Exchange.flushRequest(), okhttp3.internal.connection.Exchange.responseHeadersEnd(Response), okhttp3.internal.connection.Exchange.finishRequest(), okhttp3.internal.connection.Exchange.writeRequestHeaders(Request), okhttp3.internal.connection.Exchange.webSocketUpgradeFailed(), okhttp3.internal.connection.Exchange.cancel(), okhttp3.internal.connection.Exchange.trailers()]"
+    } ]
+  }, {
+    "refactoredTypeName" : "okhttp3.Headers",
+    "refactorings" : [ {
+      "refactoringKind" : "Extract Class",
+      "change" : "extractedFields=[okhttp3.Headers.namesAndValues, okhttp3.Headers.namesAndValues], extractedMethods=[okhttp3.Headers.hashCode(), okhttp3.Headers.getInstant(String), okhttp3.Headers.get(String), okhttp3.Headers.size(), okhttp3.Headers.toString(), okhttp3.Headers.name(int), okhttp3.Headers.value(int), okhttp3.Headers.equals(Object), okhttp3.Headers.getDate(String), okhttp3.Headers.of(Map<String,String>), okhttp3.Headers.checkValue(String, String), okhttp3.Headers.of(String...), okhttp3.Headers.toMultimap(), okhttp3.Headers.checkName(String), okhttp3.Headers.byteCount()]"
+    } ]
+  }, {
+    "refactoredTypeName" : "okhttp3.HttpUrl",
+    "refactorings" : [ {
+      "refactoringKind" : "Extract Class",
+      "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS], extractedMethods=[okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.newBuilder(String), okhttp3.HttpUrl.redact(), okhttp3.HttpUrl.equals(Object), okhttp3.HttpUrl.resolve(String), okhttp3.HttpUrl.isHttps(), okhttp3.HttpUrl.uri(), okhttp3.HttpUrl.percentDecode(Buffer, String, int, int, boolean), okhttp3.HttpUrl.queryStringToNamesAndValues(String), okhttp3.HttpUrl.percentDecode(List<String>, boolean), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.hashCode(), okhttp3.HttpUrl.namesAndValuesToQueryString(StringBuilder, List<String>), okhttp3.HttpUrl.url(), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.newBuilder(), okhttp3.HttpUrl.percentDecode(String, boolean), okhttp3.HttpUrl.toString(), okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.encodedUsername(), okhttp3.HttpUrl.scheme(), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.defaultPort(String), okhttp3.HttpUrl.percentDecode(String, int, int, boolean)]"
+    } ]
+  } ]
+} ]

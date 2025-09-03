@@ -1,0 +1,1892 @@
+{
+  "executionId" : "785ac50a-90cb-4eea-8a75-b7438bd586ce",
+  "computingTime" : 3776311,
+  "maxEvaluations" : 100,
+  "initialPopulationSize" : 128,
+  "finalPopulationSize" : 23,
+  "algorithm" : "MOSA",
+  "projectBeforeRefactoring" : {
+    "meanDensity" : 3.4242424242424248,
+    "meanNumConcerns" : 1.927323943661972,
+    "meanMetricsIntensity" : 0.0626901885889211,
+    "meanLackOfCohesion" : 1.3045137304594558
+  },
+  "population" : [ {
+    "solutionId" : "e4863827-d8c0-4fc3-9825-7b76b42d1d3a",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9959076293481438,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 1.3013690031358558,
+      "MetricsIntensity" : 0.06260942294192866,
+      "Density" : 0.995575221238938
+    },
+    "euclideanDistance" : 10.182361378850327,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.9172763083849185,
+      "LackOfCohesion" : 1.3013690031358558,
+      "MetricsIntensity" : 0.06260942294192864,
+      "Density" : 3.4090909090909105
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber.cancel()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableInternalHelper.SubscriberOnComplete'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.cancel(), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.request(long)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber.onComplete()', targetType='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver.isDisposed()', targetType='io.reactivex.rxjava3.internal.functions.Functions.EqualsPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.subscribers.BoundedSubscriber'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onComplete(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.dispose(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onNext(T), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.isDisposed(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onSubscribe(Subscription)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.single.SingleZipIterable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable.SingleZipIterable(Iterable<? extends SingleSource<? extends T>>, Function<? super Object[],? extends R>)', targetType='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.util.AtomicThrowable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.util.AtomicThrowable.isTerminated()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableRefCount.RefCountObserver'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableFlatMapSingle.FlatMapSingleObserver.InnerObserver'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "29cba372-992e-4632-801c-1d3e6b80ea43",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9967845659163987,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 1.3013884013598411,
+      "MetricsIntensity" : 0.06258871861771784,
+      "Density" : 0.9962559564329476
+    },
+    "euclideanDistance" : 10.182516119332657,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.9189645469893075,
+      "LackOfCohesion" : 1.3013884013598411,
+      "MetricsIntensity" : 0.06258871861771785,
+      "Density" : 3.411421911421912
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber.cancel()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableInternalHelper.SubscriberOnComplete'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.cancel(), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.request(long)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber.tryOnNext(T)', targetType='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver.isDisposed()', targetType='io.reactivex.rxjava3.internal.functions.Functions.EqualsPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.subscribers.BoundedSubscriber'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onComplete(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.dispose(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onNext(T), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.isDisposed(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onSubscribe(Subscription)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.single.SingleZipIterable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable.SingleZipIterable(Iterable<? extends SingleSource<? extends T>>, Function<? super Object[],? extends R>)', targetType='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.util.AtomicThrowable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.util.AtomicThrowable.isTerminated()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableRefCount.RefCountObserver'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableDebounce.DebounceObserver'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "1d9b50b8-9d31-4b55-8a31-6a605ca69bac",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9967845659163987,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 1.3013884013598411,
+      "MetricsIntensity" : 0.06258871861771784,
+      "Density" : 0.9962559564329476
+    },
+    "euclideanDistance" : 10.182516119332657,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.9189645469893077,
+      "LackOfCohesion" : 1.3013884013598411,
+      "MetricsIntensity" : 0.06258871861771784,
+      "Density" : 3.4114219114219115
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber.cancel()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableInternalHelper.SubscriberOnComplete'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.cancel(), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.request(long)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber.tryOnNext(T)', targetType='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver.isDisposed()', targetType='io.reactivex.rxjava3.internal.functions.Functions.EqualsPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.subscribers.BoundedSubscriber'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onComplete(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.dispose(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onNext(T), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.isDisposed(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onSubscribe(Subscription)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.single.SingleZipIterable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable.SingleZipIterable(Iterable<? extends SingleSource<? extends T>>, Function<? super Object[],? extends R>)', targetType='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.util.AtomicThrowable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.util.AtomicThrowable.isTerminated()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableRefCount.RefCountObserver'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableDebounce.DebounceObserver'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "de6f048c-969b-42e8-8cd6-0b6061d3509c",
+    "objectives" : {
+      "NumberOfConcerns" : 0.997076878105817,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 1.3010974280000684,
+      "MetricsIntensity" : 0.06260605519470915,
+      "Density" : 0.9964261402314499
+    },
+    "euclideanDistance" : 10.182524313208647,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.9195272931907708,
+      "LackOfCohesion" : 1.3010974280000684,
+      "MetricsIntensity" : 0.06260605519470913,
+      "Density" : 3.412004662004662
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber.cancel()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableInternalHelper.SubscriberOnComplete'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.cancel(), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.request(long)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber.onComplete()', targetType='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver.isDisposed()', targetType='io.reactivex.rxjava3.internal.functions.Functions.EqualsPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.subscribers.BoundedSubscriber'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onComplete(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.dispose(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onNext(T), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.isDisposed(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onSubscribe(Subscription)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.single.SingleZipIterable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable.SingleZipIterable(Iterable<? extends SingleSource<? extends T>>, Function<? super Object[],? extends R>)', targetType='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.util.AtomicThrowable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.util.AtomicThrowable.isTerminated()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableRefCount.RefCountObserver'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.isDisposed()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableReplay.MulticastFlowable.DisposableConsumer'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "53be53a6-fd85-42cc-820e-d268aa78258b",
+    "objectives" : {
+      "NumberOfConcerns" : 0.997076878105817,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 1.3010974280000687,
+      "MetricsIntensity" : 0.0626060551947091,
+      "Density" : 0.9964261402314499
+    },
+    "euclideanDistance" : 10.182524313208647,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.9195272931907705,
+      "LackOfCohesion" : 1.3010974280000687,
+      "MetricsIntensity" : 0.0626060551947091,
+      "Density" : 3.412004662004662
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber.cancel()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableInternalHelper.SubscriberOnComplete'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.cancel(), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.request(long)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber.onComplete()', targetType='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver.isDisposed()', targetType='io.reactivex.rxjava3.internal.functions.Functions.EqualsPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.subscribers.BoundedSubscriber'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onComplete(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.dispose(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onNext(T), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.isDisposed(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onSubscribe(Subscription)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.single.SingleZipIterable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable.SingleZipIterable(Iterable<? extends SingleSource<? extends T>>, Function<? super Object[],? extends R>)', targetType='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.util.AtomicThrowable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.util.AtomicThrowable.isTerminated()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableRefCount.RefCountObserver'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.isDisposed()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableReplay.MulticastFlowable.DisposableConsumer'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "51b3cc29-72d3-477b-9e40-f849da088600",
+    "objectives" : {
+      "NumberOfConcerns" : 0.997076878105817,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 1.3010974280000687,
+      "MetricsIntensity" : 0.0626060551947091,
+      "Density" : 0.9964261402314499
+    },
+    "euclideanDistance" : 10.182524313208647,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.9195272931907708,
+      "LackOfCohesion" : 1.3010974280000687,
+      "MetricsIntensity" : 0.0626060551947091,
+      "Density" : 3.412004662004662
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber.cancel()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableInternalHelper.SubscriberOnComplete'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.cancel(), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.request(long)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber.onComplete()', targetType='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver.isDisposed()', targetType='io.reactivex.rxjava3.internal.functions.Functions.EqualsPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.subscribers.BoundedSubscriber'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onComplete(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.dispose(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onNext(T), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.isDisposed(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onSubscribe(Subscription)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.single.SingleZipIterable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable.SingleZipIterable(Iterable<? extends SingleSource<? extends T>>, Function<? super Object[],? extends R>)', targetType='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.util.AtomicThrowable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.util.AtomicThrowable.isTerminated()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableRefCount.RefCountObserver'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.isDisposed()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableReplay.MulticastFlowable.DisposableConsumer'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "6667cf20-0f99-4e16-a452-3762db1e75b4",
+    "objectives" : {
+      "NumberOfConcerns" : 0.997076878105817,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 1.3010974280000687,
+      "MetricsIntensity" : 0.0626060551947091,
+      "Density" : 0.9964261402314499
+    },
+    "euclideanDistance" : 10.182524313208647,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.9195272931907708,
+      "LackOfCohesion" : 1.3010974280000687,
+      "MetricsIntensity" : 0.0626060551947091,
+      "Density" : 3.412004662004662
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber.cancel()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableInternalHelper.SubscriberOnComplete'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.cancel(), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.request(long)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber.onComplete()', targetType='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver.isDisposed()', targetType='io.reactivex.rxjava3.internal.functions.Functions.EqualsPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.subscribers.BoundedSubscriber'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onComplete(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.dispose(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onNext(T), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.isDisposed(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onSubscribe(Subscription)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.single.SingleZipIterable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable.SingleZipIterable(Iterable<? extends SingleSource<? extends T>>, Function<? super Object[],? extends R>)', targetType='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.util.AtomicThrowable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.util.AtomicThrowable.isTerminated()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableRefCount.RefCountObserver'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.isDisposed()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableReplay.MulticastFlowable.DisposableConsumer'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "045586c2-be0d-485a-b1b9-623305f706ad",
+    "objectives" : {
+      "NumberOfConcerns" : 0.997076878105817,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 1.3010974280000687,
+      "MetricsIntensity" : 0.0626060551947091,
+      "Density" : 0.9964261402314499
+    },
+    "euclideanDistance" : 10.182524313208647,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.9195272931907708,
+      "LackOfCohesion" : 1.3010974280000687,
+      "MetricsIntensity" : 0.06260605519470912,
+      "Density" : 3.412004662004662
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber.cancel()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableInternalHelper.SubscriberOnComplete'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.cancel(), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.request(long)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber.onComplete()', targetType='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver.isDisposed()', targetType='io.reactivex.rxjava3.internal.functions.Functions.EqualsPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.subscribers.BoundedSubscriber'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onComplete(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.dispose(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onNext(T), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.isDisposed(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onSubscribe(Subscription)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.single.SingleZipIterable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable.SingleZipIterable(Iterable<? extends SingleSource<? extends T>>, Function<? super Object[],? extends R>)', targetType='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.util.AtomicThrowable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.util.AtomicThrowable.isTerminated()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableRefCount.RefCountObserver'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.isDisposed()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableReplay.MulticastFlowable.DisposableConsumer'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "80a883f5-c0f1-40fd-b0cb-d3624a390821",
+    "objectives" : {
+      "NumberOfConcerns" : 0.997076878105817,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 1.3010974280000684,
+      "MetricsIntensity" : 0.06260605519470915,
+      "Density" : 0.9964261402314499
+    },
+    "euclideanDistance" : 10.182524313208647,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.9195272931907708,
+      "LackOfCohesion" : 1.3010974280000684,
+      "MetricsIntensity" : 0.06260605519470915,
+      "Density" : 3.412004662004662
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber.cancel()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableInternalHelper.SubscriberOnComplete'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.cancel(), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.request(long)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber.onComplete()', targetType='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver.isDisposed()', targetType='io.reactivex.rxjava3.internal.functions.Functions.EqualsPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.subscribers.BoundedSubscriber'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onComplete(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.dispose(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onNext(T), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.isDisposed(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onSubscribe(Subscription)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.single.SingleZipIterable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable.SingleZipIterable(Iterable<? extends SingleSource<? extends T>>, Function<? super Object[],? extends R>)', targetType='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.util.AtomicThrowable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.util.AtomicThrowable.isTerminated()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableRefCount.RefCountObserver'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.isDisposed()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableReplay.MulticastFlowable.DisposableConsumer'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "c270833c-2e35-45ed-8d52-4aecfaaf5d11",
+    "objectives" : {
+      "NumberOfConcerns" : 0.997076878105817,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 1.3010974280000687,
+      "MetricsIntensity" : 0.0626060551947091,
+      "Density" : 0.9964261402314499
+    },
+    "euclideanDistance" : 10.182524313208647,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.9195272931907728,
+      "LackOfCohesion" : 1.3010974280000687,
+      "MetricsIntensity" : 0.0626060551947091,
+      "Density" : 3.412004662004662
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber.cancel()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableInternalHelper.SubscriberOnComplete'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.cancel(), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.request(long)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber.onComplete()', targetType='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver.isDisposed()', targetType='io.reactivex.rxjava3.internal.functions.Functions.EqualsPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.subscribers.BoundedSubscriber'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onComplete(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.dispose(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onNext(T), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.isDisposed(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onSubscribe(Subscription)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.single.SingleZipIterable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable.SingleZipIterable(Iterable<? extends SingleSource<? extends T>>, Function<? super Object[],? extends R>)', targetType='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.util.AtomicThrowable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.util.AtomicThrowable.isTerminated()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableRefCount.RefCountObserver'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.isDisposed()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableReplay.MulticastFlowable.DisposableConsumer'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "9b5693ef-d6d1-40ba-b0fd-272854844e37",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9961999415375621,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 1.3010600684575795,
+      "MetricsIntensity" : 0.06260879820041547,
+      "Density" : 0.995575221238938
+    },
+    "euclideanDistance" : 11.166031591752343,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.917839054586382,
+      "LackOfCohesion" : 1.3010600684575795,
+      "MetricsIntensity" : 0.06260879820041547,
+      "Density" : 3.4090909090909096
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber.cancel()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableInternalHelper.SubscriberOnComplete'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.cancel(), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.request(long)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber.onComplete()', targetType='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver.isDisposed()', targetType='io.reactivex.rxjava3.internal.functions.Functions.EqualsPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.subscribers.BoundedSubscriber'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onComplete(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.dispose(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onNext(T), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.isDisposed(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onSubscribe(Subscription)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.single.SingleZipIterable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable.SingleZipIterable(Iterable<? extends SingleSource<? extends T>>, Function<? super Object[],? extends R>)', targetType='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.util.AtomicThrowable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.util.AtomicThrowable.isTerminated()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableRefCount.RefCountObserver'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.isDisposed()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableReplay.MulticastFlowable.DisposableConsumer'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableFlatMapSingle.FlatMapSingleObserver.InnerObserver'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "13ce5ddd-c918-4926-b755-ac184edbdd6b",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9961999415375621,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 1.3010600684575793,
+      "MetricsIntensity" : 0.06260879820041548,
+      "Density" : 0.995575221238938
+    },
+    "euclideanDistance" : 11.166031591752343,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.917839054586382,
+      "LackOfCohesion" : 1.3010600684575793,
+      "MetricsIntensity" : 0.06260879820041548,
+      "Density" : 3.4090909090909096
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber.cancel()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableInternalHelper.SubscriberOnComplete'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.cancel(), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.request(long)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber.onComplete()', targetType='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver.isDisposed()', targetType='io.reactivex.rxjava3.internal.functions.Functions.EqualsPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.subscribers.BoundedSubscriber'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onComplete(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.dispose(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onNext(T), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.isDisposed(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onSubscribe(Subscription)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.single.SingleZipIterable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable.SingleZipIterable(Iterable<? extends SingleSource<? extends T>>, Function<? super Object[],? extends R>)', targetType='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.util.AtomicThrowable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.util.AtomicThrowable.isTerminated()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableRefCount.RefCountObserver'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.isDisposed()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableReplay.MulticastFlowable.DisposableConsumer'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableFlatMapSingle.FlatMapSingleObserver.InnerObserver'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "353a39b6-8ece-4717-8214-4ed791cbf33d",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9961999415375621,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 1.3010600684575793,
+      "MetricsIntensity" : 0.06260879820041548,
+      "Density" : 0.995575221238938
+    },
+    "euclideanDistance" : 11.166031591752343,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.917839054586382,
+      "LackOfCohesion" : 1.3010600684575793,
+      "MetricsIntensity" : 0.06260879820041548,
+      "Density" : 3.4090909090909087
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber.cancel()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableInternalHelper.SubscriberOnComplete'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.cancel(), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.request(long)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber.onComplete()', targetType='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver.isDisposed()', targetType='io.reactivex.rxjava3.internal.functions.Functions.EqualsPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.subscribers.BoundedSubscriber'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onComplete(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.dispose(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onNext(T), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.isDisposed(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onSubscribe(Subscription)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.single.SingleZipIterable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable.SingleZipIterable(Iterable<? extends SingleSource<? extends T>>, Function<? super Object[],? extends R>)', targetType='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.util.AtomicThrowable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.util.AtomicThrowable.isTerminated()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableRefCount.RefCountObserver'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.isDisposed()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableReplay.MulticastFlowable.DisposableConsumer'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableFlatMapSingle.FlatMapSingleObserver.InnerObserver'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "9eafd353-f6c7-4fe4-9f26-1a9633894316",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9973691902952353,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 1.3010270196315312,
+      "MetricsIntensity" : 0.06261683198581178,
+      "Density" : 0.9964261402314499
+    },
+    "euclideanDistance" : 11.166208063982417,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.9200900393922338,
+      "LackOfCohesion" : 1.3010270196315312,
+      "MetricsIntensity" : 0.06261683198581178,
+      "Density" : 3.412004662004662
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber.cancel()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableInternalHelper.SubscriberOnComplete'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.cancel(), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.request(long)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver.onComplete()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber.onComplete()', targetType='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver.isDisposed()', targetType='io.reactivex.rxjava3.internal.functions.Functions.EqualsPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.subscribers.BoundedSubscriber'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onComplete(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.dispose(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onNext(T), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.isDisposed(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onSubscribe(Subscription)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.single.SingleZipIterable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable.SingleZipIterable(Iterable<? extends SingleSource<? extends T>>, Function<? super Object[],? extends R>)', targetType='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.util.AtomicThrowable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.util.AtomicThrowable.isTerminated()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableRefCount.RefCountObserver'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.isDisposed()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableReplay.MulticastFlowable.DisposableConsumer'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "7d16d455-7d98-46b7-b9d7-8476b77511ee",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9976615024846536,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 1.300804059797829,
+      "MetricsIntensity" : 0.06263876626987677,
+      "Density" : 0.9964261402314499
+    },
+    "euclideanDistance" : 11.166208324382222,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.9206527855936977,
+      "LackOfCohesion" : 1.300804059797829,
+      "MetricsIntensity" : 0.06263876626987677,
+      "Density" : 3.412004662004662
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber.cancel()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableInternalHelper.SubscriberOnComplete'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.cancel(), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.request(long)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver.onComplete()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber.tryOnNext(T)', targetType='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver.isDisposed()', targetType='io.reactivex.rxjava3.internal.functions.Functions.EqualsPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.subscribers.BoundedSubscriber'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onComplete(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.dispose(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onNext(T), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.isDisposed(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onSubscribe(Subscription)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.single.SingleZipIterable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable.SingleZipIterable(Iterable<? extends SingleSource<? extends T>>, Function<? super Object[],? extends R>)', targetType='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.util.AtomicThrowable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.util.AtomicThrowable.isTerminated()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableRefCount.RefCountObserver'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.util.AtomicThrowable.terminate()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableDoOnEach'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.isDisposed()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableReplay.MulticastFlowable.DisposableConsumer'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "675a1a5c-7fb3-4106-bcf9-c486d1b7883a",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9967845659163987,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 1.3022864672850645,
+      "MetricsIntensity" : 0.0626066799362223,
+      "Density" : 0.9960857726344452
+    },
+    "euclideanDistance" : 11.166272250690485,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.9189645469893077,
+      "LackOfCohesion" : 1.3022864672850645,
+      "MetricsIntensity" : 0.0626066799362223,
+      "Density" : 3.4108391608391613
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber.cancel()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableInternalHelper.SubscriberOnComplete'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.cancel(), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.request(long)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber.tryOnNext(T)', targetType='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver.isDisposed()', targetType='io.reactivex.rxjava3.internal.functions.Functions.EqualsPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.subscribers.BoundedSubscriber'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onComplete(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.dispose(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onNext(T), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.isDisposed()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.single.SingleZipIterable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable.SingleZipIterable(Iterable<? extends SingleSource<? extends T>>, Function<? super Object[],? extends R>)', targetType='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.util.AtomicThrowable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.util.AtomicThrowable.isTerminated()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableRefCount.RefCountObserver'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.isDisposed()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableReplay.MulticastFlowable.DisposableConsumer'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableDebounce.DebounceObserver'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "1e44adfc-4faf-4fef-9232-a0c063ba0202",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9967845659163987,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 1.3022864672850647,
+      "MetricsIntensity" : 0.06260667993622229,
+      "Density" : 0.9960857726344452
+    },
+    "euclideanDistance" : 11.166272250690485,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.9189645469893077,
+      "LackOfCohesion" : 1.3022864672850647,
+      "MetricsIntensity" : 0.06260667993622229,
+      "Density" : 3.4108391608391617
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber.cancel()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableInternalHelper.SubscriberOnComplete'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.cancel(), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.request(long)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber.tryOnNext(T)', targetType='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver.isDisposed()', targetType='io.reactivex.rxjava3.internal.functions.Functions.EqualsPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.subscribers.BoundedSubscriber'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onComplete(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.dispose(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onNext(T), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.isDisposed()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.single.SingleZipIterable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable.SingleZipIterable(Iterable<? extends SingleSource<? extends T>>, Function<? super Object[],? extends R>)', targetType='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.util.AtomicThrowable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.util.AtomicThrowable.isTerminated()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableRefCount.RefCountObserver'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.isDisposed()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableReplay.MulticastFlowable.DisposableConsumer'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableDebounce.DebounceObserver'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "43d7d419-6b4d-457d-8dbe-218a70bb2bd2",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9961999415375621,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 1.3010392333281142,
+      "MetricsIntensity" : 0.06259083688191105,
+      "Density" : 0.9954050374404356
+    },
+    "euclideanDistance" : 12.152360520145946,
+    "generation" : 1,
+    "numberOfRefactorings" : 12,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.917839054586382,
+      "LackOfCohesion" : 1.3010392333281142,
+      "MetricsIntensity" : 0.06259083688191105,
+      "Density" : 3.40850815850816
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber.cancel()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableInternalHelper.SubscriberOnComplete'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.cancel(), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.request(long)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber.tryOnNext(T)', targetType='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver.isDisposed()', targetType='io.reactivex.rxjava3.internal.functions.Functions.EqualsPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.subscribers.BoundedSubscriber'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onComplete(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.dispose(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onNext(T), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.isDisposed(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onSubscribe(Subscription)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.single.SingleZipIterable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable.SingleZipIterable(Iterable<? extends SingleSource<? extends T>>, Function<? super Object[],? extends R>)', targetType='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.util.AtomicThrowable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.util.AtomicThrowable.isTerminated()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableRefCount.RefCountObserver'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.isDisposed()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableReplay.MulticastFlowable.DisposableConsumer'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableFlatMapSingle.FlatMapSingleObserver.InnerObserver'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableDebounce.DebounceObserver'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "725dacfa-d7af-4372-9011-93829dccac27",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9964922537269805,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 1.300989660089042,
+      "MetricsIntensity" : 0.0626195749915182,
+      "Density" : 0.995575221238938
+    },
+    "euclideanDistance" : 12.152393267982795,
+    "generation" : 1,
+    "numberOfRefactorings" : 12,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.918401800787845,
+      "LackOfCohesion" : 1.300989660089042,
+      "MetricsIntensity" : 0.0626195749915182,
+      "Density" : 3.4090909090909105
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber.cancel()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableInternalHelper.SubscriberOnComplete'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.cancel(), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.request(long)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver.onComplete()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber.onComplete()', targetType='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver.isDisposed()', targetType='io.reactivex.rxjava3.internal.functions.Functions.EqualsPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.subscribers.BoundedSubscriber'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onComplete(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.dispose(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onNext(T), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.isDisposed(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onSubscribe(Subscription)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.single.SingleZipIterable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable.SingleZipIterable(Iterable<? extends SingleSource<? extends T>>, Function<? super Object[],? extends R>)', targetType='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.util.AtomicThrowable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.util.AtomicThrowable.isTerminated()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableRefCount.RefCountObserver'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.isDisposed()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableReplay.MulticastFlowable.DisposableConsumer'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableFlatMapSingle.FlatMapSingleObserver.InnerObserver'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "a58d8b81-7023-4325-8e5e-98109a84ea96",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9959076293481438,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 1.3022462339316145,
+      "MetricsIntensity" : 0.06262800900194637,
+      "Density" : 0.9954050374404356
+    },
+    "euclideanDistance" : 12.152466034351063,
+    "generation" : 1,
+    "numberOfRefactorings" : 12,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.9172763083849187,
+      "LackOfCohesion" : 1.3022462339316145,
+      "MetricsIntensity" : 0.06262800900194637,
+      "Density" : 3.4085081585081585
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber.cancel()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableInternalHelper.SubscriberOnComplete'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.cancel(), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.request(long)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber.onComplete()', targetType='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver.isDisposed()', targetType='io.reactivex.rxjava3.internal.functions.Functions.EqualsPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.subscribers.BoundedSubscriber'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onComplete(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.dispose(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onNext(T), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.isDisposed()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.single.SingleZipIterable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable.SingleZipIterable(Iterable<? extends SingleSource<? extends T>>, Function<? super Object[],? extends R>)', targetType='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.util.AtomicThrowable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.util.AtomicThrowable.isTerminated()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableRefCount.RefCountObserver'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.isDisposed()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableReplay.MulticastFlowable.DisposableConsumer'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableFlatMapSingle.FlatMapSingleObserver.InnerObserver'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableDebounce.DebounceObserver'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "39fa17e0-a242-4ba3-9e1f-1bd443c84711",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9959076293481438,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 1.3022462339316143,
+      "MetricsIntensity" : 0.06262800900194639,
+      "Density" : 0.9954050374404356
+    },
+    "euclideanDistance" : 12.152466034351063,
+    "generation" : 1,
+    "numberOfRefactorings" : 12,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.9172763083849182,
+      "LackOfCohesion" : 1.3022462339316143,
+      "MetricsIntensity" : 0.06262800900194639,
+      "Density" : 3.40850815850816
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber.cancel()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableInternalHelper.SubscriberOnComplete'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.cancel(), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.request(long)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber.onComplete()', targetType='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver.isDisposed()', targetType='io.reactivex.rxjava3.internal.functions.Functions.EqualsPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.subscribers.BoundedSubscriber'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onComplete(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.dispose(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onNext(T), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.isDisposed()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.single.SingleZipIterable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable.SingleZipIterable(Iterable<? extends SingleSource<? extends T>>, Function<? super Object[],? extends R>)', targetType='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.util.AtomicThrowable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.util.AtomicThrowable.isTerminated()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableRefCount.RefCountObserver'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.isDisposed()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableReplay.MulticastFlowable.DisposableConsumer'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableFlatMapSingle.FlatMapSingleObserver.InnerObserver'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableDebounce.DebounceObserver'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "31f3d486-edca-49b3-aa48-97a6e90ba4c6",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9959076293481438,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 1.3022462339316148,
+      "MetricsIntensity" : 0.06262800900194634,
+      "Density" : 0.9954050374404356
+    },
+    "euclideanDistance" : 12.152466034351065,
+    "generation" : 1,
+    "numberOfRefactorings" : 12,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.9172763083849185,
+      "LackOfCohesion" : 1.3022462339316148,
+      "MetricsIntensity" : 0.06262800900194634,
+      "Density" : 3.4085081585081602
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber.cancel()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableInternalHelper.SubscriberOnComplete'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.cancel(), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.request(long)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber.onComplete()', targetType='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver.isDisposed()', targetType='io.reactivex.rxjava3.internal.functions.Functions.EqualsPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.subscribers.BoundedSubscriber'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onComplete(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.dispose(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onNext(T), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.isDisposed()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.single.SingleZipIterable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable.SingleZipIterable(Iterable<? extends SingleSource<? extends T>>, Function<? super Object[],? extends R>)', targetType='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.util.AtomicThrowable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.util.AtomicThrowable.isTerminated()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableRefCount.RefCountObserver'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.isDisposed()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableReplay.MulticastFlowable.DisposableConsumer'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableFlatMapSingle.FlatMapSingleObserver.InnerObserver'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableDebounce.DebounceObserver'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "5b66def1-94bc-49fa-86f3-86d255e0467d",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9964922537269805,
+      "NumberOfRefactorings" : 13.0,
+      "LackOfCohesion" : 1.300968824959577,
+      "MetricsIntensity" : 0.06262019973303139,
+      "Density" : 0.9954050374404356
+    },
+    "euclideanDistance" : 13.140786474683734,
+    "generation" : 1,
+    "numberOfRefactorings" : 13,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.918401800787845,
+      "LackOfCohesion" : 1.300968824959577,
+      "MetricsIntensity" : 0.06262019973303139,
+      "Density" : 3.4085081585081585
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.flowable.FlowableTakeUntilPredicate.InnerSubscriber.cancel()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableInternalHelper.SubscriberOnComplete'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.cancel(), io.reactivex.rxjava3.internal.operators.flowable.FlowableTake.TakeSubscriber.request(long)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate.TakeUntilPredicateObserver.onComplete()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableTakeUntilPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry.ParallelDoOnNextSubscriber.tryOnNext(T)', targetType='io.reactivex.rxjava3.internal.operators.parallel.ParallelDoOnNextTry'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.maybe.MaybeDoFinally.DoFinallyObserver.isDisposed()', targetType='io.reactivex.rxjava3.internal.functions.Functions.EqualsPredicate'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.observable.ObservableReduceMaybe.ReduceObserver.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.subscribers.BoundedSubscriber'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onComplete(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.dispose(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onError(Throwable), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.onNext(T), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.isDisposed(), io.reactivex.rxjava3.internal.operators.flowable.FlowableReduceSeedSingle.ReduceSeedObserver.ReduceSeedObserver(SingleObserver<? super R>, BiFunction<R,? super T,R>, R)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.single.SingleZipIterable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable.SingleZipIterable(Iterable<? extends SingleSource<? extends T>>, Function<? super Object[],? extends R>)', targetType='io.reactivex.rxjava3.internal.operators.single.SingleZipIterable'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.util.AtomicThrowable",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.util.AtomicThrowable.isTerminated()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableRefCount.RefCountObserver'"
+      } ]
+    }, {
+      "refactoredTypeName" : "io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.isDisposed()', targetType='io.reactivex.rxjava3.internal.operators.flowable.FlowableReplay.MulticastFlowable.DisposableConsumer'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.onError(Throwable)', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableFlatMapSingle.FlatMapSingleObserver.InnerObserver'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='io.reactivex.rxjava3.internal.operators.completable.CompletableCreate.Emitter.dispose()', targetType='io.reactivex.rxjava3.internal.operators.observable.ObservableDebounce.DebounceObserver'"
+      } ]
+    } ]
+  } ]
+}

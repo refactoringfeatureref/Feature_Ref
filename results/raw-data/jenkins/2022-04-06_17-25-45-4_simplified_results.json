@@ -1,0 +1,1284 @@
+{
+  "executionId" : "2a812983-abb0-4289-ade4-456dd7914aa3",
+  "solutions" : [ {
+    "solutionId" : "39222af6-699d-4348-9b9f-12110d45b9e1",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0019311232700354,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.4860630002129716,
+      "MetricsIntensity" : 0.032877165695435036,
+      "Density" : 0.9994739610731194
+    },
+    "euclideanDistance" : 10.111387260056878
+  }, {
+    "solutionId" : "a1a07778-81ab-4d32-a3a3-4fbc452e9048",
+    "objectives" : {
+      "NumberOfConcerns" : 1.002574831026714,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.4858982284507579,
+      "MetricsIntensity" : 0.03285902174270169,
+      "Density" : 0.9996493073820796
+    },
+    "euclideanDistance" : 10.111460420398192
+  }, {
+    "solutionId" : "7d65f620-02c0-45ef-bac2-ed252b9e7fd6",
+    "objectives" : {
+      "NumberOfConcerns" : 1.002574831026714,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.48720995358101066,
+      "MetricsIntensity" : 0.03285754982065192,
+      "Density" : 1.0
+    },
+    "euclideanDistance" : 10.111558210743627
+  }, {
+    "solutionId" : "83ceb059-0cf8-4f81-8e96-675ed74e5eb4",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0035403926617317,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.48574105515309396,
+      "MetricsIntensity" : 0.03286563208191553,
+      "Density" : 1.0005260389268806
+    },
+    "euclideanDistance" : 10.11163538685547
+  }, {
+    "solutionId" : "c20a0f75-526b-4256-be43-0368701c557c",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0038622465400708,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.48578686787070413,
+      "MetricsIntensity" : 0.03286504532372714,
+      "Density" : 1.0007013852358408
+    },
+    "euclideanDistance" : 10.111686885215601
+  }, {
+    "solutionId" : "49bd3d7a-612d-4e25-9bd3-2d156b4de4bb",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0012874155133569,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.48613507086842167,
+      "MetricsIntensity" : 0.03287716569543502,
+      "Density" : 0.9992986147641593
+    },
+    "euclideanDistance" : 11.10128742196541
+  }, {
+    "solutionId" : "8edb11cd-bdc1-4e8a-8f3e-f7d2251facd8",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0019311232700354,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.4863032357311379,
+      "MetricsIntensity" : 0.03287145089133477,
+      "Density" : 0.9989479221462388
+    },
+    "euclideanDistance" : 11.101321286058868
+  }, {
+    "solutionId" : "9b06ddfd-00cf-4ed7-8d41-27f2d916eb71",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0022529771483746,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.4874780933463277,
+      "MetricsIntensity" : 0.032829742816911325,
+      "Density" : 0.9996493073820796
+    },
+    "euclideanDistance" : 11.101464878630129
+  }, {
+    "solutionId" : "611393ba-53de-48c4-89a1-9e34e9eb51e6",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0032185387833923,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.4860082394518576,
+      "MetricsIntensity" : 0.03283784481924477,
+      "Density" : 1.0001753463089602
+    },
+    "euclideanDistance" : 11.101535051189561
+  }, {
+    "solutionId" : "a108b5ff-096f-445f-a267-3aa16d727910",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0032185387833923,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.48600823945185767,
+      "MetricsIntensity" : 0.03283784481924475,
+      "Density" : 1.0001753463089602
+    },
+    "euclideanDistance" : 11.101535051189561
+  }, {
+    "solutionId" : "9ee6bd6d-69b4-4067-b498-672659c1652b",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0035403926617317,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.4860540773689829,
+      "MetricsIntensity" : 0.03283725644430972,
+      "Density" : 1.0003506926179204
+    },
+    "euclideanDistance" : 11.101581944905988
+  }, {
+    "solutionId" : "a8e7a105-27b9-4e12-9ffc-64c1bf567d0c",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0012874155133569,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 0.4851120854011724,
+      "MetricsIntensity" : 0.032860311864471206,
+      "Density" : 0.9985972295283184
+    },
+    "euclideanDistance" : 12.092815488991187
+  }, {
+    "solutionId" : "79989b7b-d7d5-4b99-b714-f1bfdc6b623d",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0006437077566785,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 0.48654043159026533,
+      "MetricsIntensity" : 0.03288961167947637,
+      "Density" : 0.9985972295283184
+    },
+    "euclideanDistance" : 12.09281967015233
+  }, {
+    "solutionId" : "103323f8-ee69-4886-ab4f-8312eaf72aa1",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0016092693916963,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 0.48563874390916456,
+      "MetricsIntensity" : 0.03285825172829556,
+      "Density" : 0.999123268455199
+    },
+    "euclideanDistance" : 12.09290672619252
+  }, {
+    "solutionId" : "7de757f4-8a14-4d4b-9a49-fab429c79962",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0009655616350177,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 0.4870673801084493,
+      "MetricsIntensity" : 0.03288755040886452,
+      "Density" : 0.999123268455199
+    },
+    "euclideanDistance" : 12.092910964068391
+  }, {
+    "solutionId" : "0e8bf3d8-8ca2-4fb2-9110-fa91bb272261",
+    "objectives" : {
+      "NumberOfConcerns" : 1.002574831026714,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 0.48500109598859387,
+      "MetricsIntensity" : 0.03286633804915962,
+      "Density" : 0.9996493073820796
+    },
+    "euclideanDistance" : 12.093004642719881
+  }, {
+    "solutionId" : "f289f5a3-cb5e-46b1-8cfc-29a1a0246724",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0028966849050531,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 0.48504693390571885,
+      "MetricsIntensity" : 0.032865749674224544,
+      "Density" : 0.9998246536910398
+    },
+    "euclideanDistance" : 12.09304766319537
+  }, {
+    "solutionId" : "e51efcbd-bff3-4ebd-92e6-ae192b6c7ad6",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0028966849050531,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 0.4850469339057191,
+      "MetricsIntensity" : 0.03286574967422454,
+      "Density" : 0.9998246536910398
+    },
+    "euclideanDistance" : 12.09304766319537
+  }, {
+    "solutionId" : "c1a660d6-bee5-4dba-8836-2b27018bda4b",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0006437077566785,
+      "NumberOfRefactorings" : 13.0,
+      "LackOfCohesion" : 0.48551688280502775,
+      "MetricsIntensity" : 0.03287274856776861,
+      "Density" : 0.9978958442924777
+    },
+    "euclideanDistance" : 13.08563682848551
+  }, {
+    "solutionId" : "6f215e9d-69e4-4f9a-bf65-b84c65f70481",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0003218538783392,
+      "NumberOfRefactorings" : 13.0,
+      "LackOfCohesion" : 0.48539451373992726,
+      "MetricsIntensity" : 0.03287787879128486,
+      "Density" : 0.9984218832193582
+    },
+    "euclideanDistance" : 13.085647819543386
+  }, {
+    "solutionId" : "01c9866f-cf5c-4629-8c32-4b88afd77d37",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0009655616350177,
+      "NumberOfRefactorings" : 13.0,
+      "LackOfCohesion" : 0.48537921760678965,
+      "MetricsIntensity" : 0.0328324910694531,
+      "Density" : 0.998246536910398
+    },
+    "euclideanDistance" : 13.08568298413909
+  }, {
+    "solutionId" : "166e8321-82d3-4188-ae8b-b85932bd7ffe",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0022529771483746,
+      "NumberOfRefactorings" : 13.0,
+      "LackOfCohesion" : 0.4852680200920548,
+      "MetricsIntensity" : 0.032838535882088536,
+      "Density" : 0.9992986147641593
+    },
+    "euclideanDistance" : 13.085857716345357
+  }, {
+    "solutionId" : "7703b396-d3c4-4b0f-adce-ea02e9d29f6d",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9996781461216607,
+      "NumberOfRefactorings" : 14.0,
+      "LackOfCohesion" : 0.48579968978055516,
+      "MetricsIntensity" : 0.03289033202550795,
+      "Density" : 0.9977204979835175
+    },
+    "euclideanDistance" : 14.079484567996847
+  }, {
+    "solutionId" : "2f9def74-846c-4c65-8b70-3d5d1be77943",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0,
+      "NumberOfRefactorings" : 14.0,
+      "LackOfCohesion" : 0.48566194873372354,
+      "MetricsIntensity" : 0.03285005234675261,
+      "Density" : 0.9980711906014378
+    },
+    "euclideanDistance" : 14.079527433685252
+  }, {
+    "solutionId" : "57a269f5-6356-4d41-a7cf-1f82c84212cf",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0006437077566785,
+      "NumberOfRefactorings" : 14.0,
+      "LackOfCohesion" : 0.4868524727062714,
+      "MetricsIntensity" : 0.032833621015647955,
+      "Density" : 0.9980711906014378
+    },
+    "euclideanDistance" : 14.079614245718197
+  }, {
+    "solutionId" : "509415dc-109c-4d39-b601-47b6947c7d4f",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0012874155133569,
+      "NumberOfRefactorings" : 14.0,
+      "LackOfCohesion" : 0.48601119469716303,
+      "MetricsIntensity" : 0.03281157977758203,
+      "Density" : 0.998246536910398
+    },
+    "euclideanDistance" : 14.079643323538331
+  }, {
+    "solutionId" : "b86cb61b-601b-4cc8-aafa-a49063f1601a",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0016092693916963,
+      "NumberOfRefactorings" : 14.0,
+      "LackOfCohesion" : 0.4873702528580291,
+      "MetricsIntensity" : 0.032809518506970156,
+      "Density" : 0.9987725758372786
+    },
+    "euclideanDistance" : 14.079750495468716
+  }, {
+    "solutionId" : "92494982-56c1-4e05-a7b2-3b0cacca46b7",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0016092693916963,
+      "NumberOfRefactorings" : 14.0,
+      "LackOfCohesion" : 0.48737025285802904,
+      "MetricsIntensity" : 0.03280951850697017,
+      "Density" : 0.9987725758372786
+    },
+    "euclideanDistance" : 14.079750495468716
+  }, {
+    "solutionId" : "f226787e-18f4-47c4-acb9-59a1ba8c75ae",
+    "objectives" : {
+      "NumberOfConcerns" : 1.002574831026714,
+      "NumberOfRefactorings" : 14.0,
+      "LackOfCohesion" : 0.48589964936894964,
+      "MetricsIntensity" : 0.032817636098908635,
+      "Density" : 0.9992986147641593
+    },
+    "euclideanDistance" : 14.079805733026781
+  }, {
+    "solutionId" : "61082afd-0773-488e-bb5d-149327c91e4d",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0,
+      "NumberOfRefactorings" : 15.0,
+      "LackOfCohesion" : 0.48501211041148884,
+      "MetricsIntensity" : 0.03286214562577197,
+      "Density" : 0.9975451516745573
+    },
+    "euclideanDistance" : 15.07419692711656
+  }, {
+    "solutionId" : "b56c1a53-9cfb-4dd1-9169-74fb43e2a8c3",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9993562922433216,
+      "NumberOfRefactorings" : 15.0,
+      "LackOfCohesion" : 0.48644118848554013,
+      "MetricsIntensity" : 0.0328914625942627,
+      "Density" : 0.9975451516745573
+    },
+    "euclideanDistance" : 15.074200350487668
+  }, {
+    "solutionId" : "1b42286e-2337-4530-a687-107e7776ec57",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9996781461216607,
+      "NumberOfRefactorings" : 15.0,
+      "LackOfCohesion" : 0.4863034474387084,
+      "MetricsIntensity" : 0.03285118291550737,
+      "Density" : 0.9978958442924777
+    },
+    "euclideanDistance" : 15.074240370748344
+  }, {
+    "solutionId" : "c21fb3f4-4368-4dd4-b51f-94c731f60f38",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0006437077566785,
+      "NumberOfRefactorings" : 15.0,
+      "LackOfCohesion" : 0.4850029420450625,
+      "MetricsIntensity" : 0.03284009573322337,
+      "Density" : 0.9977204979835175
+    },
+    "euclideanDistance" : 15.074250905025087
+  }, {
+    "solutionId" : "f48b3b9d-5251-4f75-b9af-2a119e5d65bc",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0012874155133569,
+      "NumberOfRefactorings" : 15.0,
+      "LackOfCohesion" : 0.4849011149370373,
+      "MetricsIntensity" : 0.03286817411779299,
+      "Density" : 0.9985972295283184
+    },
+    "euclideanDistance" : 15.074348487527548
+  }, {
+    "solutionId" : "9e30aee5-4770-4c86-90e6-f0959a6e11af",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0006437077566785,
+      "NumberOfRefactorings" : 15.0,
+      "LackOfCohesion" : 0.4868215128687866,
+      "MetricsIntensity" : 0.03282706712721046,
+      "Density" : 0.9985972295283184
+    },
+    "euclideanDistance" : 15.074367550860059
+  }, {
+    "solutionId" : "dacf8453-f8c8-4a85-954c-c0c446b5831f",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0019311232700354,
+      "NumberOfRefactorings" : 15.0,
+      "LackOfCohesion" : 0.4848919516164924,
+      "MetricsIntensity" : 0.03284613636057327,
+      "Density" : 0.9987725758372786
+    },
+    "euclideanDistance" : 15.074402532353913
+  }, {
+    "solutionId" : "2c017239-a401-4dea-8ac5-d2f066442c64",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0019311232700354,
+      "NumberOfRefactorings" : 15.0,
+      "LackOfCohesion" : 0.48489195161649246,
+      "MetricsIntensity" : 0.032846136360573264,
+      "Density" : 0.9987725758372786
+    },
+    "euclideanDistance" : 15.074402532353913
+  }, {
+    "solutionId" : "0ee95c5c-1d6c-409a-9f44-5683a200f0df",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9993562922433216,
+      "NumberOfRefactorings" : 16.0,
+      "LackOfCohesion" : 0.4854170757615776,
+      "MetricsIntensity" : 0.032874590191584306,
+      "Density" : 0.9968437664387164
+    },
+    "euclideanDistance" : 16.069509045694435
+  }, {
+    "solutionId" : "3ac472c4-7f16-4e5d-91dc-8bb8049eb207",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9990344383649823,
+      "NumberOfRefactorings" : 16.0,
+      "LackOfCohesion" : 0.4852946392755048,
+      "MetricsIntensity" : 0.03287972324167,
+      "Density" : 0.997369805365597
+    },
+    "euclideanDistance" : 16.069517985951048
+  }, {
+    "solutionId" : "392a2178-1c80-406e-a72b-358a9fdf8850",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9990344383649823,
+      "NumberOfRefactorings" : 16.0,
+      "LackOfCohesion" : 0.48529463927550487,
+      "MetricsIntensity" : 0.032879723241669996,
+      "Density" : 0.997369805365597
+    },
+    "euclideanDistance" : 16.069517985951048
+  }, {
+    "solutionId" : "2831f3fc-27bc-47bb-a8b9-23bd19b298ff",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9996781461216607,
+      "NumberOfRefactorings" : 16.0,
+      "LackOfCohesion" : 0.4852793347147457,
+      "MetricsIntensity" : 0.03283431051282897,
+      "Density" : 0.9971944590566368
+    },
+    "euclideanDistance" : 16.06954658071143
+  }, {
+    "solutionId" : "0d3a0c65-a847-4a05-8daf-6c729d6fc230",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0003218538783392,
+      "NumberOfRefactorings" : 16.0,
+      "LackOfCohesion" : 0.4852701612968782,
+      "MetricsIntensity" : 0.032812255834693986,
+      "Density" : 0.997369805365597
+    },
+    "euclideanDistance" : 16.069597198236792
+  }, {
+    "solutionId" : "1c260cf1-f6cd-4df5-b630-27fe1e26add5",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0016092693916963,
+      "NumberOfRefactorings" : 16.0,
+      "LackOfCohesion" : 0.4851589626030655,
+      "MetricsIntensity" : 0.03281831511872108,
+      "Density" : 0.9984218832193582
+    },
+    "euclideanDistance" : 16.06973937704728
+  }, {
+    "solutionId" : "39b31e0b-6bc8-4540-9f40-6cb5ab508088",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9983907306083039,
+      "NumberOfRefactorings" : 17.0,
+      "LackOfCohesion" : 0.4856999836190966,
+      "MetricsIntensity" : 0.03289218435774787,
+      "Density" : 0.9966684201297563
+    },
+    "euclideanDistance" : 17.065377767882197
+  }, {
+    "solutionId" : "85c44cbb-83d9-422d-bf40-2b58589fe3b4",
+    "objectives" : {
+      "NumberOfConcerns" : 0.998712584486643,
+      "NumberOfRefactorings" : 17.0,
+      "LackOfCohesion" : 0.4855621666400449,
+      "MetricsIntensity" : 0.032851882474097975,
+      "Density" : 0.9970191127476766
+    },
+    "euclideanDistance" : 17.065413086164963
+  }, {
+    "solutionId" : "aa44a1e8-0502-4d7b-841c-3d665e8aeb82",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9996781461216607,
+      "NumberOfRefactorings" : 17.0,
+      "LackOfCohesion" : 0.4860805176629733,
+      "MetricsIntensity" : 0.03282775209468993,
+      "Density" : 0.9977204979835175
+    },
+    "euclideanDistance" : 17.06552532208982
+  }, {
+    "solutionId" : "629fe917-e178-4749-a434-a721aaa5437a",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0,
+      "NumberOfRefactorings" : 18.0,
+      "LackOfCohesion" : 0.4861182715721108,
+      "MetricsIntensity" : 0.03281384005113445,
+      "Density" : 0.9975451516745573
+    },
+    "euclideanDistance" : 18.061906988235894
+  }, {
+    "solutionId" : "b023ff6e-7795-4e23-8fbc-b184b4cad380",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0003218538783392,
+      "NumberOfRefactorings" : 18.0,
+      "LackOfCohesion" : 0.48664551042005666,
+      "MetricsIntensity" : 0.032811777644836344,
+      "Density" : 0.9980711906014378
+    },
+    "euclideanDistance" : 18.06196806492635
+  }, {
+    "solutionId" : "cc4e07e6-dfef-4a35-b7ef-1e0300b2609e",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9980688767299646,
+      "NumberOfRefactorings" : 19.0,
+      "LackOfCohesion" : 0.4865485614303136,
+      "MetricsIntensity" : 0.03289376685381458,
+      "Density" : 0.9968437664387164
+    },
+    "euclideanDistance" : 19.058532222600785
+  }, {
+    "solutionId" : "15dd6dcb-81aa-4879-930f-2137b148b98f",
+    "objectives" : {
+      "NumberOfConcerns" : 0.998712584486643,
+      "NumberOfRefactorings" : 19.0,
+      "LackOfCohesion" : 0.4869382739490688,
+      "MetricsIntensity" : 0.03285140142692809,
+      "Density" : 0.9977204979835175
+    },
+    "euclideanDistance" : 19.058621700315076
+  }, {
+    "solutionId" : "e06e5b27-41b5-4ca0-9fc1-ee7e737e9e63",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9993562922433216,
+      "NumberOfRefactorings" : 19.0,
+      "LackOfCohesion" : 0.48692909547419005,
+      "MetricsIntensity" : 0.03282933718445816,
+      "Density" : 0.9978958442924777
+    },
+    "euclideanDistance" : 19.05866435048117
+  }, {
+    "solutionId" : "b1c3ed1c-9589-4774-9132-629bde9fddf1",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0003218538783392,
+      "NumberOfRefactorings" : 20.0,
+      "LackOfCohesion" : 0.4863746714536114,
+      "MetricsIntensity" : 0.032911857199957276,
+      "Density" : 0.9959670348939155
+    },
+    "euclideanDistance" : 20.055678439218106
+  }, {
+    "solutionId" : "5a92ae01-ca39-4bec-8f7b-6e1595879a25",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0012874155133569,
+      "NumberOfRefactorings" : 20.0,
+      "LackOfCohesion" : 0.4867362959852994,
+      "MetricsIntensity" : 0.03289162403264585,
+      "Density" : 0.9966684201297563
+    },
+    "euclideanDistance" : 20.05577020482909
+  }, {
+    "solutionId" : "688ed353-7f2e-429f-8b51-6469eefe96c1",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9996781461216607,
+      "NumberOfRefactorings" : 21.0,
+      "LackOfCohesion" : 0.4864467817955456,
+      "MetricsIntensity" : 0.03291185719995727,
+      "Density" : 0.9957916885849553
+    },
+    "euclideanDistance" : 21.05299672599489
+  }, {
+    "solutionId" : "f884ae57-48b2-48de-889f-9ec3b1682731",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0003218538783392,
+      "NumberOfRefactorings" : 21.0,
+      "LackOfCohesion" : 0.4866150392600589,
+      "MetricsIntensity" : 0.03290613924893846,
+      "Density" : 0.995440995967035
+    },
+    "euclideanDistance" : 21.05301459644753
+  }, {
+    "solutionId" : "ac69edaf-6a19-4d36-9db2-d685c7c7a5b2",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0009655616350177,
+      "NumberOfRefactorings" : 21.0,
+      "LackOfCohesion" : 0.4870043225800045,
+      "MetricsIntensity" : 0.03286381918458856,
+      "Density" : 0.9963177275118359
+    },
+    "euclideanDistance" : 21.053095599235675
+  }, {
+    "solutionId" : "48df7a37-3654-42a5-a692-e45b598a6366",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9990344383649823,
+      "NumberOfRefactorings" : 22.0,
+      "LackOfCohesion" : 0.4868525375981879,
+      "MetricsIntensity" : 0.03292432915506666,
+      "Density" : 0.9950903033491145
+    },
+    "euclideanDistance" : 22.050541578965237
+  }, {
+    "solutionId" : "a40046f3-8a3a-478f-a239-13caedd2a7cb",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9993562922433216,
+      "NumberOfRefactorings" : 22.0,
+      "LackOfCohesion" : 0.48737977644613406,
+      "MetricsIntensity" : 0.03292226674876854,
+      "Density" : 0.995616342275995
+    },
+    "euclideanDistance" : 22.050591552654318
+  }, {
+    "solutionId" : "451cc3b8-872d-4775-8a1c-977cf0245bc9",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9996781461216607,
+      "NumberOfRefactorings" : 22.0,
+      "LackOfCohesion" : 0.4872420353993019,
+      "MetricsIntensity" : 0.032881987070013205,
+      "Density" : 0.9959670348939155
+    },
+    "euclideanDistance" : 22.05061887468382
+  }, {
+    "solutionId" : "c947cf93-b263-4457-9b65-1a2b57aa90b3",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0012874155133569,
+      "NumberOfRefactorings" : 22.0,
+      "LackOfCohesion" : 0.48535787441573247,
+      "MetricsIntensity" : 0.032900415803113474,
+      "Density" : 0.9963177275118359
+    },
+    "euclideanDistance" : 22.05066620776427
+  }, {
+    "solutionId" : "3a9906fe-76e6-4a7a-a621-6e66f4bd349f",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9990344383649823,
+      "NumberOfRefactorings" : 23.0,
+      "LackOfCohesion" : 0.48582842487422556,
+      "MetricsIntensity" : 0.032907456752388285,
+      "Density" : 0.9943889181132737
+    },
+    "euclideanDistance" : 23.04829692816004
+  }, {
+    "solutionId" : "97eee4cc-7aa0-479d-a175-9a957bf22d21",
+    "objectives" : {
+      "NumberOfConcerns" : 0.998712584486643,
+      "NumberOfRefactorings" : 23.0,
+      "LackOfCohesion" : 0.48570598838815243,
+      "MetricsIntensity" : 0.03291258980247399,
+      "Density" : 0.9949149570401543
+    },
+    "euclideanDistance" : 23.04830310768838
+  }, {
+    "solutionId" : "b30f0ec6-7f58-4636-9880-639d0d297be6",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0006437077566785,
+      "NumberOfRefactorings" : 23.0,
+      "LackOfCohesion" : 0.48557925356831116,
+      "MetricsIntensity" : 0.03287320611468709,
+      "Density" : 0.9957916885849553
+    },
+    "euclideanDistance" : 23.048422001866072
+  }, {
+    "solutionId" : "70961613-d9aa-41c1-a5d1-aeac60fbdd1a",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9980688767299646,
+      "NumberOfRefactorings" : 24.0,
+      "LackOfCohesion" : 0.48611155949531254,
+      "MetricsIntensity" : 0.03292506903683234,
+      "Density" : 0.9942135718043135
+    },
+    "euclideanDistance" : 24.04624691334394
+  }, {
+    "solutionId" : "3b79ed41-b55c-422d-99f0-1a3ea8bf35fd",
+    "objectives" : {
+      "NumberOfConcerns" : 0.998712584486643,
+      "NumberOfRefactorings" : 24.0,
+      "LackOfCohesion" : 0.4864699235792103,
+      "MetricsIntensity" : 0.03290858732114304,
+      "Density" : 0.9942135718043135
+    },
+    "euclideanDistance" : 24.04628086450041
+  }, {
+    "solutionId" : "358dd6b1-c391-4bb0-a324-24a09ff0d227",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9983907306083039,
+      "NumberOfRefactorings" : 24.0,
+      "LackOfCohesion" : 0.48634748709313746,
+      "MetricsIntensity" : 0.032913720371228736,
+      "Density" : 0.9947396107311941
+    },
+    "euclideanDistance" : 24.046286784768096
+  }, {
+    "solutionId" : "4adf2b4f-e9b7-4e7f-a185-8ed6064f4bc1",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9993562922433216,
+      "NumberOfRefactorings" : 24.0,
+      "LackOfCohesion" : 0.4876919894856197,
+      "MetricsIntensity" : 0.032866245236089574,
+      "Density" : 0.9950903033491145
+    },
+    "euclideanDistance" : 24.046368569439963
+  }, {
+    "solutionId" : "e48e6448-59d9-4afc-9d85-50ebc72167bc",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0009655616350177,
+      "NumberOfRefactorings" : 24.0,
+      "LackOfCohesion" : 0.4862112306586839,
+      "MetricsIntensity" : 0.03285229482281601,
+      "Density" : 0.9957916885849553
+    },
+    "euclideanDistance" : 24.046434533558774
+  }, {
+    "solutionId" : "dcf5ae9f-2bb0-413f-911c-6f57cdf22571",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9983907306083039,
+      "NumberOfRefactorings" : 25.0,
+      "LackOfCohesion" : 0.48532337436917516,
+      "MetricsIntensity" : 0.032896847968550344,
+      "Density" : 0.9940382254953534
+    },
+    "euclideanDistance" : 25.044390929408245
+  }, {
+    "solutionId" : "c03e3521-7687-4760-88f0-bf49aa87b23a",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9977470228516253,
+      "NumberOfRefactorings" : 25.0,
+      "LackOfCohesion" : 0.4867534118379518,
+      "MetricsIntensity" : 0.032926200228833365,
+      "Density" : 0.9940382254953534
+    },
+    "euclideanDistance" : 25.0443930677897
+  }, {
+    "solutionId" : "5cecec87-552f-4183-a582-2826a11c49f1",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9980688767299646,
+      "NumberOfRefactorings" : 25.0,
+      "LackOfCohesion" : 0.4866155948589001,
+      "MetricsIntensity" : 0.032885898345183455,
+      "Density" : 0.9943889181132737
+    },
+    "euclideanDistance" : 25.044417082907586
+  }, {
+    "solutionId" : "339a8cef-aa9e-47db-a0a8-8ca4afd0123a",
+    "objectives" : {
+      "NumberOfConcerns" : 0.998712584486643,
+      "NumberOfRefactorings" : 25.0,
+      "LackOfCohesion" : 0.4866064163840213,
+      "MetricsIntensity" : 0.03286383280586277,
+      "Density" : 0.9945642644222339
+    },
+    "euclideanDistance" : 25.044449499608703
+  }, {
+    "solutionId" : "e43b5c29-bda1-4b00-9c18-bda6cfaae789",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9996781461216607,
+      "NumberOfRefactorings" : 25.0,
+      "LackOfCohesion" : 0.48521214637300986,
+      "MetricsIntensity" : 0.032902860671005965,
+      "Density" : 0.9950903033491145
+    },
+    "euclideanDistance" : 25.04448191783733
+  }, {
+    "solutionId" : "3955e0be-2448-4287-a326-010a117b948c",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0003218538783392,
+      "NumberOfRefactorings" : 25.0,
+      "LackOfCohesion" : 0.4852029780065838,
+      "MetricsIntensity" : 0.03288081077845737,
+      "Density" : 0.9952656496580747
+    },
+    "euclideanDistance" : 25.04451438144329
+  }, {
+    "solutionId" : "b9b7385a-9dc0-4fff-a113-20bbc7a598ea",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9977470228516253,
+      "NumberOfRefactorings" : 26.0,
+      "LackOfCohesion" : 0.485728734553502,
+      "MetricsIntensity" : 0.03290931852494072,
+      "Density" : 0.9933368402595125
+    },
+    "euclideanDistance" : 26.04264258147861
+  }, {
+    "solutionId" : "ffc83628-388a-4ec4-875b-6678f99f0b63",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9974251689732861,
+      "NumberOfRefactorings" : 26.0,
+      "LackOfCohesion" : 0.4856062305721225,
+      "MetricsIntensity" : 0.03291445440471224,
+      "Density" : 0.9938628791863932
+    },
+    "euclideanDistance" : 26.042648044367635
+  }, {
+    "solutionId" : "e29fa6db-7a8b-46be-bcd6-a50030e5e2b5",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9980688767299646,
+      "NumberOfRefactorings" : 26.0,
+      "LackOfCohesion" : 0.48593055715579053,
+      "MetricsIntensity" : 0.03290485517187169,
+      "Density" : 0.9935121865684727
+    },
+    "euclideanDistance" : 26.04266536250521
+  }, {
+    "solutionId" : "9d2358b8-e781-4ee0-869e-8f8597bc9752",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9983907306083039,
+      "NumberOfRefactorings" : 26.0,
+      "LackOfCohesion" : 0.48579266416075484,
+      "MetricsIntensity" : 0.03286453843006929,
+      "Density" : 0.9938628791863932
+    },
+    "euclideanDistance" : 26.042688456916807
+  }, {
+    "solutionId" : "95281c98-b931-4107-bf2e-b0e5f379fe8b",
+    "objectives" : {
+      "NumberOfConcerns" : 0.998712584486643,
+      "NumberOfRefactorings" : 26.0,
+      "LackOfCohesion" : 0.48558173909957125,
+      "MetricsIntensity" : 0.03284694980511933,
+      "Density" : 0.9938628791863932
+    },
+    "euclideanDistance" : 26.04269684184983
+  }, {
+    "solutionId" : "4171712d-4873-47e1-bd1a-0eb5a85fadf7",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9990344383649823,
+      "NumberOfRefactorings" : 26.0,
+      "LackOfCohesion" : 0.48610926859737863,
+      "MetricsIntensity" : 0.032844886261882776,
+      "Density" : 0.9943889181132737
+    },
+    "euclideanDistance" : 26.042739105882767
+  }, {
+    "solutionId" : "1a0d1ff4-7714-4131-8fbb-923748e8b5a8",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0,
+      "NumberOfRefactorings" : 26.0,
+      "LackOfCohesion" : 0.4854703074710502,
+      "MetricsIntensity" : 0.03285299331245978,
+      "Density" : 0.9949149570401543
+    },
+    "euclideanDistance" : 26.04278434634722
+  }, {
+    "solutionId" : "9833b25e-33b4-440d-a02b-b2ec32b71737",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9993562922433216,
+      "NumberOfRefactorings" : 26.0,
+      "LackOfCohesion" : 0.4856659226253346,
+      "MetricsIntensity" : 0.032836784705478746,
+      "Density" : 0.9968437664387164
+    },
+    "euclideanDistance" : 26.04283702165268
+  }, {
+    "solutionId" : "5849ba75-09cd-4964-9957-3029fd28598a",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9967814612166077,
+      "NumberOfRefactorings" : 27.0,
+      "LackOfCohesion" : 0.48601197035732513,
+      "MetricsIntensity" : 0.032926941550728964,
+      "Density" : 0.9931614939505523
+    },
+    "euclideanDistance" : 27.04102873141667
+  }, {
+    "solutionId" : "09d4ef72-092c-45f7-9957-29622d6006be",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9983907306083039,
+      "NumberOfRefactorings" : 27.0,
+      "LackOfCohesion" : 0.4859491237838582,
+      "MetricsIntensity" : 0.03285436772364457,
+      "Density" : 0.9966684201297563
+    },
+    "euclideanDistance" : 27.04121591110565
+  }, {
+    "solutionId" : "d3ba009e-843d-4ae4-abcb-52e0260fc71b",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9990344383649823,
+      "NumberOfRefactorings" : 28.0,
+      "LackOfCohesion" : 0.48651450043655137,
+      "MetricsIntensity" : 0.03283836979524697,
+      "Density" : 0.9970191127476766
+    },
+    "euclideanDistance" : 28.039791219584522
+  }, {
+    "solutionId" : "71c25745-8559-4505-b32a-5c96ab602dae",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9964596073382684,
+      "NumberOfRefactorings" : 29.0,
+      "LackOfCohesion" : 0.4868610162202856,
+      "MetricsIntensity" : 0.03292852491965611,
+      "Density" : 0.9933368402595125
+    },
+    "euclideanDistance" : 29.038212199860755
+  }, {
+    "solutionId" : "d2198c1d-2ca1-43c1-91f8-4e09b56a351a",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9974251689732861,
+      "NumberOfRefactorings" : 29.0,
+      "LackOfCohesion" : 0.48671393968778176,
+      "MetricsIntensity" : 0.032866124394128594,
+      "Density" : 0.9938628791863932
+    },
+    "euclideanDistance" : 29.038260812788792
+  }, {
+    "solutionId" : "5fcb6819-e350-4fa4-b2cd-d74c04e0fa51",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9980688767299646,
+      "NumberOfRefactorings" : 29.0,
+      "LackOfCohesion" : 0.4867981696468185,
+      "MetricsIntensity" : 0.03285595368770389,
+      "Density" : 1.0024548483254427
+    },
+    "euclideanDistance" : 29.03857966873195
+  }, {
+    "solutionId" : "bf3704ee-9b0a-438d-87f8-490c5f1914e3",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9974251689732861,
+      "NumberOfRefactorings" : 35.0,
+      "LackOfCohesion" : 0.48571916503229107,
+      "MetricsIntensity" : 0.03292142412068985,
+      "Density" : 0.9935121865684727
+    },
+    "euclideanDistance" : 35.0316846634587
+  }, {
+    "solutionId" : "2f0393cc-8803-4b5e-96c2-40e23a392f64",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9967814612166077,
+      "NumberOfRefactorings" : 36.0,
+      "LackOfCohesion" : 0.4861249671089771,
+      "MetricsIntensity" : 0.03293391511100662,
+      "Density" : 0.992810801332632
+    },
+    "euclideanDistance" : 36.03077363442365
+  }, {
+    "solutionId" : "6703666c-3e51-437a-961c-c76efedfba61",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9964596073382684,
+      "NumberOfRefactorings" : 36.0,
+      "LackOfCohesion" : 0.4860023955578343,
+      "MetricsIntensity" : 0.03293905382358549,
+      "Density" : 0.9933368402595125
+    },
+    "euclideanDistance" : 36.0307775816319
+  }, {
+    "solutionId" : "1226e5e5-26b8-44af-a692-73dcd7304181",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9977470228516253,
+      "NumberOfRefactorings" : 36.0,
+      "LackOfCohesion" : 0.485977890576473,
+      "MetricsIntensity" : 0.03287151134156392,
+      "Density" : 0.9933368402595125
+    },
+    "euclideanDistance" : 36.03081281689622
+  }, {
+    "solutionId" : "40600ee0-2f33-41de-bbe3-a84955ed8fd2",
+    "objectives" : {
+      "NumberOfConcerns" : 0.99581589958159,
+      "NumberOfRefactorings" : 37.0,
+      "LackOfCohesion" : 0.4864085778953385,
+      "MetricsIntensity" : 0.03295156143680141,
+      "Density" : 0.9926354550236718
+    },
+    "euclideanDistance" : 37.02991565697228
+  }, {
+    "solutionId" : "63462a01-afe6-4777-8bc8-9196adb1828f",
+    "objectives" : {
+      "NumberOfConcerns" : 0.99581589958159,
+      "NumberOfRefactorings" : 37.0,
+      "LackOfCohesion" : 0.4864085778953387,
+      "MetricsIntensity" : 0.032951561436801405,
+      "Density" : 0.9926354550236718
+    },
+    "euclideanDistance" : 37.02991565697228
+  }, {
+    "solutionId" : "6503d2ef-9288-45b1-9fc6-7570e289e9c6",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9961377534599292,
+      "NumberOfRefactorings" : 37.0,
+      "LackOfCohesion" : 0.48627060880041595,
+      "MetricsIntensity" : 0.03291121506983621,
+      "Density" : 0.9929861476415921
+    },
+    "euclideanDistance" : 37.029931868237846
+  }, {
+    "solutionId" : "37b50254-8742-4d2c-bda0-414dbf940e6f",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9964596073382684,
+      "NumberOfRefactorings" : 37.0,
+      "LackOfCohesion" : 0.48639938928969323,
+      "MetricsIntensity" : 0.03292946221985224,
+      "Density" : 0.992810801332632
+    },
+    "euclideanDistance" : 37.02993753372645
+  }, {
+    "solutionId" : "998659d6-e408-4a50-8b93-e1be2115ffb0",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9967814612166077,
+      "NumberOfRefactorings" : 37.0,
+      "LackOfCohesion" : 0.4862614201947704,
+      "MetricsIntensity" : 0.03288912322819235,
+      "Density" : 0.9931614939505523
+    },
+    "euclideanDistance" : 37.02995375230285
+  }, {
+    "solutionId" : "ef1b9b20-9d7c-4eae-80a7-d6b16ccb3e93",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9964596073382684,
+      "NumberOfRefactorings" : 38.0,
+      "LackOfCohesion" : 0.48771393456069007,
+      "MetricsIntensity" : 0.0329510798586744,
+      "Density" : 0.9912326845519902
+    },
+    "euclideanDistance" : 38.0291260041512
+  }, {
+    "solutionId" : "12e86dab-d6e2-4235-9a2f-fbe2dbcf91e2",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9964596073382684,
+      "NumberOfRefactorings" : 38.0,
+      "LackOfCohesion" : 0.48771393456069023,
+      "MetricsIntensity" : 0.03295107985867439,
+      "Density" : 0.9912326845519902
+    },
+    "euclideanDistance" : 38.0291260041512
+  }, {
+    "solutionId" : "4a5e3b8e-1615-4de4-b3b3-74ee3bb9cbf3",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9967814612166077,
+      "NumberOfRefactorings" : 38.0,
+      "LackOfCohesion" : 0.4875759654657672,
+      "MetricsIntensity" : 0.032910733491709206,
+      "Density" : 0.9915833771699105
+    },
+    "euclideanDistance" : 38.029141777244774
+  }, {
+    "solutionId" : "11c27bca-762c-48ff-a5c8-7f8c9ee36eb9",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9971033150949469,
+      "NumberOfRefactorings" : 38.0,
+      "LackOfCohesion" : 0.48770474595504437,
+      "MetricsIntensity" : 0.03292898323828956,
+      "Density" : 0.9914080308609504
+    },
+    "euclideanDistance" : 38.02914731021185
+  }, {
+    "solutionId" : "20576f9c-8c0e-4b8c-ab8b-62c46799da9b",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9974251689732861,
+      "NumberOfRefactorings" : 38.0,
+      "LackOfCohesion" : 0.48756677686012145,
+      "MetricsIntensity" : 0.03288864424662968,
+      "Density" : 0.9917587234788707
+    },
+    "euclideanDistance" : 38.02916309042464
+  }, {
+    "solutionId" : "62715db1-2304-4d58-97bb-a30338e72940",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9974251689732861,
+      "NumberOfRefactorings" : 38.0,
+      "LackOfCohesion" : 0.48682693643943376,
+      "MetricsIntensity" : 0.03287309730562322,
+      "Density" : 0.9935121865684727
+    },
+    "euclideanDistance" : 38.029199367579785
+  }, {
+    "solutionId" : "d77adfde-6a0b-4742-877e-a21888704753",
+    "objectives" : {
+      "NumberOfConcerns" : 0.99581589958159,
+      "NumberOfRefactorings" : 39.0,
+      "LackOfCohesion" : 0.4877862040866017,
+      "MetricsIntensity" : 0.0329510798586744,
+      "Density" : 0.9994739610731194
+    },
+    "euclideanDistance" : 39.0285743867142
+  }, {
+    "solutionId" : "1d92ff01-1c92-466f-a3a5-b3ee5a84d1f1",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9961377534599292,
+      "NumberOfRefactorings" : 39.0,
+      "LackOfCohesion" : 0.48764823499167914,
+      "MetricsIntensity" : 0.032910733491709206,
+      "Density" : 0.9998246536910398
+    },
+    "euclideanDistance" : 39.02858982437703
+  }, {
+    "solutionId" : "217f050b-34ff-42d1-b3e2-f42a2040d557",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9954940457032507,
+      "NumberOfRefactorings" : 39.0,
+      "LackOfCohesion" : 0.48725809232665623,
+      "MetricsIntensity" : 0.03295314567955249,
+      "Density" : 1.0012274241627215
+    },
+    "euclideanDistance" : 39.028604524223944
+  }, {
+    "solutionId" : "3ead4adc-3dfc-4b89-ac3f-d7b0a67755b4",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9954940457032507,
+      "NumberOfRefactorings" : 39.0,
+      "LackOfCohesion" : 0.4872580923266562,
+      "MetricsIntensity" : 0.032953145679552494,
+      "Density" : 1.0012274241627215
+    },
+    "euclideanDistance" : 39.028604524223944
+  }, {
+    "solutionId" : "5979eeaa-9634-4dcf-bbf3-78ac5db25bea",
+    "objectives" : {
+      "NumberOfConcerns" : 0.99581589958159,
+      "NumberOfRefactorings" : 39.0,
+      "LackOfCohesion" : 0.4871201232317335,
+      "MetricsIntensity" : 0.0329127993125873,
+      "Density" : 1.0015781167806417
+    },
+    "euclideanDistance" : 39.02861997684121
+  }, {
+    "solutionId" : "a7f679ed-758f-456a-a13f-13447a38acbd",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9964596073382684,
+      "NumberOfRefactorings" : 39.0,
+      "LackOfCohesion" : 0.4871109346260878,
+      "MetricsIntensity" : 0.03289071006750778,
+      "Density" : 1.001753463089602
+    },
+    "euclideanDistance" : 39.02864077330019
+  }, {
+    "solutionId" : "b92c8f8e-b3fb-403a-b2bc-f6f67e5940d9",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9961377534599292,
+      "NumberOfRefactorings" : 42.0,
+      "LackOfCohesion" : 0.488398912530984,
+      "MetricsIntensity" : 0.03295655179998107,
+      "Density" : 0.9922847624057514
+    },
+    "euclideanDistance" : 42.02637908630291
+  }, {
+    "solutionId" : "9dee681a-0543-4738-80fa-400763c88bab",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9961377534599292,
+      "NumberOfRefactorings" : 42.0,
+      "LackOfCohesion" : 0.48839891253098416,
+      "MetricsIntensity" : 0.03295655179998106,
+      "Density" : 0.9922847624057514
+    },
+    "euclideanDistance" : 42.02637908630291
+  }, {
+    "solutionId" : "3ec36a21-8066-40a4-810d-6e6c43c336dd",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9964596073382684,
+      "NumberOfRefactorings" : 42.0,
+      "LackOfCohesion" : 0.4882609434360614,
+      "MetricsIntensity" : 0.03291620543301586,
+      "Density" : 0.9926354550236718
+    },
+    "euclideanDistance" : 42.026393363231776
+  }, {
+    "solutionId" : "a0704bf7-33cb-4054-ad2d-7eaae513592f",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9971033150949469,
+      "NumberOfRefactorings" : 42.0,
+      "LackOfCohesion" : 0.4882517548304158,
+      "MetricsIntensity" : 0.03289411813535959,
+      "Density" : 0.992810801332632
+    },
+    "euclideanDistance" : 42.02641264856327
+  }, {
+    "solutionId" : "36b2dcdd-eb30-4cab-8a54-7e1f595b31dc",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9971033150949469,
+      "NumberOfRefactorings" : 42.0,
+      "LackOfCohesion" : 0.4882517548304158,
+      "MetricsIntensity" : 0.03289411813535959,
+      "Density" : 0.992810801332632
+    },
+    "euclideanDistance" : 42.02641264856327
+  }, {
+    "solutionId" : "942b3a92-3d50-44f0-8d3c-5c5fca878022",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9954940457032507,
+      "NumberOfRefactorings" : 50.0,
+      "LackOfCohesion" : 0.4879470735754388,
+      "MetricsIntensity" : 0.03297961651337009,
+      "Density" : 0.9936875328774329
+    },
+    "euclideanDistance" : 50.02217111751291
+  }, {
+    "solutionId" : "c0cdba12-57fb-4967-a25f-7168e4d44cb5",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9954940457032507,
+      "NumberOfRefactorings" : 50.0,
+      "LackOfCohesion" : 0.4879470735754385,
+      "MetricsIntensity" : 0.03297961651337011,
+      "Density" : 0.9936875328774329
+    },
+    "euclideanDistance" : 50.02217111751291
+  }, {
+    "solutionId" : "65c0cedc-b820-4586-99fd-5665d3bfcff1",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9954940457032507,
+      "NumberOfRefactorings" : 50.0,
+      "LackOfCohesion" : 0.4879470735754384,
+      "MetricsIntensity" : 0.03297961651337012,
+      "Density" : 0.9936875328774329
+    },
+    "euclideanDistance" : 50.02217111751291
+  }, {
+    "solutionId" : "e23b5d6e-ef85-4912-9cf0-f0ee0dc8e651",
+    "objectives" : {
+      "NumberOfConcerns" : 0.99581589958159,
+      "NumberOfRefactorings" : 50.0,
+      "LackOfCohesion" : 0.48780902829658723,
+      "MetricsIntensity" : 0.032939247867903,
+      "Density" : 0.9940382254953534
+    },
+    "euclideanDistance" : 50.02218311850996
+  }, {
+    "solutionId" : "58f7d0ea-520d-44be-8d9e-9fcde32da05b",
+    "objectives" : {
+      "NumberOfConcerns" : 0.99581589958159,
+      "NumberOfRefactorings" : 51.0,
+      "LackOfCohesion" : 0.48872474766080276,
+      "MetricsIntensity" : 0.03298120163091013,
+      "Density" : 0.9919340697878309
+    },
+    "euclideanDistance" : 51.021716181870076
+  }, {
+    "solutionId" : "6282ddda-5958-466b-9e7e-2b6be0d8e2f0",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9961377534599292,
+      "NumberOfRefactorings" : 51.0,
+      "LackOfCohesion" : 0.48851197164287447,
+      "MetricsIntensity" : 0.03296352920880192,
+      "Density" : 0.9919340697878309
+    },
+    "euclideanDistance" : 51.02172041555802
+  }, {
+    "solutionId" : "fdfafe9e-33e7-45be-8ef1-ed9e9e6b0356",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9961377534599292,
+      "NumberOfRefactorings" : 51.0,
+      "LackOfCohesion" : 0.4885867023819516,
+      "MetricsIntensity" : 0.032940832985443036,
+      "Density" : 0.9922847624057514
+    },
+    "euclideanDistance" : 51.02172793563339
+  }, {
+    "solutionId" : "a1e27a7f-e36f-470b-9dcc-cec3b813d771",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9964596073382684,
+      "NumberOfRefactorings" : 51.0,
+      "LackOfCohesion" : 0.48920794907726256,
+      "MetricsIntensity" : 0.03292318284183673,
+      "Density" : 0.9922847624057514
+    },
+    "euclideanDistance" : 51.02174016193654
+  }, {
+    "solutionId" : "a17a9c26-9280-4ec5-8db9-87c44ecebe82",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9971033150949469,
+      "NumberOfRefactorings" : 51.0,
+      "LackOfCohesion" : 0.4883648139423063,
+      "MetricsIntensity" : 0.032901094895039375,
+      "Density" : 0.9924601087147116
+    },
+    "euclideanDistance" : 51.02174805670524
+  }, {
+    "solutionId" : "0dc2f770-4358-42c4-bf67-c74829a27016",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9971033150949469,
+      "NumberOfRefactorings" : 51.0,
+      "LackOfCohesion" : 0.48836481394230624,
+      "MetricsIntensity" : 0.03290109489503939,
+      "Density" : 0.9924601087147116
+    },
+    "euclideanDistance" : 51.02174805670524
+  }, {
+    "solutionId" : "60aa2a40-ae05-401c-bb58-c3e9d17507e3",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9951721918249115,
+      "NumberOfRefactorings" : 52.0,
+      "LackOfCohesion" : 0.4887970570925823,
+      "MetricsIntensity" : 0.032981201630910124,
+      "Density" : 1.0001753463089602
+    },
+    "euclideanDistance" : 52.02144489282693
+  }, {
+    "solutionId" : "0a058104-c7a2-40c5-ad63-83410fa3937e",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9951721918249115,
+      "NumberOfRefactorings" : 52.0,
+      "LackOfCohesion" : 0.48879705709258203,
+      "MetricsIntensity" : 0.03298120163091013,
+      "Density" : 1.0001753463089602
+    },
+    "euclideanDistance" : 52.02144489282693
+  }, {
+    "solutionId" : "0ed0d411-c8d2-4a30-bad6-a8343abc27ed",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9954940457032507,
+      "NumberOfRefactorings" : 52.0,
+      "LackOfCohesion" : 0.4886590118137308,
+      "MetricsIntensity" : 0.03294083298544303,
+      "Density" : 1.0005260389268806
+    },
+    "euclideanDistance" : 52.02145647209338
+  }, {
+    "solutionId" : "985592aa-fa1c-4094-9e30-2d16e4e98bbc",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9954940457032507,
+      "NumberOfRefactorings" : 52.0,
+      "LackOfCohesion" : 0.4886590118137309,
+      "MetricsIntensity" : 0.03294083298544302,
+      "Density" : 1.0005260389268806
+    },
+    "euclideanDistance" : 52.02145647209338
+  } ]
+}

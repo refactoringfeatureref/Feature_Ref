@@ -1,0 +1,3198 @@
+{
+  "executionId" : "f922c8f2-a876-42cd-9004-317599fa3d82",
+  "computingTime" : 4131335,
+  "maxEvaluations" : 100,
+  "initialPopulationSize" : 128,
+  "finalPopulationSize" : 42,
+  "algorithm" : "MOSA",
+  "projectBeforeRefactoring" : {
+    "meanDensity" : 3.035021551724138,
+    "meanNumConcerns" : 1.5050352467270895,
+    "meanMetricsIntensity" : 0.032969370243008465,
+    "meanLackOfCohesion" : 0.4853503005035552
+  },
+  "population" : [ {
+    "solutionId" : "6c4027da-5520-4b1a-9db1-bc342e7cbd1d",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9959852793576447,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.48535517592695204,
+      "MetricsIntensity" : 0.03287133702688429,
+      "Density" : 0.9927214628084502
+    },
+    "euclideanDistance" : 9.122178070560489,
+    "generation" : 1,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.498992950654582,
+      "LackOfCohesion" : 0.48535517592695204,
+      "MetricsIntensity" : 0.03287133702688429,
+      "Density" : 3.014555256064691
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.toList(Map<User,UserInfo>)', targetType='hudson.model.TransientProjectActionFactory'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, String)', targetType='hudson.views.ListViewColumn'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSONHTML(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "fa93d6c7-5f91-4e98-8096-9177f60276d3",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9963198394111743,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.4853822097940605,
+      "MetricsIntensity" : 0.03287064202233376,
+      "Density" : 0.9927214628084502
+    },
+    "euclideanDistance" : 9.122216040733544,
+    "generation" : 1,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.499496475327291,
+      "LackOfCohesion" : 0.4853822097940605,
+      "MetricsIntensity" : 0.03287064202233376,
+      "Density" : 3.0145552560646904
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.getApi()', targetType='jenkins.tasks.filters.EnvVarsFilterGlobalConfiguration'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.handleClose()', targetType='hudson.model.Run.Runner'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSON(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "bc5a86f2-cc53-47f8-aa53-04c523618401",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9963198394111743,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.48538220979406066,
+      "MetricsIntensity" : 0.032870642022333744,
+      "Density" : 0.9927214628084502
+    },
+    "euclideanDistance" : 9.122216040733544,
+    "generation" : 1,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.499496475327291,
+      "LackOfCohesion" : 0.48538220979406066,
+      "MetricsIntensity" : 0.03287064202233375,
+      "Density" : 3.0145552560646904
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.getApi()', targetType='jenkins.tasks.filters.EnvVarsFilterGlobalConfiguration'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.handleClose()', targetType='hudson.model.Run.Runner'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSON(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "aafbd1a6-9067-47a1-bae4-934372b3beed",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9963198394111743,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.48538220979406055,
+      "MetricsIntensity" : 0.03287031257212473,
+      "Density" : 0.9928989881058051
+    },
+    "euclideanDistance" : 9.122235360371876,
+    "generation" : 1,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.499496475327291,
+      "LackOfCohesion" : 0.48538220979406055,
+      "MetricsIntensity" : 0.032870312572124735,
+      "Density" : 3.015094339622641
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.getApi()', targetType='jenkins.tasks.filters.EnvVarsFilterGlobalConfiguration'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, byte[], int, int)', targetType='hudson.views.MyViewsTabBar.GlobalConfigurationImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSON(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "a444dc53-af62-4695-8e2e-3f21b9793e04",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9966543994647039,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.4854742399799617,
+      "MetricsIntensity" : 0.03287041469375597,
+      "Density" : 0.9925439375110954
+    },
+    "euclideanDistance" : 9.122238166245642,
+    "generation" : 1,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5,
+      "LackOfCohesion" : 0.4854742399799617,
+      "MetricsIntensity" : 0.03287041469375598,
+      "Density" : 3.0140161725067367
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.getApi()', targetType='jenkins.tasks.filters.EnvVarsFilterGlobalConfiguration'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.handle(DataInputStream)', targetType='hudson.security.ACLContext'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSON(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "22f8edf3-bd11-4a1c-ab38-94f112c768cc",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9966543994647039,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.4854742399799616,
+      "MetricsIntensity" : 0.03287041469375598,
+      "Density" : 0.9925439375110954
+    },
+    "euclideanDistance" : 9.122238166245642,
+    "generation" : 1,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5,
+      "LackOfCohesion" : 0.4854742399799616,
+      "MetricsIntensity" : 0.032870414693755984,
+      "Density" : 3.0140161725067394
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.getApi()', targetType='jenkins.tasks.filters.EnvVarsFilterGlobalConfiguration'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.handle(DataInputStream)', targetType='hudson.security.ACLContext'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSON(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "4ae66f62-c9ef-43ba-af0a-c927dd011dab",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9966543994647039,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.4853551759269522,
+      "MetricsIntensity" : 0.03284664766717875,
+      "Density" : 0.9928989881058051
+    },
+    "euclideanDistance" : 9.122270383057934,
+    "generation" : 1,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5,
+      "LackOfCohesion" : 0.4853551759269522,
+      "MetricsIntensity" : 0.03284664766717875,
+      "Density" : 3.015094339622641
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.toList(Map<User,UserInfo>)', targetType='hudson.model.TransientProjectActionFactory'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, String)', targetType='hudson.views.ListViewColumn'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.getDescriptor()', targetType='hudson.model.Node.InternalComputerListener'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSON(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "c8feefd5-77f6-4125-94fe-19175c39f193",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9966543994647039,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.48535517592695215,
+      "MetricsIntensity" : 0.032846647667178756,
+      "Density" : 0.9928989881058051
+    },
+    "euclideanDistance" : 9.122270383057934,
+    "generation" : 1,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5,
+      "LackOfCohesion" : 0.48535517592695215,
+      "MetricsIntensity" : 0.032846647667178756,
+      "Density" : 3.015094339622641
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.toList(Map<User,UserInfo>)', targetType='hudson.model.TransientProjectActionFactory'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, String)', targetType='hudson.views.ListViewColumn'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.getDescriptor()', targetType='hudson.model.Node.InternalComputerListener'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSON(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "8a66cf35-0b71-481d-af10-cb3c878776d4",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9973235195717631,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.4853661974234002,
+      "MetricsIntensity" : 0.032846318216969726,
+      "Density" : 0.9936090892952246
+    },
+    "euclideanDistance" : 9.122421413815674,
+    "generation" : 1,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.501007049345418,
+      "LackOfCohesion" : 0.4853661974234002,
+      "MetricsIntensity" : 0.03284631821696973,
+      "Density" : 3.017250673854447
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.toList(Map<User,UserInfo>)', targetType='hudson.model.TransientProjectActionFactory'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, byte[], int, int)', targetType='hudson.views.MyViewsTabBar.GlobalConfigurationImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.getDescriptor()', targetType='hudson.model.Node.InternalComputerListener'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.getById(String)', targetType='hudson.model.DownloadService.Downloadable'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "a4ff766a-006c-4585-854d-91df37fa880b",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9973235195717631,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.48536619742340015,
+      "MetricsIntensity" : 0.03284631821696974,
+      "Density" : 0.9936090892952246
+    },
+    "euclideanDistance" : 9.122421413815674,
+    "generation" : 1,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.501007049345418,
+      "LackOfCohesion" : 0.48536619742340015,
+      "MetricsIntensity" : 0.03284631821696974,
+      "Density" : 3.0172506738544467
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.toList(Map<User,UserInfo>)', targetType='hudson.model.TransientProjectActionFactory'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, byte[], int, int)', targetType='hudson.views.MyViewsTabBar.GlobalConfigurationImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.getDescriptor()', targetType='hudson.model.Node.InternalComputerListener'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.getById(String)', targetType='hudson.model.DownloadService.Downloadable'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "134981b0-ae91-4a49-b5a3-35dcdd41b121",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9973235195717631,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.4853661974234002,
+      "MetricsIntensity" : 0.032846318216969726,
+      "Density" : 0.9936090892952246
+    },
+    "euclideanDistance" : 9.122421413815674,
+    "generation" : 1,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.501007049345418,
+      "LackOfCohesion" : 0.4853661974234002,
+      "MetricsIntensity" : 0.032846318216969726,
+      "Density" : 3.0172506738544467
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.toList(Map<User,UserInfo>)', targetType='hudson.model.TransientProjectActionFactory'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, byte[], int, int)', targetType='hudson.views.MyViewsTabBar.GlobalConfigurationImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.getDescriptor()', targetType='hudson.model.Node.InternalComputerListener'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.getById(String)', targetType='hudson.model.DownloadService.Downloadable'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "032c6fca-4008-4f41-a066-72e3950e7eae",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9969889595182335,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.48533619470111,
+      "MetricsIntensity" : 0.03283326553260763,
+      "Density" : 0.995739392863483
+    },
+    "euclideanDistance" : 9.12261547852993,
+    "generation" : 1,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.500503524672709,
+      "LackOfCohesion" : 0.48533619470111,
+      "MetricsIntensity" : 0.03283326553260763,
+      "Density" : 3.0220905172413794
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.getApi()', targetType='jenkins.tasks.filters.EnvVarsFilterGlobalConfiguration'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.handleClose()', targetType='hudson.model.Run.Runner'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)', targetType='hudson.cli.handlers.GenericItemOptionHandler'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSON(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "1b9911a6-7cb1-4a7d-a5a4-bf889761f922",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9969889595182335,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.48533619470111006,
+      "MetricsIntensity" : 0.03283326553260762,
+      "Density" : 0.995739392863483
+    },
+    "euclideanDistance" : 9.12261547852993,
+    "generation" : 1,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.500503524672709,
+      "LackOfCohesion" : 0.48533619470111006,
+      "MetricsIntensity" : 0.03283326553260762,
+      "Density" : 3.022090517241379
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.getApi()', targetType='jenkins.tasks.filters.EnvVarsFilterGlobalConfiguration'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.handleClose()', targetType='hudson.model.Run.Runner'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)', targetType='hudson.cli.handlers.GenericItemOptionHandler'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSON(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "25ea2238-9b36-4068-897b-cf79646cc8ca",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9973235195717631,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.48542822488701104,
+      "MetricsIntensity" : 0.032833038204029864,
+      "Density" : 0.9955618675661282
+    },
+    "euclideanDistance" : 9.122637568420519,
+    "generation" : 1,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.501007049345418,
+      "LackOfCohesion" : 0.48542822488701104,
+      "MetricsIntensity" : 0.032833038204029864,
+      "Density" : 3.0215517241379315
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.getApi()', targetType='jenkins.tasks.filters.EnvVarsFilterGlobalConfiguration'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.handle(DataInputStream)', targetType='hudson.security.ACLContext'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)', targetType='hudson.cli.handlers.GenericItemOptionHandler'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSON(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "e182958a-3e10-4ab9-80d7-896ecc4023a4",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9966543994647039,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.48530916083400155,
+      "MetricsIntensity" : 0.03287133702688429,
+      "Density" : 0.9964494940529025
+    },
+    "euclideanDistance" : 9.122655155850078,
+    "generation" : 1,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5,
+      "LackOfCohesion" : 0.48530916083400155,
+      "MetricsIntensity" : 0.03287133702688429,
+      "Density" : 3.0242456896551717
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.toList(Map<User,UserInfo>)', targetType='hudson.model.TransientProjectActionFactory'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, String)', targetType='hudson.views.ListViewColumn'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.toSpring()', targetType='hudson.cli.handlers.GenericItemOptionHandler'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSONHTML(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "baa5e466-7f01-4e81-bea9-318180593572",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9966543994647039,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.48530916083400155,
+      "MetricsIntensity" : 0.03287133702688429,
+      "Density" : 0.9964494940529025
+    },
+    "euclideanDistance" : 9.122655155850078,
+    "generation" : 1,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5,
+      "LackOfCohesion" : 0.48530916083400155,
+      "MetricsIntensity" : 0.03287133702688429,
+      "Density" : 3.024245689655172
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.toList(Map<User,UserInfo>)', targetType='hudson.model.TransientProjectActionFactory'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, String)', targetType='hudson.views.ListViewColumn'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.toSpring()', targetType='hudson.cli.handlers.GenericItemOptionHandler'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSONHTML(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "87ac290b-1444-4d16-b384-9bc5fab7a1bb",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9956507193041151,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.4853398375626356,
+      "MetricsIntensity" : 0.03287236148164385,
+      "Density" : 0.9923664122137404
+    },
+    "euclideanDistance" : 10.11003198813018,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.498489425981873,
+      "LackOfCohesion" : 0.4853398375626356,
+      "MetricsIntensity" : 0.03287236148164385,
+      "Density" : 3.0134770889487874
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.toList(Map<User,UserInfo>)', targetType='hudson.model.TransientProjectActionFactory'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.handleClose()', targetType='hudson.model.Run.Runner'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, String)', targetType='hudson.views.ListViewColumn'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSONHTML(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "ae37a420-cafa-4dcd-ad6d-f011844fc84a",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9956507193041151,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.4853398375626354,
+      "MetricsIntensity" : 0.032872361481643866,
+      "Density" : 0.9923664122137404
+    },
+    "euclideanDistance" : 10.11003198813018,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.498489425981873,
+      "LackOfCohesion" : 0.4853398375626354,
+      "MetricsIntensity" : 0.032872361481643866,
+      "Density" : 3.013477088948787
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.toList(Map<User,UserInfo>)', targetType='hudson.model.TransientProjectActionFactory'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.handleClose()', targetType='hudson.model.Run.Runner'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, String)', targetType='hudson.views.ListViewColumn'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSONHTML(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "c6737b13-6162-4ddb-9631-8e701beeb3d7",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9956507193041151,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.48533983756263527,
+      "MetricsIntensity" : 0.032872032031434836,
+      "Density" : 0.9925439375110954
+    },
+    "euclideanDistance" : 10.110049413883003,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.498489425981873,
+      "LackOfCohesion" : 0.48533983756263527,
+      "MetricsIntensity" : 0.032872032031434836,
+      "Density" : 3.0140161725067385
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.toList(Map<User,UserInfo>)', targetType='hudson.model.TransientProjectActionFactory'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, byte[], int, int)', targetType='hudson.views.MyViewsTabBar.GlobalConfigurationImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, String)', targetType='hudson.views.ListViewColumn'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSONHTML(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "e18fd0d2-b4a6-49f0-a587-ec308a3f2524",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9956507193041151,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.4853398375626353,
+      "MetricsIntensity" : 0.03287203203143483,
+      "Density" : 0.9925439375110954
+    },
+    "euclideanDistance" : 10.110049413883003,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.498489425981873,
+      "LackOfCohesion" : 0.4853398375626353,
+      "MetricsIntensity" : 0.03287203203143483,
+      "Density" : 3.0140161725067385
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.toList(Map<User,UserInfo>)', targetType='hudson.model.TransientProjectActionFactory'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, byte[], int, int)', targetType='hudson.views.MyViewsTabBar.GlobalConfigurationImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, String)', targetType='hudson.views.ListViewColumn'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSONHTML(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "edff6f93-72aa-481b-a4ad-cfbe294fc5c9",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9959852793576447,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.48536687142974394,
+      "MetricsIntensity" : 0.03287133702688429,
+      "Density" : 0.9925439375110954
+    },
+    "euclideanDistance" : 10.11008366282231,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.498992950654582,
+      "LackOfCohesion" : 0.48536687142974394,
+      "MetricsIntensity" : 0.03287133702688429,
+      "Density" : 3.014016172506738
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.getApi()', targetType='jenkins.tasks.filters.EnvVarsFilterGlobalConfiguration'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.handleClose()', targetType='hudson.model.Run.Runner'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, byte[], int, int)', targetType='hudson.views.MyViewsTabBar.GlobalConfigurationImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSON(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "817e0adc-4cc2-4dc5-8b8b-772758fccd4a",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9959852793576447,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.4853668714297438,
+      "MetricsIntensity" : 0.03287133702688431,
+      "Density" : 0.9925439375110954
+    },
+    "euclideanDistance" : 10.11008366282231,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.498992950654582,
+      "LackOfCohesion" : 0.4853668714297438,
+      "MetricsIntensity" : 0.0328713370268843,
+      "Density" : 3.014016172506738
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.getApi()', targetType='jenkins.tasks.filters.EnvVarsFilterGlobalConfiguration'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.handleClose()', targetType='hudson.model.Run.Runner'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, byte[], int, int)', targetType='hudson.views.MyViewsTabBar.GlobalConfigurationImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSON(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "ef83830c-d3f1-47d8-861b-1da57c43f248",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9959852793576447,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.4852894400798799,
+      "MetricsIntensity" : 0.03287133702688429,
+      "Density" : 0.9927214628084502
+    },
+    "euclideanDistance" : 10.110097375637322,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.498992950654582,
+      "LackOfCohesion" : 0.4852894400798799,
+      "MetricsIntensity" : 0.03287133702688429,
+      "Density" : 3.014555256064691
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.toList(Map<User,UserInfo>)', targetType='hudson.model.TransientProjectActionFactory'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, String)', targetType='hudson.views.ListViewColumn'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.toSpring()', targetType='hudson.cli.handlers.GenericItemOptionHandler'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSONHTML(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "e681ba1a-66e5-4955-ab0c-c29a34352db4",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9963198394111743,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.48533983756263527,
+      "MetricsIntensity" : 0.0328473426717293,
+      "Density" : 0.9927214628084502
+    },
+    "euclideanDistance" : 10.110132681175395,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.499496475327291,
+      "LackOfCohesion" : 0.48533983756263527,
+      "MetricsIntensity" : 0.0328473426717293,
+      "Density" : 3.014555256064691
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.toList(Map<User,UserInfo>)', targetType='hudson.model.TransientProjectActionFactory'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, byte[], int, int)', targetType='hudson.views.MyViewsTabBar.GlobalConfigurationImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, String)', targetType='hudson.views.ListViewColumn'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.getDescriptor()', targetType='hudson.model.Node.InternalComputerListener'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSON(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "3be3dd06-15d5-4a2d-981e-49fc8779fcb0",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9963198394111743,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.4853398375626355,
+      "MetricsIntensity" : 0.032847342671729285,
+      "Density" : 0.9927214628084502
+    },
+    "euclideanDistance" : 10.110132681175395,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.499496475327291,
+      "LackOfCohesion" : 0.4853398375626355,
+      "MetricsIntensity" : 0.032847342671729285,
+      "Density" : 3.014555256064691
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.toList(Map<User,UserInfo>)', targetType='hudson.model.TransientProjectActionFactory'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, byte[], int, int)', targetType='hudson.views.MyViewsTabBar.GlobalConfigurationImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, String)', targetType='hudson.views.ListViewColumn'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.getDescriptor()', targetType='hudson.model.Node.InternalComputerListener'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSON(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "a59dc713-ef0f-4870-b645-62607cf8d6db",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9963198394111743,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.4853398375626354,
+      "MetricsIntensity" : 0.03284734267172929,
+      "Density" : 0.9927214628084502
+    },
+    "euclideanDistance" : 10.110132681175395,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.499496475327291,
+      "LackOfCohesion" : 0.4853398375626354,
+      "MetricsIntensity" : 0.03284734267172929,
+      "Density" : 3.0145552560646904
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.toList(Map<User,UserInfo>)', targetType='hudson.model.TransientProjectActionFactory'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, byte[], int, int)', targetType='hudson.views.MyViewsTabBar.GlobalConfigurationImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, String)', targetType='hudson.views.ListViewColumn'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.getDescriptor()', targetType='hudson.model.Node.InternalComputerListener'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSON(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "e3fc7ef1-f5c9-4cac-b9d3-6ad95fda49f5",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9966543994647039,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.48563458787482294,
+      "MetricsIntensity" : 0.032845275710143895,
+      "Density" : 0.9928989881058051
+    },
+    "euclideanDistance" : 10.110197236336722,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5,
+      "LackOfCohesion" : 0.48563458787482294,
+      "MetricsIntensity" : 0.032845275710143895,
+      "Density" : 3.015094339622641
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.toList(Map<User,UserInfo>)', targetType='hudson.model.TransientProjectActionFactory'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, String)', targetType='hudson.views.ListViewColumn'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.getDescriptor()', targetType='hudson.model.Node.InternalComputerListener'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSON(URL)', targetType='hudson.ProxyConfiguration'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.getById(String)', targetType='hudson.model.DownloadService.Downloadable'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "db453b93-c6a4-4ddb-bed3-e2fc835fc122",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9966543994647039,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.4856345878748229,
+      "MetricsIntensity" : 0.03284527571014393,
+      "Density" : 0.9928989881058051
+    },
+    "euclideanDistance" : 10.110197236336722,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5,
+      "LackOfCohesion" : 0.4856345878748229,
+      "MetricsIntensity" : 0.03284527571014393,
+      "Density" : 3.015094339622641
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.toList(Map<User,UserInfo>)', targetType='hudson.model.TransientProjectActionFactory'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, String)', targetType='hudson.views.ListViewColumn'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.getDescriptor()', targetType='hudson.model.Node.InternalComputerListener'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSON(URL)', targetType='hudson.ProxyConfiguration'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.getById(String)', targetType='hudson.model.DownloadService.Downloadable'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "ff0ab905-f950-4dcf-bc94-7aedb98ece7a",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9969889595182335,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.48534223122915493,
+      "MetricsIntensity" : 0.03284631821696971,
+      "Density" : 0.9934315639978697
+    },
+    "euclideanDistance" : 10.11026850384219,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.500503524672709,
+      "LackOfCohesion" : 0.48534223122915493,
+      "MetricsIntensity" : 0.03284631821696972,
+      "Density" : 3.0167115902964965
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.toList(Map<User,UserInfo>)', targetType='hudson.model.TransientProjectActionFactory'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, byte[], int, int)', targetType='hudson.views.MyViewsTabBar.GlobalConfigurationImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, String)', targetType='hudson.views.ListViewColumn'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.getDescriptor()', targetType='hudson.model.Node.InternalComputerListener'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.getById(String)', targetType='hudson.model.DownloadService.Downloadable'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "8addf25e-f390-4542-88b3-fe3aa7ab3221",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9966543994647039,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.4853164739469884,
+      "MetricsIntensity" : 0.03283326553260763,
+      "Density" : 0.9953843422687733
+    },
+    "euclideanDistance" : 10.110426305750716,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5,
+      "LackOfCohesion" : 0.4853164739469884,
+      "MetricsIntensity" : 0.03283326553260763,
+      "Density" : 3.0226415094339623
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.getApi()', targetType='jenkins.tasks.filters.EnvVarsFilterGlobalConfiguration'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.handleClose()', targetType='hudson.model.Run.Runner'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)', targetType='hudson.cli.handlers.GenericItemOptionHandler'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSON(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "bb3b7dee-e1cf-437f-a2ca-c6890ae20f95",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9966543994647039,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.4853164739469885,
+      "MetricsIntensity" : 0.032833265532607625,
+      "Density" : 0.9953843422687733
+    },
+    "euclideanDistance" : 10.110426305750716,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5,
+      "LackOfCohesion" : 0.4853164739469885,
+      "MetricsIntensity" : 0.032833265532607625,
+      "Density" : 3.0226415094339627
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.getApi()', targetType='jenkins.tasks.filters.EnvVarsFilterGlobalConfiguration'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.handleClose()', targetType='hudson.model.Run.Runner'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)', targetType='hudson.cli.handlers.GenericItemOptionHandler'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSON(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "9ddbc79b-008c-4580-9104-db3f42d66cae",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9969889595182335,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.4853164739469883,
+      "MetricsIntensity" : 0.03283224107784806,
+      "Density" : 0.995739392863483
+    },
+    "euclideanDistance" : 10.110494249038467,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.500503524672709,
+      "LackOfCohesion" : 0.4853164739469883,
+      "MetricsIntensity" : 0.03283224107784806,
+      "Density" : 3.0237196765498644
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.getApi()', targetType='jenkins.tasks.filters.EnvVarsFilterGlobalConfiguration'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.close()', targetType='hudson.triggers.TimerTrigger.TimerTriggerCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)', targetType='hudson.cli.handlers.GenericItemOptionHandler'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSON(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "c0847782-8394-49e9-9cec-6c23b72d0ea9",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9953161592505855,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.48532011680851384,
+      "MetricsIntensity" : 0.0328730564861944,
+      "Density" : 0.9921888869163856
+    },
+    "euclideanDistance" : 11.100076995129696,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.497985901309164,
+      "LackOfCohesion" : 0.48532011680851384,
+      "MetricsIntensity" : 0.0328730564861944,
+      "Density" : 3.012938005390835
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.toList(Map<User,UserInfo>)', targetType='hudson.model.TransientProjectActionFactory'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.handleClose()', targetType='hudson.model.Run.Runner'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, byte[], int, int)', targetType='hudson.views.MyViewsTabBar.GlobalConfigurationImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, String)', targetType='hudson.views.ListViewColumn'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSONHTML(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "9275a035-57a4-48f3-84af-f223bef0bdde",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9959852793576447,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.4854391808615231,
+      "MetricsIntensity" : 0.03287088236972876,
+      "Density" : 0.9920113616190307
+    },
+    "euclideanDistance" : 11.100126346645864,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.498992950654582,
+      "LackOfCohesion" : 0.4854391808615231,
+      "MetricsIntensity" : 0.03287088236972875,
+      "Density" : 3.0123989218328844
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.getApi()', targetType='jenkins.tasks.filters.EnvVarsFilterGlobalConfiguration'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.handle(DataInputStream)', targetType='hudson.security.ACLContext'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.handleClose()', targetType='hudson.model.Run.Runner'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, byte[], int, int)', targetType='hudson.views.MyViewsTabBar.GlobalConfigurationImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSON(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "aeabdc54-e88d-427b-8555-4a0aad6dd01d",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9956507193041151,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.4852741017155633,
+      "MetricsIntensity" : 0.032872032031434816,
+      "Density" : 0.9925439375110954
+    },
+    "euclideanDistance" : 11.10013672650146,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.498489425981873,
+      "LackOfCohesion" : 0.4852741017155633,
+      "MetricsIntensity" : 0.03287203203143482,
+      "Density" : 3.0140161725067394
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.toList(Map<User,UserInfo>)', targetType='hudson.model.TransientProjectActionFactory'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, byte[], int, int)', targetType='hudson.views.MyViewsTabBar.GlobalConfigurationImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, String)', targetType='hudson.views.ListViewColumn'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.toSpring()', targetType='hudson.cli.handlers.GenericItemOptionHandler'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSONHTML(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "10f1c476-ddf4-4560-ae41-f41c97935f4f",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9963198394111743,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.4856192495105061,
+      "MetricsIntensity" : 0.032845970714694465,
+      "Density" : 0.9927214628084502
+    },
+    "euclideanDistance" : 11.100227657053354,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.499496475327291,
+      "LackOfCohesion" : 0.4856192495105061,
+      "MetricsIntensity" : 0.032845970714694465,
+      "Density" : 3.0145552560646904
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.toList(Map<User,UserInfo>)', targetType='hudson.model.TransientProjectActionFactory'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, byte[], int, int)', targetType='hudson.views.MyViewsTabBar.GlobalConfigurationImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, String)', targetType='hudson.views.ListViewColumn'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.getDescriptor()', targetType='hudson.model.Node.InternalComputerListener'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSON(URL)', targetType='hudson.ProxyConfiguration'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.getById(String)', targetType='hudson.model.DownloadService.Downloadable'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "1d2aa530-b438-433f-ac03-47eb5a119b56",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9963198394111743,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.48530113558267174,
+      "MetricsIntensity" : 0.03283396053715817,
+      "Density" : 0.9952068169714184
+    },
+    "euclideanDistance" : 11.100436256837526,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.499496475327291,
+      "LackOfCohesion" : 0.48530113558267174,
+      "MetricsIntensity" : 0.03283396053715817,
+      "Density" : 3.0221024258760107
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.getApi()', targetType='jenkins.tasks.filters.EnvVarsFilterGlobalConfiguration'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.handleClose()', targetType='hudson.model.Run.Runner'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, byte[], int, int)', targetType='hudson.views.MyViewsTabBar.GlobalConfigurationImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)', targetType='hudson.cli.handlers.GenericItemOptionHandler'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSON(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "c79c97da-d2b4-4441-89e5-3e5047feecb9",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9966543994647039,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.4853931657685724,
+      "MetricsIntensity" : 0.0328337332085804,
+      "Density" : 0.9950292916740635
+    },
+    "euclideanDistance" : 11.100454398927685,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5,
+      "LackOfCohesion" : 0.4853931657685724,
+      "MetricsIntensity" : 0.0328337332085804,
+      "Density" : 3.0215633423180592
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.getApi()', targetType='jenkins.tasks.filters.EnvVarsFilterGlobalConfiguration'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.handle(DataInputStream)', targetType='hudson.security.ACLContext'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, byte[], int, int)', targetType='hudson.views.MyViewsTabBar.GlobalConfigurationImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)', targetType='hudson.cli.handlers.GenericItemOptionHandler'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSON(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "cc043828-9567-450b-98cd-b3f7f6c63d53",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9966543994647039,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.48530113558267135,
+      "MetricsIntensity" : 0.03283326553260763,
+      "Density" : 0.9953843422687733
+    },
+    "euclideanDistance" : 11.100482205576908,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5,
+      "LackOfCohesion" : 0.48530113558267135,
+      "MetricsIntensity" : 0.032833265532607625,
+      "Density" : 3.0226415094339623
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.getApi()', targetType='jenkins.tasks.filters.EnvVarsFilterGlobalConfiguration'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.handleClose()', targetType='hudson.model.Run.Runner'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.close()', targetType='hudson.triggers.TimerTrigger.TimerTriggerCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)', targetType='hudson.cli.handlers.GenericItemOptionHandler'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSON(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "fae8143e-2fa3-43ff-b2c0-20a85a7978e0",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9953161592505855,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 0.4853858526555858,
+      "MetricsIntensity" : 0.03287260182903886,
+      "Density" : 0.991656311024321
+    },
+    "euclideanDistance" : 12.091762341775036,
+    "generation" : 1,
+    "numberOfRefactorings" : 12,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.497985901309164,
+      "LackOfCohesion" : 0.4853858526555858,
+      "MetricsIntensity" : 0.03287260182903885,
+      "Density" : 3.0113207547169805
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.toList(Map<User,UserInfo>)', targetType='hudson.model.TransientProjectActionFactory'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.handle(DataInputStream)', targetType='hudson.security.ACLContext'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.handleClose()', targetType='hudson.model.Run.Runner'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, byte[], int, int)', targetType='hudson.views.MyViewsTabBar.GlobalConfigurationImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, String)', targetType='hudson.views.ListViewColumn'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSONHTML(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "f2a4ce99-9e53-4a46-a51e-7c7cc39f84d2",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9956507193041151,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 0.48534641114734234,
+      "MetricsIntensity" : 0.03287282915761662,
+      "Density" : 0.9920113616190307
+    },
+    "euclideanDistance" : 12.09181742576948,
+    "generation" : 1,
+    "numberOfRefactorings" : 12,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.498489425981873,
+      "LackOfCohesion" : 0.48534641114734234,
+      "MetricsIntensity" : 0.03287282915761662,
+      "Density" : 3.012398921832885
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.toList(Map<User,UserInfo>)', targetType='hudson.model.TransientProjectActionFactory'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.handle(DataInputStream)', targetType='hudson.security.ACLContext'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, byte[], int, int)', targetType='hudson.views.MyViewsTabBar.GlobalConfigurationImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, String)', targetType='hudson.views.ListViewColumn'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.toSpring()', targetType='hudson.cli.handlers.GenericItemOptionHandler'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.setAuthentication(Authentication)', targetType='hudson.model.Cause.LegacyCodeCause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSONHTML(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "96bfb2cd-8827-49b7-8073-ce5bcb4a8dc6",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9966543994647039,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 0.4852451779428516,
+      "MetricsIntensity" : 0.03283293608239857,
+      "Density" : 0.995739392863483
+    },
+    "euclideanDistance" : 12.092202355852349,
+    "generation" : 1,
+    "numberOfRefactorings" : 12,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5,
+      "LackOfCohesion" : 0.4852451779428516,
+      "MetricsIntensity" : 0.03283293608239857,
+      "Density" : 3.0220905172413786
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.getApi()', targetType='jenkins.tasks.filters.EnvVarsFilterGlobalConfiguration'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.GlobalNodePropertiesConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.GlobalNodePropertiesConfiguration.configure(StaplerRequest, JSONObject)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.PlainCLIProtocol.EitherSide",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, byte[], int, int)', targetType='hudson.views.MyViewsTabBar.GlobalConfigurationImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.close()', targetType='hudson.triggers.TimerTrigger.TimerTriggerCause'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.PlainCLIProtocol.EitherSide.send(Op, String)', targetType='hudson.views.ListViewColumn'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.QueueItemAuthenticator",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.QueueItemAuthenticator.authenticate2(Queue.Task)', targetType='hudson.search.SearchItems'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.toSpring()', targetType='hudson.cli.handlers.GenericItemOptionHandler'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)', targetType='hudson.cli.handlers.GenericItemOptionHandler'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.DownloadService",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.DownloadService.loadJSON(URL)', targetType='hudson.ProxyConfiguration'"
+      } ]
+    } ]
+  } ]
+}

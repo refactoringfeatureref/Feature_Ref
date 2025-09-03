@@ -1,0 +1,3044 @@
+{
+  "executionId" : "68bb37b2-fa4c-4074-82c3-2536992f18e5",
+  "computingTime" : 4041836,
+  "maxEvaluations" : 100,
+  "initialPopulationSize" : 128,
+  "finalPopulationSize" : 38,
+  "algorithm" : "MOSA",
+  "projectBeforeRefactoring" : {
+    "meanDensity" : 3.0739320920043816,
+    "meanNumConcerns" : 1.5055387713997983,
+    "meanMetricsIntensity" : 0.03296937024300846,
+    "meanLackOfCohesion" : 0.4853503005035552
+  },
+  "population" : [ {
+    "solutionId" : "603969b0-4339-46ae-ade0-de6e16c49b42",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9983277591973244,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.48641347186517614,
+      "MetricsIntensity" : 0.03294897871544753,
+      "Density" : 0.997327632282202
+    },
+    "euclideanDistance" : 9.122993172293176,
+    "generation" : 1,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5030211480362539,
+      "LackOfCohesion" : 0.48641347186517614,
+      "MetricsIntensity" : 0.03294897871544753,
+      "Density" : 3.0690789473684212
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.replace(File, File)', targetType='hudson.util.ProcessTree.Darwin'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.from(ModelObjectWithContextMenu, StaplerRequest, StaplerResponse)', targetType='hudson.slaves.Cloud.CloudState'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.toString()', targetType='hudson.cli.DisconnectNodeCommand'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "20e484d7-4863-4979-96f0-1cbe9274923f",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9983277591973244,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.48641347186517586,
+      "MetricsIntensity" : 0.032948978715447545,
+      "Density" : 0.997327632282202
+    },
+    "euclideanDistance" : 9.122993172293176,
+    "generation" : 1,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5030211480362539,
+      "LackOfCohesion" : 0.48641347186517586,
+      "MetricsIntensity" : 0.032948978715447545,
+      "Density" : 3.069078947368421
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.replace(File, File)', targetType='hudson.util.ProcessTree.Darwin'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.from(ModelObjectWithContextMenu, StaplerRequest, StaplerResponse)', targetType='hudson.slaves.Cloud.CloudState'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.toString()', targetType='hudson.cli.DisconnectNodeCommand'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "22ad65c9-e50e-4cf9-b8c1-e005524ebed8",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9986622073578595,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.4864112806702736,
+      "MetricsIntensity" : 0.032986645271067705,
+      "Density" : 0.997327632282202
+    },
+    "euclideanDistance" : 9.123029796249051,
+    "generation" : 1,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5035246727089628,
+      "LackOfCohesion" : 0.4864112806702736,
+      "MetricsIntensity" : 0.032986645271067705,
+      "Density" : 3.069078947368419
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.replace(File, File)', targetType='hudson.util.ProcessTree.Darwin'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Node)', targetType='jenkins.model.ModelObjectWithContextMenu.MenuItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "654fd6e0-ff0f-4ae2-b12f-e4ba79b47d24",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9986622073578595,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.48641128067027317,
+      "MetricsIntensity" : 0.03298664527106772,
+      "Density" : 0.997327632282202
+    },
+    "euclideanDistance" : 9.123029796249051,
+    "generation" : 1,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5035246727089628,
+      "LackOfCohesion" : 0.48641128067027317,
+      "MetricsIntensity" : 0.03298664527106772,
+      "Density" : 3.0690789473684204
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.replace(File, File)', targetType='hudson.util.ProcessTree.Darwin'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Node)', targetType='jenkins.model.ModelObjectWithContextMenu.MenuItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "f15de83e-c23c-4cb6-a142-b155c78e93ac",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9986622073578595,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.4864112806702736,
+      "MetricsIntensity" : 0.032986645271067705,
+      "Density" : 0.997327632282202
+    },
+    "euclideanDistance" : 9.123029796249051,
+    "generation" : 1,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5035246727089628,
+      "LackOfCohesion" : 0.4864112806702736,
+      "MetricsIntensity" : 0.032986645271067705,
+      "Density" : 3.069078947368421
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.replace(File, File)', targetType='hudson.util.ProcessTree.Darwin'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Node)', targetType='jenkins.model.ModelObjectWithContextMenu.MenuItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "4da94d3b-ba2d-4664-81d3-2ef20a649de5",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9986622073578595,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.4863490507350452,
+      "MetricsIntensity" : 0.03299807991437225,
+      "Density" : 0.9980402636736149
+    },
+    "euclideanDistance" : 9.123104452144975,
+    "generation" : 1,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5035246727089628,
+      "LackOfCohesion" : 0.4863490507350452,
+      "MetricsIntensity" : 0.03299807991437225,
+      "Density" : 3.0695890410958904
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.replace(File, File)', targetType='hudson.util.ProcessTree.Darwin'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.addAll(Collection<? extends Action>)', targetType='hudson.slaves.DelegatingComputerLauncher'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.toString()', targetType='hudson.cli.DisconnectNodeCommand'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "f46f3d73-423e-4eab-b663-38e5eb726b7b",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9986622073578595,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.48634905073504525,
+      "MetricsIntensity" : 0.03299807991437224,
+      "Density" : 0.9980402636736149
+    },
+    "euclideanDistance" : 9.123104452144975,
+    "generation" : 1,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5035246727089628,
+      "LackOfCohesion" : 0.48634905073504525,
+      "MetricsIntensity" : 0.03299807991437224,
+      "Density" : 3.0695890410958904
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.replace(File, File)', targetType='hudson.util.ProcessTree.Darwin'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.addAll(Collection<? extends Action>)', targetType='hudson.slaves.DelegatingComputerLauncher'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.toString()', targetType='hudson.cli.DisconnectNodeCommand'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "51f9ac66-5103-4b7b-83bb-e39a4ea0d00a",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9989966555183947,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.48631925048437236,
+      "MetricsIntensity" : 0.032987194063983385,
+      "Density" : 0.9978621058257616
+    },
+    "euclideanDistance" : 9.12311995253509,
+    "generation" : 1,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5040281973816716,
+      "LackOfCohesion" : 0.48631925048437236,
+      "MetricsIntensity" : 0.032987194063983385,
+      "Density" : 3.06904109589041
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.replace(File, File)', targetType='hudson.util.ProcessTree.Darwin'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Node)', targetType='jenkins.model.ModelObjectWithContextMenu.MenuItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.toString()', targetType='hudson.cli.DisconnectNodeCommand'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "b6ecff4b-f59e-4352-9f8d-5e8b13e42f36",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9976588628762542,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.4865163783457744,
+      "MetricsIntensity" : 0.0329576767015475,
+      "Density" : 0.9969713165864956
+    },
+    "euclideanDistance" : 10.110739805158868,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.502014098690836,
+      "LackOfCohesion" : 0.4865163783457744,
+      "MetricsIntensity" : 0.03295767670154749,
+      "Density" : 3.069665386725178
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.replace(File, File)', targetType='hudson.util.ProcessTree.Darwin'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.addAll(Collection<? extends Action>)', targetType='hudson.slaves.DelegatingComputerLauncher'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.from(ModelObjectWithContextMenu, StaplerRequest, StaplerResponse)', targetType='hudson.slaves.Cloud.CloudState'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "a71e7465-7b5e-49b8-82a5-32d3502c45a6",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9979933110367893,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.48648657809510176,
+      "MetricsIntensity" : 0.032946817810494425,
+      "Density" : 0.9967931587386424
+    },
+    "euclideanDistance" : 10.110753776729648,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5025176233635449,
+      "LackOfCohesion" : 0.48648657809510176,
+      "MetricsIntensity" : 0.032946817810494425,
+      "Density" : 3.069116840373011
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.replace(File, File)', targetType='hudson.util.ProcessTree.Darwin'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Node)', targetType='jenkins.model.ModelObjectWithContextMenu.MenuItem'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.from(ModelObjectWithContextMenu, StaplerRequest, StaplerResponse)', targetType='hudson.slaves.Cloud.CloudState'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "d943a7e2-e398-4b85-a832-1632b431afad",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9979933110367893,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.48648657809510176,
+      "MetricsIntensity" : 0.032946817810494425,
+      "Density" : 0.9967931587386424
+    },
+    "euclideanDistance" : 10.110753776729648,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5025176233635449,
+      "LackOfCohesion" : 0.48648657809510176,
+      "MetricsIntensity" : 0.032946817810494425,
+      "Density" : 3.069116840373011
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.replace(File, File)', targetType='hudson.util.ProcessTree.Darwin'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Node)', targetType='jenkins.model.ModelObjectWithContextMenu.MenuItem'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.from(ModelObjectWithContextMenu, StaplerRequest, StaplerResponse)', targetType='hudson.slaves.Cloud.CloudState'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "5c451950-80f6-45e3-b7c7-b7abe9dce675",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9979933110367893,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.48634626194153324,
+      "MetricsIntensity" : 0.03299753112145658,
+      "Density" : 0.997327632282202
+    },
+    "euclideanDistance" : 10.110799898057147,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5025176233635449,
+      "LackOfCohesion" : 0.48634626194153324,
+      "MetricsIntensity" : 0.03299753112145658,
+      "Density" : 3.0690789473684186
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.replace(File, File)', targetType='hudson.util.ProcessTree.Darwin'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.addAll(Collection<? extends Action>)', targetType='hudson.slaves.DelegatingComputerLauncher'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.toString()', targetType='hudson.cli.DisconnectNodeCommand'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "5c857ab3-658e-4454-8aeb-298258c9a108",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9983277591973244,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.48631646169086046,
+      "MetricsIntensity" : 0.03298664527106772,
+      "Density" : 0.9971494744343489
+    },
+    "euclideanDistance" : 10.11081387470002,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5030211480362539,
+      "LackOfCohesion" : 0.48631646169086046,
+      "MetricsIntensity" : 0.03298664527106772,
+      "Density" : 3.0685307017543857
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.replace(File, File)', targetType='hudson.util.ProcessTree.Darwin'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Node)', targetType='jenkins.model.ModelObjectWithContextMenu.MenuItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.toString()', targetType='hudson.cli.DisconnectNodeCommand'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "6a4c1c43-390e-44ed-87fc-739974bdc956",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9979933110367893,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.4864243481598734,
+      "MetricsIntensity" : 0.03295823897413106,
+      "Density" : 0.9975057901300552
+    },
+    "euclideanDistance" : 10.110821101286295,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5025176233635449,
+      "LackOfCohesion" : 0.4864243481598734,
+      "MetricsIntensity" : 0.03295823897413106,
+      "Density" : 3.0696271929824563
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.replace(File, File)', targetType='hudson.util.ProcessTree.Darwin'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.addAll(Collection<? extends Action>)', targetType='hudson.slaves.DelegatingComputerLauncher'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.from(ModelObjectWithContextMenu, StaplerRequest, StaplerResponse)', targetType='hudson.slaves.Cloud.CloudState'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.toString()', targetType='hudson.cli.DisconnectNodeCommand'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "01b18b61-33c6-4067-afcd-8f17e63458a2",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9986622073578595,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.4863945479092007,
+      "MetricsIntensity" : 0.03294659113515969,
+      "Density" : 0.997327632282202
+    },
+    "euclideanDistance" : 10.110868100446258,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5035246727089628,
+      "LackOfCohesion" : 0.4863945479092007,
+      "MetricsIntensity" : 0.03294659113515969,
+      "Density" : 3.06907894736842
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.replace(File, File)', targetType='hudson.util.ProcessTree.Darwin'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Node)', targetType='jenkins.model.ModelObjectWithContextMenu.MenuItem'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(String, String)', targetType='hudson.FilePath.CreateTempDir'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "9e912680-de65-4661-8af5-483611168689",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9973244147157191,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.4856327292014958,
+      "MetricsIntensity" : 0.03295894281018814,
+      "Density" : 0.9966150008907892
+    },
+    "euclideanDistance" : 11.100667677566582,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.501510574018127,
+      "LackOfCohesion" : 0.4856327292014958,
+      "MetricsIntensity" : 0.032958942810188144,
+      "Density" : 3.0685682940208445
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.setBatch(List<PluginWrapper>)', targetType='hudson.model.Queue.LeftItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.addAll(Collection<? extends Action>)', targetType='hudson.slaves.DelegatingComputerLauncher'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.from(ModelObjectWithContextMenu, StaplerRequest, StaplerResponse)', targetType='hudson.slaves.Cloud.CloudState'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.toString()', targetType='hudson.cli.DisconnectNodeCommand'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "8009d7ca-6cec-492a-800b-46d53dec0730",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9976588628762542,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.4856051201457255,
+      "MetricsIntensity" : 0.032910611740087484,
+      "Density" : 0.996436843042936
+    },
+    "euclideanDistance" : 11.100680385900937,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.502014098690836,
+      "LackOfCohesion" : 0.4856051201457255,
+      "MetricsIntensity" : 0.03291061174008749,
+      "Density" : 3.0680197476686777
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.setBatch(List<PluginWrapper>)', targetType='hudson.model.Queue.LeftItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(String, String)', targetType='hudson.FilePath.CreateTempDir'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.from(ModelObjectWithContextMenu, StaplerRequest, StaplerResponse)', targetType='hudson.slaves.Cloud.CloudState'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.toString()', targetType='hudson.cli.DisconnectNodeCommand'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "2aea3ec6-389a-4e90-8586-f9e523a49c6b",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9976588628762542,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.4856029289508231,
+      "MetricsIntensity" : 0.03294808391913508,
+      "Density" : 0.996436843042936
+    },
+    "euclideanDistance" : 11.100680401204624,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.502014098690836,
+      "LackOfCohesion" : 0.4856029289508231,
+      "MetricsIntensity" : 0.03294808391913508,
+      "Density" : 3.068019747668678
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.setBatch(List<PluginWrapper>)', targetType='hudson.model.Queue.LeftItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Node)', targetType='jenkins.model.ModelObjectWithContextMenu.MenuItem'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.from(ModelObjectWithContextMenu, StaplerRequest, StaplerResponse)', targetType='hudson.slaves.Cloud.CloudState'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.toString()', targetType='hudson.cli.DisconnectNodeCommand'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "432e26b4-744f-4f4f-a081-f1358f0ce517",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9976588628762542,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.4856029289508231,
+      "MetricsIntensity" : 0.03294808391913508,
+      "Density" : 0.996436843042936
+    },
+    "euclideanDistance" : 11.100680401204624,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.502014098690836,
+      "LackOfCohesion" : 0.4856029289508231,
+      "MetricsIntensity" : 0.03294808391913508,
+      "Density" : 3.0680197476686777
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.setBatch(List<PluginWrapper>)', targetType='hudson.model.Queue.LeftItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Node)', targetType='jenkins.model.ModelObjectWithContextMenu.MenuItem'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.from(ModelObjectWithContextMenu, StaplerRequest, StaplerResponse)', targetType='hudson.slaves.Cloud.CloudState'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.toString()', targetType='hudson.cli.DisconnectNodeCommand'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "eb6a597d-040c-4ce7-9fcf-fa8b22635737",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9979933110367893,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.48567766861694867,
+      "MetricsIntensity" : 0.032909026241753306,
+      "Density" : 0.9966150008907892
+    },
+    "euclideanDistance" : 11.10072961163707,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5025176233635449,
+      "LackOfCohesion" : 0.48567766861694867,
+      "MetricsIntensity" : 0.03290902624175331,
+      "Density" : 3.0685682940208445
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.setBatch(List<PluginWrapper>)', targetType='hudson.model.Queue.LeftItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Node)', targetType='jenkins.model.ModelObjectWithContextMenu.MenuItem'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(String, String)', targetType='hudson.FilePath.CreateTempDir'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.from(ModelObjectWithContextMenu, StaplerRequest, StaplerResponse)', targetType='hudson.slaves.Cloud.CloudState'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "66c89f17-207d-4055-ad2b-631970ab6153",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9979933110367893,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.48567766861694867,
+      "MetricsIntensity" : 0.032909026241753306,
+      "Density" : 0.9966150008907892
+    },
+    "euclideanDistance" : 11.10072961163707,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5025176233635449,
+      "LackOfCohesion" : 0.48567766861694867,
+      "MetricsIntensity" : 0.032909026241753306,
+      "Density" : 3.0685682940208454
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.setBatch(List<PluginWrapper>)', targetType='hudson.model.Queue.LeftItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Node)', targetType='jenkins.model.ModelObjectWithContextMenu.MenuItem'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(String, String)', targetType='hudson.FilePath.CreateTempDir'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.from(ModelObjectWithContextMenu, StaplerRequest, StaplerResponse)', targetType='hudson.slaves.Cloud.CloudState'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "6c5e5cb2-ddce-4d11-aac7-4a5a262460a9",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9983277591973244,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.48551089876492215,
+      "MetricsIntensity" : 0.032947857243800345,
+      "Density" : 0.9969713165864956
+    },
+    "euclideanDistance" : 11.10078449998002,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5030211480362539,
+      "LackOfCohesion" : 0.48551089876492215,
+      "MetricsIntensity" : 0.03294785724380034,
+      "Density" : 3.0679824561403515
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.setBatch(List<PluginWrapper>)', targetType='hudson.model.Queue.LeftItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Node)', targetType='jenkins.model.ModelObjectWithContextMenu.MenuItem'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(String, String)', targetType='hudson.FilePath.CreateTempDir'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.toString()', targetType='hudson.cli.DisconnectNodeCommand'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "95804be9-76e4-4f46-9517-3a09b72a5ffc",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9983277591973244,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.4855856384310477,
+      "MetricsIntensity" : 0.03290960164837224,
+      "Density" : 0.9971494744343489
+    },
+    "euclideanDistance" : 11.100803657541187,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5030211480362539,
+      "LackOfCohesion" : 0.4855856384310477,
+      "MetricsIntensity" : 0.032909601648372235,
+      "Density" : 3.0685307017543857
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.setBatch(List<PluginWrapper>)', targetType='hudson.model.Queue.LeftItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Node)', targetType='jenkins.model.ModelObjectWithContextMenu.MenuItem'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(String, String)', targetType='hudson.FilePath.CreateTempDir'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.from(ModelObjectWithContextMenu, StaplerRequest, StaplerResponse)', targetType='hudson.slaves.Cloud.CloudState'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.toString()', targetType='hudson.cli.DisconnectNodeCommand'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "99c99b37-ca73-4f80-b7ed-268806d2b7fa",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9983277591973244,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.4855856384310478,
+      "MetricsIntensity" : 0.032909601648372235,
+      "Density" : 0.9971494744343489
+    },
+    "euclideanDistance" : 11.100803657541187,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5030211480362539,
+      "LackOfCohesion" : 0.4855856384310478,
+      "MetricsIntensity" : 0.032909601648372235,
+      "Density" : 3.0685307017543857
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.setBatch(List<PluginWrapper>)', targetType='hudson.model.Queue.LeftItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Node)', targetType='jenkins.model.ModelObjectWithContextMenu.MenuItem'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(String, String)', targetType='hudson.FilePath.CreateTempDir'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.from(ModelObjectWithContextMenu, StaplerRequest, StaplerResponse)', targetType='hudson.slaves.Cloud.CloudState'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.toString()', targetType='hudson.cli.DisconnectNodeCommand'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "67b8ce2d-cd1e-434b-8ae0-89fbac9ee241",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9969899665551839,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 0.48562310786387874,
+      "MetricsIntensity" : 0.03295757085315331,
+      "Density" : 0.9962586851950829
+    },
+    "euclideanDistance" : 12.092288301459169,
+    "generation" : 1,
+    "numberOfRefactorings" : 12,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.501007049345418,
+      "LackOfCohesion" : 0.48562310786387874,
+      "MetricsIntensity" : 0.03295757085315332,
+      "Density" : 3.0674712013165117
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.setBatch(List<PluginWrapper>)', targetType='hudson.model.Queue.LeftItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.addAll(Collection<? extends Action>)', targetType='hudson.slaves.DelegatingComputerLauncher'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.from(ModelObjectWithContextMenu, StaplerRequest, StaplerResponse)', targetType='hudson.slaves.Cloud.CloudState'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.mac(String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.toString()', targetType='hudson.cli.DisconnectNodeCommand'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "a4cc10f9-0c4b-4825-859b-783aaecf0be2",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9973244147157191,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 0.48559330761320607,
+      "MetricsIntensity" : 0.03294671196210023,
+      "Density" : 0.9960805273472296
+    },
+    "euclideanDistance" : 12.092299977728647,
+    "generation" : 1,
+    "numberOfRefactorings" : 12,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.501510574018127,
+      "LackOfCohesion" : 0.48559330761320607,
+      "MetricsIntensity" : 0.03294671196210023,
+      "Density" : 3.066922654964345
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.setBatch(List<PluginWrapper>)', targetType='hudson.model.Queue.LeftItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Node)', targetType='jenkins.model.ModelObjectWithContextMenu.MenuItem'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.from(ModelObjectWithContextMenu, StaplerRequest, StaplerResponse)', targetType='hudson.slaves.Cloud.CloudState'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.mac(String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.toString()', targetType='hudson.cli.DisconnectNodeCommand'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "4f1ae88a-b3b2-4902-8399-67f15d35067b",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9976588628762542,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 0.4855828496375357,
+      "MetricsIntensity" : 0.032909026241753306,
+      "Density" : 0.996436843042936
+    },
+    "euclideanDistance" : 12.092356399673275,
+    "generation" : 1,
+    "numberOfRefactorings" : 12,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.502014098690836,
+      "LackOfCohesion" : 0.4855828496375357,
+      "MetricsIntensity" : 0.032909026241753306,
+      "Density" : 3.068019747668679
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.setBatch(List<PluginWrapper>)', targetType='hudson.model.Queue.LeftItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Node)', targetType='jenkins.model.ModelObjectWithContextMenu.MenuItem'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(String, String)', targetType='hudson.FilePath.CreateTempDir'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.from(ModelObjectWithContextMenu, StaplerRequest, StaplerResponse)', targetType='hudson.slaves.Cloud.CloudState'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.toString()', targetType='hudson.cli.DisconnectNodeCommand'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "2029414c-6b5f-48dd-9b52-8cd9f45f2e97",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9976588628762542,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 0.4855288864830754,
+      "MetricsIntensity" : 0.03299581316102493,
+      "Density" : 0.9967931587386424
+    },
+    "euclideanDistance" : 12.09238383575709,
+    "generation" : 1,
+    "numberOfRefactorings" : 12,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.502014098690836,
+      "LackOfCohesion" : 0.4855288864830754,
+      "MetricsIntensity" : 0.03299581316102493,
+      "Density" : 3.0674342105263164
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.setBatch(List<PluginWrapper>)', targetType='hudson.model.Queue.LeftItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.addAll(Collection<? extends Action>)', targetType='hudson.slaves.DelegatingComputerLauncher'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Node)', targetType='jenkins.model.ModelObjectWithContextMenu.MenuItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.mac(String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.toString()', targetType='hudson.cli.DisconnectNodeCommand'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "e3ebd7a1-0431-429c-9430-39f4fcc74eb3",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9969899665551839,
+      "NumberOfRefactorings" : 13.0,
+      "LackOfCohesion" : 0.4856008373556888,
+      "MetricsIntensity" : 0.032955972220783745,
+      "Density" : 0.9962586851950829
+    },
+    "euclideanDistance" : 13.08523651412476,
+    "generation" : 1,
+    "numberOfRefactorings" : 13,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.501007049345418,
+      "LackOfCohesion" : 0.4856008373556888,
+      "MetricsIntensity" : 0.03295597222078375,
+      "Density" : 3.067471201316512
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.setBatch(List<PluginWrapper>)', targetType='hudson.model.Queue.LeftItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.addAll(Collection<? extends Action>)', targetType='hudson.slaves.DelegatingComputerLauncher'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Node)', targetType='jenkins.model.ModelObjectWithContextMenu.MenuItem'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.from(ModelObjectWithContextMenu, StaplerRequest, StaplerResponse)', targetType='hudson.slaves.Cloud.CloudState'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.mac(String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.toString()', targetType='hudson.cli.DisconnectNodeCommand'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "b121f812-8ab8-48ce-abe2-df86335cf7ba",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9969899665551839,
+      "NumberOfRefactorings" : 13.0,
+      "LackOfCohesion" : 0.48567330614709764,
+      "MetricsIntensity" : 0.03291850004173616,
+      "Density" : 0.9962586851950829
+    },
+    "euclideanDistance" : 13.085239109362396,
+    "generation" : 1,
+    "numberOfRefactorings" : 13,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.501007049345418,
+      "LackOfCohesion" : 0.48567330614709764,
+      "MetricsIntensity" : 0.03291850004173616,
+      "Density" : 3.067471201316514
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.setBatch(List<PluginWrapper>)', targetType='hudson.model.Queue.LeftItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.addAll(Collection<? extends Action>)', targetType='hudson.slaves.DelegatingComputerLauncher'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Job)', targetType='hudson.FilePath.CreateTempDir'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(String, String)', targetType='hudson.FilePath.CreateTempDir'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.from(ModelObjectWithContextMenu, StaplerRequest, StaplerResponse)', targetType='hudson.slaves.Cloud.CloudState'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.mac(String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "6220198a-6899-48d5-ae1b-eb7dc7709741",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9973244147157191,
+      "NumberOfRefactorings" : 13.0,
+      "LackOfCohesion" : 0.4855732282999186,
+      "MetricsIntensity" : 0.03290766741875384,
+      "Density" : 0.9960805273472296
+    },
+    "euclideanDistance" : 13.085247291502172,
+    "generation" : 1,
+    "numberOfRefactorings" : 13,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.501510574018127,
+      "LackOfCohesion" : 0.4855732282999186,
+      "MetricsIntensity" : 0.03290766741875384,
+      "Density" : 3.066922654964345
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.setBatch(List<PluginWrapper>)', targetType='hudson.model.Queue.LeftItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Node)', targetType='jenkins.model.ModelObjectWithContextMenu.MenuItem'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(String, String)', targetType='hudson.FilePath.CreateTempDir'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.from(ModelObjectWithContextMenu, StaplerRequest, StaplerResponse)', targetType='hudson.slaves.Cloud.CloudState'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.mac(String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.toString()', targetType='hudson.cli.DisconnectNodeCommand'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "2de33a27-3883-427d-84a3-903d63d04286",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9973244147157191,
+      "NumberOfRefactorings" : 13.0,
+      "LackOfCohesion" : 0.48555830825462887,
+      "MetricsIntensity" : 0.032907667418753846,
+      "Density" : 0.9962586851950829
+    },
+    "euclideanDistance" : 13.085260300861604,
+    "generation" : 1,
+    "numberOfRefactorings" : 13,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.501510574018127,
+      "LackOfCohesion" : 0.48555830825462887,
+      "MetricsIntensity" : 0.032907667418753846,
+      "Density" : 3.067471201316512
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.setBatch(List<PluginWrapper>)', targetType='hudson.model.Queue.LeftItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Node)', targetType='jenkins.model.ModelObjectWithContextMenu.MenuItem'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Job)', targetType='hudson.FilePath.CreateTempDir'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(String, String)', targetType='hudson.FilePath.CreateTempDir'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.from(ModelObjectWithContextMenu, StaplerRequest, StaplerResponse)', targetType='hudson.slaves.Cloud.CloudState'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.mac(String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.toString()', targetType='hudson.cli.DisconnectNodeCommand'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "28580432-1917-4ab3-ac21-dc09ba61af42",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9976588628762542,
+      "NumberOfRefactorings" : 13.0,
+      "LackOfCohesion" : 0.48550880716978806,
+      "MetricsIntensity" : 0.032955745545449,
+      "Density" : 0.9967931587386424
+    },
+    "euclideanDistance" : 13.08532478354999,
+    "generation" : 1,
+    "numberOfRefactorings" : 13,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.502014098690836,
+      "LackOfCohesion" : 0.48550880716978806,
+      "MetricsIntensity" : 0.032955745545449,
+      "Density" : 3.0674342105263164
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.setBatch(List<PluginWrapper>)', targetType='hudson.model.Queue.LeftItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.addAll(Collection<? extends Action>)', targetType='hudson.slaves.DelegatingComputerLauncher'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Node)', targetType='jenkins.model.ModelObjectWithContextMenu.MenuItem'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(String, String)', targetType='hudson.FilePath.CreateTempDir'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.mac(String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.toString()', targetType='hudson.cli.DisconnectNodeCommand'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "838658ba-003b-479f-aad9-777df76cae7a",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9976588628762542,
+      "NumberOfRefactorings" : 13.0,
+      "LackOfCohesion" : 0.48550880716978795,
+      "MetricsIntensity" : 0.03295574554544902,
+      "Density" : 0.9967931587386424
+    },
+    "euclideanDistance" : 13.08532478354999,
+    "generation" : 1,
+    "numberOfRefactorings" : 13,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.502014098690836,
+      "LackOfCohesion" : 0.48550880716978795,
+      "MetricsIntensity" : 0.03295574554544902,
+      "Density" : 3.0674342105263164
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.setBatch(List<PluginWrapper>)', targetType='hudson.model.Queue.LeftItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.addAll(Collection<? extends Action>)', targetType='hudson.slaves.DelegatingComputerLauncher'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Node)', targetType='jenkins.model.ModelObjectWithContextMenu.MenuItem'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(String, String)', targetType='hudson.FilePath.CreateTempDir'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.mac(String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.toString()', targetType='hudson.cli.DisconnectNodeCommand'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "e6a22524-8643-4639-bc9f-ef11a8595354",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9969899665551839,
+      "NumberOfRefactorings" : 14.0,
+      "LackOfCohesion" : 0.4855486869170118,
+      "MetricsIntensity" : 0.032907667418753846,
+      "Density" : 0.9959023694993765
+    },
+    "euclideanDistance" : 14.07915661412032,
+    "generation" : 1,
+    "numberOfRefactorings" : 14,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.501007049345418,
+      "LackOfCohesion" : 0.4855486869170118,
+      "MetricsIntensity" : 0.032907667418753846,
+      "Density" : 3.066374108612178
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.setBatch(List<PluginWrapper>)', targetType='hudson.model.Queue.LeftItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Node)', targetType='jenkins.model.ModelObjectWithContextMenu.MenuItem'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Job)', targetType='hudson.FilePath.CreateTempDir'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(String, String)', targetType='hudson.FilePath.CreateTempDir'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.from(ModelObjectWithContextMenu, StaplerRequest, StaplerResponse)', targetType='hudson.slaves.Cloud.CloudState'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.mac(String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.toString()', targetType='hudson.cli.DisconnectNodeCommand'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "0e9f26c8-3f4f-4684-976a-e079a7399c14",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9973244147157191,
+      "NumberOfRefactorings" : 14.0,
+      "LackOfCohesion" : 0.4855484080376606,
+      "MetricsIntensity" : 0.032917489950020896,
+      "Density" : 0.9967931587386424
+    },
+    "euclideanDistance" : 14.079243353504078,
+    "generation" : 1,
+    "numberOfRefactorings" : 14,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.501510574018127,
+      "LackOfCohesion" : 0.4855484080376606,
+      "MetricsIntensity" : 0.032917489950020896,
+      "Density" : 3.067434210526316
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.setBatch(List<PluginWrapper>)', targetType='hudson.model.Queue.LeftItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.addAll(Collection<? extends Action>)', targetType='hudson.slaves.DelegatingComputerLauncher'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Node)', targetType='jenkins.model.ModelObjectWithContextMenu.MenuItem'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Job)', targetType='hudson.FilePath.CreateTempDir'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(String, String)', targetType='hudson.FilePath.CreateTempDir'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.from(ModelObjectWithContextMenu, StaplerRequest, StaplerResponse)', targetType='hudson.slaves.Cloud.CloudState'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.mac(String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.toString()', targetType='hudson.cli.DisconnectNodeCommand'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "335b5374-ece5-4283-8367-5519b18c3596",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9966555183946488,
+      "NumberOfRefactorings" : 15.0,
+      "LackOfCohesion" : 0.4863344494090138,
+      "MetricsIntensity" : 0.03291566156879671,
+      "Density" : 0.9962586851950829
+    },
+    "euclideanDistance" : 15.073933070955027,
+    "generation" : 1,
+    "numberOfRefactorings" : 15,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.500503524672709,
+      "LackOfCohesion" : 0.4863344494090138,
+      "MetricsIntensity" : 0.03291566156879671,
+      "Density" : 3.0674712013165117
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.replace(File, File)', targetType='hudson.util.ProcessTree.Darwin'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.addAll(Collection<? extends Action>)', targetType='hudson.slaves.DelegatingComputerLauncher'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Node)', targetType='jenkins.model.ModelObjectWithContextMenu.MenuItem'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Job)', targetType='hudson.FilePath.CreateTempDir'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(String, String)', targetType='hudson.FilePath.CreateTempDir'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.from(ModelObjectWithContextMenu, StaplerRequest, StaplerResponse)', targetType='hudson.slaves.Cloud.CloudState'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.mac(String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.toString()', targetType='hudson.cli.DisconnectNodeCommand'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "56db6ad1-2b1d-4d35-b8b7-8d177229123d",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9966555183946488,
+      "NumberOfRefactorings" : 17.0,
+      "LackOfCohesion" : 0.4854242270465553,
+      "MetricsIntensity" : 0.03291668786806724,
+      "Density" : 0.9959023694993765
+    },
+    "euclideanDistance" : 17.065223817473502,
+    "generation" : 1,
+    "numberOfRefactorings" : 17,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.500503524672709,
+      "LackOfCohesion" : 0.4854242270465553,
+      "MetricsIntensity" : 0.03291668786806724,
+      "Density" : 3.066374108612177
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getID()', targetType='jenkins.model.InterruptedBuildAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.UpdateCenter.InstallationJob",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.UpdateCenter.InstallationJob.setBatch(List<PluginWrapper>)', targetType='hudson.model.Queue.LeftItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.ModelObjectWithContextMenu.ContextMenu",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.addAll(Collection<? extends Action>)', targetType='hudson.slaves.DelegatingComputerLauncher'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.generateResponse(StaplerRequest, StaplerResponse, Object)', targetType='hudson.security.csrf.CrumbIssuerDescriptor'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Node)', targetType='jenkins.model.ModelObjectWithContextMenu.MenuItem'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Computer)', targetType='jenkins.model.ModelObjectWithContextMenu.MenuItem'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(Job)', targetType='hudson.FilePath.CreateTempDir'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.add(String, String)', targetType='hudson.FilePath.CreateTempDir'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.ModelObjectWithContextMenu.ContextMenu.from(ModelObjectWithContextMenu, StaplerRequest, StaplerResponse)', targetType='hudson.slaves.Cloud.CloudState'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.Fingerprint.BuildPtr",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.Fingerprint.BuildPtr.BuildPtr(Run)', targetType='hudson.model.AbstractItem'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.JavaVMArguments",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.JavaVMArguments.current()', targetType='hudson.util.ProcessTree'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.HMACConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.checkMac(String, String)', targetType='hudson.console.ModelHyperlinkNote'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.HMACConfidentialKey.mac(String)', targetType='hudson.console.ModelHyperlinkNote'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.paren(LabelOperatorPrecedence, Label)', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.Secret",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.toString()', targetType='hudson.cli.DisconnectNodeCommand'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.Secret.getCipher(String)', targetType='hudson.util.AlternativeUiTextProvider.Message'"
+      } ]
+    } ]
+  } ]
+}

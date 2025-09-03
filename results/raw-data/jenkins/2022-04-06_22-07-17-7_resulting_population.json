@@ -1,0 +1,2972 @@
+{
+  "executionId" : "e46618b5-48b9-48d7-8322-7708ac918a6e",
+  "computingTime" : 4283880,
+  "maxEvaluations" : 100,
+  "initialPopulationSize" : 128,
+  "finalPopulationSize" : 32,
+  "algorithm" : "MOSA",
+  "projectBeforeRefactoring" : {
+    "meanDensity" : 3.0465619924201404,
+    "meanNumConcerns" : 1.5297079556898283,
+    "meanMetricsIntensity" : 0.03296937024300845,
+    "meanLackOfCohesion" : 0.4853503005035552
+  },
+  "population" : [ {
+    "solutionId" : "bc6ffbc9-1704-4241-8e1d-f5f819fb088a",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9986833443054641,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.48581018266553117,
+      "MetricsIntensity" : 0.032932819096818215,
+      "Density" : 0.9944908476985961
+    },
+    "euclideanDistance" : 10.110562623934664,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5261569416498995,
+      "LackOfCohesion" : 0.48581018266553117,
+      "MetricsIntensity" : 0.032932819096818215,
+      "Density" : 3.0281385281385287
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int), jenkins.security.CryptoConfidentialKey.decrypt(byte[])]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.getValue()', targetType='hudson.cli.CLI.ClientSideImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getQualifiedUrl(JellyContext)', targetType='hudson.model.FreeStyleBuild'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getCategory()', targetType='jenkins.telemetry.impl.SecuritySystemProperties'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "b3341961-07ab-4108-9fed-4d66b6ba228c",
+    "objectives" : {
+      "NumberOfConcerns" : 0.999670836076366,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.48609347920710605,
+      "MetricsIntensity" : 0.03291798121973583,
+      "Density" : 0.9941354185178604
+    },
+    "euclideanDistance" : 10.110638826249732,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5276659959758554,
+      "LackOfCohesion" : 0.48609347920710605,
+      "MetricsIntensity" : 0.03291798121973583,
+      "Density" : 3.0254191454840464
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.getValue()', targetType='hudson.cli.CLI.ClientSideImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getQualifiedUrl(JellyContext)', targetType='hudson.model.FreeStyleBuild'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getCategory()', targetType='jenkins.telemetry.impl.SecuritySystemProperties'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails(), org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "46d5d0b7-c3ad-47fd-85b6-f4cc941693f4",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.48609347920710594,
+      "MetricsIntensity" : 0.032925056557936996,
+      "Density" : 0.9950239914696997
+    },
+    "euclideanDistance" : 10.110758807996426,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5281690140845066,
+      "LackOfCohesion" : 0.48609347920710594,
+      "MetricsIntensity" : 0.03292505655793699,
+      "Density" : 3.0281233098972424
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.getValue()', targetType='hudson.cli.CLI.ClientSideImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getQualifiedUrl(JellyContext)', targetType='hudson.model.FreeStyleBuild'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getCategory()', targetType='jenkins.telemetry.impl.SecuritySystemProperties'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "6aab5f16-af06-4600-a804-19bfe7588d5f",
+    "objectives" : {
+      "NumberOfConcerns" : 0.999670836076366,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.48604622605554837,
+      "MetricsIntensity" : 0.03292606732053716,
+      "Density" : 0.9948462768793318
+    },
+    "euclideanDistance" : 11.100738081537386,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.527665995975855,
+      "LackOfCohesion" : 0.48604622605554837,
+      "MetricsIntensity" : 0.032926067320537156,
+      "Density" : 3.0275824770146023
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.getValue()', targetType='hudson.cli.CLI.ClientSideImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconSizeClass(String)', targetType='hudson.LocalPluginManager'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getQualifiedUrl(JellyContext)', targetType='hudson.model.FreeStyleBuild'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getCategory()', targetType='jenkins.telemetry.impl.SecuritySystemProperties'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "3a3a973f-c35e-4b57-973f-4c41f4281e57",
+    "objectives" : {
+      "NumberOfConcerns" : 0.999670836076366,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.48604622605554787,
+      "MetricsIntensity" : 0.032926067320537176,
+      "Density" : 0.9948462768793318
+    },
+    "euclideanDistance" : 11.100738081537386,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.527665995975855,
+      "LackOfCohesion" : 0.48604622605554787,
+      "MetricsIntensity" : 0.032926067320537176,
+      "Density" : 3.0275824770146014
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.getValue()', targetType='hudson.cli.CLI.ClientSideImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconSizeClass(String)', targetType='hudson.LocalPluginManager'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getQualifiedUrl(JellyContext)', targetType='hudson.model.FreeStyleBuild'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getCategory()', targetType='jenkins.telemetry.impl.SecuritySystemProperties'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "dc01c6aa-9a2b-48d2-8737-9c8d998d09fa",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.4860474895087983,
+      "MetricsIntensity" : 0.032920883811560886,
+      "Density" : 0.9953794206504354
+    },
+    "euclideanDistance" : 11.100815561827119,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5281690140845068,
+      "LackOfCohesion" : 0.4860474895087983,
+      "MetricsIntensity" : 0.032920883811560886,
+      "Density" : 3.0292049756625206
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.toSpring()', targetType='hudson.security.HttpSessionContextIntegrationFilter2'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.getValue()', targetType='hudson.cli.CLI.ClientSideImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconSizeClass(String)', targetType='hudson.LocalPluginManager'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getCategory()', targetType='jenkins.telemetry.impl.SecuritySystemProperties'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "6d5d905c-f3d9-4317-ba36-be6e5526f2eb",
+    "objectives" : {
+      "NumberOfConcerns" : 0.999670836076366,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 0.4860238882020846,
+      "MetricsIntensity" : 0.03292730398423421,
+      "Density" : 0.9946685622889639
+    },
+    "euclideanDistance" : 12.092394748624375,
+    "generation" : 1,
+    "numberOfRefactorings" : 12,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.527665995975855,
+      "LackOfCohesion" : 0.4860238882020846,
+      "MetricsIntensity" : 0.03292730398423421,
+      "Density" : 3.027041644131964
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.getValue()', targetType='hudson.cli.CLI.ClientSideImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconSizeClass(String)', targetType='hudson.LocalPluginManager'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getQualifiedUrl(JellyContext)', targetType='hudson.model.FreeStyleBuild'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getCategory()', targetType='jenkins.telemetry.impl.SecuritySystemProperties'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.toString()', targetType='jenkins.security.CryptoConfidentialKey'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "541fe511-7c54-4c78-aea4-f43e6ce7117e",
+    "objectives" : {
+      "NumberOfConcerns" : 0.999670836076366,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 0.4860238882020846,
+      "MetricsIntensity" : 0.03292730398423421,
+      "Density" : 0.9946685622889639
+    },
+    "euclideanDistance" : 12.092394748624375,
+    "generation" : 1,
+    "numberOfRefactorings" : 12,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5276659959758558,
+      "LackOfCohesion" : 0.4860238882020846,
+      "MetricsIntensity" : 0.03292730398423421,
+      "Density" : 3.027041644131964
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.getValue()', targetType='hudson.cli.CLI.ClientSideImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconSizeClass(String)', targetType='hudson.LocalPluginManager'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getQualifiedUrl(JellyContext)', targetType='hudson.model.FreeStyleBuild'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getCategory()', targetType='jenkins.telemetry.impl.SecuritySystemProperties'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.toString()', targetType='jenkins.security.CryptoConfidentialKey'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "3af480a0-5e35-400e-87a5-f00e0ebe11fc",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 0.48602515165533483,
+      "MetricsIntensity" : 0.032922120475257936,
+      "Density" : 0.9952017060600675
+    },
+    "euclideanDistance" : 12.092465867216788,
+    "generation" : 1,
+    "numberOfRefactorings" : 12,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5281690140845068,
+      "LackOfCohesion" : 0.48602515165533483,
+      "MetricsIntensity" : 0.03292212047525793,
+      "Density" : 3.028664142779881
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.toSpring()', targetType='hudson.security.HttpSessionContextIntegrationFilter2'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.getValue()', targetType='hudson.cli.CLI.ClientSideImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconSizeClass(String)', targetType='hudson.LocalPluginManager'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getCategory()', targetType='jenkins.telemetry.impl.SecuritySystemProperties'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.toString()', targetType='jenkins.security.CryptoConfidentialKey'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "00a977ae-6382-473f-893b-b2760e90c66a",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9993416721527321,
+      "NumberOfRefactorings" : 13.0,
+      "LackOfCohesion" : 0.48574269404671816,
+      "MetricsIntensity" : 0.0329286463504421,
+      "Density" : 0.9944908476985961
+    },
+    "euclideanDistance" : 13.085286625994385,
+    "generation" : 1,
+    "numberOfRefactorings" : 13,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5271629778672033,
+      "LackOfCohesion" : 0.48574269404671816,
+      "MetricsIntensity" : 0.0329286463504421,
+      "Density" : 3.026500811249324
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int), jenkins.security.CryptoConfidentialKey.CryptoConfidentialKey(String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.toSpring()', targetType='hudson.security.HttpSessionContextIntegrationFilter2'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.getValue()', targetType='hudson.cli.CLI.ClientSideImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconSizeClass(String)', targetType='hudson.LocalPluginManager'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getQualifiedUrl(JellyContext)', targetType='hudson.model.FreeStyleBuild'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getCategory()', targetType='jenkins.telemetry.impl.SecuritySystemProperties'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.toString()', targetType='jenkins.security.CryptoConfidentialKey'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "9586a3c1-9572-41ec-a579-555bab7ef365",
+    "objectives" : {
+      "NumberOfConcerns" : 0.999670836076366,
+      "NumberOfRefactorings" : 13.0,
+      "LackOfCohesion" : 0.48594504871927147,
+      "MetricsIntensity" : 0.03292594591113709,
+      "Density" : 0.9946685622889639
+    },
+    "euclideanDistance" : 13.0853327828373,
+    "generation" : 1,
+    "numberOfRefactorings" : 13,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.527665995975855,
+      "LackOfCohesion" : 0.48594504871927147,
+      "MetricsIntensity" : 0.03292594591113709,
+      "Density" : 3.027041644131964
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.getValue()', targetType='hudson.cli.CLI.ClientSideImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.buildEnvironment(Run<?,?>, EnvVars)', targetType='hudson.model.ManageJenkinsAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconSizeClass(String)', targetType='hudson.LocalPluginManager'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getQualifiedUrl(JellyContext)', targetType='hudson.model.FreeStyleBuild'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getCategory()', targetType='jenkins.telemetry.impl.SecuritySystemProperties'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.toString()', targetType='jenkins.security.CryptoConfidentialKey'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "6fa65cfc-6baa-4663-9309-2190f8731bcd",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0,
+      "NumberOfRefactorings" : 13.0,
+      "LackOfCohesion" : 0.48594631217252177,
+      "MetricsIntensity" : 0.032920762402160804,
+      "Density" : 0.9952017060600675
+    },
+    "euclideanDistance" : 13.085398504847152,
+    "generation" : 1,
+    "numberOfRefactorings" : 13,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5281690140845068,
+      "LackOfCohesion" : 0.48594631217252177,
+      "MetricsIntensity" : 0.032920762402160804,
+      "Density" : 3.028664142779881
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.toSpring()', targetType='hudson.security.HttpSessionContextIntegrationFilter2'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.getValue()', targetType='hudson.cli.CLI.ClientSideImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.buildEnvironment(Run<?,?>, EnvVars)', targetType='hudson.model.ManageJenkinsAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconSizeClass(String)', targetType='hudson.LocalPluginManager'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getCategory()', targetType='jenkins.telemetry.impl.SecuritySystemProperties'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.toString()', targetType='jenkins.security.CryptoConfidentialKey'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "4ecde442-3641-42fb-9192-bd0fd5522986",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0,
+      "NumberOfRefactorings" : 13.0,
+      "LackOfCohesion" : 0.48594631217252177,
+      "MetricsIntensity" : 0.032920762402160804,
+      "Density" : 0.9952017060600675
+    },
+    "euclideanDistance" : 13.085398504847152,
+    "generation" : 1,
+    "numberOfRefactorings" : 13,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5281690140845068,
+      "LackOfCohesion" : 0.48594631217252177,
+      "MetricsIntensity" : 0.0329207624021608,
+      "Density" : 3.0286641427798813
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.toSpring()', targetType='hudson.security.HttpSessionContextIntegrationFilter2'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.getValue()', targetType='hudson.cli.CLI.ClientSideImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.buildEnvironment(Run<?,?>, EnvVars)', targetType='hudson.model.ManageJenkinsAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconSizeClass(String)', targetType='hudson.LocalPluginManager'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getCategory()', targetType='jenkins.telemetry.impl.SecuritySystemProperties'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.toString()', targetType='jenkins.security.CryptoConfidentialKey'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "cade8f78-8b53-4190-9eb8-e3c5623fa2b3",
+    "objectives" : {
+      "NumberOfConcerns" : 0.999670836076366,
+      "NumberOfRefactorings" : 14.0,
+      "LackOfCohesion" : 0.48591620982453876,
+      "MetricsIntensity" : 0.03291967768132159,
+      "Density" : 0.9952017060600675
+    },
+    "euclideanDistance" : 14.07930987244742,
+    "generation" : 1,
+    "numberOfRefactorings" : 14,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.527665995975855,
+      "LackOfCohesion" : 0.48591620982453876,
+      "MetricsIntensity" : 0.03291967768132159,
+      "Density" : 3.028664142779881
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isAccountNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.getValue()', targetType='hudson.cli.CLI.ClientSideImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.buildEnvironment(Run<?,?>, EnvVars)', targetType='hudson.model.ManageJenkinsAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconSizeClass(String)', targetType='hudson.LocalPluginManager'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getCategory()', targetType='jenkins.telemetry.impl.SecuritySystemProperties'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.toString()', targetType='jenkins.security.CryptoConfidentialKey'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.isLegacy()', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "f3d29a76-add3-49b9-ad1c-c3df88f66d02",
+    "objectives" : {
+      "NumberOfConcerns" : 0.999670836076366,
+      "NumberOfRefactorings" : 14.0,
+      "LackOfCohesion" : 0.48591620982453854,
+      "MetricsIntensity" : 0.0329196776813216,
+      "Density" : 0.9952017060600675
+    },
+    "euclideanDistance" : 14.07930987244742,
+    "generation" : 1,
+    "numberOfRefactorings" : 14,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.527665995975855,
+      "LackOfCohesion" : 0.48591620982453854,
+      "MetricsIntensity" : 0.03291967768132159,
+      "Density" : 3.028664142779881
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isAccountNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.getValue()', targetType='hudson.cli.CLI.ClientSideImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.buildEnvironment(Run<?,?>, EnvVars)', targetType='hudson.model.ManageJenkinsAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconSizeClass(String)', targetType='hudson.LocalPluginManager'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getCategory()', targetType='jenkins.telemetry.impl.SecuritySystemProperties'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.toString()', targetType='jenkins.security.CryptoConfidentialKey'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.isLegacy()', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "5ece599c-4ca5-40d2-bf1f-dcd28716dc45",
+    "objectives" : {
+      "NumberOfConcerns" : 1.000329163923634,
+      "NumberOfRefactorings" : 15.0,
+      "LackOfCohesion" : 0.4856911888006766,
+      "MetricsIntensity" : 0.03292516104963381,
+      "Density" : 0.9950239914696997
+    },
+    "euclideanDistance" : 15.074074139956496,
+    "generation" : 1,
+    "numberOfRefactorings" : 15,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.528672032193159,
+      "LackOfCohesion" : 0.4856911888006766,
+      "MetricsIntensity" : 0.03292516104963381,
+      "Density" : 3.0281233098972424
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.buildEnvironment(Run<?,?>, EnvVars)', targetType='hudson.model.ManageJenkinsAction'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.equals(Object)', targetType='Authenticator'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.toString()', targetType='hudson.util.Iterators.FilterIterator'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconSizeClass(String)', targetType='hudson.LocalPluginManager'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getCategory()', targetType='jenkins.telemetry.impl.SecuritySystemProperties'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.toString()', targetType='jenkins.security.CryptoConfidentialKey'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.toHtml()', targetType='hudson.util.LogTaskListener'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.isLegacy()', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "1ec869d2-e75c-4dc4-8cea-a3469ebd9b9e",
+    "objectives" : {
+      "NumberOfConcerns" : 1.000329163923634,
+      "NumberOfRefactorings" : 15.0,
+      "LackOfCohesion" : 0.4856911888006768,
+      "MetricsIntensity" : 0.03292516104963379,
+      "Density" : 0.9950239914696997
+    },
+    "euclideanDistance" : 15.074074139956496,
+    "generation" : 1,
+    "numberOfRefactorings" : 15,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.528672032193159,
+      "LackOfCohesion" : 0.4856911888006768,
+      "MetricsIntensity" : 0.03292516104963379,
+      "Density" : 3.0281233098972424
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.buildEnvironment(Run<?,?>, EnvVars)', targetType='hudson.model.ManageJenkinsAction'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.equals(Object)', targetType='Authenticator'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.toString()', targetType='hudson.util.Iterators.FilterIterator'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconSizeClass(String)', targetType='hudson.LocalPluginManager'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getCategory()', targetType='jenkins.telemetry.impl.SecuritySystemProperties'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.toString()', targetType='jenkins.security.CryptoConfidentialKey'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.toHtml()', targetType='hudson.util.LogTaskListener'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.isLegacy()', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "1d01e6c7-1915-4a20-af2e-a7f82cb9300b",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0,
+      "NumberOfRefactorings" : 15.0,
+      "LackOfCohesion" : 0.4858094985630259,
+      "MetricsIntensity" : 0.0329195562719215,
+      "Density" : 0.9987559978674249
+    },
+    "euclideanDistance" : 15.074302906249276,
+    "generation" : 1,
+    "numberOfRefactorings" : 15,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5281690140845066,
+      "LackOfCohesion" : 0.4858094985630259,
+      "MetricsIntensity" : 0.0329195562719215,
+      "Density" : 3.0394808004326666
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isAccountNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.buildEnvironment(Run<?,?>, EnvVars)', targetType='hudson.model.ManageJenkinsAction'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.equals(Object)', targetType='Authenticator'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.toString()', targetType='hudson.util.Iterators.FilterIterator'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconSizeClass(String)', targetType='hudson.LocalPluginManager'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getUrl()', targetType='hudson.model.FreeStyleBuild'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getCategory()', targetType='jenkins.telemetry.impl.SecuritySystemProperties'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.toString()', targetType='jenkins.security.CryptoConfidentialKey'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.isLegacy()', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "dc47b03b-4470-4704-8965-ea301d33d0fd",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9993416721527321,
+      "NumberOfRefactorings" : 16.0,
+      "LackOfCohesion" : 0.4859149463712884,
+      "MetricsIntensity" : 0.03292747196447458,
+      "Density" : 0.9946685622889639
+    },
+    "euclideanDistance" : 16.069388503612203,
+    "generation" : 1,
+    "numberOfRefactorings" : 16,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5271629778672033,
+      "LackOfCohesion" : 0.4859149463712884,
+      "MetricsIntensity" : 0.03292747196447458,
+      "Density" : 3.0270416441319625
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isAccountNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isEnabled()', targetType='hudson.cli.handlers.AbstractItemOptionHandler'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.getValue()', targetType='hudson.cli.CLI.ClientSideImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.buildEnvironment(Run<?,?>, EnvVars)', targetType='hudson.model.ManageJenkinsAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconSizeClass(String)', targetType='hudson.LocalPluginManager'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getQualifiedUrl(JellyContext)', targetType='hudson.model.FreeStyleBuild'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getCategory()', targetType='jenkins.telemetry.impl.SecuritySystemProperties'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.toString()', targetType='jenkins.security.CryptoConfidentialKey'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.isLegacy()', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "0b048969-1b99-40fb-b59f-4f928059e1ba",
+    "objectives" : {
+      "NumberOfConcerns" : 0.999670836076366,
+      "NumberOfRefactorings" : 16.0,
+      "LackOfCohesion" : 0.48591494637128835,
+      "MetricsIntensity" : 0.03292855668531378,
+      "Density" : 0.9946685622889639
+    },
+    "euclideanDistance" : 16.06940897961901,
+    "generation" : 1,
+    "numberOfRefactorings" : 16,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.527665995975855,
+      "LackOfCohesion" : 0.48591494637128835,
+      "MetricsIntensity" : 0.03292855668531379,
+      "Density" : 3.027041644131964
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.toSpring()', targetType='hudson.security.HttpSessionContextIntegrationFilter2'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isEnabled()', targetType='hudson.cli.handlers.AbstractItemOptionHandler'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.getValue()', targetType='hudson.cli.CLI.ClientSideImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.buildEnvironment(Run<?,?>, EnvVars)', targetType='hudson.model.ManageJenkinsAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconSizeClass(String)', targetType='hudson.LocalPluginManager'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getQualifiedUrl(JellyContext)', targetType='hudson.model.FreeStyleBuild'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getCategory()', targetType='jenkins.telemetry.impl.SecuritySystemProperties'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.toString()', targetType='jenkins.security.CryptoConfidentialKey'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.isLegacy()', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "cd71f8d5-fbc9-4813-9c57-e6277a4bf89e",
+    "objectives" : {
+      "NumberOfConcerns" : 0.999670836076366,
+      "NumberOfRefactorings" : 16.0,
+      "LackOfCohesion" : 0.4857819047440415,
+      "MetricsIntensity" : 0.0329195562719215,
+      "Density" : 0.9950239914696997
+    },
+    "euclideanDistance" : 16.069426943119776,
+    "generation" : 1,
+    "numberOfRefactorings" : 16,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5276659959758552,
+      "LackOfCohesion" : 0.4857819047440415,
+      "MetricsIntensity" : 0.0329195562719215,
+      "Density" : 3.028123309897242
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isAccountNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.buildEnvironment(Run<?,?>, EnvVars)', targetType='hudson.model.ManageJenkinsAction'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.equals(Object)', targetType='Authenticator'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.toString()', targetType='hudson.util.Iterators.FilterIterator'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconSizeClass(String)', targetType='hudson.LocalPluginManager'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getUrl()', targetType='hudson.model.FreeStyleBuild'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getCategory()', targetType='jenkins.telemetry.impl.SecuritySystemProperties'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.toString()', targetType='jenkins.security.CryptoConfidentialKey'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.isLegacy()', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "52a69c50-19b9-4205-a3b8-8df98911ad0a",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0,
+      "NumberOfRefactorings" : 16.0,
+      "LackOfCohesion" : 0.48578190474404137,
+      "MetricsIntensity" : 0.03292056703452167,
+      "Density" : 0.9950239914696997
+    },
+    "euclideanDistance" : 16.069447425668095,
+    "generation" : 1,
+    "numberOfRefactorings" : 16,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5281690140845074,
+      "LackOfCohesion" : 0.48578190474404137,
+      "MetricsIntensity" : 0.03292056703452167,
+      "Density" : 3.0281233098972415
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isAccountNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isEnabled()', targetType='hudson.cli.handlers.AbstractItemOptionHandler'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.buildEnvironment(Run<?,?>, EnvVars)', targetType='hudson.model.ManageJenkinsAction'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.equals(Object)', targetType='Authenticator'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.toString()', targetType='hudson.util.Iterators.FilterIterator'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconSizeClass(String)', targetType='hudson.LocalPluginManager'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getUrl()', targetType='hudson.model.FreeStyleBuild'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getCategory()', targetType='jenkins.telemetry.impl.SecuritySystemProperties'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.toString()', targetType='jenkins.security.CryptoConfidentialKey'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.isLegacy()', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "3dd731b5-7b31-4dd9-8ef2-5ecce2580175",
+    "objectives" : {
+      "NumberOfConcerns" : 1.000329163923634,
+      "NumberOfRefactorings" : 16.0,
+      "LackOfCohesion" : 0.4856899253474264,
+      "MetricsIntensity" : 0.03292617181223397,
+      "Density" : 0.9950239914696997
+    },
+    "euclideanDistance" : 16.069465144060352,
+    "generation" : 1,
+    "numberOfRefactorings" : 16,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5286720321931588,
+      "LackOfCohesion" : 0.4856899253474264,
+      "MetricsIntensity" : 0.03292617181223397,
+      "Density" : 3.0281233098972415
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.buildEnvironment(Run<?,?>, EnvVars)', targetType='hudson.model.ManageJenkinsAction'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.equals(Object)', targetType='Authenticator'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.toString()', targetType='hudson.util.Iterators.FilterIterator'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconSizeClass(String)', targetType='hudson.LocalPluginManager'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getUrl()', targetType='hudson.model.FreeStyleBuild'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getCategory()', targetType='jenkins.telemetry.impl.SecuritySystemProperties'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.toString()', targetType='jenkins.security.CryptoConfidentialKey'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.toHtml()', targetType='hudson.util.LogTaskListener'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.isLegacy()', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "2ab364a6-4ba9-4f0f-bed5-15fa83ae3dd2",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0,
+      "NumberOfRefactorings" : 16.0,
+      "LackOfCohesion" : 0.48585149574906283,
+      "MetricsIntensity" : 0.032918834898961795,
+      "Density" : 0.9953794206504354
+    },
+    "euclideanDistance" : 16.069471538189024,
+    "generation" : 1,
+    "numberOfRefactorings" : 16,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5281690140845068,
+      "LackOfCohesion" : 0.48585149574906283,
+      "MetricsIntensity" : 0.03291883489896179,
+      "Density" : 3.0292049756625206
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isAccountNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.getPassword()', targetType='hudson.cli.handlers.AbstractItemOptionHandler'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isEnabled()', targetType='hudson.cli.handlers.AbstractItemOptionHandler'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.buildEnvironment(Run<?,?>, EnvVars)', targetType='hudson.model.ManageJenkinsAction'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.equals(Object)', targetType='Authenticator'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.toString()', targetType='hudson.util.Iterators.FilterIterator'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getUrl()', targetType='hudson.model.FreeStyleBuild'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getCategory()', targetType='jenkins.telemetry.impl.SecuritySystemProperties'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.isLegacy()', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "3e8434c0-8b63-4294-a90b-48d4b403b1a9",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9976958525345622,
+      "NumberOfRefactorings" : 17.0,
+      "LackOfCohesion" : 0.48648200256748353,
+      "MetricsIntensity" : 0.03295345242147884,
+      "Density" : 0.9944908476985961
+    },
+    "euclideanDistance" : 17.065232483888682,
+    "generation" : 1,
+    "numberOfRefactorings" : 17,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5246478873239435,
+      "LackOfCohesion" : 0.48648200256748353,
+      "MetricsIntensity" : 0.03295345242147883,
+      "Density" : 3.0281385281385287
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isAccountNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.getValue()', targetType='hudson.cli.CLI.ClientSideImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconSizeClass(String)', targetType='hudson.LocalPluginManager'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getUrl()', targetType='hudson.model.FreeStyleBuild'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getQualifiedUrl(JellyContext)', targetType='hudson.model.FreeStyleBuild'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconUrl(String)', targetType='hudson.model.FreeStyleBuild'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getPlugin(UpdateSite.Warning)', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.load()', targetType='hudson.model.FingerprintMap.FingerprintParams'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='jenkins.install.InstallState.Restart'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.getNodes()', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "309e5cd8-c199-42e9-980c-19a67c6dc1fd",
+    "objectives" : {
+      "NumberOfConcerns" : 0.999012508229098,
+      "NumberOfRefactorings" : 17.0,
+      "LackOfCohesion" : 0.4859149463712885,
+      "MetricsIntensity" : 0.03292173899248129,
+      "Density" : 0.9937799893371245
+    },
+    "euclideanDistance" : 17.065251883134053,
+    "generation" : 1,
+    "numberOfRefactorings" : 17,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5266599597585517,
+      "LackOfCohesion" : 0.4859149463712885,
+      "MetricsIntensity" : 0.03292173899248129,
+      "Density" : 3.024337479718767
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.toSpring()', targetType='hudson.security.HttpSessionContextIntegrationFilter2'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isAccountNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isEnabled()', targetType='hudson.cli.handlers.AbstractItemOptionHandler'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.getValue()', targetType='hudson.cli.CLI.ClientSideImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.buildEnvironment(Run<?,?>, EnvVars)', targetType='hudson.model.ManageJenkinsAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconSizeClass(String)', targetType='hudson.LocalPluginManager'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getQualifiedUrl(JellyContext)', targetType='hudson.model.FreeStyleBuild'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getCategory()', targetType='jenkins.telemetry.impl.SecuritySystemProperties'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails(), org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.toString()', targetType='jenkins.security.CryptoConfidentialKey'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.isLegacy()', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "f388106f-bca1-4ae2-81a6-48736e04dbcb",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9980250164581962,
+      "NumberOfRefactorings" : 17.0,
+      "LackOfCohesion" : 0.48695503946436136,
+      "MetricsIntensity" : 0.032960854110480324,
+      "Density" : 0.9943131331082282
+    },
+    "euclideanDistance" : 17.065254881439987,
+    "generation" : 1,
+    "numberOfRefactorings" : 17,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5251509054325953,
+      "LackOfCohesion" : 0.48695503946436136,
+      "MetricsIntensity" : 0.032960854110480324,
+      "Density" : 3.029236599891716
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.doTrim()', targetType='hudson.node_monitors.ClockMonitor'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.getValue()', targetType='hudson.cli.CLI.ClientSideImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconSizeClass(String)', targetType='hudson.LocalPluginManager'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getUrl()', targetType='hudson.model.FreeStyleBuild'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getQualifiedUrl(JellyContext)', targetType='hudson.model.FreeStyleBuild'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconUrl(String)', targetType='hudson.model.FreeStyleBuild'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getPlugin(UpdateSite.Warning)', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.load()', targetType='hudson.model.FingerprintMap.FingerprintParams'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='jenkins.install.InstallState.Restart'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.getNodes()', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "f4360964-57fd-4943-8851-de1ce9f3ac69",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9986833443054641,
+      "NumberOfRefactorings" : 17.0,
+      "LackOfCohesion" : 0.48563375221592214,
+      "MetricsIntensity" : 0.03293271430018168,
+      "Density" : 0.9944908476985961
+    },
+    "euclideanDistance" : 17.06526604460979,
+    "generation" : 1,
+    "numberOfRefactorings" : 17,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5261569416498997,
+      "LackOfCohesion" : 0.48563375221592214,
+      "MetricsIntensity" : 0.03293271430018168,
+      "Density" : 3.026500811249325
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int), jenkins.security.CryptoConfidentialKey.getKey()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.toSpring()', targetType='hudson.security.HttpSessionContextIntegrationFilter2'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isAccountNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isEnabled()', targetType='hudson.cli.handlers.AbstractItemOptionHandler'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.getValue()', targetType='hudson.cli.CLI.ClientSideImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.buildEnvironment(Run<?,?>, EnvVars)', targetType='hudson.model.ManageJenkinsAction'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconSizeClass(String)', targetType='hudson.LocalPluginManager'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getQualifiedUrl(JellyContext)', targetType='hudson.model.FreeStyleBuild'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getCategory()', targetType='jenkins.telemetry.impl.SecuritySystemProperties'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.toString()', targetType='jenkins.security.CryptoConfidentialKey'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.isLegacy()', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "ba1b312a-3c7d-4ae9-9b73-ffc9876d39e9",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9967083607636603,
+      "NumberOfRefactorings" : 18.0,
+      "LackOfCohesion" : 0.4866734849568137,
+      "MetricsIntensity" : 0.03297157344684949,
+      "Density" : 0.9943131331082282
+    },
+    "euclideanDistance" : 18.061562068899335,
+    "generation" : 1,
+    "numberOfRefactorings" : 18,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.523138832997988,
+      "LackOfCohesion" : 0.4866734849568137,
+      "MetricsIntensity" : 0.03297157344684949,
+      "Density" : 3.0292365998917163
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int), jenkins.security.CryptoConfidentialKey.decrypt(byte[])]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.toSpring()', targetType='hudson.security.HttpSessionContextIntegrationFilter2'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isAccountNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.doTrim()', targetType='hudson.node_monitors.ClockMonitor'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.getValue()', targetType='hudson.cli.CLI.ClientSideImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconSizeClass(String)', targetType='hudson.LocalPluginManager'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getUrl()', targetType='hudson.model.FreeStyleBuild'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconUrl(String)', targetType='hudson.model.FreeStyleBuild'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getPlugin(UpdateSite.Warning)', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.load()', targetType='hudson.model.FingerprintMap.FingerprintParams'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='jenkins.install.InstallState.Restart'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.getNodes()', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "483a86c5-0a2c-446b-b01e-1bc3e953651e",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9976958525345622,
+      "NumberOfRefactorings" : 18.0,
+      "LackOfCohesion" : 0.4869550394643617,
+      "MetricsIntensity" : 0.032961111755848996,
+      "Density" : 0.9943131331082282
+    },
+    "euclideanDistance" : 18.061624159144273,
+    "generation" : 1,
+    "numberOfRefactorings" : 18,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5246478873239435,
+      "LackOfCohesion" : 0.4869550394643617,
+      "MetricsIntensity" : 0.032961111755848996,
+      "Density" : 3.029236599891716
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isAccountNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.doTrim()', targetType='hudson.node_monitors.ClockMonitor'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.getValue()', targetType='hudson.cli.CLI.ClientSideImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconSizeClass(String)', targetType='hudson.LocalPluginManager'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getUrl()', targetType='hudson.model.FreeStyleBuild'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getQualifiedUrl(JellyContext)', targetType='hudson.model.FreeStyleBuild'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconUrl(String)', targetType='hudson.model.FreeStyleBuild'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getPlugin(UpdateSite.Warning)', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.load()', targetType='hudson.model.FingerprintMap.FingerprintParams'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='jenkins.install.InstallState.Restart'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.getNodes()', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "9609b88e-9f91-40c8-8e05-c461b7f38e05",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9970375246872942,
+      "NumberOfRefactorings" : 19.0,
+      "LackOfCohesion" : 0.48667174292278703,
+      "MetricsIntensity" : 0.03296635537874181,
+      "Density" : 0.9939577039274925
+    },
+    "euclideanDistance" : 19.05833077446128,
+    "generation" : 1,
+    "numberOfRefactorings" : 19,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5236418511066403,
+      "LackOfCohesion" : 0.48667174292278703,
+      "MetricsIntensity" : 0.03296635537874181,
+      "Density" : 3.028153762858689
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int), jenkins.security.CryptoConfidentialKey.getKey()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.toSpring()', targetType='hudson.security.HttpSessionContextIntegrationFilter2'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isAccountNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.doTrim()', targetType='hudson.node_monitors.ClockMonitor'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.getValue()', targetType='hudson.cli.CLI.ClientSideImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconSizeClass(String)', targetType='hudson.LocalPluginManager'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getUrl()', targetType='hudson.model.FreeStyleBuild'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getQualifiedUrl(JellyContext)', targetType='hudson.model.FreeStyleBuild'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconUrl(String)', targetType='hudson.model.FreeStyleBuild'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getPlugin(UpdateSite.Warning)', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.load()', targetType='hudson.model.FingerprintMap.FingerprintParams'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='jenkins.install.InstallState.Restart'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.getNodes()', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "9a57fd05-80ce-4d34-bf31-f20b63211362",
+    "objectives" : {
+      "NumberOfConcerns" : 1.000329163923634,
+      "NumberOfRefactorings" : 20.0,
+      "LackOfCohesion" : 0.48555754071586943,
+      "MetricsIntensity" : 0.03292881433068247,
+      "Density" : 0.9948462768793318
+    },
+    "euclideanDistance" : 20.05560340610514,
+    "generation" : 1,
+    "numberOfRefactorings" : 20,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.528672032193159,
+      "LackOfCohesion" : 0.48555754071586943,
+      "MetricsIntensity" : 0.03292881433068247,
+      "Density" : 3.027582477014602
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.CryptoConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.security.CryptoConfidentialKey.DEFAULT_IV_LENGTH], extractedMethods=[jenkins.security.CryptoConfidentialKey.newIv(), jenkins.security.CryptoConfidentialKey.newIv(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.labels.LabelExpression",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.labels.LabelExpression.getExpression()', targetType='hudson.model.Label'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.userdetails.UserDetails",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.toSpring()', targetType='hudson.security.HttpSessionContextIntegrationFilter2'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isCredentialsNonExpired()', targetType='jenkins.telemetry.impl.StaplerDispatches.StaplerTrace'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.getPassword()', targetType='hudson.cli.handlers.AbstractItemOptionHandler'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.userdetails.UserDetails.isEnabled()', targetType='hudson.cli.handlers.AbstractItemOptionHandler'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.getValue()', targetType='hudson.cli.CLI.ClientSideImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.buildEnvironment(Run<?,?>, EnvVars)', targetType='hudson.model.ManageJenkinsAction'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.equals(Object)', targetType='Authenticator'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.toString()', targetType='hudson.util.Iterators.FilterIterator'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconSizeClass(String)', targetType='hudson.LocalPluginManager'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getUrl()', targetType='hudson.model.FreeStyleBuild'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.UpdateSiteWarningsConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.UpdateSiteWarningsConfiguration.getCategory()', targetType='jenkins.telemetry.impl.SecuritySystemProperties'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.marshal(Object, HierarchicalStreamWriter, MarshallingContext)', targetType='jenkins.util.xstream.XStreamDOM'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.acegisecurity.Authentication.toSpring(), org.acegisecurity.Authentication.getCredentials(), org.acegisecurity.Authentication.getPrincipal(), org.acegisecurity.Authentication.getDetails()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ClockDifference",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.abs()', targetType='hudson.slaves.ConnectionActivityMonitor'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.toString()', targetType='jenkins.security.CryptoConfidentialKey'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ClockDifference.toHtml()', targetType='hudson.util.LogTaskListener'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.isLegacy()', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='hudson.util.FormFieldValidator.HudsonURL'"
+      } ]
+    } ]
+  } ]
+}

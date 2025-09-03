@@ -1,0 +1,2575 @@
+{
+  "executionId" : "d8e2f52b-641f-4bad-a97a-90b829e01a59",
+  "computingTime" : 3760774,
+  "maxEvaluations" : 100,
+  "initialPopulationSize" : 128,
+  "finalPopulationSize" : 28,
+  "algorithm" : "MOSA",
+  "projectBeforeRefactoring" : {
+    "meanDensity" : 2.990243902439024,
+    "meanNumConcerns" : 1.4843907351460226,
+    "meanMetricsIntensity" : 0.03296937024300845,
+    "meanLackOfCohesion" : 0.48535030050355515
+  },
+  "population" : [ {
+    "solutionId" : "cf21aef4-8a2e-4054-8b1f-b155990d2237",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9993215739484396,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.48510146866381104,
+      "MetricsIntensity" : 0.033006928291741865,
+      "Density" : 0.9990937103498279
+    },
+    "euclideanDistance" : 10.111045679969724,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.4833836858006046,
+      "LackOfCohesion" : 0.48510146866381104,
+      "MetricsIntensity" : 0.033006928291741865,
+      "Density" : 2.9891540130151855
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.LastGrantedAuthoritiesProperty",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.update(Authentication)', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.createVariableResolver(AbstractBuild<?,?>)', targetType='jenkins.install.InstallState.CreateAdminUser'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.isApplicable(Collection<? extends Item>)', targetType='hudson.model.Item'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.RSAConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.lastCS', targetTypeName='hudson.util.JNADoublyLoaded'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.IOUtils",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.IOUtils.mode(File)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.canConvert(Class)', targetType='jenkins.security.s2m.CallableDirectionChecker.DefaultWhitelist'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getNormalizedSelector()', targetType='hudson.model.ListView.Listener'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getClassSpec()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.search.SuggestedItem",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.search.SuggestedItem.path', targetTypeName='jenkins.mvn.SettingsPathHelper'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "ba6f97d1-131b-400b-89a9-4c73a1ef5242",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9993215739484396,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.48504137935744873,
+      "MetricsIntensity" : 0.03300531617970442,
+      "Density" : 0.9992749682798623
+    },
+    "euclideanDistance" : 10.111060704049532,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.4833836858006046,
+      "LackOfCohesion" : 0.48504137935744873,
+      "MetricsIntensity" : 0.03300531617970442,
+      "Density" : 2.9896963123644245
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.LastGrantedAuthoritiesProperty",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.getAuthorities()', targetType='hudson.util.ComboBoxModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.update(Authentication)', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.createVariableResolver(AbstractBuild<?,?>)', targetType='jenkins.install.InstallState.CreateAdminUser'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.isApplicable(Collection<? extends Item>)', targetType='hudson.model.Item'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.RSAConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.lastCS', targetTypeName='hudson.util.JNADoublyLoaded'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.IOUtils",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.IOUtils.mode(File)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.canConvert(Class)', targetType='jenkins.security.s2m.CallableDirectionChecker.DefaultWhitelist'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getClassSpec()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.search.SuggestedItem",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.search.SuggestedItem.path', targetTypeName='jenkins.mvn.SettingsPathHelper'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "4559c354-bcf1-40ab-9c32-7bab4cf039e7",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9993215739484396,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.48504137935744873,
+      "MetricsIntensity" : 0.03300531617970442,
+      "Density" : 0.9992749682798623
+    },
+    "euclideanDistance" : 10.111060704049532,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.4833836858006044,
+      "LackOfCohesion" : 0.48504137935744873,
+      "MetricsIntensity" : 0.03300531617970442,
+      "Density" : 2.9896963123644245
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.LastGrantedAuthoritiesProperty",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.getAuthorities()', targetType='hudson.util.ComboBoxModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.update(Authentication)', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.createVariableResolver(AbstractBuild<?,?>)', targetType='jenkins.install.InstallState.CreateAdminUser'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.isApplicable(Collection<? extends Item>)', targetType='hudson.model.Item'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.RSAConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.lastCS', targetTypeName='hudson.util.JNADoublyLoaded'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.IOUtils",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.IOUtils.mode(File)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.canConvert(Class)', targetType='jenkins.security.s2m.CallableDirectionChecker.DefaultWhitelist'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getNormalizedSelector()', targetType='hudson.model.ListView.Listener'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.search.SuggestedItem",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.search.SuggestedItem.path', targetTypeName='jenkins.mvn.SettingsPathHelper'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "2575c594-1c3d-4c3c-bac7-f2b64ca4564d",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9989823609226595,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.484857318985647,
+      "MetricsIntensity" : 0.03300347739233221,
+      "Density" : 0.99836867862969
+    },
+    "euclideanDistance" : 11.100940573897212,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.4828801611278957,
+      "LackOfCohesion" : 0.484857318985647,
+      "MetricsIntensity" : 0.03300347739233221,
+      "Density" : 2.986984815618221
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.LastGrantedAuthoritiesProperty",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.getAuthorities()', targetType='hudson.util.ComboBoxModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.update(Authentication)', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.invalidate()', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.createVariableResolver(AbstractBuild<?,?>)', targetType='jenkins.install.InstallState.CreateAdminUser'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.isApplicable(Collection<? extends Item>)', targetType='hudson.model.Item'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.RSAConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.lastCS', targetTypeName='hudson.util.JNADoublyLoaded'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.IOUtils",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.IOUtils.mode(File)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.canConvert(Class)', targetType='jenkins.security.s2m.CallableDirectionChecker.DefaultWhitelist'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getClassSpec()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.search.SuggestedItem",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.search.SuggestedItem.path', targetTypeName='jenkins.mvn.SettingsPathHelper'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "9a02f8ba-3b82-4854-8018-98dcace47ac1",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9989823609226595,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.48506438690392417,
+      "MetricsIntensity" : 0.032971722755696764,
+      "Density" : 0.9985499365597245
+    },
+    "euclideanDistance" : 11.100965828574648,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.4828801611278957,
+      "LackOfCohesion" : 0.48506438690392417,
+      "MetricsIntensity" : 0.032971722755696764,
+      "Density" : 2.98914812805209
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.LastGrantedAuthoritiesProperty",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.update(Authentication)', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.invalidate()', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='jenkins.slaves.systemInfo.ThreadDumpSlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.createVariableResolver(AbstractBuild<?,?>)', targetType='jenkins.install.InstallState.CreateAdminUser'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.isApplicable(Collection<? extends Item>)', targetType='hudson.model.Item'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.RSAConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.lastCS', targetTypeName='hudson.util.JNADoublyLoaded'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getEncodedPublicKey()', targetType='hudson.Launcher.DecoratedLauncher'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.IOUtils",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.IOUtils.mode(File)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.canConvert(Class)', targetType='jenkins.security.s2m.CallableDirectionChecker.DefaultWhitelist'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getClassSpec()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.search.SuggestedItem",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.search.SuggestedItem.path', targetTypeName='jenkins.mvn.SettingsPathHelper'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "498cc336-d867-40fc-ab21-bd2023571a1a",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9989823609226595,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.4850643869039242,
+      "MetricsIntensity" : 0.03297172275569675,
+      "Density" : 0.9985499365597245
+    },
+    "euclideanDistance" : 11.100965828574648,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.4828801611278954,
+      "LackOfCohesion" : 0.4850643869039242,
+      "MetricsIntensity" : 0.03297172275569675,
+      "Density" : 2.989148128052089
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.LastGrantedAuthoritiesProperty",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.update(Authentication)', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.invalidate()', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='jenkins.slaves.systemInfo.ThreadDumpSlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.createVariableResolver(AbstractBuild<?,?>)', targetType='jenkins.install.InstallState.CreateAdminUser'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.isApplicable(Collection<? extends Item>)', targetType='hudson.model.Item'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.RSAConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.lastCS', targetTypeName='hudson.util.JNADoublyLoaded'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getEncodedPublicKey()', targetType='hudson.Launcher.DecoratedLauncher'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.IOUtils",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.IOUtils.mode(File)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.canConvert(Class)', targetType='jenkins.security.s2m.CallableDirectionChecker.DefaultWhitelist'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getClassSpec()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.search.SuggestedItem",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.search.SuggestedItem.path', targetTypeName='jenkins.mvn.SettingsPathHelper'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "7c3e194f-58aa-497d-8768-64e6a0f00080",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9986431478968792,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 0.48502813258826616,
+      "MetricsIntensity" : 0.03296687713576257,
+      "Density" : 0.99836867862969
+    },
+    "euclideanDistance" : 12.092574881293904,
+    "generation" : 1,
+    "numberOfRefactorings" : 12,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.4823766364551865,
+      "LackOfCohesion" : 0.48502813258826616,
+      "MetricsIntensity" : 0.03296687713576257,
+      "Density" : 2.9886055344546945
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.LastGrantedAuthoritiesProperty",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.update(Authentication)', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.invalidate()', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.load()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='jenkins.slaves.systemInfo.ThreadDumpSlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.createVariableResolver(AbstractBuild<?,?>)', targetType='jenkins.install.InstallState.CreateAdminUser'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.isApplicable(Collection<? extends Item>)', targetType='hudson.model.Item'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.RSAConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getEncodedPublicKey()', targetType='hudson.Launcher.DecoratedLauncher'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.IOUtils",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.IOUtils.mode(File)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.canConvert(Class)', targetType='jenkins.security.s2m.CallableDirectionChecker.DefaultWhitelist'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getNormalizedSelector()', targetType='hudson.model.ListView.Listener'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.search.SuggestedItem",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.search.SuggestedItem.path', targetTypeName='jenkins.mvn.SettingsPathHelper'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "6a48188c-24f6-4a08-a4cf-6ce7aacec6af",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9986431478968792,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 0.4850219972425394,
+      "MetricsIntensity" : 0.032966877135762566,
+      "Density" : 0.9985499365597245
+    },
+    "euclideanDistance" : 12.092589601298888,
+    "generation" : 1,
+    "numberOfRefactorings" : 12,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.4823766364551867,
+      "LackOfCohesion" : 0.4850219972425394,
+      "MetricsIntensity" : 0.032966877135762566,
+      "Density" : 2.9891481280520895
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.LastGrantedAuthoritiesProperty",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.update(Authentication)', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.invalidate()', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.load()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='jenkins.slaves.systemInfo.ThreadDumpSlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.createVariableResolver(AbstractBuild<?,?>)', targetType='jenkins.install.InstallState.CreateAdminUser'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.isApplicable(Collection<? extends Item>)', targetType='hudson.model.Item'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.RSAConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getEncodedPublicKey()', targetType='hudson.Launcher.DecoratedLauncher'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.IOUtils",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.IOUtils.mode(File)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.canConvert(Class)', targetType='jenkins.security.s2m.CallableDirectionChecker.DefaultWhitelist'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.isSvgSprite()', targetType='hudson.init.TaskMethodFinder.TaskImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.search.SuggestedItem",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.search.SuggestedItem.path', targetTypeName='jenkins.mvn.SettingsPathHelper'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "5539cd2f-3da2-47e7-996b-b27c1e5a9d7b",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9989823609226595,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 0.48485605483474176,
+      "MetricsIntensity" : 0.03300347739233222,
+      "Density" : 0.99836867862969
+    },
+    "euclideanDistance" : 12.092596098412171,
+    "generation" : 1,
+    "numberOfRefactorings" : 12,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.4828801611278957,
+      "LackOfCohesion" : 0.48485605483474176,
+      "MetricsIntensity" : 0.03300347739233222,
+      "Density" : 2.986984815618221
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.LastGrantedAuthoritiesProperty",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.getAuthorities()', targetType='hudson.util.ComboBoxModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.update(Authentication)', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.invalidate()', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.createVariableResolver(AbstractBuild<?,?>)', targetType='jenkins.install.InstallState.CreateAdminUser'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.isApplicable(Collection<? extends Item>)', targetType='hudson.model.Item'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.RSAConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.lastCS', targetTypeName='hudson.util.JNADoublyLoaded'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.IOUtils",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.IOUtils.mode(File)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.canConvert(Class)', targetType='jenkins.security.s2m.CallableDirectionChecker.DefaultWhitelist'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getNormalizedSelector()', targetType='hudson.model.ListView.Listener'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getClassSpec()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.search.SuggestedItem",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.search.SuggestedItem.path', targetTypeName='jenkins.mvn.SettingsPathHelper'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "3b819f94-7755-4f7e-aa43-ee2c490fb5b2",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9986431478968792,
+      "NumberOfRefactorings" : 13.0,
+      "LackOfCohesion" : 0.48500890063916113,
+      "MetricsIntensity" : 0.03299501881835323,
+      "Density" : 0.9883994924777959
+    },
+    "euclideanDistance" : 13.084744705134211,
+    "generation" : 1,
+    "numberOfRefactorings" : 13,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.4823766364551867,
+      "LackOfCohesion" : 0.48500890063916113,
+      "MetricsIntensity" : 0.032995018818353226,
+      "Density" : 2.9555555555555557
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.LastGrantedAuthoritiesProperty",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.getAuthorities()', targetType='hudson.util.ComboBoxModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.load()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.createVariableResolver(AbstractBuild<?,?>)', targetType='jenkins.install.InstallState.CreateAdminUser'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.isApplicable(Collection<? extends Item>)', targetType='hudson.model.Item'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.RSAConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.lastCS', targetTypeName='hudson.util.JNADoublyLoaded'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.priv', targetTypeName='hudson.util.JNADoublyLoaded'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getPublicKey()', targetType='hudson.model.LabelFinder'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.IOUtils",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.IOUtils.mode(File)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.canConvert(Class)', targetType='jenkins.security.s2m.CallableDirectionChecker.DefaultWhitelist'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getUrl()', targetType='hudson.util.ProcessTree.ProcfsUnix'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getNormalizedSelector()', targetType='hudson.model.ListView.Listener'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.search.SuggestedItem",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.search.SuggestedItem.getPath()', targetType='jenkins.mvn.SettingsPathHelper'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "1c1805ec-297c-40ac-a8fa-502cb1c1b512",
+    "objectives" : {
+      "NumberOfConcerns" : 0.998303934871099,
+      "NumberOfRefactorings" : 14.0,
+      "LackOfCohesion" : 0.4848366727198321,
+      "MetricsIntensity" : 0.03296527979868062,
+      "Density" : 0.9978249048395867
+    },
+    "euclideanDistance" : 14.079361441343265,
+    "generation" : 1,
+    "numberOfRefactorings" : 14,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.4818731117824777,
+      "LackOfCohesion" : 0.4848366727198321,
+      "MetricsIntensity" : 0.03296527979868063,
+      "Density" : 2.9869777536625066
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.LastGrantedAuthoritiesProperty",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.getAuthorities()', targetType='hudson.util.ComboBoxModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.update(Authentication)', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.invalidate()', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.load()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='jenkins.slaves.systemInfo.ThreadDumpSlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.createVariableResolver(AbstractBuild<?,?>)', targetType='jenkins.install.InstallState.CreateAdminUser'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.isApplicable(Collection<? extends Item>)', targetType='hudson.model.Item'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.RSAConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getEncodedPublicKey()', targetType='hudson.Launcher.DecoratedLauncher'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.IOUtils",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.IOUtils.mode(File)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.canConvert(Class)', targetType='jenkins.security.s2m.CallableDirectionChecker.DefaultWhitelist'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.isSvgSprite()', targetType='hudson.init.TaskMethodFinder.TaskImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getClassSpec()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.search.SuggestedItem",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.search.SuggestedItem.path', targetTypeName='jenkins.mvn.SettingsPathHelper'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "0b5b20ae-ceaf-49d6-a30d-9500482cb048",
+    "objectives" : {
+      "NumberOfConcerns" : 0.998303934871099,
+      "NumberOfRefactorings" : 14.0,
+      "LackOfCohesion" : 0.4855788197071476,
+      "MetricsIntensity" : 0.032965279798680615,
+      "Density" : 0.9976436469095523
+    },
+    "euclideanDistance" : 14.079374172612166,
+    "generation" : 1,
+    "numberOfRefactorings" : 14,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.4818731117824777,
+      "LackOfCohesion" : 0.4855788197071476,
+      "MetricsIntensity" : 0.032965279798680615,
+      "Density" : 2.986435160065111
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.LastGrantedAuthoritiesProperty",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.getAuthorities()', targetType='hudson.util.ComboBoxModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.update(Authentication)', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.invalidate()', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.load()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='jenkins.slaves.systemInfo.ThreadDumpSlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.createVariableResolver(AbstractBuild<?,?>)', targetType='jenkins.install.InstallState.CreateAdminUser'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.isApplicable(Collection<? extends Item>)', targetType='hudson.model.Item'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.RSAConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getEncodedPublicKey()', targetType='hudson.Launcher.DecoratedLauncher'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.IOUtils",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.IOUtils.mode(File)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.canConvert(Class)', targetType='jenkins.security.s2m.CallableDirectionChecker.DefaultWhitelist'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getClassSpec()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='org.jenkins.ui.icon.Icon.SUPPORTED_FORMATS', targetTypeName='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.search.SuggestedItem",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.search.SuggestedItem.path', targetTypeName='jenkins.mvn.SettingsPathHelper'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "a8e06530-a5a9-4ba6-a075-98cb90d736ac",
+    "objectives" : {
+      "NumberOfConcerns" : 0.998303934871099,
+      "NumberOfRefactorings" : 14.0,
+      "LackOfCohesion" : 0.48567084989304843,
+      "MetricsIntensity" : 0.0329652797986806,
+      "Density" : 0.9976436469095523
+    },
+    "euclideanDistance" : 14.079377346910842,
+    "generation" : 1,
+    "numberOfRefactorings" : 14,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.4818731117824777,
+      "LackOfCohesion" : 0.48567084989304843,
+      "MetricsIntensity" : 0.0329652797986806,
+      "Density" : 2.986435160065111
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.LastGrantedAuthoritiesProperty",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.getAuthorities()', targetType='hudson.util.ComboBoxModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.update(Authentication)', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.invalidate()', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.load()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='jenkins.slaves.systemInfo.ThreadDumpSlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.createVariableResolver(AbstractBuild<?,?>)', targetType='jenkins.install.InstallState.CreateAdminUser'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.isApplicable(Collection<? extends Item>)', targetType='hudson.model.Item'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.RSAConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getEncodedPublicKey()', targetType='hudson.Launcher.DecoratedLauncher'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.IOUtils",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.IOUtils.mode(File)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.canConvert(Class)', targetType='jenkins.security.s2m.CallableDirectionChecker.DefaultWhitelist'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getNormalizedSelector()', targetType='hudson.model.ListView.Listener'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='org.jenkins.ui.icon.Icon.SUPPORTED_FORMATS', targetTypeName='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.search.SuggestedItem",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.search.SuggestedItem.path', targetTypeName='jenkins.mvn.SettingsPathHelper'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "5da50340-8625-4a26-8b2d-dc4b9066de6a",
+    "objectives" : {
+      "NumberOfConcerns" : 0.998303934871099,
+      "NumberOfRefactorings" : 15.0,
+      "LackOfCohesion" : 0.48483519787710944,
+      "MetricsIntensity" : 0.03296527979868063,
+      "Density" : 0.9978249048395867
+    },
+    "euclideanDistance" : 15.07409755726259,
+    "generation" : 1,
+    "numberOfRefactorings" : 15,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.4818731117824777,
+      "LackOfCohesion" : 0.48483519787710944,
+      "MetricsIntensity" : 0.03296527979868063,
+      "Density" : 2.986977753662506
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.LastGrantedAuthoritiesProperty",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.getAuthorities()', targetType='hudson.util.ComboBoxModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.update(Authentication)', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.invalidate()', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.load()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='jenkins.slaves.systemInfo.ThreadDumpSlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.createVariableResolver(AbstractBuild<?,?>)', targetType='jenkins.install.InstallState.CreateAdminUser'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.isApplicable(Collection<? extends Item>)', targetType='hudson.model.Item'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.RSAConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getEncodedPublicKey()', targetType='hudson.Launcher.DecoratedLauncher'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.IOUtils",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.IOUtils.mode(File)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.canConvert(Class)', targetType='jenkins.security.s2m.CallableDirectionChecker.DefaultWhitelist'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.isSvgSprite()', targetType='hudson.init.TaskMethodFinder.TaskImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getNormalizedSelector()', targetType='hudson.model.ListView.Listener'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getClassSpec()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.search.SuggestedItem",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.search.SuggestedItem.path', targetTypeName='jenkins.mvn.SettingsPathHelper'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "b1753437-5b8d-4614-87e6-bd0a3317bc4b",
+    "objectives" : {
+      "NumberOfConcerns" : 0.998303934871099,
+      "NumberOfRefactorings" : 15.0,
+      "LackOfCohesion" : 0.48566333547360707,
+      "MetricsIntensity" : 0.0329652797986806,
+      "Density" : 0.9978249048395867
+    },
+    "euclideanDistance" : 15.074124215761021,
+    "generation" : 1,
+    "numberOfRefactorings" : 15,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.4818731117824777,
+      "LackOfCohesion" : 0.48566333547360707,
+      "MetricsIntensity" : 0.0329652797986806,
+      "Density" : 2.9869777536625057
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.LastGrantedAuthoritiesProperty",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.getAuthorities()', targetType='hudson.util.ComboBoxModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.update(Authentication)', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.invalidate()', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.load()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='jenkins.slaves.systemInfo.ThreadDumpSlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.createVariableResolver(AbstractBuild<?,?>)', targetType='jenkins.install.InstallState.CreateAdminUser'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.isApplicable(Collection<? extends Item>)', targetType='hudson.model.Item'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.RSAConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getEncodedPublicKey()', targetType='hudson.Launcher.DecoratedLauncher'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.IOUtils",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.IOUtils.mode(File)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.canConvert(Class)', targetType='jenkins.security.s2m.CallableDirectionChecker.DefaultWhitelist'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.isSvgSprite()', targetType='hudson.init.TaskMethodFinder.TaskImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getNormalizedSelector()', targetType='hudson.model.ListView.Listener'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='org.jenkins.ui.icon.Icon.SUPPORTED_FORMATS', targetTypeName='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.search.SuggestedItem",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.search.SuggestedItem.path', targetTypeName='jenkins.mvn.SettingsPathHelper'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "5d457dd4-bd27-4d30-abbe-b8643ad81ea1",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9979647218453188,
+      "NumberOfRefactorings" : 17.0,
+      "LackOfCohesion" : 0.4849259233060459,
+      "MetricsIntensity" : 0.03296665175571547,
+      "Density" : 0.9878557186876926
+    },
+    "euclideanDistance" : 17.06481855919406,
+    "generation" : 1,
+    "numberOfRefactorings" : 17,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.4813695871097687,
+      "LackOfCohesion" : 0.4849259233060459,
+      "MetricsIntensity" : 0.03296665175571547,
+      "Density" : 2.9555314533622568
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.LastGrantedAuthoritiesProperty",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.getAuthorities()', targetType='hudson.util.ComboBoxModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.load()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='jenkins.slaves.systemInfo.ThreadDumpSlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.createVariableResolver(AbstractBuild<?,?>)', targetType='jenkins.install.InstallState.CreateAdminUser'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.isApplicable(Collection<? extends Item>)', targetType='hudson.model.Item'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.RSAConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.lastCS', targetTypeName='hudson.util.JNADoublyLoaded'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.priv', targetTypeName='hudson.util.JNADoublyLoaded'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getPublicKey()', targetType='hudson.model.LabelFinder'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.IOUtils",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.IOUtils.mode(File)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.canConvert(Class)', targetType='jenkins.security.s2m.CallableDirectionChecker.DefaultWhitelist'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.isSvgSprite()', targetType='hudson.init.TaskMethodFinder.TaskImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getNormalizedSelector()', targetType='hudson.model.ListView.Listener'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getStyle()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getClassSpec()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.search.SuggestedItem",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.search.SuggestedItem.getPath()', targetType='jenkins.mvn.SettingsPathHelper'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.search.SuggestedItem.getUrl(StringBuilder)', targetType='jenkins.management.AdministrativeMonitorsApi'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "84b144a3-3b84-4a49-84b3-1baf92963748",
+    "objectives" : {
+      "NumberOfConcerns" : 0.998303934871099,
+      "NumberOfRefactorings" : 17.0,
+      "LackOfCohesion" : 0.4848816512090404,
+      "MetricsIntensity" : 0.03296665175571544,
+      "Density" : 0.9878557186876926
+    },
+    "euclideanDistance" : 17.064837142004325,
+    "generation" : 1,
+    "numberOfRefactorings" : 17,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.4818731117824775,
+      "LackOfCohesion" : 0.4848816512090404,
+      "MetricsIntensity" : 0.03296665175571544,
+      "Density" : 2.9555314533622568
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.LastGrantedAuthoritiesProperty",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.getAuthorities()', targetType='hudson.util.ComboBoxModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.load()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='jenkins.slaves.systemInfo.ThreadDumpSlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.createVariableResolver(AbstractBuild<?,?>)', targetType='jenkins.install.InstallState.CreateAdminUser'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.isApplicable(Collection<? extends Item>)', targetType='hudson.model.Item'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.RSAConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.lastCS', targetTypeName='hudson.util.JNADoublyLoaded'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.priv', targetTypeName='hudson.util.JNADoublyLoaded'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getPublicKey()', targetType='hudson.model.LabelFinder'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getEncodedPublicKey()', targetType='hudson.Launcher.DecoratedLauncher'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.IOUtils",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.IOUtils.mode(File)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.canConvert(Class)', targetType='jenkins.security.s2m.CallableDirectionChecker.DefaultWhitelist'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.isSvgSprite()', targetType='hudson.init.TaskMethodFinder.TaskImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getNormalizedSelector()', targetType='hudson.model.ListView.Listener'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getClassSpec()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.search.SuggestedItem",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.search.SuggestedItem.getPath()', targetType='jenkins.mvn.SettingsPathHelper'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.search.SuggestedItem.getUrl(StringBuilder)', targetType='jenkins.management.AdministrativeMonitorsApi'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "b99bd2f3-04da-48fc-8e22-d81e875e4d00",
+    "objectives" : {
+      "NumberOfConcerns" : 0.998303934871099,
+      "NumberOfRefactorings" : 17.0,
+      "LackOfCohesion" : 0.4848816512090404,
+      "MetricsIntensity" : 0.03296665175571544,
+      "Density" : 0.9878557186876926
+    },
+    "euclideanDistance" : 17.064837142004325,
+    "generation" : 1,
+    "numberOfRefactorings" : 17,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.4818731117824777,
+      "LackOfCohesion" : 0.4848816512090404,
+      "MetricsIntensity" : 0.03296665175571544,
+      "Density" : 2.9555314533622568
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.LastGrantedAuthoritiesProperty",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.getAuthorities()', targetType='hudson.util.ComboBoxModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.load()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='jenkins.slaves.systemInfo.ThreadDumpSlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.createVariableResolver(AbstractBuild<?,?>)', targetType='jenkins.install.InstallState.CreateAdminUser'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.isApplicable(Collection<? extends Item>)', targetType='hudson.model.Item'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.RSAConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.lastCS', targetTypeName='hudson.util.JNADoublyLoaded'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.priv', targetTypeName='hudson.util.JNADoublyLoaded'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getPublicKey()', targetType='hudson.model.LabelFinder'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getEncodedPublicKey()', targetType='hudson.Launcher.DecoratedLauncher'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.IOUtils",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.IOUtils.mode(File)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.canConvert(Class)', targetType='jenkins.security.s2m.CallableDirectionChecker.DefaultWhitelist'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.isSvgSprite()', targetType='hudson.init.TaskMethodFinder.TaskImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getNormalizedSelector()', targetType='hudson.model.ListView.Listener'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getClassSpec()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.search.SuggestedItem",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.search.SuggestedItem.getPath()', targetType='jenkins.mvn.SettingsPathHelper'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.search.SuggestedItem.getUrl(StringBuilder)', targetType='jenkins.management.AdministrativeMonitorsApi'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "3086f076-0af0-4a83-851e-a44ff62ae0b8",
+    "objectives" : {
+      "NumberOfConcerns" : 0.998303934871099,
+      "NumberOfRefactorings" : 17.0,
+      "LackOfCohesion" : 0.4860302855368576,
+      "MetricsIntensity" : 0.03295978790882637,
+      "Density" : 0.988036976617727
+    },
+    "euclideanDistance" : 17.064880298426385,
+    "generation" : 1,
+    "numberOfRefactorings" : 17,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.4818731117824777,
+      "LackOfCohesion" : 0.4860302855368576,
+      "MetricsIntensity" : 0.03295978790882637,
+      "Density" : 2.9560737527114966
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.LastGrantedAuthoritiesProperty",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.getAuthorities()', targetType='hudson.util.ComboBoxModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.load()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='jenkins.slaves.systemInfo.ThreadDumpSlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.createVariableResolver(AbstractBuild<?,?>)', targetType='jenkins.install.InstallState.CreateAdminUser'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.isApplicable(Collection<? extends Item>)', targetType='hudson.model.Item'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.RSAConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.lastCS', targetTypeName='hudson.util.JNADoublyLoaded'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.priv', targetTypeName='hudson.util.JNADoublyLoaded'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getPublicKey()', targetType='hudson.model.LabelFinder'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.IOUtils",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.IOUtils.mode(File)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.canConvert(Class)', targetType='jenkins.security.s2m.CallableDirectionChecker.DefaultWhitelist'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.isSvgSprite()', targetType='hudson.init.TaskMethodFinder.TaskImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getUrl()', targetType='hudson.util.ProcessTree.ProcfsUnix'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getNormalizedSelector()', targetType='hudson.model.ListView.Listener'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getClassSpec()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.search.SuggestedItem",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.search.SuggestedItem.getPath()', targetType='jenkins.mvn.SettingsPathHelper'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.search.SuggestedItem.getUrl()', targetType='hudson.model.NullTaskListener'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "0cbb013c-c2d9-4c6e-93c4-4efd119cf27b",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9986431478968792,
+      "NumberOfRefactorings" : 17.0,
+      "LackOfCohesion" : 0.4849167202874563,
+      "MetricsIntensity" : 0.03295876345406682,
+      "Density" : 0.9883994924777959
+    },
+    "euclideanDistance" : 17.064889457575593,
+    "generation" : 1,
+    "numberOfRefactorings" : 17,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.4823766364551867,
+      "LackOfCohesion" : 0.4849167202874563,
+      "MetricsIntensity" : 0.03295876345406682,
+      "Density" : 2.9571583514099777
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.LastGrantedAuthoritiesProperty",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.getAuthorities()', targetType='hudson.util.ComboBoxModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.load()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='jenkins.slaves.systemInfo.ThreadDumpSlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.createVariableResolver(AbstractBuild<?,?>)', targetType='jenkins.install.InstallState.CreateAdminUser'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.isApplicable(Collection<? extends Item>)', targetType='hudson.model.Item'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.RSAConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.lastCS', targetTypeName='hudson.util.JNADoublyLoaded'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.priv', targetTypeName='hudson.util.JNADoublyLoaded'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getPublicKey()', targetType='hudson.model.LabelFinder'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getEncodedPublicKey()', targetType='hudson.Launcher.DecoratedLauncher'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.IOUtils",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.IOUtils.mode(File)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.canConvert(Class)', targetType='jenkins.security.s2m.CallableDirectionChecker.DefaultWhitelist'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.isSvgSprite()', targetType='hudson.init.TaskMethodFinder.TaskImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getNormalizedSelector()', targetType='hudson.model.ListView.Listener'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getStyle()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getClassSpec()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.search.SuggestedItem",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.search.SuggestedItem.getPath()', targetType='jenkins.mvn.SettingsPathHelper'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "cf3d2d55-f769-4ca0-9359-a2879e7b08e2",
+    "objectives" : {
+      "NumberOfConcerns" : 0.998303934871099,
+      "NumberOfRefactorings" : 18.0,
+      "LackOfCohesion" : 0.48487990821309535,
+      "MetricsIntensity" : 0.03296665175571547,
+      "Density" : 0.988036976617727
+    },
+    "euclideanDistance" : 18.06125751820896,
+    "generation" : 1,
+    "numberOfRefactorings" : 18,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.4818731117824777,
+      "LackOfCohesion" : 0.48487990821309535,
+      "MetricsIntensity" : 0.03296665175571547,
+      "Density" : 2.9560737527114966
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.LastGrantedAuthoritiesProperty",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.getAuthorities()', targetType='hudson.util.ComboBoxModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.load()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='jenkins.slaves.systemInfo.ThreadDumpSlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.createVariableResolver(AbstractBuild<?,?>)', targetType='jenkins.install.InstallState.CreateAdminUser'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.isApplicable(Collection<? extends Item>)', targetType='hudson.model.Item'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.RSAConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.lastCS', targetTypeName='hudson.util.JNADoublyLoaded'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.priv', targetTypeName='hudson.util.JNADoublyLoaded'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getPublicKey()', targetType='hudson.model.LabelFinder'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getEncodedPublicKey()', targetType='hudson.Launcher.DecoratedLauncher'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.IOUtils",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.IOUtils.mode(File)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.canConvert(Class)', targetType='jenkins.security.s2m.CallableDirectionChecker.DefaultWhitelist'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.isSvgSprite()', targetType='hudson.init.TaskMethodFinder.TaskImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getNormalizedSelector()', targetType='hudson.model.ListView.Listener'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getStyle()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getClassSpec()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.search.SuggestedItem",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.search.SuggestedItem.getPath()', targetType='jenkins.mvn.SettingsPathHelper'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.search.SuggestedItem.getUrl(StringBuilder)', targetType='jenkins.management.AdministrativeMonitorsApi'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "858a5e9a-59ec-42e7-b27b-0a55c6d0713c",
+    "objectives" : {
+      "NumberOfConcerns" : 0.998303934871099,
+      "NumberOfRefactorings" : 18.0,
+      "LackOfCohesion" : 0.4848799082130955,
+      "MetricsIntensity" : 0.032966651755715455,
+      "Density" : 0.988036976617727
+    },
+    "euclideanDistance" : 18.06125751820896,
+    "generation" : 1,
+    "numberOfRefactorings" : 18,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.4818731117824777,
+      "LackOfCohesion" : 0.4848799082130955,
+      "MetricsIntensity" : 0.032966651755715455,
+      "Density" : 2.9560737527114966
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.LastGrantedAuthoritiesProperty",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.getAuthorities()', targetType='hudson.util.ComboBoxModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.load()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='jenkins.slaves.systemInfo.ThreadDumpSlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.createVariableResolver(AbstractBuild<?,?>)', targetType='jenkins.install.InstallState.CreateAdminUser'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.isApplicable(Collection<? extends Item>)', targetType='hudson.model.Item'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.RSAConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.lastCS', targetTypeName='hudson.util.JNADoublyLoaded'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.priv', targetTypeName='hudson.util.JNADoublyLoaded'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getPublicKey()', targetType='hudson.model.LabelFinder'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getEncodedPublicKey()', targetType='hudson.Launcher.DecoratedLauncher'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.IOUtils",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.IOUtils.mode(File)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.canConvert(Class)', targetType='jenkins.security.s2m.CallableDirectionChecker.DefaultWhitelist'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.isSvgSprite()', targetType='hudson.init.TaskMethodFinder.TaskImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getNormalizedSelector()', targetType='hudson.model.ListView.Listener'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getStyle()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getClassSpec()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.search.SuggestedItem",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.search.SuggestedItem.getPath()', targetType='jenkins.mvn.SettingsPathHelper'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.search.SuggestedItem.getUrl(StringBuilder)', targetType='jenkins.management.AdministrativeMonitorsApi'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "bac52377-1f07-404a-921c-551ec3be943a",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9979647218453188,
+      "NumberOfRefactorings" : 19.0,
+      "LackOfCohesion" : 0.4849887641198526,
+      "MetricsIntensity" : 0.03297957607823422,
+      "Density" : 0.9876744607576582
+    },
+    "euclideanDistance" : 19.058009764407235,
+    "generation" : 1,
+    "numberOfRefactorings" : 19,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.4813695871097687,
+      "LackOfCohesion" : 0.4849887641198526,
+      "MetricsIntensity" : 0.03297957607823422,
+      "Density" : 2.956592512208356
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.LastGrantedAuthoritiesProperty",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.getAuthorities()', targetType='hudson.util.ComboBoxModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.update(Authentication)', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='jenkins.slaves.systemInfo.ThreadDumpSlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.createVariableResolver(AbstractBuild<?,?>)', targetType='jenkins.install.InstallState.CreateAdminUser'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.isApplicable(Collection<? extends Item>)', targetType='hudson.model.Item'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.RSAConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.lastCS', targetTypeName='hudson.util.JNADoublyLoaded'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getPublicKey()', targetType='hudson.model.LabelFinder'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getEncodedPublicKey()', targetType='hudson.Launcher.DecoratedLauncher'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.IOUtils",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.IOUtils.mode(File)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.canConvert(Class)', targetType='jenkins.security.s2m.CallableDirectionChecker.DefaultWhitelist'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.isSvgSprite()', targetType='hudson.init.TaskMethodFinder.TaskImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getUrl()', targetType='hudson.util.ProcessTree.ProcfsUnix'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconUrl(String)', targetType='hudson.util.ProcessTree.ProcfsUnix'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getNormalizedSelector()', targetType='hudson.model.ListView.Listener'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getStyle()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getClassSpec()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.search.SuggestedItem",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.search.SuggestedItem.getPath()', targetType='jenkins.mvn.SettingsPathHelper'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.search.SuggestedItem.getUrl(StringBuilder)', targetType='jenkins.management.AdministrativeMonitorsApi'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "52871a3f-102f-4780-a483-543148cda5ec",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9979647218453188,
+      "NumberOfRefactorings" : 19.0,
+      "LackOfCohesion" : 0.4856855906587557,
+      "MetricsIntensity" : 0.03297957607823425,
+      "Density" : 0.9874932028276238
+    },
+    "euclideanDistance" : 19.05801811724111,
+    "generation" : 1,
+    "numberOfRefactorings" : 19,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.4813695871097687,
+      "LackOfCohesion" : 0.4856855906587557,
+      "MetricsIntensity" : 0.03297957607823425,
+      "Density" : 2.9560499186109612
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.LastGrantedAuthoritiesProperty",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.getAuthorities()', targetType='hudson.util.ComboBoxModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.update(Authentication)', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='jenkins.slaves.systemInfo.ThreadDumpSlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.createVariableResolver(AbstractBuild<?,?>)', targetType='jenkins.install.InstallState.CreateAdminUser'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.isApplicable(Collection<? extends Item>)', targetType='hudson.model.Item'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.RSAConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.lastCS', targetTypeName='hudson.util.JNADoublyLoaded'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getPublicKey()', targetType='hudson.model.LabelFinder'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getEncodedPublicKey()', targetType='hudson.Launcher.DecoratedLauncher'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.IOUtils",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.IOUtils.mode(File)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.canConvert(Class)', targetType='jenkins.security.s2m.CallableDirectionChecker.DefaultWhitelist'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getUrl()', targetType='hudson.util.ProcessTree.ProcfsUnix'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconUrl(String)', targetType='hudson.util.ProcessTree.ProcfsUnix'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getNormalizedSelector()', targetType='hudson.model.ListView.Listener'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getStyle()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getClassSpec()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='org.jenkins.ui.icon.Icon.SUPPORTED_FORMATS', targetTypeName='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.search.SuggestedItem",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.search.SuggestedItem.getPath()', targetType='jenkins.mvn.SettingsPathHelper'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.search.SuggestedItem.getUrl(StringBuilder)', targetType='jenkins.management.AdministrativeMonitorsApi'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "060283ee-0788-4f98-8a3c-5dc4cb0d8e28",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9979647218453188,
+      "NumberOfRefactorings" : 19.0,
+      "LackOfCohesion" : 0.4847694719900142,
+      "MetricsIntensity" : 0.03296882197511978,
+      "Density" : 0.9985499365597245
+    },
+    "euclideanDistance" : 19.05857087889979,
+    "generation" : 1,
+    "numberOfRefactorings" : 19,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.4813695871097687,
+      "LackOfCohesion" : 0.4847694719900142,
+      "MetricsIntensity" : 0.03296882197511978,
+      "Density" : 2.987527114967462
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.LastGrantedAuthoritiesProperty",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.getAuthorities()', targetType='hudson.util.ComboBoxModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.load()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='jenkins.slaves.systemInfo.ThreadDumpSlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.createVariableResolver(AbstractBuild<?,?>)', targetType='jenkins.install.InstallState.CreateAdminUser'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.isApplicable(Collection<? extends Item>)', targetType='hudson.model.Item'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.RSAConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.lastCS', targetTypeName='hudson.util.JNADoublyLoaded'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.priv', targetTypeName='hudson.util.JNADoublyLoaded'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getPublicKey()', targetType='hudson.model.LabelFinder'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getEncodedPublicKey()', targetType='hudson.Launcher.DecoratedLauncher'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.IOUtils",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.IOUtils.mode(File)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.canConvert(Class)', targetType='jenkins.security.s2m.CallableDirectionChecker.DefaultWhitelist'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.isSvgSprite()', targetType='hudson.init.TaskMethodFinder.TaskImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getNormalizedSelector()', targetType='hudson.model.ListView.Listener'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getStyle()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getClassSpec()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.search.SuggestedItem",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.search.SuggestedItem.path', targetTypeName='jenkins.mvn.SettingsPathHelper'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.search.SuggestedItem.getPath(StringBuilder)', targetType='jenkins.management.AdministrativeMonitorsApi'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.search.SuggestedItem.getUrl(StringBuilder)', targetType='jenkins.management.AdministrativeMonitorsApi'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "4e05c7c2-78ba-420c-a064-cd1517dd719b",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9979647218453188,
+      "NumberOfRefactorings" : 20.0,
+      "LackOfCohesion" : 0.48567666651951685,
+      "MetricsIntensity" : 0.032968700665234586,
+      "Density" : 0.9876744607576582
+    },
+    "euclideanDistance" : 20.055134085468133,
+    "generation" : 1,
+    "numberOfRefactorings" : 20,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.4813695871097687,
+      "LackOfCohesion" : 0.48567666651951685,
+      "MetricsIntensity" : 0.032968700665234586,
+      "Density" : 2.9565925122083563
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.LastGrantedAuthoritiesProperty",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.getAuthorities()', targetType='hudson.util.ComboBoxModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.update(Authentication)', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.load()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='jenkins.slaves.systemInfo.ThreadDumpSlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.createVariableResolver(AbstractBuild<?,?>)', targetType='jenkins.install.InstallState.CreateAdminUser'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.isApplicable(Collection<? extends Item>)', targetType='hudson.model.Item'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.RSAConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.lastCS', targetTypeName='hudson.util.JNADoublyLoaded'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getPublicKey()', targetType='hudson.model.LabelFinder'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getEncodedPublicKey()', targetType='hudson.Launcher.DecoratedLauncher'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.IOUtils",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.IOUtils.mode(File)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.canConvert(Class)', targetType='jenkins.security.s2m.CallableDirectionChecker.DefaultWhitelist'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.isSvgSprite()', targetType='hudson.init.TaskMethodFinder.TaskImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getUrl()', targetType='hudson.util.ProcessTree.ProcfsUnix'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconUrl(String)', targetType='hudson.util.ProcessTree.ProcfsUnix'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getNormalizedSelector()', targetType='hudson.model.ListView.Listener'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getStyle()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getClassSpec()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='org.jenkins.ui.icon.Icon.SUPPORTED_FORMATS', targetTypeName='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.search.SuggestedItem",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.search.SuggestedItem.getPath()', targetType='jenkins.mvn.SettingsPathHelper'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "0efb0ba5-4a53-4e9d-adf8-f0427bb51f42",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9972862957937585,
+      "NumberOfRefactorings" : 21.0,
+      "LackOfCohesion" : 0.48476789167369067,
+      "MetricsIntensity" : 0.0329747662497542,
+      "Density" : 0.9864056552474171
+    },
+    "euclideanDistance" : 21.052402791997142,
+    "generation" : 1,
+    "numberOfRefactorings" : 21,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.480362537764351,
+      "LackOfCohesion" : 0.48476789167369067,
+      "MetricsIntensity" : 0.03297476624975419,
+      "Density" : 2.952794357026587
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.LastGrantedAuthoritiesProperty",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.getAuthorities()', targetType='hudson.util.ComboBoxModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.update(Authentication)', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.invalidate()', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.load()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='jenkins.slaves.systemInfo.ThreadDumpSlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.createVariableResolver(AbstractBuild<?,?>)', targetType='jenkins.install.InstallState.CreateAdminUser'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.isApplicable(Collection<? extends Item>)', targetType='hudson.model.Item'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.RSAConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.lastCS', targetTypeName='hudson.util.JNADoublyLoaded'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getPublicKey()', targetType='hudson.model.LabelFinder'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getEncodedPublicKey()', targetType='hudson.Launcher.DecoratedLauncher'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.IOUtils",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.IOUtils.mode(File)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.canConvert(Class)', targetType='jenkins.security.s2m.CallableDirectionChecker.DefaultWhitelist'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.isSvgSprite()', targetType='hudson.init.TaskMethodFinder.TaskImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getUrl()', targetType='hudson.util.ProcessTree.ProcfsUnix'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconUrl(String)', targetType='hudson.util.ProcessTree.ProcfsUnix'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getNormalizedSelector()', targetType='hudson.model.ListView.Listener'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getStyle()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getClassSpec()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.search.SuggestedItem",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.search.SuggestedItem.getPath()', targetType='jenkins.mvn.SettingsPathHelper'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.search.SuggestedItem.getUrl(StringBuilder)', targetType='jenkins.management.AdministrativeMonitorsApi'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "acc8faa6-ec6b-48f6-b440-8446dc1b6722",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9972862957937585,
+      "NumberOfRefactorings" : 21.0,
+      "LackOfCohesion" : 0.48476789167369055,
+      "MetricsIntensity" : 0.032974766249754206,
+      "Density" : 0.9864056552474171
+    },
+    "euclideanDistance" : 21.052402791997142,
+    "generation" : 1,
+    "numberOfRefactorings" : 21,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.4803625377643508,
+      "LackOfCohesion" : 0.48476789167369055,
+      "MetricsIntensity" : 0.032974766249754206,
+      "Density" : 2.952794357026587
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.LastGrantedAuthoritiesProperty",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.getAuthorities()', targetType='hudson.util.ComboBoxModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.update(Authentication)', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.LastGrantedAuthoritiesProperty.invalidate()', targetType='jenkins.slaves.systemInfo.SystemPropertySlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.Nodes",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.load()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.save()', targetType='hudson.util.FormFieldValidator.URLCheck'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.Nodes.setNodes(Collection<? extends Node>)', targetType='jenkins.slaves.systemInfo.ThreadDumpSlaveInfo'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.StringParameterValue",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.StringParameterValue.createVariableResolver(AbstractBuild<?,?>)', targetType='jenkins.install.InstallState.CreateAdminUser'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.View.People",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.View.People.isApplicable(Collection<? extends Item>)', targetType='hudson.model.Item'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.security.RSAConfidentialKey",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='jenkins.security.RSAConfidentialKey.lastCS', targetTypeName='hudson.util.JNADoublyLoaded'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getPublicKey()', targetType='hudson.model.LabelFinder'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.RSAConfidentialKey.getEncodedPublicKey()', targetType='hudson.Launcher.DecoratedLauncher'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.IOUtils",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.IOUtils.mode(File)', targetType='hudson.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.util.xstream.XStreamDOM.ConverterImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.util.xstream.XStreamDOM.ConverterImpl.canConvert(Class)', targetType='jenkins.security.s2m.CallableDirectionChecker.DefaultWhitelist'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.jenkins.ui.icon.Icon",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.isSvgSprite()', targetType='hudson.init.TaskMethodFinder.TaskImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getUrl()', targetType='hudson.util.ProcessTree.ProcfsUnix'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.toNormalizedIconUrl(String)', targetType='hudson.util.ProcessTree.ProcfsUnix'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getNormalizedSelector()', targetType='hudson.model.ListView.Listener'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getStyle()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.jenkins.ui.icon.Icon.getClassSpec()', targetType='jenkins.management.AsynchronousAdministrativeMonitor.FixThread'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.search.SuggestedItem",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.search.SuggestedItem.getPath()', targetType='jenkins.mvn.SettingsPathHelper'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.search.SuggestedItem.getUrl(StringBuilder)', targetType='jenkins.management.AdministrativeMonitorsApi'"
+      } ]
+    } ]
+  } ]
+}

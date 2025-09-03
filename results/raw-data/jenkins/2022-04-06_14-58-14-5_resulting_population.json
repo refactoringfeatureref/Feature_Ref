@@ -1,0 +1,2059 @@
+{
+  "executionId" : "ef0c0e99-33e7-4904-b5ab-1050b16c22e6",
+  "computingTime" : 8625,
+  "maxEvaluations" : 1000,
+  "initialPopulationSize" : 50,
+  "finalPopulationSize" : 32,
+  "algorithm" : "Baseline_NF",
+  "projectBeforeRefactoring" : {
+    "meanDensity" : 3.0736329182458038,
+    "meanNumConcerns" : 1.5337361530715001,
+    "meanMetricsIntensity" : 0.032969370243008465,
+    "meanLackOfCohesion" : 0.4853503005035552
+  },
+  "population" : [ {
+    "solutionId" : "b3e25e18-1760-4632-b9b1-a8bb4e199894",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0019697964543663,
+      "NumberOfRefactorings" : 3.0,
+      "LackOfCohesion" : 0.48628888179635227,
+      "MetricsIntensity" : 0.03289042015191796,
+      "Density" : 0.9998238506253303
+    },
+    "euclideanDistance" : 3.352782405940264,
+    "generation" : 0,
+    "numberOfRefactorings" : 3,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.534439416792358,
+      "LackOfCohesion" : 0.48628888179635227,
+      "MetricsIntensity" : 0.03289042015191797,
+      "Density" : 3.069767441860466,
+      "baselineType" : "EXTRACT_CLASS"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.acegisecurity.AuthenticationException.authentication], extractedMethods=[org.acegisecurity.AuthenticationException.getAuthentication(), org.acegisecurity.AuthenticationException.setAuthentication(Authentication), org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[hudson.model.ResultTrend.getResultTrend(AbstractBuild<?,?>), hudson.model.ResultTrend.getResultTrend(Run<?,?>), hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>), hudson.model.ResultTrend.isFix(Run<?,?>)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.model.JenkinsLocationConfiguration.adminAddress, jenkins.model.JenkinsLocationConfiguration.ORDINAL, jenkins.model.JenkinsLocationConfiguration.useSsl, jenkins.model.JenkinsLocationConfiguration.charset], extractedMethods=[jenkins.model.JenkinsLocationConfiguration.getAdminAddress(), jenkins.model.JenkinsLocationConfiguration.setAdminAddress(String), jenkins.model.JenkinsLocationConfiguration.getOrDie(), jenkins.model.JenkinsLocationConfiguration.get(), jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "c8d30bc6-dc9a-49fe-9462-910329a2cc26",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9996717005909389,
+      "NumberOfRefactorings" : 7.0,
+      "LackOfCohesion" : 0.4856674020052664,
+      "MetricsIntensity" : 0.03281505494939104,
+      "Density" : 0.9966531618812753
+    },
+    "euclideanDistance" : 7.157486338600459,
+    "generation" : 0,
+    "numberOfRefactorings" : 7,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5316901408450703,
+      "LackOfCohesion" : 0.4856674020052664,
+      "MetricsIntensity" : 0.032815054949391034,
+      "Density" : 3.0616883116883113,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)', targetType='org.acegisecurity.CredentialsExpiredException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[hudson.model.ResultTrend.getResultTrend(AbstractBuild<?,?>), hudson.model.ResultTrend.getResultTrend(Run<?,?>), hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>), hudson.model.ResultTrend.isFix(Run<?,?>)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.model.JenkinsLocationConfiguration.adminAddress, jenkins.model.JenkinsLocationConfiguration.ORDINAL, jenkins.model.JenkinsLocationConfiguration.useSsl, jenkins.model.JenkinsLocationConfiguration.charset], extractedMethods=[jenkins.model.JenkinsLocationConfiguration.getAdminAddress(), jenkins.model.JenkinsLocationConfiguration.setAdminAddress(String), jenkins.model.JenkinsLocationConfiguration.getOrDie(), jenkins.model.JenkinsLocationConfiguration.get(), jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "d3bd2c4b-10e1-4f66-86ec-52a15adeec14",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9996717005909389,
+      "NumberOfRefactorings" : 7.0,
+      "LackOfCohesion" : 0.4856674020052664,
+      "MetricsIntensity" : 0.03281505494939104,
+      "Density" : 0.9966531618812753
+    },
+    "euclideanDistance" : 7.157486338600459,
+    "generation" : 0,
+    "numberOfRefactorings" : 7,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5316901408450698,
+      "LackOfCohesion" : 0.4856674020052664,
+      "MetricsIntensity" : 0.03281505494939104,
+      "Density" : 3.061688311688312,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)', targetType='org.acegisecurity.CredentialsExpiredException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[hudson.model.ResultTrend.getResultTrend(AbstractBuild<?,?>), hudson.model.ResultTrend.getResultTrend(Run<?,?>), hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>), hudson.model.ResultTrend.isFix(Run<?,?>)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.model.JenkinsLocationConfiguration.adminAddress, jenkins.model.JenkinsLocationConfiguration.ORDINAL, jenkins.model.JenkinsLocationConfiguration.useSsl, jenkins.model.JenkinsLocationConfiguration.charset], extractedMethods=[jenkins.model.JenkinsLocationConfiguration.getAdminAddress(), jenkins.model.JenkinsLocationConfiguration.setAdminAddress(String), jenkins.model.JenkinsLocationConfiguration.getOrDie(), jenkins.model.JenkinsLocationConfiguration.get(), jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "778bcd90-c4b5-4f0a-a858-54636c13772b",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0009848982271832,
+      "NumberOfRefactorings" : 7.0,
+      "LackOfCohesion" : 0.486289916242597,
+      "MetricsIntensity" : 0.032797483916749824,
+      "Density" : 0.9973577593799542
+    },
+    "euclideanDistance" : 7.157810197557964,
+    "generation" : 0,
+    "numberOfRefactorings" : 7,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5329311211664154,
+      "LackOfCohesion" : 0.486289916242597,
+      "MetricsIntensity" : 0.032797483916749824,
+      "Density" : 3.0621957815035152,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.acegisecurity.AuthenticationException.authentication], extractedMethods=[org.acegisecurity.AuthenticationException.getAuthentication(), org.acegisecurity.AuthenticationException.setAuthentication(Authentication), org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[hudson.model.ResultTrend.getResultTrend(AbstractBuild<?,?>), hudson.model.ResultTrend.getResultTrend(Run<?,?>), hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>), hudson.model.ResultTrend.isFix(Run<?,?>)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.model.JenkinsLocationConfiguration.adminAddress, jenkins.model.JenkinsLocationConfiguration.ORDINAL, jenkins.model.JenkinsLocationConfiguration.useSsl, jenkins.model.JenkinsLocationConfiguration.charset], extractedMethods=[jenkins.model.JenkinsLocationConfiguration.getAdminAddress(), jenkins.model.JenkinsLocationConfiguration.setAdminAddress(String), jenkins.model.JenkinsLocationConfiguration.getOrDie(), jenkins.model.JenkinsLocationConfiguration.get(), jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "38ac067e-d9cb-4e92-af54-a49b69d60707",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0009848982271832,
+      "NumberOfRefactorings" : 7.0,
+      "LackOfCohesion" : 0.4862899162425971,
+      "MetricsIntensity" : 0.032797483916749824,
+      "Density" : 0.9973577593799542
+    },
+    "euclideanDistance" : 7.157810197557964,
+    "generation" : 0,
+    "numberOfRefactorings" : 7,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.532931121166415,
+      "LackOfCohesion" : 0.4862899162425971,
+      "MetricsIntensity" : 0.032797483916749824,
+      "Density" : 3.062195781503515,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.acegisecurity.AuthenticationException.authentication], extractedMethods=[org.acegisecurity.AuthenticationException.getAuthentication(), org.acegisecurity.AuthenticationException.setAuthentication(Authentication), org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[hudson.model.ResultTrend.getResultTrend(AbstractBuild<?,?>), hudson.model.ResultTrend.getResultTrend(Run<?,?>), hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>), hudson.model.ResultTrend.isFix(Run<?,?>)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.model.JenkinsLocationConfiguration.adminAddress, jenkins.model.JenkinsLocationConfiguration.ORDINAL, jenkins.model.JenkinsLocationConfiguration.useSsl, jenkins.model.JenkinsLocationConfiguration.charset], extractedMethods=[jenkins.model.JenkinsLocationConfiguration.getAdminAddress(), jenkins.model.JenkinsLocationConfiguration.setAdminAddress(String), jenkins.model.JenkinsLocationConfiguration.getOrDie(), jenkins.model.JenkinsLocationConfiguration.get(), jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "e5961468-e0ae-4c76-a302-32336f824afc",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0009848982271832,
+      "NumberOfRefactorings" : 7.0,
+      "LackOfCohesion" : 0.4862899162425968,
+      "MetricsIntensity" : 0.032797483916749824,
+      "Density" : 0.9973577593799542
+    },
+    "euclideanDistance" : 7.157810197557964,
+    "generation" : 0,
+    "numberOfRefactorings" : 7,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5329311211664152,
+      "LackOfCohesion" : 0.4862899162425968,
+      "MetricsIntensity" : 0.032797483916749824,
+      "Density" : 3.0621957815035152,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.acegisecurity.AuthenticationException.authentication], extractedMethods=[org.acegisecurity.AuthenticationException.getAuthentication(), org.acegisecurity.AuthenticationException.setAuthentication(Authentication), org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[hudson.model.ResultTrend.getResultTrend(AbstractBuild<?,?>), hudson.model.ResultTrend.getResultTrend(Run<?,?>), hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>), hudson.model.ResultTrend.isFix(Run<?,?>)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.model.JenkinsLocationConfiguration.adminAddress, jenkins.model.JenkinsLocationConfiguration.ORDINAL, jenkins.model.JenkinsLocationConfiguration.useSsl, jenkins.model.JenkinsLocationConfiguration.charset], extractedMethods=[jenkins.model.JenkinsLocationConfiguration.getAdminAddress(), jenkins.model.JenkinsLocationConfiguration.setAdminAddress(String), jenkins.model.JenkinsLocationConfiguration.getOrDie(), jenkins.model.JenkinsLocationConfiguration.get(), jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "ebdc875b-755e-4b56-888d-f534d4d9b513",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9993434011818779,
+      "NumberOfRefactorings" : 8.0,
+      "LackOfCohesion" : 0.4853280522078883,
+      "MetricsIntensity" : 0.032828939402561,
+      "Density" : 0.9966531618812753
+    },
+    "euclideanDistance" : 8.138097186449416,
+    "generation" : 0,
+    "numberOfRefactorings" : 8,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5319577252138903,
+      "LackOfCohesion" : 0.4853280522078883,
+      "MetricsIntensity" : 0.032828939402561,
+      "Density" : 3.061688311688311,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)', targetType='org.acegisecurity.CredentialsExpiredException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[hudson.model.ResultTrend.getResultTrend(AbstractBuild<?,?>), hudson.model.ResultTrend.getResultTrend(Run<?,?>), hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>), hudson.model.ResultTrend.isFix(Run<?,?>)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.get()', targetType='jenkins.model.GlobalConfiguration'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)', targetType='hudson.util.FormValidation'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "4a132be8-903e-41c7-a350-b39b32725016",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0006565988181222,
+      "NumberOfRefactorings" : 8.0,
+      "LackOfCohesion" : 0.4859510972752599,
+      "MetricsIntensity" : 0.03281135101038012,
+      "Density" : 0.9973577593799542
+    },
+    "euclideanDistance" : 8.138381975715555,
+    "generation" : 0,
+    "numberOfRefactorings" : 8,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5331991951710264,
+      "LackOfCohesion" : 0.4859510972752599,
+      "MetricsIntensity" : 0.03281135101038012,
+      "Density" : 3.0621957815035135,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.acegisecurity.AuthenticationException.authentication], extractedMethods=[org.acegisecurity.AuthenticationException.getAuthentication(), org.acegisecurity.AuthenticationException.setAuthentication(Authentication), org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[hudson.model.ResultTrend.getResultTrend(AbstractBuild<?,?>), hudson.model.ResultTrend.getResultTrend(Run<?,?>), hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>), hudson.model.ResultTrend.isFix(Run<?,?>)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.get()', targetType='jenkins.model.GlobalConfiguration'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)', targetType='hudson.util.FormValidation'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "758af91f-fea2-4beb-a9d9-749e194a0758",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0006565988181222,
+      "NumberOfRefactorings" : 8.0,
+      "LackOfCohesion" : 0.48595109727526004,
+      "MetricsIntensity" : 0.03281135101038012,
+      "Density" : 0.9973577593799542
+    },
+    "euclideanDistance" : 8.138381975715555,
+    "generation" : 0,
+    "numberOfRefactorings" : 8,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5331991951710264,
+      "LackOfCohesion" : 0.48595109727526004,
+      "MetricsIntensity" : 0.03281135101038013,
+      "Density" : 3.0621957815035143,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.acegisecurity.AuthenticationException.authentication], extractedMethods=[org.acegisecurity.AuthenticationException.getAuthentication(), org.acegisecurity.AuthenticationException.setAuthentication(Authentication), org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[hudson.model.ResultTrend.getResultTrend(AbstractBuild<?,?>), hudson.model.ResultTrend.getResultTrend(Run<?,?>), hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>), hudson.model.ResultTrend.isFix(Run<?,?>)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.get()', targetType='jenkins.model.GlobalConfiguration'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)', targetType='hudson.util.FormValidation'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "0ababfc1-5500-4758-b216-4842d24fe3dd",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0006565988181222,
+      "NumberOfRefactorings" : 8.0,
+      "LackOfCohesion" : 0.48595109727525987,
+      "MetricsIntensity" : 0.032811351010380116,
+      "Density" : 0.9973577593799542
+    },
+    "euclideanDistance" : 8.138381975715555,
+    "generation" : 0,
+    "numberOfRefactorings" : 8,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5331991951710264,
+      "LackOfCohesion" : 0.48595109727525987,
+      "MetricsIntensity" : 0.032811351010380116,
+      "Density" : 3.062195781503513,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.acegisecurity.AuthenticationException.authentication], extractedMethods=[org.acegisecurity.AuthenticationException.getAuthentication(), org.acegisecurity.AuthenticationException.setAuthentication(Authentication), org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[hudson.model.ResultTrend.getResultTrend(AbstractBuild<?,?>), hudson.model.ResultTrend.getResultTrend(Run<?,?>), hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>), hudson.model.ResultTrend.isFix(Run<?,?>)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.get()', targetType='jenkins.model.GlobalConfiguration'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)', targetType='hudson.util.FormValidation'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "8c1b524b-20a3-49bd-97e0-21dd27cb4def",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0006565988181222,
+      "NumberOfRefactorings" : 8.0,
+      "LackOfCohesion" : 0.48595109727526004,
+      "MetricsIntensity" : 0.03281135101038012,
+      "Density" : 0.9973577593799542
+    },
+    "euclideanDistance" : 8.138381975715555,
+    "generation" : 0,
+    "numberOfRefactorings" : 8,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5331991951710264,
+      "LackOfCohesion" : 0.48595109727526004,
+      "MetricsIntensity" : 0.03281135101038012,
+      "Density" : 3.0621957815035152,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.acegisecurity.AuthenticationException.authentication], extractedMethods=[org.acegisecurity.AuthenticationException.getAuthentication(), org.acegisecurity.AuthenticationException.setAuthentication(Authentication), org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[hudson.model.ResultTrend.getResultTrend(AbstractBuild<?,?>), hudson.model.ResultTrend.getResultTrend(Run<?,?>), hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>), hudson.model.ResultTrend.isFix(Run<?,?>)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.get()', targetType='jenkins.model.GlobalConfiguration'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)', targetType='hudson.util.FormValidation'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "ae52562f-7ed5-4662-b78f-68f8e45235cf",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9983585029546946,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.4856727085089173,
+      "MetricsIntensity" : 0.032824759716420356,
+      "Density" : 0.9957724150079267
+    },
+    "euclideanDistance" : 9.122786736932607,
+    "generation" : 0,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5304479114242577,
+      "LackOfCohesion" : 0.4856727085089173,
+      "MetricsIntensity" : 0.03282475971642035,
+      "Density" : 3.060638873849486,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)', targetType='org.acegisecurity.CredentialsExpiredException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.isFix(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getResultTrend(Run<?,?>)', targetType='hudson.model.Result'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.model.JenkinsLocationConfiguration.adminAddress, jenkins.model.JenkinsLocationConfiguration.ORDINAL, jenkins.model.JenkinsLocationConfiguration.useSsl, jenkins.model.JenkinsLocationConfiguration.charset], extractedMethods=[jenkins.model.JenkinsLocationConfiguration.getAdminAddress(), jenkins.model.JenkinsLocationConfiguration.setAdminAddress(String), jenkins.model.JenkinsLocationConfiguration.getOrDie(), jenkins.model.JenkinsLocationConfiguration.get(), jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "e3f24ce1-8345-4385-920b-568bb40b42e6",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9983585029546946,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.48567270850891714,
+      "MetricsIntensity" : 0.032824759716420356,
+      "Density" : 0.9957724150079267
+    },
+    "euclideanDistance" : 9.122786736932607,
+    "generation" : 0,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5304479114242577,
+      "LackOfCohesion" : 0.48567270850891714,
+      "MetricsIntensity" : 0.03282475971642035,
+      "Density" : 3.060638873849486,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)', targetType='org.acegisecurity.CredentialsExpiredException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.isFix(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getResultTrend(Run<?,?>)', targetType='hudson.model.Result'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.model.JenkinsLocationConfiguration.adminAddress, jenkins.model.JenkinsLocationConfiguration.ORDINAL, jenkins.model.JenkinsLocationConfiguration.useSsl, jenkins.model.JenkinsLocationConfiguration.charset], extractedMethods=[jenkins.model.JenkinsLocationConfiguration.getAdminAddress(), jenkins.model.JenkinsLocationConfiguration.setAdminAddress(String), jenkins.model.JenkinsLocationConfiguration.getOrDie(), jenkins.model.JenkinsLocationConfiguration.get(), jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "587568a2-93f4-470b-b69f-e14fedebfebb",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9996717005909389,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.48629521981932927,
+      "MetricsIntensity" : 0.032807183330901574,
+      "Density" : 0.9964770125066056
+    },
+    "euclideanDistance" : 9.123040573049849,
+    "generation" : 0,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5316901408450698,
+      "LackOfCohesion" : 0.48629521981932927,
+      "MetricsIntensity" : 0.032807183330901574,
+      "Density" : 3.0611471861471866,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.acegisecurity.AuthenticationException.authentication], extractedMethods=[org.acegisecurity.AuthenticationException.getAuthentication(), org.acegisecurity.AuthenticationException.setAuthentication(Authentication), org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.isFix(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getResultTrend(Run<?,?>)', targetType='hudson.model.Result'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.model.JenkinsLocationConfiguration.adminAddress, jenkins.model.JenkinsLocationConfiguration.ORDINAL, jenkins.model.JenkinsLocationConfiguration.useSsl, jenkins.model.JenkinsLocationConfiguration.charset], extractedMethods=[jenkins.model.JenkinsLocationConfiguration.getAdminAddress(), jenkins.model.JenkinsLocationConfiguration.setAdminAddress(String), jenkins.model.JenkinsLocationConfiguration.getOrDie(), jenkins.model.JenkinsLocationConfiguration.get(), jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "efb2e38c-8937-435c-8dd9-75a6e68c187a",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9996717005909389,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.4862952198193294,
+      "MetricsIntensity" : 0.03280718333090158,
+      "Density" : 0.9964770125066056
+    },
+    "euclideanDistance" : 9.123040573049849,
+    "generation" : 0,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.53169014084507,
+      "LackOfCohesion" : 0.4862952198193294,
+      "MetricsIntensity" : 0.032807183330901574,
+      "Density" : 3.0611471861471857,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.acegisecurity.AuthenticationException.authentication], extractedMethods=[org.acegisecurity.AuthenticationException.getAuthentication(), org.acegisecurity.AuthenticationException.setAuthentication(Authentication), org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.isFix(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getResultTrend(Run<?,?>)', targetType='hudson.model.Result'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.model.JenkinsLocationConfiguration.adminAddress, jenkins.model.JenkinsLocationConfiguration.ORDINAL, jenkins.model.JenkinsLocationConfiguration.useSsl, jenkins.model.JenkinsLocationConfiguration.charset], extractedMethods=[jenkins.model.JenkinsLocationConfiguration.getAdminAddress(), jenkins.model.JenkinsLocationConfiguration.setAdminAddress(String), jenkins.model.JenkinsLocationConfiguration.getOrDie(), jenkins.model.JenkinsLocationConfiguration.get(), jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "4aa8fe6b-9ef9-4c2e-8e83-c3e60be13928",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9996717005909389,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.4862952198193293,
+      "MetricsIntensity" : 0.03280718333090158,
+      "Density" : 0.9964770125066056
+    },
+    "euclideanDistance" : 9.123040573049849,
+    "generation" : 0,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5316901408450703,
+      "LackOfCohesion" : 0.4862952198193293,
+      "MetricsIntensity" : 0.032807183330901574,
+      "Density" : 3.061147186147186,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.acegisecurity.AuthenticationException.authentication], extractedMethods=[org.acegisecurity.AuthenticationException.getAuthentication(), org.acegisecurity.AuthenticationException.setAuthentication(Authentication), org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.isFix(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getResultTrend(Run<?,?>)', targetType='hudson.model.Result'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.model.JenkinsLocationConfiguration.adminAddress, jenkins.model.JenkinsLocationConfiguration.ORDINAL, jenkins.model.JenkinsLocationConfiguration.useSsl, jenkins.model.JenkinsLocationConfiguration.charset], extractedMethods=[jenkins.model.JenkinsLocationConfiguration.getAdminAddress(), jenkins.model.JenkinsLocationConfiguration.setAdminAddress(String), jenkins.model.JenkinsLocationConfiguration.getOrDie(), jenkins.model.JenkinsLocationConfiguration.get(), jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "a7a131df-0dbe-4821-944b-5868d5a612cf",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9996717005909389,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.48629521981932944,
+      "MetricsIntensity" : 0.03280718333090157,
+      "Density" : 0.9964770125066056
+    },
+    "euclideanDistance" : 9.123040573049849,
+    "generation" : 0,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.53169014084507,
+      "LackOfCohesion" : 0.48629521981932944,
+      "MetricsIntensity" : 0.03280718333090157,
+      "Density" : 3.061147186147186,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.acegisecurity.AuthenticationException.authentication], extractedMethods=[org.acegisecurity.AuthenticationException.getAuthentication(), org.acegisecurity.AuthenticationException.setAuthentication(Authentication), org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.isFix(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getResultTrend(Run<?,?>)', targetType='hudson.model.Result'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.model.JenkinsLocationConfiguration.adminAddress, jenkins.model.JenkinsLocationConfiguration.ORDINAL, jenkins.model.JenkinsLocationConfiguration.useSsl, jenkins.model.JenkinsLocationConfiguration.charset], extractedMethods=[jenkins.model.JenkinsLocationConfiguration.getAdminAddress(), jenkins.model.JenkinsLocationConfiguration.setAdminAddress(String), jenkins.model.JenkinsLocationConfiguration.getOrDie(), jenkins.model.JenkinsLocationConfiguration.get(), jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "345ce7fa-3d8c-4a90-ab9d-d74a48ba458c",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9996717005909389,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.4862952198193291,
+      "MetricsIntensity" : 0.03280718333090157,
+      "Density" : 0.9964770125066056
+    },
+    "euclideanDistance" : 9.123040573049849,
+    "generation" : 0,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5316901408450707,
+      "LackOfCohesion" : 0.4862952198193291,
+      "MetricsIntensity" : 0.03280718333090157,
+      "Density" : 3.0611471861471853,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.acegisecurity.AuthenticationException.authentication], extractedMethods=[org.acegisecurity.AuthenticationException.getAuthentication(), org.acegisecurity.AuthenticationException.setAuthentication(Authentication), org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.isFix(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getResultTrend(Run<?,?>)', targetType='hudson.model.Result'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.model.JenkinsLocationConfiguration.adminAddress, jenkins.model.JenkinsLocationConfiguration.ORDINAL, jenkins.model.JenkinsLocationConfiguration.useSsl, jenkins.model.JenkinsLocationConfiguration.charset], extractedMethods=[jenkins.model.JenkinsLocationConfiguration.getAdminAddress(), jenkins.model.JenkinsLocationConfiguration.setAdminAddress(String), jenkins.model.JenkinsLocationConfiguration.getOrDie(), jenkins.model.JenkinsLocationConfiguration.get(), jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "69c1bc63-cfa8-4d24-9bd2-8eb179e84583",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9996717005909389,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.48629521981932916,
+      "MetricsIntensity" : 0.03280718333090157,
+      "Density" : 0.9964770125066056
+    },
+    "euclideanDistance" : 9.123040573049849,
+    "generation" : 0,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5316901408450703,
+      "LackOfCohesion" : 0.48629521981932916,
+      "MetricsIntensity" : 0.03280718333090157,
+      "Density" : 3.061147186147186,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.acegisecurity.AuthenticationException.authentication], extractedMethods=[org.acegisecurity.AuthenticationException.getAuthentication(), org.acegisecurity.AuthenticationException.setAuthentication(Authentication), org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.isFix(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getResultTrend(Run<?,?>)', targetType='hudson.model.Result'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.model.JenkinsLocationConfiguration.adminAddress, jenkins.model.JenkinsLocationConfiguration.ORDINAL, jenkins.model.JenkinsLocationConfiguration.useSsl, jenkins.model.JenkinsLocationConfiguration.charset], extractedMethods=[jenkins.model.JenkinsLocationConfiguration.getAdminAddress(), jenkins.model.JenkinsLocationConfiguration.setAdminAddress(String), jenkins.model.JenkinsLocationConfiguration.getOrDie(), jenkins.model.JenkinsLocationConfiguration.get(), jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "e42c4f88-f45e-48b9-afde-db77333d53d6",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9996717005909389,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.48629521981932927,
+      "MetricsIntensity" : 0.03280718333090156,
+      "Density" : 0.9964770125066056
+    },
+    "euclideanDistance" : 9.123040573049849,
+    "generation" : 0,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5316901408450703,
+      "LackOfCohesion" : 0.48629521981932927,
+      "MetricsIntensity" : 0.03280718333090156,
+      "Density" : 3.0611471861471866,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.acegisecurity.AuthenticationException.authentication], extractedMethods=[org.acegisecurity.AuthenticationException.getAuthentication(), org.acegisecurity.AuthenticationException.setAuthentication(Authentication), org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.isFix(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getResultTrend(Run<?,?>)', targetType='hudson.model.Result'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[jenkins.model.JenkinsLocationConfiguration.adminAddress, jenkins.model.JenkinsLocationConfiguration.ORDINAL, jenkins.model.JenkinsLocationConfiguration.useSsl, jenkins.model.JenkinsLocationConfiguration.charset], extractedMethods=[jenkins.model.JenkinsLocationConfiguration.getAdminAddress(), jenkins.model.JenkinsLocationConfiguration.setAdminAddress(String), jenkins.model.JenkinsLocationConfiguration.getOrDie(), jenkins.model.JenkinsLocationConfiguration.get(), jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "d5f2373a-e676-417d-a009-5b4192a40c6a",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9980302035456337,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.4853333616416904,
+      "MetricsIntensity" : 0.03283864952837938,
+      "Density" : 0.9957724150079267
+    },
+    "euclideanDistance" : 10.110601062177528,
+    "generation" : 0,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5307150050352463,
+      "LackOfCohesion" : 0.4853333616416904,
+      "MetricsIntensity" : 0.032838649528379386,
+      "Density" : 3.060638873849486,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)', targetType='org.acegisecurity.CredentialsExpiredException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.isFix(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getResultTrend(Run<?,?>)', targetType='hudson.model.Result'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.get()', targetType='jenkins.model.GlobalConfiguration'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)', targetType='hudson.util.FormValidation'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "c9883161-0a0a-4ce0-b17a-6f9d0cce4784",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9980302035456337,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.48533336164169033,
+      "MetricsIntensity" : 0.03283864952837938,
+      "Density" : 0.9957724150079267
+    },
+    "euclideanDistance" : 10.110601062177528,
+    "generation" : 0,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.530715005035246,
+      "LackOfCohesion" : 0.48533336164169033,
+      "MetricsIntensity" : 0.03283864952837938,
+      "Density" : 3.060638873849486,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)', targetType='org.acegisecurity.CredentialsExpiredException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.isFix(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getResultTrend(Run<?,?>)', targetType='hudson.model.Result'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.get()', targetType='jenkins.model.GlobalConfiguration'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)', targetType='hudson.util.FormValidation'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "05ee7fe9-f76d-4bb6-8841-2e1a34da7d7e",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9980302035456337,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.48533336164169005,
+      "MetricsIntensity" : 0.03283864952837938,
+      "Density" : 0.9957724150079267
+    },
+    "euclideanDistance" : 10.110601062177528,
+    "generation" : 0,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5307150050352463,
+      "LackOfCohesion" : 0.48533336164169005,
+      "MetricsIntensity" : 0.03283864952837938,
+      "Density" : 3.0606388738494856,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)', targetType='org.acegisecurity.CredentialsExpiredException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.isFix(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getResultTrend(Run<?,?>)', targetType='hudson.model.Result'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.get()', targetType='jenkins.model.GlobalConfiguration'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)', targetType='hudson.util.FormValidation'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "63bfe766-e858-4633-8b9c-01247b2856eb",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9980302035456337,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.48533336164169005,
+      "MetricsIntensity" : 0.03283864952837938,
+      "Density" : 0.9957724150079267
+    },
+    "euclideanDistance" : 10.110601062177528,
+    "generation" : 0,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5307150050352465,
+      "LackOfCohesion" : 0.48533336164169005,
+      "MetricsIntensity" : 0.03283864952837938,
+      "Density" : 3.0606388738494865,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)', targetType='org.acegisecurity.CredentialsExpiredException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.isFix(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getResultTrend(Run<?,?>)', targetType='hudson.model.Result'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.get()', targetType='jenkins.model.GlobalConfiguration'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)', targetType='hudson.util.FormValidation'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "60ba00a0-8c8a-4ec2-a520-19457ee03bd6",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9980302035456337,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.48533336164169005,
+      "MetricsIntensity" : 0.032838649528379386,
+      "Density" : 0.9957724150079267
+    },
+    "euclideanDistance" : 10.110601062177528,
+    "generation" : 0,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.530715005035246,
+      "LackOfCohesion" : 0.48533336164169005,
+      "MetricsIntensity" : 0.03283864952837938,
+      "Density" : 3.060638873849486,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)', targetType='org.acegisecurity.CredentialsExpiredException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.isFix(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getResultTrend(Run<?,?>)', targetType='hudson.model.Result'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.get()', targetType='jenkins.model.GlobalConfiguration'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)', targetType='hudson.util.FormValidation'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "4767bd3d-a6d8-4d5a-8874-3eeb18c48efe",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9980302035456337,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.48533336164169016,
+      "MetricsIntensity" : 0.032838649528379386,
+      "Density" : 0.9957724150079267
+    },
+    "euclideanDistance" : 10.110601062177528,
+    "generation" : 0,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5307150050352465,
+      "LackOfCohesion" : 0.48533336164169016,
+      "MetricsIntensity" : 0.03283864952837938,
+      "Density" : 3.060638873849486,
+      "baselineType" : "MOVE_METHODS"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)', targetType='org.acegisecurity.CredentialsExpiredException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.isFix(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getResultTrend(Run<?,?>)', targetType='hudson.model.Result'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.get()', targetType='jenkins.model.GlobalConfiguration'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)', targetType='hudson.util.FormValidation'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "809d2282-6577-451e-bb17-072fbeebf819",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9993434011818779,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.48595640377891086,
+      "MetricsIntensity" : 0.032821055777409444,
+      "Density" : 0.9964770125066056
+    },
+    "euclideanDistance" : 10.110830060782149,
+    "generation" : 0,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.53195772521389,
+      "LackOfCohesion" : 0.48595640377891086,
+      "MetricsIntensity" : 0.032821055777409444,
+      "Density" : 3.061147186147186,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.acegisecurity.AuthenticationException.authentication], extractedMethods=[org.acegisecurity.AuthenticationException.getAuthentication(), org.acegisecurity.AuthenticationException.setAuthentication(Authentication), org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.isFix(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getResultTrend(Run<?,?>)', targetType='hudson.model.Result'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.get()', targetType='jenkins.model.GlobalConfiguration'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)', targetType='hudson.util.FormValidation'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "cc04a94a-5212-440b-941e-136180f40363",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9993434011818779,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.48595640377891086,
+      "MetricsIntensity" : 0.032821055777409444,
+      "Density" : 0.9964770125066056
+    },
+    "euclideanDistance" : 10.110830060782149,
+    "generation" : 0,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5319577252138903,
+      "LackOfCohesion" : 0.48595640377891086,
+      "MetricsIntensity" : 0.032821055777409444,
+      "Density" : 3.0611471861471857,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.acegisecurity.AuthenticationException.authentication], extractedMethods=[org.acegisecurity.AuthenticationException.getAuthentication(), org.acegisecurity.AuthenticationException.setAuthentication(Authentication), org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.isFix(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getResultTrend(Run<?,?>)', targetType='hudson.model.Result'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.get()', targetType='jenkins.model.GlobalConfiguration'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)', targetType='hudson.util.FormValidation'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "5435f5a4-4ccc-495e-8d2f-5390a2e1b06a",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9993434011818779,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.4859564037789107,
+      "MetricsIntensity" : 0.032821055777409444,
+      "Density" : 0.9964770125066056
+    },
+    "euclideanDistance" : 10.110830060782149,
+    "generation" : 0,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5319577252138905,
+      "LackOfCohesion" : 0.4859564037789107,
+      "MetricsIntensity" : 0.032821055777409444,
+      "Density" : 3.061147186147186,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.acegisecurity.AuthenticationException.authentication], extractedMethods=[org.acegisecurity.AuthenticationException.getAuthentication(), org.acegisecurity.AuthenticationException.setAuthentication(Authentication), org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.isFix(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getResultTrend(Run<?,?>)', targetType='hudson.model.Result'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.get()', targetType='jenkins.model.GlobalConfiguration'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)', targetType='hudson.util.FormValidation'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "ff75e9b6-c63f-4302-a463-f912f14f7fbc",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9993434011818779,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.485956403778911,
+      "MetricsIntensity" : 0.032821055777409444,
+      "Density" : 0.9964770125066056
+    },
+    "euclideanDistance" : 10.110830060782149,
+    "generation" : 0,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5319577252138905,
+      "LackOfCohesion" : 0.485956403778911,
+      "MetricsIntensity" : 0.032821055777409444,
+      "Density" : 3.061147186147186,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.acegisecurity.AuthenticationException.authentication], extractedMethods=[org.acegisecurity.AuthenticationException.getAuthentication(), org.acegisecurity.AuthenticationException.setAuthentication(Authentication), org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.isFix(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getResultTrend(Run<?,?>)', targetType='hudson.model.Result'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.get()', targetType='jenkins.model.GlobalConfiguration'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)', targetType='hudson.util.FormValidation'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "6df6e2c5-3d51-4aae-adb2-47100808c597",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9993434011818779,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.4859564037789109,
+      "MetricsIntensity" : 0.03282105577740944,
+      "Density" : 0.9964770125066056
+    },
+    "euclideanDistance" : 10.110830060782149,
+    "generation" : 0,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5319577252138903,
+      "LackOfCohesion" : 0.4859564037789109,
+      "MetricsIntensity" : 0.032821055777409444,
+      "Density" : 3.061147186147186,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.acegisecurity.AuthenticationException.authentication], extractedMethods=[org.acegisecurity.AuthenticationException.getAuthentication(), org.acegisecurity.AuthenticationException.setAuthentication(Authentication), org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.isFix(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getResultTrend(Run<?,?>)', targetType='hudson.model.Result'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.get()', targetType='jenkins.model.GlobalConfiguration'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)', targetType='hudson.util.FormValidation'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "7392b6e0-13a1-4fd5-a5be-9f23bc2322d4",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9993434011818779,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.4859564037789109,
+      "MetricsIntensity" : 0.03282105577740945,
+      "Density" : 0.9964770125066056
+    },
+    "euclideanDistance" : 10.110830060782149,
+    "generation" : 0,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5319577252138903,
+      "LackOfCohesion" : 0.4859564037789109,
+      "MetricsIntensity" : 0.032821055777409444,
+      "Density" : 3.0611471861471857,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "jenkins.security.BasicApiTokenHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.security.BasicApiTokenHelper.isConnectingUsingApiToken(String, String)', targetType='jenkins.security.ApiTokenProperty'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.AuthenticationException",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.acegisecurity.AuthenticationException.authentication], extractedMethods=[org.acegisecurity.AuthenticationException.getAuthentication(), org.acegisecurity.AuthenticationException.setAuthentication(Authentication), org.acegisecurity.AuthenticationException.fromSpring(org.springframework.security.core.AuthenticationException)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.HistoricalSecrets",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.HistoricalSecrets.getLegacyKey()', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.DOSToUnixPathHelper",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.iteratePath(String, Helper)', targetType='hudson.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.DOSToUnixPathHelper.checkPrefix(String, Helper)', targetType='hudson.util.DOSToUnixPathHelper.Helper'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.ResultTrend",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getPreviousNonAbortedBuild(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.isFix(Run<?,?>)', targetType='hudson.model.Result'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.ResultTrend.getResultTrend(Run<?,?>)', targetType='hudson.model.Result'"
+      } ]
+    }, {
+      "refactoredTypeName" : "jenkins.model.JenkinsLocationConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.get()', targetType='jenkins.model.GlobalConfiguration'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='jenkins.model.JenkinsLocationConfiguration.doCheckAdminAddress(String)', targetType='hudson.util.FormValidation'"
+      } ]
+    } ]
+  } ]
+}

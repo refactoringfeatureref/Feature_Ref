@@ -1,0 +1,2626 @@
+{
+  "executionId" : "f3ad272d-3f17-4e5f-9dfd-2ebbda607a30",
+  "computingTime" : 9734,
+  "maxEvaluations" : 1000,
+  "initialPopulationSize" : 50,
+  "finalPopulationSize" : 32,
+  "algorithm" : "Baseline_NF",
+  "projectBeforeRefactoring" : {
+    "meanDensity" : 3.216355441081779,
+    "meanNumConcerns" : 1.7593615715162678,
+    "meanMetricsIntensity" : 0.06120302141264513,
+    "meanLackOfCohesion" : 0.54059293177879
+  },
+  "population" : [ {
+    "solutionId" : "7904d42a-81ad-46b2-874c-1a38a6994792",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0045359385903698,
+      "NumberOfRefactorings" : 8.0,
+      "LackOfCohesion" : 0.5475776632951489,
+      "MetricsIntensity" : 0.060903939100883465,
+      "Density" : 1.001001001001001
+    },
+    "euclideanDistance" : 8.143380504622293,
+    "generation" : 0,
+    "numberOfRefactorings" : 8,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7597799511002445,
+      "LackOfCohesion" : 0.5475776632951489,
+      "MetricsIntensity" : 0.06090393910088347,
+      "Density" : 3.207184092366902,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()', targetType='org.apache.dubbo.rpc.model.ServiceModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.rpc.TriRpcStatus.OK, org.apache.dubbo.rpc.TriRpcStatus.INTERNAL, org.apache.dubbo.rpc.TriRpcStatus.NOT_FOUND, org.apache.dubbo.rpc.TriRpcStatus.UNAVAILABLE, org.apache.dubbo.rpc.TriRpcStatus.CANCELLED, org.apache.dubbo.rpc.TriRpcStatus.UNIMPLEMENTED, org.apache.dubbo.rpc.TriRpcStatus.UNKNOWN, org.apache.dubbo.rpc.TriRpcStatus.DEADLINE_EXCEEDED], extractedMethods=[org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String), org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int), org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable), org.apache.dubbo.rpc.TriRpcStatus.fromCode(Code), org.apache.dubbo.rpc.TriRpcStatus.fromCode(int), org.apache.dubbo.rpc.TriRpcStatus.asException(), org.apache.dubbo.rpc.TriRpcStatus.httpStatusToGrpcCode(int), org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String), org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.overrideURL], extractedMethods=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL), org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getOrDefault(ScopeModel, Class<T>), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "666da9e7-1eeb-421f-9ad1-4df1894885af",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0045359385903698,
+      "NumberOfRefactorings" : 8.0,
+      "LackOfCohesion" : 0.5475776632951491,
+      "MetricsIntensity" : 0.06090393910088348,
+      "Density" : 1.001001001001001
+    },
+    "euclideanDistance" : 8.143380504622293,
+    "generation" : 0,
+    "numberOfRefactorings" : 8,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7597799511002445,
+      "LackOfCohesion" : 0.5475776632951491,
+      "MetricsIntensity" : 0.06090393910088347,
+      "Density" : 3.2071840923669024,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()', targetType='org.apache.dubbo.rpc.model.ServiceModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.rpc.TriRpcStatus.OK, org.apache.dubbo.rpc.TriRpcStatus.INTERNAL, org.apache.dubbo.rpc.TriRpcStatus.NOT_FOUND, org.apache.dubbo.rpc.TriRpcStatus.UNAVAILABLE, org.apache.dubbo.rpc.TriRpcStatus.CANCELLED, org.apache.dubbo.rpc.TriRpcStatus.UNIMPLEMENTED, org.apache.dubbo.rpc.TriRpcStatus.UNKNOWN, org.apache.dubbo.rpc.TriRpcStatus.DEADLINE_EXCEEDED], extractedMethods=[org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String), org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int), org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable), org.apache.dubbo.rpc.TriRpcStatus.fromCode(Code), org.apache.dubbo.rpc.TriRpcStatus.fromCode(int), org.apache.dubbo.rpc.TriRpcStatus.asException(), org.apache.dubbo.rpc.TriRpcStatus.httpStatusToGrpcCode(int), org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String), org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.overrideURL], extractedMethods=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL), org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getOrDefault(ScopeModel, Class<T>), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "7edf0708-69ca-46f6-8c95-2c1cc1f76973",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0045359385903698,
+      "NumberOfRefactorings" : 8.0,
+      "LackOfCohesion" : 0.547577663295149,
+      "MetricsIntensity" : 0.060903939100883465,
+      "Density" : 1.001001001001001
+    },
+    "euclideanDistance" : 8.143380504622293,
+    "generation" : 0,
+    "numberOfRefactorings" : 8,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7597799511002445,
+      "LackOfCohesion" : 0.547577663295149,
+      "MetricsIntensity" : 0.060903939100883465,
+      "Density" : 3.2071840923669024,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()', targetType='org.apache.dubbo.rpc.model.ServiceModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.rpc.TriRpcStatus.OK, org.apache.dubbo.rpc.TriRpcStatus.INTERNAL, org.apache.dubbo.rpc.TriRpcStatus.NOT_FOUND, org.apache.dubbo.rpc.TriRpcStatus.UNAVAILABLE, org.apache.dubbo.rpc.TriRpcStatus.CANCELLED, org.apache.dubbo.rpc.TriRpcStatus.UNIMPLEMENTED, org.apache.dubbo.rpc.TriRpcStatus.UNKNOWN, org.apache.dubbo.rpc.TriRpcStatus.DEADLINE_EXCEEDED], extractedMethods=[org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String), org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int), org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable), org.apache.dubbo.rpc.TriRpcStatus.fromCode(Code), org.apache.dubbo.rpc.TriRpcStatus.fromCode(int), org.apache.dubbo.rpc.TriRpcStatus.asException(), org.apache.dubbo.rpc.TriRpcStatus.httpStatusToGrpcCode(int), org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String), org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.overrideURL], extractedMethods=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL), org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getOrDefault(ScopeModel, Class<T>), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "26f45c9f-9823-4fb7-b046-58d0e0906d9a",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0045359385903698,
+      "NumberOfRefactorings" : 8.0,
+      "LackOfCohesion" : 0.5475776632951491,
+      "MetricsIntensity" : 0.06090393910088347,
+      "Density" : 1.001001001001001
+    },
+    "euclideanDistance" : 8.143380504622293,
+    "generation" : 0,
+    "numberOfRefactorings" : 8,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7597799511002445,
+      "LackOfCohesion" : 0.5475776632951491,
+      "MetricsIntensity" : 0.06090393910088347,
+      "Density" : 3.2071840923669024,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()', targetType='org.apache.dubbo.rpc.model.ServiceModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.rpc.TriRpcStatus.OK, org.apache.dubbo.rpc.TriRpcStatus.INTERNAL, org.apache.dubbo.rpc.TriRpcStatus.NOT_FOUND, org.apache.dubbo.rpc.TriRpcStatus.UNAVAILABLE, org.apache.dubbo.rpc.TriRpcStatus.CANCELLED, org.apache.dubbo.rpc.TriRpcStatus.UNIMPLEMENTED, org.apache.dubbo.rpc.TriRpcStatus.UNKNOWN, org.apache.dubbo.rpc.TriRpcStatus.DEADLINE_EXCEEDED], extractedMethods=[org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String), org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int), org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable), org.apache.dubbo.rpc.TriRpcStatus.fromCode(Code), org.apache.dubbo.rpc.TriRpcStatus.fromCode(int), org.apache.dubbo.rpc.TriRpcStatus.asException(), org.apache.dubbo.rpc.TriRpcStatus.httpStatusToGrpcCode(int), org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String), org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.overrideURL], extractedMethods=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL), org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getOrDefault(ScopeModel, Class<T>), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "67772fcf-0998-433c-ab2a-39969b8f2b1c",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0048848569434752,
+      "NumberOfRefactorings" : 8.0,
+      "LackOfCohesion" : 0.5470069841119268,
+      "MetricsIntensity" : 0.06086258002784069,
+      "Density" : 1.0012012012012013
+    },
+    "euclideanDistance" : 8.143409501880395,
+    "generation" : 0,
+    "numberOfRefactorings" : 8,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7593158216249236,
+      "LackOfCohesion" : 0.5470069841119268,
+      "MetricsIntensity" : 0.060862580027840694,
+      "Density" : 3.2057692307692305,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.rpc.model.ProviderModel.registryUrl, org.apache.dubbo.rpc.model.ProviderModel.providerUrl, org.apache.dubbo.rpc.model.ProviderModel.registered], extractedMethods=[org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.rpc.TriRpcStatus.OK, org.apache.dubbo.rpc.TriRpcStatus.INTERNAL, org.apache.dubbo.rpc.TriRpcStatus.NOT_FOUND, org.apache.dubbo.rpc.TriRpcStatus.UNAVAILABLE, org.apache.dubbo.rpc.TriRpcStatus.CANCELLED, org.apache.dubbo.rpc.TriRpcStatus.UNIMPLEMENTED, org.apache.dubbo.rpc.TriRpcStatus.UNKNOWN, org.apache.dubbo.rpc.TriRpcStatus.DEADLINE_EXCEEDED], extractedMethods=[org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String), org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int), org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable), org.apache.dubbo.rpc.TriRpcStatus.fromCode(Code), org.apache.dubbo.rpc.TriRpcStatus.fromCode(int), org.apache.dubbo.rpc.TriRpcStatus.asException(), org.apache.dubbo.rpc.TriRpcStatus.httpStatusToGrpcCode(int), org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String), org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.overrideURL], extractedMethods=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL), org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getOrDefault(ScopeModel, Class<T>), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "d10605f3-2f07-4859-9bce-69c22fb2ed63",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0048848569434752,
+      "NumberOfRefactorings" : 8.0,
+      "LackOfCohesion" : 0.5470069841119269,
+      "MetricsIntensity" : 0.06086258002784068,
+      "Density" : 1.0012012012012013
+    },
+    "euclideanDistance" : 8.143409501880395,
+    "generation" : 0,
+    "numberOfRefactorings" : 8,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7593158216249236,
+      "LackOfCohesion" : 0.5470069841119269,
+      "MetricsIntensity" : 0.06086258002784068,
+      "Density" : 3.2057692307692305,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.rpc.model.ProviderModel.registryUrl, org.apache.dubbo.rpc.model.ProviderModel.providerUrl, org.apache.dubbo.rpc.model.ProviderModel.registered], extractedMethods=[org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.rpc.TriRpcStatus.OK, org.apache.dubbo.rpc.TriRpcStatus.INTERNAL, org.apache.dubbo.rpc.TriRpcStatus.NOT_FOUND, org.apache.dubbo.rpc.TriRpcStatus.UNAVAILABLE, org.apache.dubbo.rpc.TriRpcStatus.CANCELLED, org.apache.dubbo.rpc.TriRpcStatus.UNIMPLEMENTED, org.apache.dubbo.rpc.TriRpcStatus.UNKNOWN, org.apache.dubbo.rpc.TriRpcStatus.DEADLINE_EXCEEDED], extractedMethods=[org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String), org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int), org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable), org.apache.dubbo.rpc.TriRpcStatus.fromCode(Code), org.apache.dubbo.rpc.TriRpcStatus.fromCode(int), org.apache.dubbo.rpc.TriRpcStatus.asException(), org.apache.dubbo.rpc.TriRpcStatus.httpStatusToGrpcCode(int), org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String), org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.overrideURL], extractedMethods=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL), org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getOrDefault(ScopeModel, Class<T>), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "b0eabad1-ee14-480b-b4a3-0509869178da",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0048848569434752,
+      "NumberOfRefactorings" : 8.0,
+      "LackOfCohesion" : 0.5470069841119268,
+      "MetricsIntensity" : 0.06086258002784066,
+      "Density" : 1.0012012012012013
+    },
+    "euclideanDistance" : 8.143409501880395,
+    "generation" : 0,
+    "numberOfRefactorings" : 8,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7593158216249236,
+      "LackOfCohesion" : 0.5470069841119268,
+      "MetricsIntensity" : 0.06086258002784066,
+      "Density" : 3.205769230769231,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.rpc.model.ProviderModel.registryUrl, org.apache.dubbo.rpc.model.ProviderModel.providerUrl, org.apache.dubbo.rpc.model.ProviderModel.registered], extractedMethods=[org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.rpc.TriRpcStatus.OK, org.apache.dubbo.rpc.TriRpcStatus.INTERNAL, org.apache.dubbo.rpc.TriRpcStatus.NOT_FOUND, org.apache.dubbo.rpc.TriRpcStatus.UNAVAILABLE, org.apache.dubbo.rpc.TriRpcStatus.CANCELLED, org.apache.dubbo.rpc.TriRpcStatus.UNIMPLEMENTED, org.apache.dubbo.rpc.TriRpcStatus.UNKNOWN, org.apache.dubbo.rpc.TriRpcStatus.DEADLINE_EXCEEDED], extractedMethods=[org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String), org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int), org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable), org.apache.dubbo.rpc.TriRpcStatus.fromCode(Code), org.apache.dubbo.rpc.TriRpcStatus.fromCode(int), org.apache.dubbo.rpc.TriRpcStatus.asException(), org.apache.dubbo.rpc.TriRpcStatus.httpStatusToGrpcCode(int), org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String), org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.overrideURL], extractedMethods=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL), org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getOrDefault(ScopeModel, Class<T>), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "17c30bb1-144f-4967-96f5-c91ed953637a",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0048848569434752,
+      "NumberOfRefactorings" : 8.0,
+      "LackOfCohesion" : 0.5470069841119268,
+      "MetricsIntensity" : 0.06086258002784068,
+      "Density" : 1.0012012012012013
+    },
+    "euclideanDistance" : 8.143409501880395,
+    "generation" : 0,
+    "numberOfRefactorings" : 8,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7593158216249236,
+      "LackOfCohesion" : 0.5470069841119268,
+      "MetricsIntensity" : 0.06086258002784068,
+      "Density" : 3.2057692307692314,
+      "baselineType" : "EXTRACT_CLASS"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.rpc.model.ProviderModel.registryUrl, org.apache.dubbo.rpc.model.ProviderModel.providerUrl, org.apache.dubbo.rpc.model.ProviderModel.registered], extractedMethods=[org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.rpc.TriRpcStatus.OK, org.apache.dubbo.rpc.TriRpcStatus.INTERNAL, org.apache.dubbo.rpc.TriRpcStatus.NOT_FOUND, org.apache.dubbo.rpc.TriRpcStatus.UNAVAILABLE, org.apache.dubbo.rpc.TriRpcStatus.CANCELLED, org.apache.dubbo.rpc.TriRpcStatus.UNIMPLEMENTED, org.apache.dubbo.rpc.TriRpcStatus.UNKNOWN, org.apache.dubbo.rpc.TriRpcStatus.DEADLINE_EXCEEDED], extractedMethods=[org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String), org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int), org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable), org.apache.dubbo.rpc.TriRpcStatus.fromCode(Code), org.apache.dubbo.rpc.TriRpcStatus.fromCode(int), org.apache.dubbo.rpc.TriRpcStatus.asException(), org.apache.dubbo.rpc.TriRpcStatus.httpStatusToGrpcCode(int), org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String), org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.overrideURL], extractedMethods=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL), org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getOrDefault(ScopeModel, Class<T>), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "ca0dd40f-861b-4421-a35d-dfce475b7bed",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0041870202372645,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.5456675553331661,
+      "MetricsIntensity" : 0.06080973557571389,
+      "Density" : 1.0012012012012013
+    },
+    "euclideanDistance" : 11.104604735054002,
+    "generation" : 0,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7602446483180427,
+      "LackOfCohesion" : 0.5456675553331661,
+      "MetricsIntensity" : 0.06080973557571388,
+      "Density" : 3.2078255291853757,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()', targetType='org.apache.dubbo.rpc.model.ServiceModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.rpc.TriRpcStatus.OK, org.apache.dubbo.rpc.TriRpcStatus.INTERNAL, org.apache.dubbo.rpc.TriRpcStatus.NOT_FOUND, org.apache.dubbo.rpc.TriRpcStatus.UNAVAILABLE, org.apache.dubbo.rpc.TriRpcStatus.CANCELLED, org.apache.dubbo.rpc.TriRpcStatus.UNIMPLEMENTED, org.apache.dubbo.rpc.TriRpcStatus.UNKNOWN, org.apache.dubbo.rpc.TriRpcStatus.DEADLINE_EXCEEDED], extractedMethods=[org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String), org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int), org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable), org.apache.dubbo.rpc.TriRpcStatus.fromCode(Code), org.apache.dubbo.rpc.TriRpcStatus.fromCode(int), org.apache.dubbo.rpc.TriRpcStatus.asException(), org.apache.dubbo.rpc.TriRpcStatus.httpStatusToGrpcCode(int), org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String), org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getSide()', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getServiceModel()', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getScopeModel()', targetType='org.apache.dubbo.common.URL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getOrDefault(ScopeModel, Class<T>), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "551be440-0073-41d9-b27e-2ee99100a23a",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0045359385903698,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.5450979258590183,
+      "MetricsIntensity" : 0.06076841791681853,
+      "Density" : 1.0014014014014014
+    },
+    "euclideanDistance" : 11.104626142650648,
+    "generation" : 0,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7597799511002443,
+      "LackOfCohesion" : 0.5450979258590183,
+      "MetricsIntensity" : 0.060768417916818536,
+      "Density" : 3.2064102564102557,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.rpc.model.ProviderModel.registryUrl, org.apache.dubbo.rpc.model.ProviderModel.providerUrl, org.apache.dubbo.rpc.model.ProviderModel.registered], extractedMethods=[org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.rpc.TriRpcStatus.OK, org.apache.dubbo.rpc.TriRpcStatus.INTERNAL, org.apache.dubbo.rpc.TriRpcStatus.NOT_FOUND, org.apache.dubbo.rpc.TriRpcStatus.UNAVAILABLE, org.apache.dubbo.rpc.TriRpcStatus.CANCELLED, org.apache.dubbo.rpc.TriRpcStatus.UNIMPLEMENTED, org.apache.dubbo.rpc.TriRpcStatus.UNKNOWN, org.apache.dubbo.rpc.TriRpcStatus.DEADLINE_EXCEEDED], extractedMethods=[org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String), org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int), org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable), org.apache.dubbo.rpc.TriRpcStatus.fromCode(Code), org.apache.dubbo.rpc.TriRpcStatus.fromCode(int), org.apache.dubbo.rpc.TriRpcStatus.asException(), org.apache.dubbo.rpc.TriRpcStatus.httpStatusToGrpcCode(int), org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String), org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getSide()', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getServiceModel()', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getScopeModel()', targetType='org.apache.dubbo.common.URL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getOrDefault(ScopeModel, Class<T>), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "3d8d60a9-3c9a-421a-a979-30783c00dc12",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0041870202372645,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.5468401101875706,
+      "MetricsIntensity" : 0.06095048649956502,
+      "Density" : 1.0046046046046047
+    },
+    "euclideanDistance" : 11.104970556067235,
+    "generation" : 0,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7602446483180425,
+      "LackOfCohesion" : 0.5468401101875706,
+      "MetricsIntensity" : 0.06095048649956502,
+      "Density" : 3.2207958921694475,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()', targetType='org.apache.dubbo.rpc.model.ServiceModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.rpc.TriRpcStatus.OK, org.apache.dubbo.rpc.TriRpcStatus.INTERNAL, org.apache.dubbo.rpc.TriRpcStatus.NOT_FOUND, org.apache.dubbo.rpc.TriRpcStatus.UNAVAILABLE, org.apache.dubbo.rpc.TriRpcStatus.CANCELLED, org.apache.dubbo.rpc.TriRpcStatus.UNIMPLEMENTED, org.apache.dubbo.rpc.TriRpcStatus.UNKNOWN, org.apache.dubbo.rpc.TriRpcStatus.DEADLINE_EXCEEDED], extractedMethods=[org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String), org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int), org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable), org.apache.dubbo.rpc.TriRpcStatus.fromCode(Code), org.apache.dubbo.rpc.TriRpcStatus.fromCode(int), org.apache.dubbo.rpc.TriRpcStatus.asException(), org.apache.dubbo.rpc.TriRpcStatus.httpStatusToGrpcCode(int), org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String), org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.overrideURL], extractedMethods=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL), org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ModuleModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "62643b49-cd39-4411-9a9f-dc55753fee5b",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0034891835310538,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 0.5476950601580403,
+      "MetricsIntensity" : 0.060954757129630395,
+      "Density" : 1.001001001001001
+    },
+    "euclideanDistance" : 12.095977798706771,
+    "generation" : 0,
+    "numberOfRefactorings" : 12,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7590214067278285,
+      "LackOfCohesion" : 0.5476950601580403,
+      "MetricsIntensity" : 0.0609547571296304,
+      "Density" : 3.2092426187419765,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()', targetType='org.apache.dubbo.rpc.model.ServiceModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int)', targetType='org.apache.dubbo.rpc.RpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String)', targetType='org.apache.dubbo.rpc.StatusRpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.fromCode(int)', targetType='org.apache.dubbo.rpc.TriRpcStatus.Code'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String)', targetType='org.apache.dubbo.common.utils.StringUtils'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)', targetType='org.apache.dubbo.rpc.RpcException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.overrideURL], extractedMethods=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL), org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getOrDefault(ScopeModel, Class<T>), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "1bec5b18-5927-481d-b5a7-9ac9f3ec575d",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0034891835310538,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 0.5476950601580403,
+      "MetricsIntensity" : 0.0609547571296304,
+      "Density" : 1.001001001001001
+    },
+    "euclideanDistance" : 12.095977798706771,
+    "generation" : 0,
+    "numberOfRefactorings" : 12,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7590214067278287,
+      "LackOfCohesion" : 0.5476950601580403,
+      "MetricsIntensity" : 0.060954757129630395,
+      "Density" : 3.2092426187419774,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()', targetType='org.apache.dubbo.rpc.model.ServiceModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int)', targetType='org.apache.dubbo.rpc.RpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String)', targetType='org.apache.dubbo.rpc.StatusRpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.fromCode(int)', targetType='org.apache.dubbo.rpc.TriRpcStatus.Code'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String)', targetType='org.apache.dubbo.common.utils.StringUtils'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)', targetType='org.apache.dubbo.rpc.RpcException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.overrideURL], extractedMethods=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL), org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getOrDefault(ScopeModel, Class<T>), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "dc0b4336-f489-4c4c-90d4-72e77a9e3ff7",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0034891835310538,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 0.5476950601580401,
+      "MetricsIntensity" : 0.06095475712963041,
+      "Density" : 1.001001001001001
+    },
+    "euclideanDistance" : 12.095977798706771,
+    "generation" : 0,
+    "numberOfRefactorings" : 12,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7590214067278291,
+      "LackOfCohesion" : 0.5476950601580401,
+      "MetricsIntensity" : 0.06095475712963041,
+      "Density" : 3.209242618741978,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()', targetType='org.apache.dubbo.rpc.model.ServiceModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int)', targetType='org.apache.dubbo.rpc.RpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String)', targetType='org.apache.dubbo.rpc.StatusRpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.fromCode(int)', targetType='org.apache.dubbo.rpc.TriRpcStatus.Code'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String)', targetType='org.apache.dubbo.common.utils.StringUtils'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)', targetType='org.apache.dubbo.rpc.RpcException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.overrideURL], extractedMethods=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL), org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getOrDefault(ScopeModel, Class<T>), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "8c4ad3e1-69d4-4a75-ae53-82f999b98c15",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0034891835310538,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 0.5476950601580401,
+      "MetricsIntensity" : 0.060954757129630395,
+      "Density" : 1.001001001001001
+    },
+    "euclideanDistance" : 12.095977798706771,
+    "generation" : 0,
+    "numberOfRefactorings" : 12,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7590214067278285,
+      "LackOfCohesion" : 0.5476950601580401,
+      "MetricsIntensity" : 0.060954757129630395,
+      "Density" : 3.209242618741977,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()', targetType='org.apache.dubbo.rpc.model.ServiceModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int)', targetType='org.apache.dubbo.rpc.RpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String)', targetType='org.apache.dubbo.rpc.StatusRpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.fromCode(int)', targetType='org.apache.dubbo.rpc.TriRpcStatus.Code'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String)', targetType='org.apache.dubbo.common.utils.StringUtils'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)', targetType='org.apache.dubbo.rpc.RpcException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.overrideURL], extractedMethods=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL), org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getOrDefault(ScopeModel, Class<T>), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "92c51d3f-6585-4b84-bb50-f9a702e610d9",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0003489183531054,
+      "NumberOfRefactorings" : 14.0,
+      "LackOfCohesion" : 0.5407836230932695,
+      "MetricsIntensity" : 0.06107794090149189,
+      "Density" : 1.0042042042042043
+    },
+    "euclideanDistance" : 14.082091516676856,
+    "generation" : 0,
+    "numberOfRefactorings" : 14,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7599754450583183,
+      "LackOfCohesion" : 0.5407836230932695,
+      "MetricsIntensity" : 0.061077940901491885,
+      "Density" : 3.2298776561493883,
+      "baselineType" : "MOVE_METHODS"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()', targetType='org.apache.dubbo.rpc.model.ServiceModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int)', targetType='org.apache.dubbo.rpc.RpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String)', targetType='org.apache.dubbo.rpc.StatusRpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.fromCode(int)', targetType='org.apache.dubbo.rpc.TriRpcStatus.Code'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String)', targetType='org.apache.dubbo.common.utils.StringUtils'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)', targetType='org.apache.dubbo.rpc.RpcException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getSide()', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getServiceModel()', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getScopeModel()', targetType='org.apache.dubbo.common.URL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ModuleModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "db89076d-ad30-428f-9eb8-86030043c74c",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0038381018841591,
+      "NumberOfRefactorings" : 14.0,
+      "LackOfCohesion" : 0.5449279239986884,
+      "MetricsIntensity" : 0.060856245567702784,
+      "Density" : 1.0048048048048048
+    },
+    "euclideanDistance" : 14.082541445191323,
+    "generation" : 0,
+    "numberOfRefactorings" : 14,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7607099143206857,
+      "LackOfCohesion" : 0.5449279239986884,
+      "MetricsIntensity" : 0.06085624556770277,
+      "Density" : 3.2214377406931956,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()', targetType='org.apache.dubbo.rpc.model.ServiceModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.rpc.TriRpcStatus.OK, org.apache.dubbo.rpc.TriRpcStatus.INTERNAL, org.apache.dubbo.rpc.TriRpcStatus.NOT_FOUND, org.apache.dubbo.rpc.TriRpcStatus.UNAVAILABLE, org.apache.dubbo.rpc.TriRpcStatus.CANCELLED, org.apache.dubbo.rpc.TriRpcStatus.UNIMPLEMENTED, org.apache.dubbo.rpc.TriRpcStatus.UNKNOWN, org.apache.dubbo.rpc.TriRpcStatus.DEADLINE_EXCEEDED], extractedMethods=[org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String), org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int), org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable), org.apache.dubbo.rpc.TriRpcStatus.fromCode(Code), org.apache.dubbo.rpc.TriRpcStatus.fromCode(int), org.apache.dubbo.rpc.TriRpcStatus.asException(), org.apache.dubbo.rpc.TriRpcStatus.httpStatusToGrpcCode(int), org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String), org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getSide()', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getServiceModel()', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getScopeModel()', targetType='org.apache.dubbo.common.URL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ModuleModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "1cc4c5d1-1a68-432e-8a1e-365ab87db780",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0038381018841591,
+      "NumberOfRefactorings" : 14.0,
+      "LackOfCohesion" : 0.5449279239986885,
+      "MetricsIntensity" : 0.06085624556770277,
+      "Density" : 1.0048048048048048
+    },
+    "euclideanDistance" : 14.082541445191323,
+    "generation" : 0,
+    "numberOfRefactorings" : 14,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7607099143206857,
+      "LackOfCohesion" : 0.5449279239986885,
+      "MetricsIntensity" : 0.06085624556770277,
+      "Density" : 3.2214377406931956,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()', targetType='org.apache.dubbo.rpc.model.ServiceModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.rpc.TriRpcStatus.OK, org.apache.dubbo.rpc.TriRpcStatus.INTERNAL, org.apache.dubbo.rpc.TriRpcStatus.NOT_FOUND, org.apache.dubbo.rpc.TriRpcStatus.UNAVAILABLE, org.apache.dubbo.rpc.TriRpcStatus.CANCELLED, org.apache.dubbo.rpc.TriRpcStatus.UNIMPLEMENTED, org.apache.dubbo.rpc.TriRpcStatus.UNKNOWN, org.apache.dubbo.rpc.TriRpcStatus.DEADLINE_EXCEEDED], extractedMethods=[org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String), org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int), org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable), org.apache.dubbo.rpc.TriRpcStatus.fromCode(Code), org.apache.dubbo.rpc.TriRpcStatus.fromCode(int), org.apache.dubbo.rpc.TriRpcStatus.asException(), org.apache.dubbo.rpc.TriRpcStatus.httpStatusToGrpcCode(int), org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String), org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getSide()', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getServiceModel()', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getScopeModel()', targetType='org.apache.dubbo.common.URL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ModuleModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "abd0c553-3a13-4884-a223-82b22571ec04",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0038381018841591,
+      "NumberOfRefactorings" : 14.0,
+      "LackOfCohesion" : 0.5449279239986884,
+      "MetricsIntensity" : 0.060856245567702756,
+      "Density" : 1.0048048048048048
+    },
+    "euclideanDistance" : 14.082541445191323,
+    "generation" : 0,
+    "numberOfRefactorings" : 14,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7607099143206857,
+      "LackOfCohesion" : 0.5449279239986884,
+      "MetricsIntensity" : 0.06085624556770276,
+      "Density" : 3.2214377406931964,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()', targetType='org.apache.dubbo.rpc.model.ServiceModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.rpc.TriRpcStatus.OK, org.apache.dubbo.rpc.TriRpcStatus.INTERNAL, org.apache.dubbo.rpc.TriRpcStatus.NOT_FOUND, org.apache.dubbo.rpc.TriRpcStatus.UNAVAILABLE, org.apache.dubbo.rpc.TriRpcStatus.CANCELLED, org.apache.dubbo.rpc.TriRpcStatus.UNIMPLEMENTED, org.apache.dubbo.rpc.TriRpcStatus.UNKNOWN, org.apache.dubbo.rpc.TriRpcStatus.DEADLINE_EXCEEDED], extractedMethods=[org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String), org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int), org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable), org.apache.dubbo.rpc.TriRpcStatus.fromCode(Code), org.apache.dubbo.rpc.TriRpcStatus.fromCode(int), org.apache.dubbo.rpc.TriRpcStatus.asException(), org.apache.dubbo.rpc.TriRpcStatus.httpStatusToGrpcCode(int), org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String), org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getSide()', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getServiceModel()', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getScopeModel()', targetType='org.apache.dubbo.common.URL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ModuleModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "52caac45-8b57-48d7-9dd7-a6c28604fd7c",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0031402651779484,
+      "NumberOfRefactorings" : 15.0,
+      "LackOfCohesion" : 0.5457835450444881,
+      "MetricsIntensity" : 0.060860529300810096,
+      "Density" : 1.0012012012012013
+    },
+    "euclideanDistance" : 15.076812591492146,
+    "generation" : 0,
+    "numberOfRefactorings" : 15,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7594859241126075,
+      "LackOfCohesion" : 0.5457835450444881,
+      "MetricsIntensity" : 0.060860529300810096,
+      "Density" : 3.209884467265726,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()', targetType='org.apache.dubbo.rpc.model.ServiceModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int)', targetType='org.apache.dubbo.rpc.RpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String)', targetType='org.apache.dubbo.rpc.StatusRpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.fromCode(int)', targetType='org.apache.dubbo.rpc.TriRpcStatus.Code'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String)', targetType='org.apache.dubbo.common.utils.StringUtils'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)', targetType='org.apache.dubbo.rpc.RpcException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getSide()', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getServiceModel()', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getScopeModel()', targetType='org.apache.dubbo.common.URL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getOrDefault(ScopeModel, Class<T>), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "57f94b8c-08d9-4837-8e48-58423f8de2ff",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0034891835310538,
+      "NumberOfRefactorings" : 15.0,
+      "LackOfCohesion" : 0.5452133778298025,
+      "MetricsIntensity" : 0.060819139397692006,
+      "Density" : 1.0014014014014014
+    },
+    "euclideanDistance" : 15.07682831046617,
+    "generation" : 0,
+    "numberOfRefactorings" : 15,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7590214067278285,
+      "LackOfCohesion" : 0.5452133778298025,
+      "MetricsIntensity" : 0.060819139397692006,
+      "Density" : 3.208466966003849,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.rpc.model.ProviderModel.registryUrl, org.apache.dubbo.rpc.model.ProviderModel.providerUrl, org.apache.dubbo.rpc.model.ProviderModel.registered], extractedMethods=[org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int)', targetType='org.apache.dubbo.rpc.RpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String)', targetType='org.apache.dubbo.rpc.StatusRpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.fromCode(int)', targetType='org.apache.dubbo.rpc.TriRpcStatus.Code'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String)', targetType='org.apache.dubbo.common.utils.StringUtils'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)', targetType='org.apache.dubbo.rpc.RpcException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getSide()', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getServiceModel()', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getScopeModel()', targetType='org.apache.dubbo.common.URL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getOrDefault(ScopeModel, Class<T>), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "b78a21ec-c1d1-4f24-83ad-acc93c766f08",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0034891835310538,
+      "NumberOfRefactorings" : 15.0,
+      "LackOfCohesion" : 0.5452133778298025,
+      "MetricsIntensity" : 0.06081913939769202,
+      "Density" : 1.0014014014014014
+    },
+    "euclideanDistance" : 15.07682831046617,
+    "generation" : 0,
+    "numberOfRefactorings" : 15,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7590214067278287,
+      "LackOfCohesion" : 0.5452133778298025,
+      "MetricsIntensity" : 0.06081913939769202,
+      "Density" : 3.208466966003849,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.rpc.model.ProviderModel.registryUrl, org.apache.dubbo.rpc.model.ProviderModel.providerUrl, org.apache.dubbo.rpc.model.ProviderModel.registered], extractedMethods=[org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int)', targetType='org.apache.dubbo.rpc.RpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String)', targetType='org.apache.dubbo.rpc.StatusRpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.fromCode(int)', targetType='org.apache.dubbo.rpc.TriRpcStatus.Code'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String)', targetType='org.apache.dubbo.common.utils.StringUtils'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)', targetType='org.apache.dubbo.rpc.RpcException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getSide()', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getServiceModel()', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getScopeModel()', targetType='org.apache.dubbo.common.URL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getOrDefault(ScopeModel, Class<T>), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel), org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "6a2292b4-2605-49b9-ac27-d8426499bcf0",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0031402651779484,
+      "NumberOfRefactorings" : 15.0,
+      "LackOfCohesion" : 0.5469570202716195,
+      "MetricsIntensity" : 0.061001380953294215,
+      "Density" : 1.0046046046046047
+    },
+    "euclideanDistance" : 15.077082076904558,
+    "generation" : 0,
+    "numberOfRefactorings" : 15,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7594859241126075,
+      "LackOfCohesion" : 0.5469570202716195,
+      "MetricsIntensity" : 0.061001380953294215,
+      "Density" : 3.2228644829800905,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()', targetType='org.apache.dubbo.rpc.model.ServiceModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int)', targetType='org.apache.dubbo.rpc.RpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String)', targetType='org.apache.dubbo.rpc.StatusRpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.fromCode(int)', targetType='org.apache.dubbo.rpc.TriRpcStatus.Code'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String)', targetType='org.apache.dubbo.common.utils.StringUtils'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)', targetType='org.apache.dubbo.rpc.RpcException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.overrideURL], extractedMethods=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL), org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ModuleModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "2de5443e-d0df-4d99-a8f3-f9730c72fa7e",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0031402651779484,
+      "NumberOfRefactorings" : 15.0,
+      "LackOfCohesion" : 0.5469570202716195,
+      "MetricsIntensity" : 0.061001380953294215,
+      "Density" : 1.0046046046046047
+    },
+    "euclideanDistance" : 15.077082076904558,
+    "generation" : 0,
+    "numberOfRefactorings" : 15,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7594859241126075,
+      "LackOfCohesion" : 0.5469570202716195,
+      "MetricsIntensity" : 0.061001380953294215,
+      "Density" : 3.2228644829800905,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()', targetType='org.apache.dubbo.rpc.model.ServiceModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int)', targetType='org.apache.dubbo.rpc.RpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String)', targetType='org.apache.dubbo.rpc.StatusRpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.fromCode(int)', targetType='org.apache.dubbo.rpc.TriRpcStatus.Code'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String)', targetType='org.apache.dubbo.common.utils.StringUtils'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)', targetType='org.apache.dubbo.rpc.RpcException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.overrideURL], extractedMethods=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL), org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ModuleModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "6cb530b5-b736-47f6-a8ac-6bba5a264b39",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0031402651779484,
+      "NumberOfRefactorings" : 15.0,
+      "LackOfCohesion" : 0.5469570202716197,
+      "MetricsIntensity" : 0.06100138095329422,
+      "Density" : 1.0046046046046047
+    },
+    "euclideanDistance" : 15.077082076904558,
+    "generation" : 0,
+    "numberOfRefactorings" : 15,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7594859241126073,
+      "LackOfCohesion" : 0.5469570202716197,
+      "MetricsIntensity" : 0.06100138095329423,
+      "Density" : 3.22286448298009,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()', targetType='org.apache.dubbo.rpc.model.ServiceModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int)', targetType='org.apache.dubbo.rpc.RpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String)', targetType='org.apache.dubbo.rpc.StatusRpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.fromCode(int)', targetType='org.apache.dubbo.rpc.TriRpcStatus.Code'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String)', targetType='org.apache.dubbo.common.utils.StringUtils'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)', targetType='org.apache.dubbo.rpc.RpcException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.overrideURL], extractedMethods=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL), org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ModuleModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "fdfebd00-cb4d-49bc-baa3-c040684dadb3",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0034891835310538,
+      "NumberOfRefactorings" : 15.0,
+      "LackOfCohesion" : 0.5463859326842069,
+      "MetricsIntensity" : 0.06095988057829186,
+      "Density" : 1.0048048048048048
+    },
+    "euclideanDistance" : 15.077097762225259,
+    "generation" : 0,
+    "numberOfRefactorings" : 15,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7590214067278294,
+      "LackOfCohesion" : 0.5463859326842069,
+      "MetricsIntensity" : 0.06095988057829185,
+      "Density" : 3.221437740693196,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.rpc.model.ProviderModel.registryUrl, org.apache.dubbo.rpc.model.ProviderModel.providerUrl, org.apache.dubbo.rpc.model.ProviderModel.registered], extractedMethods=[org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int)', targetType='org.apache.dubbo.rpc.RpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String)', targetType='org.apache.dubbo.rpc.StatusRpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.fromCode(int)', targetType='org.apache.dubbo.rpc.TriRpcStatus.Code'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String)', targetType='org.apache.dubbo.common.utils.StringUtils'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)', targetType='org.apache.dubbo.rpc.RpcException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.overrideURL], extractedMethods=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL), org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ModuleModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "b258f234-faa1-4517-b669-ca157489d9a6",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0034891835310538,
+      "NumberOfRefactorings" : 15.0,
+      "LackOfCohesion" : 0.5463859326842068,
+      "MetricsIntensity" : 0.06095988057829183,
+      "Density" : 1.0048048048048048
+    },
+    "euclideanDistance" : 15.077097762225259,
+    "generation" : 0,
+    "numberOfRefactorings" : 15,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7590214067278287,
+      "LackOfCohesion" : 0.5463859326842068,
+      "MetricsIntensity" : 0.060959880578291825,
+      "Density" : 3.2214377406931956,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.rpc.model.ProviderModel.registryUrl, org.apache.dubbo.rpc.model.ProviderModel.providerUrl, org.apache.dubbo.rpc.model.ProviderModel.registered], extractedMethods=[org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int)', targetType='org.apache.dubbo.rpc.RpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String)', targetType='org.apache.dubbo.rpc.StatusRpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.fromCode(int)', targetType='org.apache.dubbo.rpc.TriRpcStatus.Code'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String)', targetType='org.apache.dubbo.common.utils.StringUtils'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)', targetType='org.apache.dubbo.rpc.RpcException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.overrideURL], extractedMethods=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL), org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ModuleModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "6cc4ce77-8224-4a8c-88e7-1be47323e067",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0034891835310538,
+      "NumberOfRefactorings" : 15.0,
+      "LackOfCohesion" : 0.5463859326842068,
+      "MetricsIntensity" : 0.060959880578291846,
+      "Density" : 1.0048048048048048
+    },
+    "euclideanDistance" : 15.077097762225259,
+    "generation" : 0,
+    "numberOfRefactorings" : 15,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7590214067278287,
+      "LackOfCohesion" : 0.5463859326842068,
+      "MetricsIntensity" : 0.06095988057829184,
+      "Density" : 3.221437740693196,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.rpc.model.ProviderModel.registryUrl, org.apache.dubbo.rpc.model.ProviderModel.providerUrl, org.apache.dubbo.rpc.model.ProviderModel.registered], extractedMethods=[org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int)', targetType='org.apache.dubbo.rpc.RpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String)', targetType='org.apache.dubbo.rpc.StatusRpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.fromCode(int)', targetType='org.apache.dubbo.rpc.TriRpcStatus.Code'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String)', targetType='org.apache.dubbo.common.utils.StringUtils'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)', targetType='org.apache.dubbo.rpc.RpcException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.overrideURL], extractedMethods=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL), org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ModuleModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "eb3130ed-5ce8-414a-9f45-3bfc673c4ab5",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0034891835310538,
+      "NumberOfRefactorings" : 15.0,
+      "LackOfCohesion" : 0.5463859326842069,
+      "MetricsIntensity" : 0.06095988057829186,
+      "Density" : 1.0048048048048048
+    },
+    "euclideanDistance" : 15.077097762225259,
+    "generation" : 0,
+    "numberOfRefactorings" : 15,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7590214067278285,
+      "LackOfCohesion" : 0.5463859326842069,
+      "MetricsIntensity" : 0.060959880578291846,
+      "Density" : 3.221437740693196,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.rpc.model.ProviderModel.registryUrl, org.apache.dubbo.rpc.model.ProviderModel.providerUrl, org.apache.dubbo.rpc.model.ProviderModel.registered], extractedMethods=[org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int)', targetType='org.apache.dubbo.rpc.RpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String)', targetType='org.apache.dubbo.rpc.StatusRpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.fromCode(int)', targetType='org.apache.dubbo.rpc.TriRpcStatus.Code'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String)', targetType='org.apache.dubbo.common.utils.StringUtils'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)', targetType='org.apache.dubbo.rpc.RpcException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.overrideURL], extractedMethods=[org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL), org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ModuleModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "1a1f344d-db99-4d6e-966a-d2073d2bd207",
+    "objectives" : {
+      "NumberOfConcerns" : 1.002791346824843,
+      "NumberOfRefactorings" : 18.0,
+      "LackOfCohesion" : 0.5450434238108562,
+      "MetricsIntensity" : 0.0609071157293403,
+      "Density" : 1.0048048048048048
+    },
+    "euclideanDistance" : 18.064218920053296,
+    "generation" : 0,
+    "numberOfRefactorings" : 18,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7599510104102882,
+      "LackOfCohesion" : 0.5450434238108562,
+      "MetricsIntensity" : 0.0609071157293403,
+      "Density" : 3.223506743737958,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()', targetType='org.apache.dubbo.rpc.model.ServiceModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int)', targetType='org.apache.dubbo.rpc.RpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String)', targetType='org.apache.dubbo.rpc.StatusRpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.fromCode(int)', targetType='org.apache.dubbo.rpc.TriRpcStatus.Code'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String)', targetType='org.apache.dubbo.common.utils.StringUtils'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)', targetType='org.apache.dubbo.rpc.RpcException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getSide()', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getServiceModel()', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getScopeModel()', targetType='org.apache.dubbo.common.URL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ModuleModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "1cd09ba5-2bde-44b6-bd11-198c8ef2ae35",
+    "objectives" : {
+      "NumberOfConcerns" : 1.002791346824843,
+      "NumberOfRefactorings" : 18.0,
+      "LackOfCohesion" : 0.5450434238108562,
+      "MetricsIntensity" : 0.060907115729340315,
+      "Density" : 1.0048048048048048
+    },
+    "euclideanDistance" : 18.064218920053296,
+    "generation" : 0,
+    "numberOfRefactorings" : 18,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7599510104102882,
+      "LackOfCohesion" : 0.5450434238108562,
+      "MetricsIntensity" : 0.0609071157293403,
+      "Density" : 3.223506743737958,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()', targetType='org.apache.dubbo.rpc.model.ServiceModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int)', targetType='org.apache.dubbo.rpc.RpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String)', targetType='org.apache.dubbo.rpc.StatusRpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.fromCode(int)', targetType='org.apache.dubbo.rpc.TriRpcStatus.Code'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String)', targetType='org.apache.dubbo.common.utils.StringUtils'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)', targetType='org.apache.dubbo.rpc.RpcException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getSide()', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getServiceModel()', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getScopeModel()', targetType='org.apache.dubbo.common.URL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ModuleModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "dd3f3bc3-04d5-4bb5-93ee-b25bb0666780",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0031402651779484,
+      "NumberOfRefactorings" : 18.0,
+      "LackOfCohesion" : 0.5444733899980693,
+      "MetricsIntensity" : 0.06086565677101682,
+      "Density" : 1.005005005005005
+    },
+    "euclideanDistance" : 18.06423209971286,
+    "generation" : 0,
+    "numberOfRefactorings" : 18,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7594859241126075,
+      "LackOfCohesion" : 0.5444733899980693,
+      "MetricsIntensity" : 0.060865656771016824,
+      "Density" : 3.2220795892169436,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.apache.dubbo.common.Version",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.Version.DEFAULT_DUBBO_PROTOCOL_VERSION], extractedMethods=[org.apache.dubbo.common.Version.getProtocolVersion(), org.apache.dubbo.common.Version.compare(String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ProviderModel",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.rpc.model.ProviderModel.registryUrl, org.apache.dubbo.rpc.model.ProviderModel.providerUrl, org.apache.dubbo.rpc.model.ProviderModel.registered], extractedMethods=[org.apache.dubbo.rpc.model.ProviderModel.getServiceInstance()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.TriRpcStatus",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.dubboCodeToTriCode(int)', targetType='org.apache.dubbo.rpc.RpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.getStatus(Throwable, String)', targetType='org.apache.dubbo.rpc.StatusRpcException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.fromCode(int)', targetType='org.apache.dubbo.rpc.TriRpcStatus.Code'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.decodeMessage(String)', targetType='org.apache.dubbo.common.utils.StringUtils'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.TriRpcStatus.triCodeToDubboCode(Code)', targetType='org.apache.dubbo.rpc.RpcException'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.status.reporter.FrameworkStatusReportService",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.reporters, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.applicationModel, org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.gson], extractedMethods=[org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.hasReporter(), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createRegistrationReport(String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createMigrationStepReport(String, String, String, String, String, String), org.apache.dubbo.common.status.reporter.FrameworkStatusReportService.createConsumptionReport(String, String, String, String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.url.component.DubboServiceAddressURL",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.valueOf(String, URL, ServiceConfigURL)', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getSide()', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getServiceModel()', targetType='org.apache.dubbo.common.URL'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.common.url.component.DubboServiceAddressURL.getScopeModel()', targetType='org.apache.dubbo.common.URL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.config.CompositeConfiguration",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.config.CompositeConfiguration.dynamicIncluded], extractedMethods=[org.apache.dubbo.common.config.CompositeConfiguration.isDynamicIncluded(), org.apache.dubbo.common.config.CompositeConfiguration.setDynamicIncluded(boolean)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.rpc.model.ScopeModelUtil",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getModuleModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.getFrameworkModel(ScopeModel)', targetType='org.apache.dubbo.rpc.model.ModuleModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getExtensionLoader(Class<T>, ScopeModel)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.apache.dubbo.rpc.model.ScopeModelUtil.<T>getDefaultScopeModel(Class<T>)', targetType='org.apache.dubbo.rpc.model.ApplicationModel'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.apache.dubbo.common.cache.FileCacheStoreFactory",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.apache.dubbo.common.cache.FileCacheStoreFactory.logger], extractedMethods=[org.apache.dubbo.common.cache.FileCacheStoreFactory.getFile(String), org.apache.dubbo.common.cache.FileCacheStoreFactory.tryFileLock(FileCacheStore.Builder, String)]"
+      } ]
+    } ]
+  } ]
+}

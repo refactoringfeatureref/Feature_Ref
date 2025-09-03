@@ -1,0 +1,2840 @@
+{
+  "executionId" : "fc155a4f-b48b-49b8-99a9-1a35c9feb037",
+  "computingTime" : 3912271,
+  "maxEvaluations" : 100,
+  "initialPopulationSize" : 128,
+  "finalPopulationSize" : 29,
+  "algorithm" : "MOSA",
+  "projectBeforeRefactoring" : {
+    "meanDensity" : 3.1151580074986605,
+    "meanNumConcerns" : 1.59718026183283,
+    "meanMetricsIntensity" : 0.03296937024300846,
+    "meanLackOfCohesion" : 0.48535030050355504
+  },
+  "population" : [ {
+    "solutionId" : "cd7874e6-3a65-47a3-aa7a-671b3ece63d6",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9977931904161412,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.4859882516026415,
+      "MetricsIntensity" : 0.03289554390314469,
+      "Density" : 0.9974209078404401
+    },
+    "euclideanDistance" : 11.100797557641638,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5920523138832996,
+      "LackOfCohesion" : 0.4859882516026415,
+      "MetricsIntensity" : 0.03289554390314469,
+      "Density" : 3.1021390374331554
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.get(int)', targetType='hudson.node_monitors.ArchitectureMonitor.DescriptorImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.run()', targetType='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.getCredentials()', targetType='hudson.model.LargeText.HeadMark'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.genericType()', targetType='hudson.console.ConsoleAnnotator'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.isAnnotationPresent(Class<? extends Annotation>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.getToken()', targetType='jenkins.security.ApiTokenProperty.TokenInfoAndStats'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.head(int)', targetType='hudson.console.PlainTextConsoleOutputStream'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[hudson.MarkupText.markup, hudson.MarkupText.tags, hudson.MarkupText.pos], extractedMethods=[hudson.MarkupText.addMarkup(int, String), hudson.MarkupText.toString(boolean), hudson.MarkupText.rangeCheck(int), hudson.MarkupText.addMarkup(int, int, String, String), hudson.MarkupText.toString(), hudson.MarkupText.findTokens(Pattern)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[hudson.util.io.TarArchiver.buf], extractedMethods=[hudson.util.io.TarArchiver.visit(File, String), hudson.util.io.TarArchiver.understandsSymlink(), hudson.util.io.TarArchiver.close()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.getApi()', targetType='hudson.util.JVMBuilder'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "de308601-efd1-42e1-9c69-115a649e70df",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9971626733921816,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 0.48587458688438484,
+      "MetricsIntensity" : 0.03289634080250397,
+      "Density" : 0.9970770288858322
+    },
+    "euclideanDistance" : 12.092379926307174,
+    "generation" : 1,
+    "numberOfRefactorings" : 12,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5910462776659964,
+      "LackOfCohesion" : 0.48587458688438484,
+      "MetricsIntensity" : 0.03289634080250397,
+      "Density" : 3.1027287319422157
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.get(int)', targetType='hudson.node_monitors.ArchitectureMonitor.DescriptorImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.run()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.handleClose()', targetType='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.getCredentials()', targetType='hudson.model.LargeText.HeadMark'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.genericType()', targetType='hudson.console.ConsoleAnnotator'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.getToken()', targetType='jenkins.security.ApiTokenProperty.TokenInfoAndStats'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.head(int)', targetType='hudson.console.PlainTextConsoleOutputStream'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.lines2()', targetType='jenkins.util.URLClassLoader2'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[hudson.MarkupText.markup, hudson.MarkupText.tags, hudson.MarkupText.pos], extractedMethods=[hudson.MarkupText.addMarkup(int, String), hudson.MarkupText.toString(boolean), hudson.MarkupText.rangeCheck(int), hudson.MarkupText.addMarkup(int, int, String, String), hudson.MarkupText.toString(), hudson.MarkupText.findTokens(Pattern)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[hudson.util.io.TarArchiver.buf], extractedMethods=[hudson.util.io.TarArchiver.visit(File, String), hudson.util.io.TarArchiver.understandsSymlink(), hudson.util.io.TarArchiver.close()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.getApi()', targetType='hudson.util.JVMBuilder'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "112c86a0-b783-4bdf-b7e4-9ae495796658",
+    "objectives" : {
+      "NumberOfConcerns" : 0.998108448928121,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 0.4858852422521831,
+      "MetricsIntensity" : 0.03289531747786547,
+      "Density" : 0.9975928473177441
+    },
+    "euclideanDistance" : 12.092500921455068,
+    "generation" : 1,
+    "numberOfRefactorings" : 12,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5925553319919517,
+      "LackOfCohesion" : 0.4858852422521831,
+      "MetricsIntensity" : 0.03289531747786547,
+      "Density" : 3.102673796791444
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.get(int)', targetType='hudson.node_monitors.ArchitectureMonitor.DescriptorImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.run()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.handleClose()', targetType='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.getCredentials()', targetType='hudson.model.LargeText.HeadMark'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.genericType()', targetType='hudson.console.ConsoleAnnotator'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.isAnnotationPresent(Class<? extends Annotation>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.getToken()', targetType='jenkins.security.ApiTokenProperty.TokenInfoAndStats'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.head(int)', targetType='hudson.console.PlainTextConsoleOutputStream'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[hudson.MarkupText.markup, hudson.MarkupText.tags, hudson.MarkupText.pos], extractedMethods=[hudson.MarkupText.addMarkup(int, String), hudson.MarkupText.toString(boolean), hudson.MarkupText.rangeCheck(int), hudson.MarkupText.addMarkup(int, int, String, String), hudson.MarkupText.toString(), hudson.MarkupText.findTokens(Pattern)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[hudson.util.io.TarArchiver.buf], extractedMethods=[hudson.util.io.TarArchiver.visit(File, String), hudson.util.io.TarArchiver.understandsSymlink(), hudson.util.io.TarArchiver.close()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.getApi()', targetType='hudson.util.JVMBuilder'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "0e0acdd4-dfd3-4ede-b767-e4e9c5732472",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9968474148802018,
+      "NumberOfRefactorings" : 13.0,
+      "LackOfCohesion" : 0.4858401136356261,
+      "MetricsIntensity" : 0.03289634080250396,
+      "Density" : 0.9967331499312242
+    },
+    "euclideanDistance" : 13.085270517875465,
+    "generation" : 1,
+    "numberOfRefactorings" : 13,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5905432595573443,
+      "LackOfCohesion" : 0.4858401136356261,
+      "MetricsIntensity" : 0.03289634080250396,
+      "Density" : 3.101658640984485
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.get(int)', targetType='hudson.node_monitors.ArchitectureMonitor.DescriptorImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.run()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.handleClose()', targetType='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.getCredentials()', targetType='hudson.model.LargeText.HeadMark'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.genericType()', targetType='hudson.console.ConsoleAnnotator'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.isAnnotationPresent(Class<? extends Annotation>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.getToken()', targetType='jenkins.security.ApiTokenProperty.TokenInfoAndStats'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.head(int)', targetType='hudson.console.PlainTextConsoleOutputStream'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.lines2()', targetType='jenkins.util.URLClassLoader2'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[hudson.MarkupText.markup, hudson.MarkupText.tags, hudson.MarkupText.pos], extractedMethods=[hudson.MarkupText.addMarkup(int, String), hudson.MarkupText.toString(boolean), hudson.MarkupText.rangeCheck(int), hudson.MarkupText.addMarkup(int, int, String, String), hudson.MarkupText.toString(), hudson.MarkupText.findTokens(Pattern)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[hudson.util.io.TarArchiver.buf], extractedMethods=[hudson.util.io.TarArchiver.visit(File, String), hudson.util.io.TarArchiver.understandsSymlink(), hudson.util.io.TarArchiver.close()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.getApi()', targetType='hudson.util.JVMBuilder'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "a206d0b6-145e-4051-be3e-5c0211b22ec1",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9968474148802018,
+      "NumberOfRefactorings" : 13.0,
+      "LackOfCohesion" : 0.485840113635626,
+      "MetricsIntensity" : 0.03289634080250397,
+      "Density" : 0.9967331499312242
+    },
+    "euclideanDistance" : 13.085270517875465,
+    "generation" : 1,
+    "numberOfRefactorings" : 13,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5905432595573448,
+      "LackOfCohesion" : 0.485840113635626,
+      "MetricsIntensity" : 0.03289634080250396,
+      "Density" : 3.101658640984485
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.get(int)', targetType='hudson.node_monitors.ArchitectureMonitor.DescriptorImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.run()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.handleClose()', targetType='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.getCredentials()', targetType='hudson.model.LargeText.HeadMark'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.genericType()', targetType='hudson.console.ConsoleAnnotator'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.isAnnotationPresent(Class<? extends Annotation>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.getToken()', targetType='jenkins.security.ApiTokenProperty.TokenInfoAndStats'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.head(int)', targetType='hudson.console.PlainTextConsoleOutputStream'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.lines2()', targetType='jenkins.util.URLClassLoader2'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[hudson.MarkupText.markup, hudson.MarkupText.tags, hudson.MarkupText.pos], extractedMethods=[hudson.MarkupText.addMarkup(int, String), hudson.MarkupText.toString(boolean), hudson.MarkupText.rangeCheck(int), hudson.MarkupText.addMarkup(int, int, String, String), hudson.MarkupText.toString(), hudson.MarkupText.findTokens(Pattern)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[hudson.util.io.TarArchiver.buf], extractedMethods=[hudson.util.io.TarArchiver.visit(File, String), hudson.util.io.TarArchiver.understandsSymlink(), hudson.util.io.TarArchiver.close()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.getApi()', targetType='hudson.util.JVMBuilder'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "9bbd8bd1-7e3c-4957-b1eb-30b5891aa72f",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9984237074401009,
+      "NumberOfRefactorings" : 13.0,
+      "LackOfCohesion" : 0.4845623066702857,
+      "MetricsIntensity" : 0.03296905862450538,
+      "Density" : 0.9977647867950481
+    },
+    "euclideanDistance" : 13.085422119947786,
+    "generation" : 1,
+    "numberOfRefactorings" : 13,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.594662638469285,
+      "LackOfCohesion" : 0.4845623066702857,
+      "MetricsIntensity" : 0.032969058624505374,
+      "Density" : 3.109860664523044
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.assigned(int)', targetType='hudson.lifecycle.RestartNotSupportedException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.execute(WorkUnitContext)', targetType='hudson.tasks.BuildTrigger'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.isPartiallyValid()', targetType='hudson.model.Run.AddArtifacts'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.handleClose()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.cli.CLIAction.ServerSideImpl.runningThread', targetTypeName='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.<T extends Annotation>getAnnotation(Class<T>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.checkPermission(Job<?,?>, BuildAuthorizationToken, StaplerRequest, StaplerResponse)', targetType='hudson.cli.AddJobToViewCommand'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.fastTail(int)', targetType='hudson.util.Secret.ConverterImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.rangeCheck(int)', targetType='hudson.triggers.SCMTrigger.DescriptorImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.util.io.TarArchiver.buf', targetTypeName='hudson.WebAppMain.FileAndDescription'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.initStaplerCrumbIssuer()', targetType='jenkins.model.Jenkins'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "97b7f973-b662-4c61-94df-55da14ca60f0",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9984237074401009,
+      "NumberOfRefactorings" : 14.0,
+      "LackOfCohesion" : 0.48401135810201246,
+      "MetricsIntensity" : 0.032976946926154035,
+      "Density" : 0.9974209078404401
+    },
+    "euclideanDistance" : 14.079312939230238,
+    "generation" : 1,
+    "numberOfRefactorings" : 14,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5946626384692855,
+      "LackOfCohesion" : 0.48401135810201246,
+      "MetricsIntensity" : 0.032976946926154035,
+      "Density" : 3.108788853161843
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.assigned(int)', targetType='hudson.lifecycle.RestartNotSupportedException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.toMap()', targetType='hudson.views.DefaultMyViewsTabBar.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.get(int)', targetType='hudson.node_monitors.ArchitectureMonitor.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.execute(WorkUnitContext)', targetType='hudson.tasks.BuildTrigger'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.isPartiallyValid()', targetType='hudson.model.Run.AddArtifacts'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.handleClose()', targetType='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.<T extends Annotation>getAnnotation(Class<T>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.checkPermission(Job<?,?>, BuildAuthorizationToken, StaplerRequest, StaplerResponse)', targetType='hudson.cli.AddJobToViewCommand'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.fastTail(int)', targetType='hudson.util.Secret.ConverterImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.rangeCheck(int)', targetType='hudson.triggers.SCMTrigger.DescriptorImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.util.io.TarArchiver.buf', targetTypeName='hudson.WebAppMain.FileAndDescription'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.initStaplerCrumbIssuer()', targetType='jenkins.model.Jenkins'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "ce085965-e8a0-4d64-abc9-8b1f35efa006",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9977931904161412,
+      "NumberOfRefactorings" : 14.0,
+      "LackOfCohesion" : 0.48610193124438233,
+      "MetricsIntensity" : 0.03288743787814914,
+      "Density" : 0.9970770288858322
+    },
+    "euclideanDistance" : 14.079315697984129,
+    "generation" : 1,
+    "numberOfRefactorings" : 14,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5920523138832996,
+      "LackOfCohesion" : 0.48610193124438233,
+      "MetricsIntensity" : 0.03288743787814915,
+      "Density" : 3.101069518716577
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.get(int)', targetType='hudson.node_monitors.ArchitectureMonitor.DescriptorImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.onLocale(String)', targetType='hudson.security.FederatedLoginService.UnclaimedIdentityException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.run()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.handleClose()', targetType='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.getCredentials()', targetType='hudson.model.LargeText.HeadMark'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.genericType()', targetType='hudson.console.ConsoleAnnotator'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.isAnnotationPresent(Class<? extends Annotation>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.<T extends Annotation>getAnnotation(Class<T>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.getToken()', targetType='jenkins.security.ApiTokenProperty.TokenInfoAndStats'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.head(int)', targetType='hudson.console.PlainTextConsoleOutputStream'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[hudson.MarkupText.markup, hudson.MarkupText.tags, hudson.MarkupText.pos], extractedMethods=[hudson.MarkupText.addMarkup(int, String), hudson.MarkupText.toString(boolean), hudson.MarkupText.rangeCheck(int), hudson.MarkupText.addMarkup(int, int, String, String), hudson.MarkupText.toString(), hudson.MarkupText.findTokens(Pattern)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[hudson.util.io.TarArchiver.buf], extractedMethods=[hudson.util.io.TarArchiver.visit(File, String), hudson.util.io.TarArchiver.understandsSymlink(), hudson.util.io.TarArchiver.close()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.getApi()', targetType='hudson.util.JVMBuilder'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "f66618fa-18b7-44ca-9770-767cdde54001",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9984237074401009,
+      "NumberOfRefactorings" : 15.0,
+      "LackOfCohesion" : 0.4842763557355219,
+      "MetricsIntensity" : 0.032976946926154035,
+      "Density" : 0.9972489683631361
+    },
+    "euclideanDistance" : 15.074049438430034,
+    "generation" : 1,
+    "numberOfRefactorings" : 15,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5946626384692852,
+      "LackOfCohesion" : 0.4842763557355219,
+      "MetricsIntensity" : 0.032976946926154035,
+      "Density" : 3.1082529474812435
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.assigned(int)', targetType='hudson.lifecycle.RestartNotSupportedException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.toMap()', targetType='hudson.views.DefaultMyViewsTabBar.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.get(int)', targetType='hudson.node_monitors.ArchitectureMonitor.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.execute(WorkUnitContext)', targetType='hudson.tasks.BuildTrigger'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.isPartiallyValid()', targetType='hudson.model.Run.AddArtifacts'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.onLocale(String)', targetType='hudson.security.FederatedLoginService.UnclaimedIdentityException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.handleClose()', targetType='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.<T extends Annotation>getAnnotation(Class<T>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.checkPermission(Job<?,?>, BuildAuthorizationToken, StaplerRequest, StaplerResponse)', targetType='hudson.cli.AddJobToViewCommand'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.fastTail(int)', targetType='hudson.util.Secret.ConverterImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.rangeCheck(int)', targetType='hudson.triggers.SCMTrigger.DescriptorImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.util.io.TarArchiver.buf', targetTypeName='hudson.WebAppMain.FileAndDescription'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.initStaplerCrumbIssuer()', targetType='jenkins.model.Jenkins'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "4099d374-21df-44d1-a7d7-82d3c57eaa9b",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9984237074401009,
+      "NumberOfRefactorings" : 15.0,
+      "LackOfCohesion" : 0.48455103766793045,
+      "MetricsIntensity" : 0.03296290326183472,
+      "Density" : 0.9974209078404401
+    },
+    "euclideanDistance" : 15.07406961069479,
+    "generation" : 1,
+    "numberOfRefactorings" : 15,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5946626384692855,
+      "LackOfCohesion" : 0.48455103766793045,
+      "MetricsIntensity" : 0.03296290326183472,
+      "Density" : 3.108788853161844
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.assigned(int)', targetType='hudson.lifecycle.RestartNotSupportedException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.toMap()', targetType='hudson.views.DefaultMyViewsTabBar.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.get(int)', targetType='hudson.node_monitors.ArchitectureMonitor.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.execute(WorkUnitContext)', targetType='hudson.tasks.BuildTrigger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.onLocale(String)', targetType='hudson.security.FederatedLoginService.UnclaimedIdentityException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.handleClose()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.cli.CLIAction.ServerSideImpl.runningThread', targetTypeName='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.<T extends Annotation>getAnnotation(Class<T>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.checkPermission(Job<?,?>, BuildAuthorizationToken, StaplerRequest, StaplerResponse)', targetType='hudson.cli.AddJobToViewCommand'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.fastTail(int)', targetType='hudson.util.Secret.ConverterImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.rangeCheck(int)', targetType='hudson.triggers.SCMTrigger.DescriptorImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.util.io.TarArchiver.buf', targetTypeName='hudson.WebAppMain.FileAndDescription'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.initStaplerCrumbIssuer()', targetType='jenkins.model.Jenkins'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "00d90431-9d0d-4e08-b48c-618d4ac1aa11",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9984237074401009,
+      "NumberOfRefactorings" : 16.0,
+      "LackOfCohesion" : 0.4839040091160348,
+      "MetricsIntensity" : 0.03297975266541086,
+      "Density" : 0.9972489683631361
+    },
+    "euclideanDistance" : 16.069430797592183,
+    "generation" : 1,
+    "numberOfRefactorings" : 16,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5946626384692855,
+      "LackOfCohesion" : 0.4839040091160348,
+      "MetricsIntensity" : 0.03297975266541086,
+      "Density" : 3.108252947481243
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.assigned(int)', targetType='hudson.lifecycle.RestartNotSupportedException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.toMap()', targetType='hudson.views.DefaultMyViewsTabBar.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.get(int)', targetType='hudson.node_monitors.ArchitectureMonitor.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.execute(WorkUnitContext)', targetType='hudson.tasks.BuildTrigger'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.isPartiallyValid()', targetType='hudson.model.Run.AddArtifacts'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.run()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.handleClose()', targetType='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.<T extends Annotation>getAnnotation(Class<T>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.checkPermission(Job<?,?>, BuildAuthorizationToken, StaplerRequest, StaplerResponse)', targetType='hudson.cli.AddJobToViewCommand'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.fastTail(int)', targetType='hudson.util.Secret.ConverterImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.rangeCheck(int)', targetType='hudson.triggers.SCMTrigger.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.findTokens(Pattern)', targetType='hudson.scm.NullSCM.DescriptorImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.util.io.TarArchiver.buf', targetTypeName='hudson.WebAppMain.FileAndDescription'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.initStaplerCrumbIssuer()', targetType='jenkins.model.Jenkins'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "ade7f83e-ee68-42c8-8e5f-44ecf758f4a6",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9987389659520807,
+      "NumberOfRefactorings" : 16.0,
+      "LackOfCohesion" : 0.4842707212343444,
+      "MetricsIntensity" : 0.03297186436376221,
+      "Density" : 0.9975928473177441
+    },
+    "euclideanDistance" : 16.06948276349973,
+    "generation" : 1,
+    "numberOfRefactorings" : 16,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5951661631419944,
+      "LackOfCohesion" : 0.4842707212343444,
+      "MetricsIntensity" : 0.03297186436376221,
+      "Density" : 3.1093247588424444
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.assigned(int)', targetType='hudson.lifecycle.RestartNotSupportedException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.get(int)', targetType='hudson.node_monitors.ArchitectureMonitor.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.execute(WorkUnitContext)', targetType='hudson.tasks.BuildTrigger'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.isPartiallyValid()', targetType='hudson.model.Run.AddArtifacts'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.run()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.handleClose()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.cli.CLIAction.ServerSideImpl.runningThread', targetTypeName='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.<T extends Annotation>getAnnotation(Class<T>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.checkPermission(Job<?,?>, BuildAuthorizationToken, StaplerRequest, StaplerResponse)', targetType='hudson.cli.AddJobToViewCommand'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.fastTail(int)', targetType='hudson.util.Secret.ConverterImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.rangeCheck(int)', targetType='hudson.triggers.SCMTrigger.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.findTokens(Pattern)', targetType='hudson.scm.NullSCM.DescriptorImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.util.io.TarArchiver.buf', targetTypeName='hudson.WebAppMain.FileAndDescription'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.initStaplerCrumbIssuer()', targetType='jenkins.model.Jenkins'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "a942d454-f2be-45fb-9a78-02cf6bd8898b",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9990542244640606,
+      "NumberOfRefactorings" : 16.0,
+      "LackOfCohesion" : 0.48417869104844335,
+      "MetricsIntensity" : 0.032965709001091574,
+      "Density" : 0.9975928473177441
+    },
+    "euclideanDistance" : 16.069499574513024,
+    "generation" : 1,
+    "numberOfRefactorings" : 16,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5956696878147034,
+      "LackOfCohesion" : 0.48417869104844335,
+      "MetricsIntensity" : 0.03296570900109157,
+      "Density" : 3.1093247588424435
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.assigned(int)', targetType='hudson.lifecycle.RestartNotSupportedException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.toMap()', targetType='hudson.views.DefaultMyViewsTabBar.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.get(int)', targetType='hudson.node_monitors.ArchitectureMonitor.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.execute(WorkUnitContext)', targetType='hudson.tasks.BuildTrigger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.run()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.handleClose()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.cli.CLIAction.ServerSideImpl.runningThread', targetTypeName='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.<T extends Annotation>getAnnotation(Class<T>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.checkPermission(Job<?,?>, BuildAuthorizationToken, StaplerRequest, StaplerResponse)', targetType='hudson.cli.AddJobToViewCommand'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.fastTail(int)', targetType='hudson.util.Secret.ConverterImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.rangeCheck(int)', targetType='hudson.triggers.SCMTrigger.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.findTokens(Pattern)', targetType='hudson.scm.NullSCM.DescriptorImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.util.io.TarArchiver.buf', targetTypeName='hudson.WebAppMain.FileAndDescription'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.initStaplerCrumbIssuer()', targetType='jenkins.model.Jenkins'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "e0c0aa79-4cd2-4f8c-ba5d-3dbd8b8c1e25",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9974779319041615,
+      "NumberOfRefactorings" : 17.0,
+      "LackOfCohesion" : 0.48468448143748705,
+      "MetricsIntensity" : 0.03298052905865221,
+      "Density" : 0.9967331499312242
+    },
+    "euclideanDistance" : 17.065299468765584,
+    "generation" : 1,
+    "numberOfRefactorings" : 17,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5931520644511579,
+      "LackOfCohesion" : 0.48468448143748705,
+      "MetricsIntensity" : 0.03298052905865221,
+      "Density" : 3.1083109919571044
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.assigned(int)', targetType='hudson.lifecycle.RestartNotSupportedException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.toMap()', targetType='hudson.views.DefaultMyViewsTabBar.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.get(int)', targetType='hudson.node_monitors.ArchitectureMonitor.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.isPartiallyValid()', targetType='hudson.model.Run.AddArtifacts'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.onLocale(String)', targetType='hudson.security.FederatedLoginService.UnclaimedIdentityException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.handleClose()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.cli.CLIAction.ServerSideImpl.runningThread', targetTypeName='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.<T extends Annotation>getAnnotation(Class<T>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.checkPermission(Job<?,?>, BuildAuthorizationToken, StaplerRequest, StaplerResponse)', targetType='hudson.cli.AddJobToViewCommand'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.fastTail(int)', targetType='hudson.util.Secret.ConverterImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.rangeCheck(int)', targetType='hudson.triggers.SCMTrigger.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.findTokens(Pattern)', targetType='hudson.scm.NullSCM.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.addMarkup(int, String)', targetType='hudson.cli.BuildCommand.CLICause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.util.io.TarArchiver.buf', targetTypeName='hudson.WebAppMain.FileAndDescription'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.initStaplerCrumbIssuer()', targetType='jenkins.model.Jenkins'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "f1863e32-c453-49c1-b5cb-6336cb78294d",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9977931904161412,
+      "NumberOfRefactorings" : 17.0,
+      "LackOfCohesion" : 0.4843217134700017,
+      "MetricsIntensity" : 0.032976146073209305,
+      "Density" : 0.9967331499312242
+    },
+    "euclideanDistance" : 17.065307590880423,
+    "generation" : 1,
+    "numberOfRefactorings" : 17,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5936555891238675,
+      "LackOfCohesion" : 0.4843217134700017,
+      "MetricsIntensity" : 0.032976146073209305,
+      "Density" : 3.1083109919571044
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.assigned(int)', targetType='hudson.lifecycle.RestartNotSupportedException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.toMap()', targetType='hudson.views.DefaultMyViewsTabBar.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.get(int)', targetType='hudson.node_monitors.ArchitectureMonitor.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.execute(WorkUnitContext)', targetType='hudson.tasks.BuildTrigger'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.isPartiallyValid()', targetType='hudson.model.Run.AddArtifacts'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.onLocale(String)', targetType='hudson.security.FederatedLoginService.UnclaimedIdentityException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.handleClose()', targetType='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.<T extends Annotation>getAnnotation(Class<T>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.checkPermission(Job<?,?>, BuildAuthorizationToken, StaplerRequest, StaplerResponse)', targetType='hudson.cli.AddJobToViewCommand'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.fastTail(int)', targetType='hudson.util.Secret.ConverterImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.rangeCheck(int)', targetType='hudson.triggers.SCMTrigger.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.findTokens(Pattern)', targetType='hudson.scm.NullSCM.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.addMarkup(int, String)', targetType='hudson.cli.BuildCommand.CLICause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.util.io.TarArchiver.buf', targetTypeName='hudson.WebAppMain.FileAndDescription'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.initStaplerCrumbIssuer()', targetType='jenkins.model.Jenkins'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "ccd33e63-801b-45df-983a-b4cc6fe28fc5",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9977931904161412,
+      "NumberOfRefactorings" : 17.0,
+      "LackOfCohesion" : 0.4842707212343442,
+      "MetricsIntensity" : 0.032976720250819304,
+      "Density" : 0.9969050894085282
+    },
+    "euclideanDistance" : 17.065316188212066,
+    "generation" : 1,
+    "numberOfRefactorings" : 17,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5936555891238677,
+      "LackOfCohesion" : 0.4842707212343442,
+      "MetricsIntensity" : 0.032976720250819304,
+      "Density" : 3.1088471849865953
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.assigned(int)', targetType='hudson.lifecycle.RestartNotSupportedException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.toMap()', targetType='hudson.views.DefaultMyViewsTabBar.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.get(int)', targetType='hudson.node_monitors.ArchitectureMonitor.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.execute(WorkUnitContext)', targetType='hudson.tasks.BuildTrigger'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.isPartiallyValid()', targetType='hudson.model.Run.AddArtifacts'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.onLocale(String)', targetType='hudson.security.FederatedLoginService.UnclaimedIdentityException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.handleClose()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.cli.CLIAction.ServerSideImpl.runningThread', targetTypeName='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.<T extends Annotation>getAnnotation(Class<T>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.checkPermission(Job<?,?>, BuildAuthorizationToken, StaplerRequest, StaplerResponse)', targetType='hudson.cli.AddJobToViewCommand'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.fastTail(int)', targetType='hudson.util.Secret.ConverterImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.rangeCheck(int)', targetType='hudson.triggers.SCMTrigger.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.findTokens(Pattern)', targetType='hudson.scm.NullSCM.DescriptorImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.util.io.TarArchiver.buf', targetTypeName='hudson.WebAppMain.FileAndDescription'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.initStaplerCrumbIssuer()', targetType='jenkins.model.Jenkins'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "0e27c5f2-d99f-430d-9107-f16c5f11cc86",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9977931904161412,
+      "NumberOfRefactorings" : 17.0,
+      "LackOfCohesion" : 0.4840554832893596,
+      "MetricsIntensity" : 0.0329761460732093,
+      "Density" : 0.9970770288858322
+    },
+    "euclideanDistance" : 17.065320125608103,
+    "generation" : 1,
+    "numberOfRefactorings" : 17,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.593655589123867,
+      "LackOfCohesion" : 0.4840554832893596,
+      "MetricsIntensity" : 0.0329761460732093,
+      "Density" : 3.1093833780160858
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.assigned(int)', targetType='hudson.lifecycle.RestartNotSupportedException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.toMap()', targetType='hudson.views.DefaultMyViewsTabBar.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.get(int)', targetType='hudson.node_monitors.ArchitectureMonitor.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.execute(WorkUnitContext)', targetType='hudson.tasks.BuildTrigger'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.isPartiallyValid()', targetType='hudson.model.Run.AddArtifacts'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.handleClose()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.cli.CLIAction.ServerSideImpl.runningThread', targetTypeName='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.<T extends Annotation>getAnnotation(Class<T>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.checkPermission(Job<?,?>, BuildAuthorizationToken, StaplerRequest, StaplerResponse)', targetType='hudson.cli.AddJobToViewCommand'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.fastTail(int)', targetType='hudson.util.Secret.ConverterImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.rangeCheck(int)', targetType='hudson.triggers.SCMTrigger.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.findTokens(Pattern)', targetType='hudson.scm.NullSCM.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.addMarkup(int, String)', targetType='hudson.cli.BuildCommand.CLICause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.util.io.TarArchiver.buf', targetTypeName='hudson.WebAppMain.FileAndDescription'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.initStaplerCrumbIssuer()', targetType='jenkins.model.Jenkins'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "d6e592b0-12c2-4e40-8102-fd17758c27a6",
+    "objectives" : {
+      "NumberOfConcerns" : 0.998108448928121,
+      "NumberOfRefactorings" : 17.0,
+      "LackOfCohesion" : 0.4841644404558817,
+      "MetricsIntensity" : 0.03297013142478421,
+      "Density" : 0.9967331499312242
+    },
+    "euclideanDistance" : 17.06532155228731,
+    "generation" : 1,
+    "numberOfRefactorings" : 17,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5941591137965765,
+      "LackOfCohesion" : 0.4841644404558817,
+      "MetricsIntensity" : 0.032970131424784214,
+      "Density" : 3.106645230439443
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.assigned(int)', targetType='hudson.lifecycle.RestartNotSupportedException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.toMap()', targetType='hudson.views.DefaultMyViewsTabBar.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.get(int)', targetType='hudson.node_monitors.ArchitectureMonitor.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.execute(WorkUnitContext)', targetType='hudson.tasks.BuildTrigger'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.isPartiallyValid()', targetType='hudson.model.Run.AddArtifacts'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.onLocale(String)', targetType='hudson.security.FederatedLoginService.UnclaimedIdentityException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.run()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.handleClose()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.cli.CLIAction.ServerSideImpl.runningThread', targetTypeName='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.<T extends Annotation>getAnnotation(Class<T>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.checkPermission(Job<?,?>, BuildAuthorizationToken, StaplerRequest, StaplerResponse)', targetType='hudson.cli.AddJobToViewCommand'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.fastTail(int)', targetType='hudson.util.Secret.ConverterImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.findTokens(Pattern)', targetType='hudson.scm.NullSCM.DescriptorImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.util.io.TarArchiver.buf', targetTypeName='hudson.WebAppMain.FileAndDescription'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.initStaplerCrumbIssuer()', targetType='jenkins.model.Jenkins'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "b8c4bba3-43a3-411c-ac4f-3767f293490e",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9977931904161412,
+      "NumberOfRefactorings" : 17.0,
+      "LackOfCohesion" : 0.48459639540241034,
+      "MetricsIntensity" : 0.032962102408889984,
+      "Density" : 0.9969050894085282
+    },
+    "euclideanDistance" : 17.065325404889347,
+    "generation" : 1,
+    "numberOfRefactorings" : 17,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5936555891238675,
+      "LackOfCohesion" : 0.48459639540241034,
+      "MetricsIntensity" : 0.032962102408889984,
+      "Density" : 3.108847184986595
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.assigned(int)', targetType='hudson.lifecycle.RestartNotSupportedException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.toMap()', targetType='hudson.views.DefaultMyViewsTabBar.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.get(int)', targetType='hudson.node_monitors.ArchitectureMonitor.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.execute(WorkUnitContext)', targetType='hudson.tasks.BuildTrigger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.onLocale(String)', targetType='hudson.security.FederatedLoginService.UnclaimedIdentityException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.handleClose()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.cli.CLIAction.ServerSideImpl.runningThread', targetTypeName='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.<T extends Annotation>getAnnotation(Class<T>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.checkPermission(Job<?,?>, BuildAuthorizationToken, StaplerRequest, StaplerResponse)', targetType='hudson.cli.AddJobToViewCommand'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.fastTail(int)', targetType='hudson.util.Secret.ConverterImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.rangeCheck(int)', targetType='hudson.triggers.SCMTrigger.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.findTokens(Pattern)', targetType='hudson.scm.NullSCM.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.addMarkup(int, String)', targetType='hudson.cli.BuildCommand.CLICause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.util.io.TarArchiver.buf', targetTypeName='hudson.WebAppMain.FileAndDescription'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.initStaplerCrumbIssuer()', targetType='jenkins.model.Jenkins'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "687ec1db-72ab-4a46-9419-49d157f42fc5",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9984237074401009,
+      "NumberOfRefactorings" : 17.0,
+      "LackOfCohesion" : 0.4844397562696728,
+      "MetricsIntensity" : 0.03295782069944292,
+      "Density" : 0.9969050894085282
+    },
+    "euclideanDistance" : 17.065357826669413,
+    "generation" : 1,
+    "numberOfRefactorings" : 17,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5946626384692855,
+      "LackOfCohesion" : 0.4844397562696728,
+      "MetricsIntensity" : 0.03295782069944292,
+      "Density" : 3.1071811361200425
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.assigned(int)', targetType='hudson.lifecycle.RestartNotSupportedException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.toMap()', targetType='hudson.views.DefaultMyViewsTabBar.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.get(int)', targetType='hudson.node_monitors.ArchitectureMonitor.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.execute(WorkUnitContext)', targetType='hudson.tasks.BuildTrigger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.onLocale(String)', targetType='hudson.security.FederatedLoginService.UnclaimedIdentityException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.run()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.handleClose()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.cli.CLIAction.ServerSideImpl.runningThread', targetTypeName='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.<T extends Annotation>getAnnotation(Class<T>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.checkPermission(Job<?,?>, BuildAuthorizationToken, StaplerRequest, StaplerResponse)', targetType='hudson.cli.AddJobToViewCommand'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.fastTail(int)', targetType='hudson.util.Secret.ConverterImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.rangeCheck(int)', targetType='hudson.triggers.SCMTrigger.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.findTokens(Pattern)', targetType='hudson.scm.NullSCM.DescriptorImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.util.io.TarArchiver.buf', targetTypeName='hudson.WebAppMain.FileAndDescription'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.initStaplerCrumbIssuer()', targetType='jenkins.model.Jenkins'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "7b0062f2-689d-4761-b23b-febe74fa6927",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9987389659520807,
+      "NumberOfRefactorings" : 17.0,
+      "LackOfCohesion" : 0.4839026004907405,
+      "MetricsIntensity" : 0.03297975266541087,
+      "Density" : 0.9974209078404401
+    },
+    "euclideanDistance" : 17.065391216739094,
+    "generation" : 1,
+    "numberOfRefactorings" : 17,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5951661631419942,
+      "LackOfCohesion" : 0.4839026004907405,
+      "MetricsIntensity" : 0.03297975266541087,
+      "Density" : 3.108788853161844
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.assigned(int)', targetType='hudson.lifecycle.RestartNotSupportedException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.toMap()', targetType='hudson.views.DefaultMyViewsTabBar.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.get(int)', targetType='hudson.node_monitors.ArchitectureMonitor.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.execute(WorkUnitContext)', targetType='hudson.tasks.BuildTrigger'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.isPartiallyValid()', targetType='hudson.model.Run.AddArtifacts'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.run()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.handleClose()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.cli.CLIAction.ServerSideImpl.runningThread', targetTypeName='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.<T extends Annotation>getAnnotation(Class<T>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.checkPermission(Job<?,?>, BuildAuthorizationToken, StaplerRequest, StaplerResponse)', targetType='hudson.cli.AddJobToViewCommand'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.fastTail(int)', targetType='hudson.util.Secret.ConverterImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.rangeCheck(int)', targetType='hudson.triggers.SCMTrigger.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.findTokens(Pattern)', targetType='hudson.scm.NullSCM.DescriptorImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.util.io.TarArchiver.buf', targetTypeName='hudson.WebAppMain.FileAndDescription'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.initStaplerCrumbIssuer()', targetType='jenkins.model.Jenkins'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "b15cfe3c-2f59-4c49-a280-78c0985b48be",
+    "objectives" : {
+      "NumberOfConcerns" : 0.998108448928121,
+      "NumberOfRefactorings" : 18.0,
+      "LackOfCohesion" : 0.48416366571196984,
+      "MetricsIntensity" : 0.03297186436376221,
+      "Density" : 0.9967331499312242
+    },
+    "euclideanDistance" : 18.06170531946053,
+    "generation" : 1,
+    "numberOfRefactorings" : 18,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5941591137965767,
+      "LackOfCohesion" : 0.48416366571196984,
+      "MetricsIntensity" : 0.03297186436376221,
+      "Density" : 3.106645230439444
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.assigned(int)', targetType='hudson.lifecycle.RestartNotSupportedException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.toMap()', targetType='hudson.views.DefaultMyViewsTabBar.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.get(int)', targetType='hudson.node_monitors.ArchitectureMonitor.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.execute(WorkUnitContext)', targetType='hudson.tasks.BuildTrigger'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.isPartiallyValid()', targetType='hudson.model.Run.AddArtifacts'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.onLocale(String)', targetType='hudson.security.FederatedLoginService.UnclaimedIdentityException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.run()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.handleClose()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.cli.CLIAction.ServerSideImpl.runningThread', targetTypeName='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.<T extends Annotation>getAnnotation(Class<T>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.checkPermission(Job<?,?>, BuildAuthorizationToken, StaplerRequest, StaplerResponse)', targetType='hudson.cli.AddJobToViewCommand'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.fastTail(int)', targetType='hudson.util.Secret.ConverterImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.rangeCheck(int)', targetType='hudson.triggers.SCMTrigger.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.findTokens(Pattern)', targetType='hudson.scm.NullSCM.DescriptorImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.util.io.TarArchiver.buf', targetTypeName='hudson.WebAppMain.FileAndDescription'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.initStaplerCrumbIssuer()', targetType='jenkins.model.Jenkins'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "36cb652c-cc9f-4ed8-a09b-7ea5546d74db",
+    "objectives" : {
+      "NumberOfConcerns" : 0.998108448928121,
+      "NumberOfRefactorings" : 18.0,
+      "LackOfCohesion" : 0.4844893398800357,
+      "MetricsIntensity" : 0.0329572465218329,
+      "Density" : 0.9967331499312242
+    },
+    "euclideanDistance" : 18.061714025765916,
+    "generation" : 1,
+    "numberOfRefactorings" : 18,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.594159113796576,
+      "LackOfCohesion" : 0.4844893398800357,
+      "MetricsIntensity" : 0.03295724652183289,
+      "Density" : 3.106645230439443
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.assigned(int)', targetType='hudson.lifecycle.RestartNotSupportedException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.toMap()', targetType='hudson.views.DefaultMyViewsTabBar.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.get(int)', targetType='hudson.node_monitors.ArchitectureMonitor.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.execute(WorkUnitContext)', targetType='hudson.tasks.BuildTrigger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.onLocale(String)', targetType='hudson.security.FederatedLoginService.UnclaimedIdentityException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.run()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.handleClose()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.cli.CLIAction.ServerSideImpl.runningThread', targetTypeName='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.<T extends Annotation>getAnnotation(Class<T>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.checkPermission(Job<?,?>, BuildAuthorizationToken, StaplerRequest, StaplerResponse)', targetType='hudson.cli.AddJobToViewCommand'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.fastTail(int)', targetType='hudson.util.Secret.ConverterImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.rangeCheck(int)', targetType='hudson.triggers.SCMTrigger.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.findTokens(Pattern)', targetType='hudson.scm.NullSCM.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.addMarkup(int, String)', targetType='hudson.cli.BuildCommand.CLICause'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.util.io.TarArchiver.buf', targetTypeName='hudson.WebAppMain.FileAndDescription'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.initStaplerCrumbIssuer()', targetType='jenkins.model.Jenkins'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "00fd837c-bad6-4e93-916f-dcebb8d8e578",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9977931904161412,
+      "NumberOfRefactorings" : 19.0,
+      "LackOfCohesion" : 0.48320673959530536,
+      "MetricsIntensity" : 0.0329767202508193,
+      "Density" : 0.9970770288858322
+    },
+    "euclideanDistance" : 19.058445111541538,
+    "generation" : 1,
+    "numberOfRefactorings" : 19,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5936555891238664,
+      "LackOfCohesion" : 0.48320673959530536,
+      "MetricsIntensity" : 0.0329767202508193,
+      "Density" : 3.109383378016085
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.assigned(int)', targetType='hudson.lifecycle.RestartNotSupportedException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.size()', targetType='hudson.util.RemotingDiagnostics.HeapDump'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.toMap()', targetType='hudson.views.DefaultMyViewsTabBar.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.get(int)', targetType='hudson.node_monitors.ArchitectureMonitor.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.execute(WorkUnitContext)', targetType='hudson.tasks.BuildTrigger'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.isPartiallyValid()', targetType='hudson.model.Run.AddArtifacts'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.onLocale(String)', targetType='hudson.security.FederatedLoginService.UnclaimedIdentityException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.handleClose()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.cli.CLIAction.ServerSideImpl.runningThread', targetTypeName='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.<T extends Annotation>getAnnotation(Class<T>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.checkPermission(Job<?,?>, BuildAuthorizationToken, StaplerRequest, StaplerResponse)', targetType='hudson.cli.AddJobToViewCommand'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.fastTail(int)', targetType='hudson.util.Secret.ConverterImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.rangeCheck(int)', targetType='hudson.triggers.SCMTrigger.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.findTokens(Pattern)', targetType='hudson.scm.NullSCM.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.toString()', targetType='hudson.tasks.Builder'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.util.io.TarArchiver.buf', targetTypeName='hudson.WebAppMain.FileAndDescription'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.initStaplerCrumbIssuer()', targetType='jenkins.model.Jenkins'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "340ac95d-bf93-43f2-bc41-5ace683561f4",
+    "objectives" : {
+      "NumberOfConcerns" : 0.998108448928121,
+      "NumberOfRefactorings" : 19.0,
+      "LackOfCohesion" : 0.4831018674421373,
+      "MetricsIntensity" : 0.03297013142478421,
+      "Density" : 0.9969050894085282
+    },
+    "euclideanDistance" : 19.058449954731433,
+    "generation" : 1,
+    "numberOfRefactorings" : 19,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5941591137965765,
+      "LackOfCohesion" : 0.4831018674421373,
+      "MetricsIntensity" : 0.03297013142478421,
+      "Density" : 3.1071811361200425
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.assigned(int)', targetType='hudson.lifecycle.RestartNotSupportedException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.size()', targetType='hudson.util.RemotingDiagnostics.HeapDump'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.toMap()', targetType='hudson.views.DefaultMyViewsTabBar.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.get(int)', targetType='hudson.node_monitors.ArchitectureMonitor.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.execute(WorkUnitContext)', targetType='hudson.tasks.BuildTrigger'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.isPartiallyValid()', targetType='hudson.model.Run.AddArtifacts'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.onLocale(String)', targetType='hudson.security.FederatedLoginService.UnclaimedIdentityException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.run()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.handleClose()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.cli.CLIAction.ServerSideImpl.runningThread', targetTypeName='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.<T extends Annotation>getAnnotation(Class<T>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.checkPermission(Job<?,?>, BuildAuthorizationToken, StaplerRequest, StaplerResponse)', targetType='hudson.cli.AddJobToViewCommand'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.fastTail(int)', targetType='hudson.util.Secret.ConverterImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.findTokens(Pattern)', targetType='hudson.scm.NullSCM.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.toString()', targetType='hudson.tasks.Builder'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.util.io.TarArchiver.buf', targetTypeName='hudson.WebAppMain.FileAndDescription'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.initStaplerCrumbIssuer()', targetType='jenkins.model.Jenkins'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "35ede2ca-9948-43a5-a992-9d793e0221e5",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9977931904161412,
+      "NumberOfRefactorings" : 19.0,
+      "LackOfCohesion" : 0.4842001021529183,
+      "MetricsIntensity" : 0.03297763278590785,
+      "Density" : 0.9967331499312242
+    },
+    "euclideanDistance" : 19.058452337118084,
+    "generation" : 1,
+    "numberOfRefactorings" : 19,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.593655589123867,
+      "LackOfCohesion" : 0.4842001021529183,
+      "MetricsIntensity" : 0.03297763278590785,
+      "Density" : 3.106645230439443
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.assigned(int)', targetType='hudson.lifecycle.RestartNotSupportedException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.size()', targetType='hudson.util.RemotingDiagnostics.HeapDump'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.toMap()', targetType='hudson.views.DefaultMyViewsTabBar.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.get(int)', targetType='hudson.node_monitors.ArchitectureMonitor.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.isPartiallyValid()', targetType='hudson.model.Run.AddArtifacts'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.onLocale(String)', targetType='hudson.security.FederatedLoginService.UnclaimedIdentityException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.run()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.handleClose()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.cli.CLIAction.ServerSideImpl.runningThread', targetTypeName='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.<T extends Annotation>getAnnotation(Class<T>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.checkPermission(Job<?,?>, BuildAuthorizationToken, StaplerRequest, StaplerResponse)', targetType='hudson.cli.AddJobToViewCommand'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.fastTail(int)', targetType='hudson.util.Secret.ConverterImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.rangeCheck(int)', targetType='hudson.triggers.SCMTrigger.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.findTokens(Pattern)', targetType='hudson.scm.NullSCM.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.toString()', targetType='hudson.tasks.Builder'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.util.io.TarArchiver.buf', targetTypeName='hudson.WebAppMain.FileAndDescription'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.initStaplerCrumbIssuer()', targetType='jenkins.model.Jenkins'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "5f677ab5-b3df-419f-9b32-70c63aa5f7e2",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9987389659520807,
+      "NumberOfRefactorings" : 19.0,
+      "LackOfCohesion" : 0.48283861885170176,
+      "MetricsIntensity" : 0.03297975266541089,
+      "Density" : 0.9975928473177441
+    },
+    "euclideanDistance" : 19.058512318831998,
+    "generation" : 1,
+    "numberOfRefactorings" : 19,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5951661631419942,
+      "LackOfCohesion" : 0.48283861885170176,
+      "MetricsIntensity" : 0.03297975266541089,
+      "Density" : 3.1093247588424435
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.assigned(int)', targetType='hudson.lifecycle.RestartNotSupportedException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.size()', targetType='hudson.util.RemotingDiagnostics.HeapDump'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.toMap()', targetType='hudson.views.DefaultMyViewsTabBar.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.get(int)', targetType='hudson.node_monitors.ArchitectureMonitor.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.execute(WorkUnitContext)', targetType='hudson.tasks.BuildTrigger'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.isPartiallyValid()', targetType='hudson.model.Run.AddArtifacts'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.run()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.handleClose()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.cli.CLIAction.ServerSideImpl.runningThread', targetTypeName='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.<T extends Annotation>getAnnotation(Class<T>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.checkPermission(Job<?,?>, BuildAuthorizationToken, StaplerRequest, StaplerResponse)', targetType='hudson.cli.AddJobToViewCommand'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.fastTail(int)', targetType='hudson.util.Secret.ConverterImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.rangeCheck(int)', targetType='hudson.triggers.SCMTrigger.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.findTokens(Pattern)', targetType='hudson.scm.NullSCM.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.toString()', targetType='hudson.tasks.Builder'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.util.io.TarArchiver.buf', targetTypeName='hudson.WebAppMain.FileAndDescription'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.initStaplerCrumbIssuer()', targetType='jenkins.model.Jenkins'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "c46ffc16-615e-4682-a8e3-ae93af2181db",
+    "objectives" : {
+      "NumberOfConcerns" : 0.998108448928121,
+      "NumberOfRefactorings" : 20.0,
+      "LackOfCohesion" : 0.4830996840729309,
+      "MetricsIntensity" : 0.032971864363762225,
+      "Density" : 0.9969050894085282
+    },
+    "euclideanDistance" : 20.05553571166079,
+    "generation" : 1,
+    "numberOfRefactorings" : 20,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5941591137965763,
+      "LackOfCohesion" : 0.4830996840729309,
+      "MetricsIntensity" : 0.032971864363762225,
+      "Density" : 3.107181136120043
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.assigned(int)', targetType='hudson.lifecycle.RestartNotSupportedException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.size()', targetType='hudson.util.RemotingDiagnostics.HeapDump'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.toMap()', targetType='hudson.views.DefaultMyViewsTabBar.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.get(int)', targetType='hudson.node_monitors.ArchitectureMonitor.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.execute(WorkUnitContext)', targetType='hudson.tasks.BuildTrigger'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.isPartiallyValid()', targetType='hudson.model.Run.AddArtifacts'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.onLocale(String)', targetType='hudson.security.FederatedLoginService.UnclaimedIdentityException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.run()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.handleClose()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.cli.CLIAction.ServerSideImpl.runningThread', targetTypeName='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.<T extends Annotation>getAnnotation(Class<T>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.checkPermission(Job<?,?>, BuildAuthorizationToken, StaplerRequest, StaplerResponse)', targetType='hudson.cli.AddJobToViewCommand'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.fastTail(int)', targetType='hudson.util.Secret.ConverterImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.rangeCheck(int)', targetType='hudson.triggers.SCMTrigger.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.findTokens(Pattern)', targetType='hudson.scm.NullSCM.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.toString()', targetType='hudson.tasks.Builder'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.util.io.TarArchiver.buf', targetTypeName='hudson.WebAppMain.FileAndDescription'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.initStaplerCrumbIssuer()', targetType='jenkins.model.Jenkins'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "b13bd485-94a7-4fbe-9e7a-c3299f9295fb",
+    "objectives" : {
+      "NumberOfConcerns" : 0.998108448928121,
+      "NumberOfRefactorings" : 20.0,
+      "LackOfCohesion" : 0.48309968407293097,
+      "MetricsIntensity" : 0.032971864363762204,
+      "Density" : 0.9969050894085282
+    },
+    "euclideanDistance" : 20.05553571166079,
+    "generation" : 1,
+    "numberOfRefactorings" : 20,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.5941591137965765,
+      "LackOfCohesion" : 0.48309968407293097,
+      "MetricsIntensity" : 0.032971864363762204,
+      "Density" : 3.1071811361200434
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "hudson.tasks.BuildWrappers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.tasks.BuildWrappers.getFor(AbstractProject<?,?>)', targetType='jenkins.model.Jenkins'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.queue.MappingWorksheet.Mapping",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.assigned(int)', targetType='hudson.lifecycle.RestartNotSupportedException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.size()', targetType='hudson.util.RemotingDiagnostics.HeapDump'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.toMap()', targetType='hudson.views.DefaultMyViewsTabBar.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.get(int)', targetType='hudson.node_monitors.ArchitectureMonitor.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.execute(WorkUnitContext)', targetType='hudson.tasks.BuildTrigger'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.queue.MappingWorksheet.Mapping.isPartiallyValid()', targetType='hudson.model.Run.AddArtifacts'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.cli.CLIAction.ServerSideImpl",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.onLocale(String)', targetType='hudson.security.FederatedLoginService.UnclaimedIdentityException'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.run()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.cli.CLIAction.ServerSideImpl.handleClose()', targetType='hudson.Functions.ThreadGroupMap'"
+      }, {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.cli.CLIAction.ServerSideImpl.runningThread', targetTypeName='hudson.Functions.ThreadGroupMap'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.acegisecurity.Authentication",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.acegisecurity.Authentication.fromSpring(org.springframework.security.core.Authentication)', targetType='hudson.security.ACL'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.ReflectionUtils.Parameter",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.ReflectionUtils.Parameter.<T extends Annotation>getAnnotation(Class<T>)', targetType='hudson.util.FormFieldValidator.NonNegativeInteger'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.model.BuildAuthorizationToken",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.model.BuildAuthorizationToken.checkPermission(Job<?,?>, BuildAuthorizationToken, StaplerRequest, StaplerResponse)', targetType='hudson.cli.AddJobToViewCommand'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.TextFile",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.util.TextFile.fastTail(int)', targetType='hudson.util.Secret.ConverterImpl'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.MarkupText",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.rangeCheck(int)', targetType='hudson.triggers.SCMTrigger.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.findTokens(Pattern)', targetType='hudson.scm.NullSCM.DescriptorImpl'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.MarkupText.toString()', targetType='hudson.tasks.Builder'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.util.io.TarArchiver",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Field",
+        "change" : "fieldName='hudson.util.io.TarArchiver.buf', targetTypeName='hudson.WebAppMain.FileAndDescription'"
+      } ]
+    }, {
+      "refactoredTypeName" : "hudson.security.csrf.CrumbIssuer",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='hudson.security.csrf.CrumbIssuer.initStaplerCrumbIssuer()', targetType='jenkins.model.Jenkins'"
+      } ]
+    } ]
+  } ]
+}

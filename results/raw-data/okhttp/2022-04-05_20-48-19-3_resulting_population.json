@@ -1,0 +1,1639 @@
+{
+  "executionId" : "0d4c2f28-a5bb-4ae3-87a9-c2d8779bcd9d",
+  "computingTime" : 3045,
+  "maxEvaluations" : 1000,
+  "initialPopulationSize" : 50,
+  "finalPopulationSize" : 32,
+  "algorithm" : "Baseline_NF",
+  "projectBeforeRefactoring" : {
+    "meanDensity" : 3.5816733067729087,
+    "meanNumConcerns" : 1.7258687258687258,
+    "meanMetricsIntensity" : 0.10570392479894604,
+    "meanLackOfCohesion" : 0.6760798143144731
+  },
+  "population" : [ {
+    "solutionId" : "2279e063-7e44-4381-8557-5e118be9fea4",
+    "objectives" : {
+      "NumberOfConcerns" : 0.9977628635346756,
+      "NumberOfRefactorings" : 3.0,
+      "LackOfCohesion" : 0.6758525453677701,
+      "MetricsIntensity" : 0.10560788171490511,
+      "Density" : 0.9955506117908788
+    },
+    "euclideanDistance" : 3.3844617652215416,
+    "generation" : 0,
+    "numberOfRefactorings" : 3,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7220077220077221,
+      "LackOfCohesion" : 0.6758525453677701,
+      "MetricsIntensity" : 0.1056078817149051,
+      "Density" : 3.5657370517928286,
+      "baselineType" : "MOVE_METHODS"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.internal.platform.Platform.findPlatform()', targetType='okhttp3.internal.platform.ConscryptPlatform'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.Headers.checkValue(String, String)', targetType='okhttp3.internal.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.Headers.checkName(String)', targetType='okhttp3.internal.Util'"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "98201525-cbbe-4193-9e14-fcfa03fc70e3",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0134228187919463,
+      "NumberOfRefactorings" : 5.0,
+      "LackOfCohesion" : 0.6716782482582538,
+      "MetricsIntensity" : 0.10800204774153431,
+      "Density" : 0.9899888765294772
+    },
+    "euclideanDistance" : 5.241175430836098,
+    "generation" : 0,
+    "numberOfRefactorings" : 5,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7224334600760458,
+      "LackOfCohesion" : 0.6716782482582538,
+      "MetricsIntensity" : 0.10800204774153431,
+      "Density" : 3.4901960784313717,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.internal.platform.Platform.findPlatform()', targetType='okhttp3.internal.platform.ConscryptPlatform'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.Headers.toMultimap(), okhttp3.Headers.size(), okhttp3.Headers.names(), okhttp3.Headers.values(String), okhttp3.Headers.of(Map<String,String>), okhttp3.Headers.of(String...), okhttp3.Headers.checkValue(String, String), okhttp3.Headers.checkName(String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "042ec6a5-7824-412a-bca0-5922056e972b",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0134228187919463,
+      "NumberOfRefactorings" : 5.0,
+      "LackOfCohesion" : 0.671678248258254,
+      "MetricsIntensity" : 0.10800204774153432,
+      "Density" : 0.9899888765294772
+    },
+    "euclideanDistance" : 5.241175430836098,
+    "generation" : 0,
+    "numberOfRefactorings" : 5,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7224334600760458,
+      "LackOfCohesion" : 0.671678248258254,
+      "MetricsIntensity" : 0.10800204774153431,
+      "Density" : 3.490196078431372,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.internal.platform.Platform.findPlatform()', targetType='okhttp3.internal.platform.ConscryptPlatform'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.Headers.toMultimap(), okhttp3.Headers.size(), okhttp3.Headers.names(), okhttp3.Headers.values(String), okhttp3.Headers.of(Map<String,String>), okhttp3.Headers.of(String...), okhttp3.Headers.checkValue(String, String), okhttp3.Headers.checkName(String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "920d0415-6ac7-417a-a6bc-a57d31d795a6",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0134228187919463,
+      "NumberOfRefactorings" : 5.0,
+      "LackOfCohesion" : 0.6716782482582538,
+      "MetricsIntensity" : 0.10800204774153432,
+      "Density" : 0.9899888765294772
+    },
+    "euclideanDistance" : 5.241175430836098,
+    "generation" : 0,
+    "numberOfRefactorings" : 5,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7224334600760458,
+      "LackOfCohesion" : 0.6716782482582538,
+      "MetricsIntensity" : 0.10800204774153432,
+      "Density" : 3.4901960784313726,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.internal.platform.Platform.findPlatform()', targetType='okhttp3.internal.platform.ConscryptPlatform'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.Headers.toMultimap(), okhttp3.Headers.size(), okhttp3.Headers.names(), okhttp3.Headers.values(String), okhttp3.Headers.of(Map<String,String>), okhttp3.Headers.of(String...), okhttp3.Headers.checkValue(String, String), okhttp3.Headers.checkName(String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "2efb8fa9-b504-4682-b031-65cac1618715",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0134228187919463,
+      "NumberOfRefactorings" : 5.0,
+      "LackOfCohesion" : 0.6716782482582538,
+      "MetricsIntensity" : 0.10800204774153432,
+      "Density" : 0.9899888765294772
+    },
+    "euclideanDistance" : 5.241175430836098,
+    "generation" : 0,
+    "numberOfRefactorings" : 5,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7224334600760458,
+      "LackOfCohesion" : 0.6716782482582538,
+      "MetricsIntensity" : 0.10800204774153432,
+      "Density" : 3.4901960784313726,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.internal.platform.Platform.findPlatform()', targetType='okhttp3.internal.platform.ConscryptPlatform'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.Headers.toMultimap(), okhttp3.Headers.size(), okhttp3.Headers.names(), okhttp3.Headers.values(String), okhttp3.Headers.of(Map<String,String>), okhttp3.Headers.of(String...), okhttp3.Headers.checkValue(String, String), okhttp3.Headers.checkName(String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "871dbc66-a636-424a-9ca8-d5d85a7567dd",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0134228187919463,
+      "NumberOfRefactorings" : 5.0,
+      "LackOfCohesion" : 0.671678248258254,
+      "MetricsIntensity" : 0.10800204774153431,
+      "Density" : 0.9899888765294772
+    },
+    "euclideanDistance" : 5.241175430836098,
+    "generation" : 0,
+    "numberOfRefactorings" : 5,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7224334600760458,
+      "LackOfCohesion" : 0.671678248258254,
+      "MetricsIntensity" : 0.10800204774153431,
+      "Density" : 3.4901960784313726,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.internal.platform.Platform.findPlatform()', targetType='okhttp3.internal.platform.ConscryptPlatform'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.Headers.toMultimap(), okhttp3.Headers.size(), okhttp3.Headers.names(), okhttp3.Headers.values(String), okhttp3.Headers.of(Map<String,String>), okhttp3.Headers.of(String...), okhttp3.Headers.checkValue(String, String), okhttp3.Headers.checkName(String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "0fcad94b-1ca2-40b9-8398-ba6829ae639d",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0134228187919463,
+      "NumberOfRefactorings" : 5.0,
+      "LackOfCohesion" : 0.671678248258254,
+      "MetricsIntensity" : 0.10800204774153432,
+      "Density" : 0.9899888765294772
+    },
+    "euclideanDistance" : 5.241175430836098,
+    "generation" : 0,
+    "numberOfRefactorings" : 5,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7224334600760458,
+      "LackOfCohesion" : 0.671678248258254,
+      "MetricsIntensity" : 0.10800204774153431,
+      "Density" : 3.4901960784313726,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.internal.platform.Platform.findPlatform()', targetType='okhttp3.internal.platform.ConscryptPlatform'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.Headers.toMultimap(), okhttp3.Headers.size(), okhttp3.Headers.names(), okhttp3.Headers.values(String), okhttp3.Headers.of(Map<String,String>), okhttp3.Headers.of(String...), okhttp3.Headers.checkValue(String, String), okhttp3.Headers.checkName(String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "8ef19cec-c207-46a0-8df1-ea69ab1dbfe7",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0134228187919463,
+      "NumberOfRefactorings" : 5.0,
+      "LackOfCohesion" : 0.671678248258254,
+      "MetricsIntensity" : 0.10800204774153432,
+      "Density" : 0.9899888765294772
+    },
+    "euclideanDistance" : 5.241175430836098,
+    "generation" : 0,
+    "numberOfRefactorings" : 5,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7224334600760458,
+      "LackOfCohesion" : 0.671678248258254,
+      "MetricsIntensity" : 0.10800204774153431,
+      "Density" : 3.490196078431372,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.internal.platform.Platform.findPlatform()', targetType='okhttp3.internal.platform.ConscryptPlatform'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.Headers.toMultimap(), okhttp3.Headers.size(), okhttp3.Headers.names(), okhttp3.Headers.values(String), okhttp3.Headers.of(Map<String,String>), okhttp3.Headers.of(String...), okhttp3.Headers.checkValue(String, String), okhttp3.Headers.checkName(String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "cc6f1a1b-bed1-4911-9df6-56b94874d9d2",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0134228187919463,
+      "NumberOfRefactorings" : 5.0,
+      "LackOfCohesion" : 0.6716782482582538,
+      "MetricsIntensity" : 0.10800204774153431,
+      "Density" : 0.9899888765294772
+    },
+    "euclideanDistance" : 5.241175430836098,
+    "generation" : 0,
+    "numberOfRefactorings" : 5,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7224334600760458,
+      "LackOfCohesion" : 0.6716782482582538,
+      "MetricsIntensity" : 0.10800204774153431,
+      "Density" : 3.4901960784313726,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.internal.platform.Platform.findPlatform()', targetType='okhttp3.internal.platform.ConscryptPlatform'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.Headers.toMultimap(), okhttp3.Headers.size(), okhttp3.Headers.names(), okhttp3.Headers.values(String), okhttp3.Headers.of(Map<String,String>), okhttp3.Headers.of(String...), okhttp3.Headers.checkValue(String, String), okhttp3.Headers.checkName(String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "be5ee2c4-bde4-482f-884d-1325e1627143",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0134228187919463,
+      "NumberOfRefactorings" : 5.0,
+      "LackOfCohesion" : 0.6716782482582538,
+      "MetricsIntensity" : 0.10800204774153432,
+      "Density" : 0.9899888765294772
+    },
+    "euclideanDistance" : 5.241175430836098,
+    "generation" : 0,
+    "numberOfRefactorings" : 5,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7224334600760458,
+      "LackOfCohesion" : 0.6716782482582538,
+      "MetricsIntensity" : 0.10800204774153431,
+      "Density" : 3.490196078431372,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.internal.platform.Platform.findPlatform()', targetType='okhttp3.internal.platform.ConscryptPlatform'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.Headers.toMultimap(), okhttp3.Headers.size(), okhttp3.Headers.names(), okhttp3.Headers.values(String), okhttp3.Headers.of(Map<String,String>), okhttp3.Headers.of(String...), okhttp3.Headers.checkValue(String, String), okhttp3.Headers.checkName(String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "e3b4a7d1-cdb3-487b-8fc6-9b72d8183697",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0201342281879195,
+      "NumberOfRefactorings" : 5.0,
+      "LackOfCohesion" : 0.6738751678184635,
+      "MetricsIntensity" : 0.10716858200671021,
+      "Density" : 1.0122358175750834
+    },
+    "euclideanDistance" : 5.24698847346496,
+    "generation" : 0,
+    "numberOfRefactorings" : 5,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7272727272727273,
+      "LackOfCohesion" : 0.6738751678184635,
+      "MetricsIntensity" : 0.10716858200671021,
+      "Density" : 3.5546875,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.platform.Platform.logger, okhttp3.internal.platform.Platform.WARN, okhttp3.internal.platform.Platform.INFO], extractedMethods=[okhttp3.internal.platform.Platform.getStackTraceForCloseable(String), okhttp3.internal.platform.Platform.logCloseableLeak(String, Object), okhttp3.internal.platform.Platform.log(int, String, Throwable), okhttp3.internal.platform.Platform.findPlatform(), okhttp3.internal.platform.Platform.isConscryptPreferred(), okhttp3.internal.platform.Platform.alpnProtocolNames(List<Protocol>), okhttp3.internal.platform.Platform.concatLengthPrefixed(List<Protocol>), okhttp3.internal.platform.Platform.getSSLContext(), okhttp3.internal.platform.Platform.afterHandshake(SSLSocket), okhttp3.internal.platform.Platform.connectSocket(Socket, InetSocketAddress, int), okhttp3.internal.platform.Platform.configureTlsExtensions(SSLSocket, String, List<Protocol>), okhttp3.internal.platform.Platform.<T>readFieldOrNull(Object, Class<T>, String), okhttp3.internal.platform.Platform.configureSslSocketFactory(SSLSocketFactory), okhttp3.internal.platform.Platform.isCleartextTrafficPermitted(String), okhttp3.internal.platform.Platform.getPrefix(), okhttp3.internal.platform.Platform.getSelectedProtocol(SSLSocket)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.Headers.toMultimap(), okhttp3.Headers.size(), okhttp3.Headers.names(), okhttp3.Headers.values(String), okhttp3.Headers.of(Map<String,String>), okhttp3.Headers.of(String...), okhttp3.Headers.checkValue(String, String), okhttp3.Headers.checkName(String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "de2b86f1-23b5-470d-a68a-462612f48421",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0201342281879195,
+      "NumberOfRefactorings" : 5.0,
+      "LackOfCohesion" : 0.6738751678184636,
+      "MetricsIntensity" : 0.10716858200671023,
+      "Density" : 1.0122358175750834
+    },
+    "euclideanDistance" : 5.24698847346496,
+    "generation" : 0,
+    "numberOfRefactorings" : 5,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7272727272727273,
+      "LackOfCohesion" : 0.6738751678184636,
+      "MetricsIntensity" : 0.10716858200671023,
+      "Density" : 3.5546875,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.platform.Platform.logger, okhttp3.internal.platform.Platform.WARN, okhttp3.internal.platform.Platform.INFO], extractedMethods=[okhttp3.internal.platform.Platform.getStackTraceForCloseable(String), okhttp3.internal.platform.Platform.logCloseableLeak(String, Object), okhttp3.internal.platform.Platform.log(int, String, Throwable), okhttp3.internal.platform.Platform.findPlatform(), okhttp3.internal.platform.Platform.isConscryptPreferred(), okhttp3.internal.platform.Platform.alpnProtocolNames(List<Protocol>), okhttp3.internal.platform.Platform.concatLengthPrefixed(List<Protocol>), okhttp3.internal.platform.Platform.getSSLContext(), okhttp3.internal.platform.Platform.afterHandshake(SSLSocket), okhttp3.internal.platform.Platform.connectSocket(Socket, InetSocketAddress, int), okhttp3.internal.platform.Platform.configureTlsExtensions(SSLSocket, String, List<Protocol>), okhttp3.internal.platform.Platform.<T>readFieldOrNull(Object, Class<T>, String), okhttp3.internal.platform.Platform.configureSslSocketFactory(SSLSocketFactory), okhttp3.internal.platform.Platform.isCleartextTrafficPermitted(String), okhttp3.internal.platform.Platform.getPrefix(), okhttp3.internal.platform.Platform.getSelectedProtocol(SSLSocket)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.Headers.toMultimap(), okhttp3.Headers.size(), okhttp3.Headers.names(), okhttp3.Headers.values(String), okhttp3.Headers.of(Map<String,String>), okhttp3.Headers.of(String...), okhttp3.Headers.checkValue(String, String), okhttp3.Headers.checkName(String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "01f12b63-ff33-4a83-b279-009e781fd2f6",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0201342281879195,
+      "NumberOfRefactorings" : 5.0,
+      "LackOfCohesion" : 0.6738751678184635,
+      "MetricsIntensity" : 0.10716858200671023,
+      "Density" : 1.0122358175750834
+    },
+    "euclideanDistance" : 5.24698847346496,
+    "generation" : 0,
+    "numberOfRefactorings" : 5,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7272727272727275,
+      "LackOfCohesion" : 0.6738751678184635,
+      "MetricsIntensity" : 0.10716858200671023,
+      "Density" : 3.5546875,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.platform.Platform.logger, okhttp3.internal.platform.Platform.WARN, okhttp3.internal.platform.Platform.INFO], extractedMethods=[okhttp3.internal.platform.Platform.getStackTraceForCloseable(String), okhttp3.internal.platform.Platform.logCloseableLeak(String, Object), okhttp3.internal.platform.Platform.log(int, String, Throwable), okhttp3.internal.platform.Platform.findPlatform(), okhttp3.internal.platform.Platform.isConscryptPreferred(), okhttp3.internal.platform.Platform.alpnProtocolNames(List<Protocol>), okhttp3.internal.platform.Platform.concatLengthPrefixed(List<Protocol>), okhttp3.internal.platform.Platform.getSSLContext(), okhttp3.internal.platform.Platform.afterHandshake(SSLSocket), okhttp3.internal.platform.Platform.connectSocket(Socket, InetSocketAddress, int), okhttp3.internal.platform.Platform.configureTlsExtensions(SSLSocket, String, List<Protocol>), okhttp3.internal.platform.Platform.<T>readFieldOrNull(Object, Class<T>, String), okhttp3.internal.platform.Platform.configureSslSocketFactory(SSLSocketFactory), okhttp3.internal.platform.Platform.isCleartextTrafficPermitted(String), okhttp3.internal.platform.Platform.getPrefix(), okhttp3.internal.platform.Platform.getSelectedProtocol(SSLSocket)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.Headers.toMultimap(), okhttp3.Headers.size(), okhttp3.Headers.names(), okhttp3.Headers.values(String), okhttp3.Headers.of(Map<String,String>), okhttp3.Headers.of(String...), okhttp3.Headers.checkValue(String, String), okhttp3.Headers.checkName(String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "5e576271-2320-42d6-ad51-ce618a7bcd3b",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0201342281879195,
+      "NumberOfRefactorings" : 5.0,
+      "LackOfCohesion" : 0.6738751678184635,
+      "MetricsIntensity" : 0.10716858200671023,
+      "Density" : 1.0122358175750834
+    },
+    "euclideanDistance" : 5.24698847346496,
+    "generation" : 0,
+    "numberOfRefactorings" : 5,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7272727272727273,
+      "LackOfCohesion" : 0.6738751678184635,
+      "MetricsIntensity" : 0.10716858200671023,
+      "Density" : 3.5546875,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.platform.Platform.logger, okhttp3.internal.platform.Platform.WARN, okhttp3.internal.platform.Platform.INFO], extractedMethods=[okhttp3.internal.platform.Platform.getStackTraceForCloseable(String), okhttp3.internal.platform.Platform.logCloseableLeak(String, Object), okhttp3.internal.platform.Platform.log(int, String, Throwable), okhttp3.internal.platform.Platform.findPlatform(), okhttp3.internal.platform.Platform.isConscryptPreferred(), okhttp3.internal.platform.Platform.alpnProtocolNames(List<Protocol>), okhttp3.internal.platform.Platform.concatLengthPrefixed(List<Protocol>), okhttp3.internal.platform.Platform.getSSLContext(), okhttp3.internal.platform.Platform.afterHandshake(SSLSocket), okhttp3.internal.platform.Platform.connectSocket(Socket, InetSocketAddress, int), okhttp3.internal.platform.Platform.configureTlsExtensions(SSLSocket, String, List<Protocol>), okhttp3.internal.platform.Platform.<T>readFieldOrNull(Object, Class<T>, String), okhttp3.internal.platform.Platform.configureSslSocketFactory(SSLSocketFactory), okhttp3.internal.platform.Platform.isCleartextTrafficPermitted(String), okhttp3.internal.platform.Platform.getPrefix(), okhttp3.internal.platform.Platform.getSelectedProtocol(SSLSocket)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.Headers.toMultimap(), okhttp3.Headers.size(), okhttp3.Headers.names(), okhttp3.Headers.values(String), okhttp3.Headers.of(Map<String,String>), okhttp3.Headers.of(String...), okhttp3.Headers.checkValue(String, String), okhttp3.Headers.checkName(String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "41f72e26-d57d-4019-8e98-58ea46196d19",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0201342281879195,
+      "NumberOfRefactorings" : 5.0,
+      "LackOfCohesion" : 0.6738751678184635,
+      "MetricsIntensity" : 0.10716858200671021,
+      "Density" : 1.0122358175750834
+    },
+    "euclideanDistance" : 5.24698847346496,
+    "generation" : 0,
+    "numberOfRefactorings" : 5,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7272727272727273,
+      "LackOfCohesion" : 0.6738751678184635,
+      "MetricsIntensity" : 0.10716858200671023,
+      "Density" : 3.5546875,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.platform.Platform.logger, okhttp3.internal.platform.Platform.WARN, okhttp3.internal.platform.Platform.INFO], extractedMethods=[okhttp3.internal.platform.Platform.getStackTraceForCloseable(String), okhttp3.internal.platform.Platform.logCloseableLeak(String, Object), okhttp3.internal.platform.Platform.log(int, String, Throwable), okhttp3.internal.platform.Platform.findPlatform(), okhttp3.internal.platform.Platform.isConscryptPreferred(), okhttp3.internal.platform.Platform.alpnProtocolNames(List<Protocol>), okhttp3.internal.platform.Platform.concatLengthPrefixed(List<Protocol>), okhttp3.internal.platform.Platform.getSSLContext(), okhttp3.internal.platform.Platform.afterHandshake(SSLSocket), okhttp3.internal.platform.Platform.connectSocket(Socket, InetSocketAddress, int), okhttp3.internal.platform.Platform.configureTlsExtensions(SSLSocket, String, List<Protocol>), okhttp3.internal.platform.Platform.<T>readFieldOrNull(Object, Class<T>, String), okhttp3.internal.platform.Platform.configureSslSocketFactory(SSLSocketFactory), okhttp3.internal.platform.Platform.isCleartextTrafficPermitted(String), okhttp3.internal.platform.Platform.getPrefix(), okhttp3.internal.platform.Platform.getSelectedProtocol(SSLSocket)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.Headers.toMultimap(), okhttp3.Headers.size(), okhttp3.Headers.names(), okhttp3.Headers.values(String), okhttp3.Headers.of(Map<String,String>), okhttp3.Headers.of(String...), okhttp3.Headers.checkValue(String, String), okhttp3.Headers.checkName(String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "b38f1509-773c-411c-bab6-77f6da7faeb8",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0201342281879195,
+      "NumberOfRefactorings" : 5.0,
+      "LackOfCohesion" : 0.6738751678184636,
+      "MetricsIntensity" : 0.10716858200671023,
+      "Density" : 1.0122358175750834
+    },
+    "euclideanDistance" : 5.24698847346496,
+    "generation" : 0,
+    "numberOfRefactorings" : 5,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7272727272727273,
+      "LackOfCohesion" : 0.6738751678184636,
+      "MetricsIntensity" : 0.10716858200671023,
+      "Density" : 3.5546875,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.platform.Platform.logger, okhttp3.internal.platform.Platform.WARN, okhttp3.internal.platform.Platform.INFO], extractedMethods=[okhttp3.internal.platform.Platform.getStackTraceForCloseable(String), okhttp3.internal.platform.Platform.logCloseableLeak(String, Object), okhttp3.internal.platform.Platform.log(int, String, Throwable), okhttp3.internal.platform.Platform.findPlatform(), okhttp3.internal.platform.Platform.isConscryptPreferred(), okhttp3.internal.platform.Platform.alpnProtocolNames(List<Protocol>), okhttp3.internal.platform.Platform.concatLengthPrefixed(List<Protocol>), okhttp3.internal.platform.Platform.getSSLContext(), okhttp3.internal.platform.Platform.afterHandshake(SSLSocket), okhttp3.internal.platform.Platform.connectSocket(Socket, InetSocketAddress, int), okhttp3.internal.platform.Platform.configureTlsExtensions(SSLSocket, String, List<Protocol>), okhttp3.internal.platform.Platform.<T>readFieldOrNull(Object, Class<T>, String), okhttp3.internal.platform.Platform.configureSslSocketFactory(SSLSocketFactory), okhttp3.internal.platform.Platform.isCleartextTrafficPermitted(String), okhttp3.internal.platform.Platform.getPrefix(), okhttp3.internal.platform.Platform.getSelectedProtocol(SSLSocket)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.Headers.toMultimap(), okhttp3.Headers.size(), okhttp3.Headers.names(), okhttp3.Headers.values(String), okhttp3.Headers.of(Map<String,String>), okhttp3.Headers.of(String...), okhttp3.Headers.checkValue(String, String), okhttp3.Headers.checkName(String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "5d09dc8e-4c7e-4e82-9614-834fa623fec8",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0201342281879195,
+      "NumberOfRefactorings" : 5.0,
+      "LackOfCohesion" : 0.6738751678184635,
+      "MetricsIntensity" : 0.10716858200671021,
+      "Density" : 1.0122358175750834
+    },
+    "euclideanDistance" : 5.24698847346496,
+    "generation" : 0,
+    "numberOfRefactorings" : 5,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7272727272727273,
+      "LackOfCohesion" : 0.6738751678184635,
+      "MetricsIntensity" : 0.10716858200671023,
+      "Density" : 3.5546875,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.platform.Platform.logger, okhttp3.internal.platform.Platform.WARN, okhttp3.internal.platform.Platform.INFO], extractedMethods=[okhttp3.internal.platform.Platform.getStackTraceForCloseable(String), okhttp3.internal.platform.Platform.logCloseableLeak(String, Object), okhttp3.internal.platform.Platform.log(int, String, Throwable), okhttp3.internal.platform.Platform.findPlatform(), okhttp3.internal.platform.Platform.isConscryptPreferred(), okhttp3.internal.platform.Platform.alpnProtocolNames(List<Protocol>), okhttp3.internal.platform.Platform.concatLengthPrefixed(List<Protocol>), okhttp3.internal.platform.Platform.getSSLContext(), okhttp3.internal.platform.Platform.afterHandshake(SSLSocket), okhttp3.internal.platform.Platform.connectSocket(Socket, InetSocketAddress, int), okhttp3.internal.platform.Platform.configureTlsExtensions(SSLSocket, String, List<Protocol>), okhttp3.internal.platform.Platform.<T>readFieldOrNull(Object, Class<T>, String), okhttp3.internal.platform.Platform.configureSslSocketFactory(SSLSocketFactory), okhttp3.internal.platform.Platform.isCleartextTrafficPermitted(String), okhttp3.internal.platform.Platform.getPrefix(), okhttp3.internal.platform.Platform.getSelectedProtocol(SSLSocket)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.Headers.toMultimap(), okhttp3.Headers.size(), okhttp3.Headers.names(), okhttp3.Headers.values(String), okhttp3.Headers.of(Map<String,String>), okhttp3.Headers.of(String...), okhttp3.Headers.checkValue(String, String), okhttp3.Headers.checkName(String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "492eead2-423c-444e-b0cc-aad0983ebdcc",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0201342281879195,
+      "NumberOfRefactorings" : 5.0,
+      "LackOfCohesion" : 0.6738751678184635,
+      "MetricsIntensity" : 0.10716858200671024,
+      "Density" : 1.0122358175750834
+    },
+    "euclideanDistance" : 5.24698847346496,
+    "generation" : 0,
+    "numberOfRefactorings" : 5,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7272727272727273,
+      "LackOfCohesion" : 0.6738751678184635,
+      "MetricsIntensity" : 0.10716858200671024,
+      "Density" : 3.5546875,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.platform.Platform.logger, okhttp3.internal.platform.Platform.WARN, okhttp3.internal.platform.Platform.INFO], extractedMethods=[okhttp3.internal.platform.Platform.getStackTraceForCloseable(String), okhttp3.internal.platform.Platform.logCloseableLeak(String, Object), okhttp3.internal.platform.Platform.log(int, String, Throwable), okhttp3.internal.platform.Platform.findPlatform(), okhttp3.internal.platform.Platform.isConscryptPreferred(), okhttp3.internal.platform.Platform.alpnProtocolNames(List<Protocol>), okhttp3.internal.platform.Platform.concatLengthPrefixed(List<Protocol>), okhttp3.internal.platform.Platform.getSSLContext(), okhttp3.internal.platform.Platform.afterHandshake(SSLSocket), okhttp3.internal.platform.Platform.connectSocket(Socket, InetSocketAddress, int), okhttp3.internal.platform.Platform.configureTlsExtensions(SSLSocket, String, List<Protocol>), okhttp3.internal.platform.Platform.<T>readFieldOrNull(Object, Class<T>, String), okhttp3.internal.platform.Platform.configureSslSocketFactory(SSLSocketFactory), okhttp3.internal.platform.Platform.isCleartextTrafficPermitted(String), okhttp3.internal.platform.Platform.getPrefix(), okhttp3.internal.platform.Platform.getSelectedProtocol(SSLSocket)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.Headers.toMultimap(), okhttp3.Headers.size(), okhttp3.Headers.names(), okhttp3.Headers.values(String), okhttp3.Headers.of(Map<String,String>), okhttp3.Headers.of(String...), okhttp3.Headers.checkValue(String, String), okhttp3.Headers.checkName(String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "f33c9f42-f298-4cd8-b016-0b55f4055e79",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0201342281879195,
+      "NumberOfRefactorings" : 5.0,
+      "LackOfCohesion" : 0.6738751678184635,
+      "MetricsIntensity" : 0.10716858200671024,
+      "Density" : 1.0122358175750834
+    },
+    "euclideanDistance" : 5.24698847346496,
+    "generation" : 0,
+    "numberOfRefactorings" : 5,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7272727272727273,
+      "LackOfCohesion" : 0.6738751678184635,
+      "MetricsIntensity" : 0.10716858200671024,
+      "Density" : 3.5546875,
+      "baselineType" : "EXTRACT_CLASS"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.platform.Platform.logger, okhttp3.internal.platform.Platform.WARN, okhttp3.internal.platform.Platform.INFO], extractedMethods=[okhttp3.internal.platform.Platform.getStackTraceForCloseable(String), okhttp3.internal.platform.Platform.logCloseableLeak(String, Object), okhttp3.internal.platform.Platform.log(int, String, Throwable), okhttp3.internal.platform.Platform.findPlatform(), okhttp3.internal.platform.Platform.isConscryptPreferred(), okhttp3.internal.platform.Platform.alpnProtocolNames(List<Protocol>), okhttp3.internal.platform.Platform.concatLengthPrefixed(List<Protocol>), okhttp3.internal.platform.Platform.getSSLContext(), okhttp3.internal.platform.Platform.afterHandshake(SSLSocket), okhttp3.internal.platform.Platform.connectSocket(Socket, InetSocketAddress, int), okhttp3.internal.platform.Platform.configureTlsExtensions(SSLSocket, String, List<Protocol>), okhttp3.internal.platform.Platform.<T>readFieldOrNull(Object, Class<T>, String), okhttp3.internal.platform.Platform.configureSslSocketFactory(SSLSocketFactory), okhttp3.internal.platform.Platform.isCleartextTrafficPermitted(String), okhttp3.internal.platform.Platform.getPrefix(), okhttp3.internal.platform.Platform.getSelectedProtocol(SSLSocket)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.Headers.toMultimap(), okhttp3.Headers.size(), okhttp3.Headers.names(), okhttp3.Headers.values(String), okhttp3.Headers.of(Map<String,String>), okhttp3.Headers.of(String...), okhttp3.Headers.checkValue(String, String), okhttp3.Headers.checkName(String)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "91e34bed-b576-42f2-928f-336b5cacccaa",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0089485458612975,
+      "NumberOfRefactorings" : 6.0,
+      "LackOfCohesion" : 0.6744866889858557,
+      "MetricsIntensity" : 0.1083051254343296,
+      "Density" : 1.0022246941045607
+    },
+    "euclideanDistance" : 6.2039579140644605,
+    "generation" : 0,
+    "numberOfRefactorings" : 6,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7213740458015265,
+      "LackOfCohesion" : 0.6744866889858557,
+      "MetricsIntensity" : 0.1083051254343296,
+      "Density" : 3.547244094488189,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.internal.platform.Platform.findPlatform()', targetType='okhttp3.internal.platform.ConscryptPlatform'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.Headers.checkValue(String, String)', targetType='okhttp3.internal.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.Headers.checkName(String)', targetType='okhttp3.internal.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "4d9c19b5-cadf-4f53-8145-321bfd6eff3c",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0089485458612975,
+      "NumberOfRefactorings" : 6.0,
+      "LackOfCohesion" : 0.6744866889858557,
+      "MetricsIntensity" : 0.1083051254343296,
+      "Density" : 1.0022246941045607
+    },
+    "euclideanDistance" : 6.2039579140644605,
+    "generation" : 0,
+    "numberOfRefactorings" : 6,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7213740458015265,
+      "LackOfCohesion" : 0.6744866889858557,
+      "MetricsIntensity" : 0.1083051254343296,
+      "Density" : 3.547244094488189,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.internal.platform.Platform.findPlatform()', targetType='okhttp3.internal.platform.ConscryptPlatform'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.Headers.checkValue(String, String)', targetType='okhttp3.internal.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.Headers.checkName(String)', targetType='okhttp3.internal.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "ea954531-ab96-47ba-bbeb-aeea66439cbe",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0089485458612975,
+      "NumberOfRefactorings" : 6.0,
+      "LackOfCohesion" : 0.6744866889858557,
+      "MetricsIntensity" : 0.10830512543432962,
+      "Density" : 1.0022246941045607
+    },
+    "euclideanDistance" : 6.2039579140644605,
+    "generation" : 0,
+    "numberOfRefactorings" : 6,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7213740458015265,
+      "LackOfCohesion" : 0.6744866889858557,
+      "MetricsIntensity" : 0.10830512543432962,
+      "Density" : 3.547244094488189,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.internal.platform.Platform.findPlatform()', targetType='okhttp3.internal.platform.ConscryptPlatform'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.Headers.checkValue(String, String)', targetType='okhttp3.internal.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.Headers.checkName(String)', targetType='okhttp3.internal.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "547d41ae-c470-4365-bacb-fdb067074af4",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0089485458612975,
+      "NumberOfRefactorings" : 6.0,
+      "LackOfCohesion" : 0.6744866889858557,
+      "MetricsIntensity" : 0.1083051254343296,
+      "Density" : 1.0022246941045607
+    },
+    "euclideanDistance" : 6.2039579140644605,
+    "generation" : 0,
+    "numberOfRefactorings" : 6,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7213740458015265,
+      "LackOfCohesion" : 0.6744866889858557,
+      "MetricsIntensity" : 0.1083051254343296,
+      "Density" : 3.547244094488189,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.internal.platform.Platform.findPlatform()', targetType='okhttp3.internal.platform.ConscryptPlatform'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.Headers.checkValue(String, String)', targetType='okhttp3.internal.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.Headers.checkName(String)', targetType='okhttp3.internal.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "498863b5-3fe6-4f41-a32b-38e974bfaa55",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0089485458612975,
+      "NumberOfRefactorings" : 6.0,
+      "LackOfCohesion" : 0.6744866889858557,
+      "MetricsIntensity" : 0.10830512543432964,
+      "Density" : 1.0022246941045607
+    },
+    "euclideanDistance" : 6.2039579140644605,
+    "generation" : 0,
+    "numberOfRefactorings" : 6,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7213740458015265,
+      "LackOfCohesion" : 0.6744866889858557,
+      "MetricsIntensity" : 0.10830512543432962,
+      "Density" : 3.547244094488189,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.internal.platform.Platform.findPlatform()', targetType='okhttp3.internal.platform.ConscryptPlatform'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.Headers.checkValue(String, String)', targetType='okhttp3.internal.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.Headers.checkName(String)', targetType='okhttp3.internal.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "9825d3d3-6b78-4e29-971f-5374fdfe88ee",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0089485458612975,
+      "NumberOfRefactorings" : 6.0,
+      "LackOfCohesion" : 0.6744866889858557,
+      "MetricsIntensity" : 0.10830512543432962,
+      "Density" : 1.0022246941045607
+    },
+    "euclideanDistance" : 6.2039579140644605,
+    "generation" : 0,
+    "numberOfRefactorings" : 6,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7213740458015265,
+      "LackOfCohesion" : 0.6744866889858557,
+      "MetricsIntensity" : 0.10830512543432962,
+      "Density" : 3.547244094488189,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.internal.platform.Platform.findPlatform()', targetType='okhttp3.internal.platform.ConscryptPlatform'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.Headers.checkValue(String, String)', targetType='okhttp3.internal.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.Headers.checkName(String)', targetType='okhttp3.internal.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "ed788684-008e-435a-9c4c-fdceb9f13154",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0089485458612975,
+      "NumberOfRefactorings" : 6.0,
+      "LackOfCohesion" : 0.6744866889858557,
+      "MetricsIntensity" : 0.10830512543432962,
+      "Density" : 1.0022246941045607
+    },
+    "euclideanDistance" : 6.2039579140644605,
+    "generation" : 0,
+    "numberOfRefactorings" : 6,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7213740458015265,
+      "LackOfCohesion" : 0.6744866889858557,
+      "MetricsIntensity" : 0.10830512543432962,
+      "Density" : 3.547244094488189,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.internal.platform.Platform.findPlatform()', targetType='okhttp3.internal.platform.ConscryptPlatform'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.Headers.checkValue(String, String)', targetType='okhttp3.internal.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.Headers.checkName(String)', targetType='okhttp3.internal.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "c636820b-b59a-4c85-a4ea-1a9da5b86cf0",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0089485458612975,
+      "NumberOfRefactorings" : 6.0,
+      "LackOfCohesion" : 0.6744866889858557,
+      "MetricsIntensity" : 0.1083051254343296,
+      "Density" : 1.0022246941045607
+    },
+    "euclideanDistance" : 6.2039579140644605,
+    "generation" : 0,
+    "numberOfRefactorings" : 6,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7213740458015265,
+      "LackOfCohesion" : 0.6744866889858557,
+      "MetricsIntensity" : 0.1083051254343296,
+      "Density" : 3.547244094488189,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.internal.platform.Platform.findPlatform()', targetType='okhttp3.internal.platform.ConscryptPlatform'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.Headers.checkValue(String, String)', targetType='okhttp3.internal.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.Headers.checkName(String)', targetType='okhttp3.internal.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "ae38295c-b462-4ff6-92a6-33d447989c47",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0089485458612975,
+      "NumberOfRefactorings" : 6.0,
+      "LackOfCohesion" : 0.6744866889858557,
+      "MetricsIntensity" : 0.10830512543432962,
+      "Density" : 1.0022246941045607
+    },
+    "euclideanDistance" : 6.2039579140644605,
+    "generation" : 0,
+    "numberOfRefactorings" : 6,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7213740458015265,
+      "LackOfCohesion" : 0.6744866889858557,
+      "MetricsIntensity" : 0.10830512543432962,
+      "Density" : 3.547244094488189,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.internal.platform.Platform.findPlatform()', targetType='okhttp3.internal.platform.ConscryptPlatform'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.Headers.checkValue(String, String)', targetType='okhttp3.internal.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.Headers.checkName(String)', targetType='okhttp3.internal.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "da9bf691-ca6b-4fe4-9287-750c8d950362",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0156599552572707,
+      "NumberOfRefactorings" : 6.0,
+      "LackOfCohesion" : 0.676680949758381,
+      "MetricsIntensity" : 0.10747684513045755,
+      "Density" : 1.0044493882091212
+    },
+    "euclideanDistance" : 6.20563712266452,
+    "generation" : 0,
+    "numberOfRefactorings" : 6,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7262357414448668,
+      "LackOfCohesion" : 0.676680949758381,
+      "MetricsIntensity" : 0.10747684513045756,
+      "Density" : 3.5411764705882356,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.platform.Platform.logger, okhttp3.internal.platform.Platform.WARN, okhttp3.internal.platform.Platform.INFO], extractedMethods=[okhttp3.internal.platform.Platform.getStackTraceForCloseable(String), okhttp3.internal.platform.Platform.logCloseableLeak(String, Object), okhttp3.internal.platform.Platform.log(int, String, Throwable), okhttp3.internal.platform.Platform.findPlatform(), okhttp3.internal.platform.Platform.isConscryptPreferred(), okhttp3.internal.platform.Platform.alpnProtocolNames(List<Protocol>), okhttp3.internal.platform.Platform.concatLengthPrefixed(List<Protocol>), okhttp3.internal.platform.Platform.getSSLContext(), okhttp3.internal.platform.Platform.afterHandshake(SSLSocket), okhttp3.internal.platform.Platform.connectSocket(Socket, InetSocketAddress, int), okhttp3.internal.platform.Platform.configureTlsExtensions(SSLSocket, String, List<Protocol>), okhttp3.internal.platform.Platform.<T>readFieldOrNull(Object, Class<T>, String), okhttp3.internal.platform.Platform.configureSslSocketFactory(SSLSocketFactory), okhttp3.internal.platform.Platform.isCleartextTrafficPermitted(String), okhttp3.internal.platform.Platform.getPrefix(), okhttp3.internal.platform.Platform.getSelectedProtocol(SSLSocket)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.Headers.checkValue(String, String)', targetType='okhttp3.internal.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.Headers.checkName(String)', targetType='okhttp3.internal.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "f804fa7a-7e7f-41b3-8094-906eeb3ae213",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0156599552572707,
+      "NumberOfRefactorings" : 6.0,
+      "LackOfCohesion" : 0.676680949758381,
+      "MetricsIntensity" : 0.10747684513045755,
+      "Density" : 1.0044493882091212
+    },
+    "euclideanDistance" : 6.20563712266452,
+    "generation" : 0,
+    "numberOfRefactorings" : 6,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7262357414448668,
+      "LackOfCohesion" : 0.676680949758381,
+      "MetricsIntensity" : 0.10747684513045755,
+      "Density" : 3.541176470588235,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.platform.Platform.logger, okhttp3.internal.platform.Platform.WARN, okhttp3.internal.platform.Platform.INFO], extractedMethods=[okhttp3.internal.platform.Platform.getStackTraceForCloseable(String), okhttp3.internal.platform.Platform.logCloseableLeak(String, Object), okhttp3.internal.platform.Platform.log(int, String, Throwable), okhttp3.internal.platform.Platform.findPlatform(), okhttp3.internal.platform.Platform.isConscryptPreferred(), okhttp3.internal.platform.Platform.alpnProtocolNames(List<Protocol>), okhttp3.internal.platform.Platform.concatLengthPrefixed(List<Protocol>), okhttp3.internal.platform.Platform.getSSLContext(), okhttp3.internal.platform.Platform.afterHandshake(SSLSocket), okhttp3.internal.platform.Platform.connectSocket(Socket, InetSocketAddress, int), okhttp3.internal.platform.Platform.configureTlsExtensions(SSLSocket, String, List<Protocol>), okhttp3.internal.platform.Platform.<T>readFieldOrNull(Object, Class<T>, String), okhttp3.internal.platform.Platform.configureSslSocketFactory(SSLSocketFactory), okhttp3.internal.platform.Platform.isCleartextTrafficPermitted(String), okhttp3.internal.platform.Platform.getPrefix(), okhttp3.internal.platform.Platform.getSelectedProtocol(SSLSocket)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.Headers.checkValue(String, String)', targetType='okhttp3.internal.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.Headers.checkName(String)', targetType='okhttp3.internal.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "46efede6-9927-4ab2-9473-d7310119e9dd",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0156599552572707,
+      "NumberOfRefactorings" : 6.0,
+      "LackOfCohesion" : 0.676680949758381,
+      "MetricsIntensity" : 0.10747684513045755,
+      "Density" : 1.0044493882091212
+    },
+    "euclideanDistance" : 6.20563712266452,
+    "generation" : 0,
+    "numberOfRefactorings" : 6,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7262357414448668,
+      "LackOfCohesion" : 0.676680949758381,
+      "MetricsIntensity" : 0.10747684513045756,
+      "Density" : 3.541176470588235,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.platform.Platform.logger, okhttp3.internal.platform.Platform.WARN, okhttp3.internal.platform.Platform.INFO], extractedMethods=[okhttp3.internal.platform.Platform.getStackTraceForCloseable(String), okhttp3.internal.platform.Platform.logCloseableLeak(String, Object), okhttp3.internal.platform.Platform.log(int, String, Throwable), okhttp3.internal.platform.Platform.findPlatform(), okhttp3.internal.platform.Platform.isConscryptPreferred(), okhttp3.internal.platform.Platform.alpnProtocolNames(List<Protocol>), okhttp3.internal.platform.Platform.concatLengthPrefixed(List<Protocol>), okhttp3.internal.platform.Platform.getSSLContext(), okhttp3.internal.platform.Platform.afterHandshake(SSLSocket), okhttp3.internal.platform.Platform.connectSocket(Socket, InetSocketAddress, int), okhttp3.internal.platform.Platform.configureTlsExtensions(SSLSocket, String, List<Protocol>), okhttp3.internal.platform.Platform.<T>readFieldOrNull(Object, Class<T>, String), okhttp3.internal.platform.Platform.configureSslSocketFactory(SSLSocketFactory), okhttp3.internal.platform.Platform.isCleartextTrafficPermitted(String), okhttp3.internal.platform.Platform.getPrefix(), okhttp3.internal.platform.Platform.getSelectedProtocol(SSLSocket)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.Headers.checkValue(String, String)', targetType='okhttp3.internal.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.Headers.checkName(String)', targetType='okhttp3.internal.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "b3dd6172-4279-412e-96cd-a7b2b544ab6e",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0156599552572707,
+      "NumberOfRefactorings" : 6.0,
+      "LackOfCohesion" : 0.676680949758381,
+      "MetricsIntensity" : 0.10747684513045756,
+      "Density" : 1.0044493882091212
+    },
+    "euclideanDistance" : 6.20563712266452,
+    "generation" : 0,
+    "numberOfRefactorings" : 6,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.7262357414448668,
+      "LackOfCohesion" : 0.676680949758381,
+      "MetricsIntensity" : 0.10747684513045755,
+      "Density" : 3.5411764705882356,
+      "baselineType" : "RANDOM_SELECTION"
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "okhttp3.internal.cache.DiskLruCache.Editor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[okhttp3.internal.cache.DiskLruCache.Editor.commit(), okhttp3.internal.cache.DiskLruCache.Editor.abort(), okhttp3.internal.cache.DiskLruCache.Editor.abortUnlessCommitted(), okhttp3.internal.cache.DiskLruCache.Editor.newSource(int)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.connection.Transmitter",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.connection.Transmitter.timeout, okhttp3.internal.connection.Transmitter.timeoutEarlyExit], extractedMethods=[okhttp3.internal.connection.Transmitter.timeoutExit(IOException), okhttp3.internal.connection.Transmitter.timeoutEarlyExit(), okhttp3.internal.connection.Transmitter.timeout(), okhttp3.internal.connection.Transmitter.timeoutEnter()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.internal.platform.Platform.logger, okhttp3.internal.platform.Platform.WARN, okhttp3.internal.platform.Platform.INFO], extractedMethods=[okhttp3.internal.platform.Platform.getStackTraceForCloseable(String), okhttp3.internal.platform.Platform.logCloseableLeak(String, Object), okhttp3.internal.platform.Platform.log(int, String, Throwable), okhttp3.internal.platform.Platform.findPlatform(), okhttp3.internal.platform.Platform.isConscryptPreferred(), okhttp3.internal.platform.Platform.alpnProtocolNames(List<Protocol>), okhttp3.internal.platform.Platform.concatLengthPrefixed(List<Protocol>), okhttp3.internal.platform.Platform.getSSLContext(), okhttp3.internal.platform.Platform.afterHandshake(SSLSocket), okhttp3.internal.platform.Platform.connectSocket(Socket, InetSocketAddress, int), okhttp3.internal.platform.Platform.configureTlsExtensions(SSLSocket, String, List<Protocol>), okhttp3.internal.platform.Platform.<T>readFieldOrNull(Object, Class<T>, String), okhttp3.internal.platform.Platform.configureSslSocketFactory(SSLSocketFactory), okhttp3.internal.platform.Platform.isCleartextTrafficPermitted(String), okhttp3.internal.platform.Platform.getPrefix(), okhttp3.internal.platform.Platform.getSelectedProtocol(SSLSocket)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.Headers",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.Headers.checkValue(String, String)', targetType='okhttp3.internal.Util'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='okhttp3.Headers.checkName(String)', targetType='okhttp3.internal.Util'"
+      } ]
+    }, {
+      "refactoredTypeName" : "okhttp3.HttpUrl",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[okhttp3.HttpUrl.HEX_DIGITS, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET_URI, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET_URI, okhttp3.HttpUrl.QUERY_COMPONENT_ENCODE_SET, okhttp3.HttpUrl.PATH_SEGMENT_ENCODE_SET, okhttp3.HttpUrl.INVALID_HOST, okhttp3.HttpUrl.FORM_ENCODE_SET, okhttp3.HttpUrl.QUERY_ENCODE_SET, okhttp3.HttpUrl.USERNAME_ENCODE_SET, okhttp3.HttpUrl.PASSWORD_ENCODE_SET, okhttp3.HttpUrl.QUERY_COMPONENT_REENCODE_SET, okhttp3.HttpUrl.FRAGMENT_ENCODE_SET], extractedMethods=[okhttp3.HttpUrl.canonicalize(Buffer, String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.canonicalize(String, int, int, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.percentEncoded(String, int, int), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean), okhttp3.HttpUrl.canonicalize(String, String, boolean, boolean, boolean, boolean, Charset), okhttp3.HttpUrl.get(String), okhttp3.HttpUrl.parse(String), okhttp3.HttpUrl.get(URI), okhttp3.HttpUrl.get(URL), okhttp3.HttpUrl.pathSegmentsToString(StringBuilder, List<String>), okhttp3.HttpUrl.queryStringToNamesAndValues(String)]"
+      } ]
+    } ]
+  } ]
+}

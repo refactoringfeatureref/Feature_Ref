@@ -1,0 +1,36 @@
+[ {
+  "solutionId" : "2279e063-7e44-4381-8557-5e118be9fea4",
+  "objectives" : {
+    "NumberOfConcerns" : 0.9977628635346756,
+    "NumberOfRefactorings" : 3.0,
+    "LackOfCohesion" : 0.6758525453677701,
+    "MetricsIntensity" : 0.10560788171490511,
+    "Density" : 0.9955506117908788
+  },
+  "euclideanDistance" : 3.3844617652215416,
+  "generation" : 0,
+  "numberOfRefactorings" : 3,
+  "additionalInformation" : {
+    "NumberOfConcerns" : 1.7220077220077221,
+    "LackOfCohesion" : 0.6758525453677701,
+    "MetricsIntensity" : 0.1056078817149051,
+    "Density" : 3.5657370517928286,
+    "baselineType" : "MOVE_METHODS"
+  },
+  "sequences" : [ {
+    "refactoredTypeName" : "okhttp3.internal.platform.Platform",
+    "refactorings" : [ {
+      "refactoringKind" : "Move Method",
+      "change" : "method='okhttp3.internal.platform.Platform.findPlatform()', targetType='okhttp3.internal.platform.ConscryptPlatform'"
+    } ]
+  }, {
+    "refactoredTypeName" : "okhttp3.Headers",
+    "refactorings" : [ {
+      "refactoringKind" : "Move Method",
+      "change" : "method='okhttp3.Headers.checkValue(String, String)', targetType='okhttp3.internal.Util'"
+    }, {
+      "refactoringKind" : "Move Method",
+      "change" : "method='okhttp3.Headers.checkName(String)', targetType='okhttp3.internal.Util'"
+    } ]
+  } ]
+} ]

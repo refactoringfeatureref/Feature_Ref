@@ -1,0 +1,963 @@
+{
+  "executionId" : "3698951a-7e15-4e3a-9a66-227656fd3068",
+  "computingTime" : 3492268,
+  "maxEvaluations" : 100,
+  "initialPopulationSize" : 128,
+  "finalPopulationSize" : 12,
+  "algorithm" : "MOSA",
+  "projectBeforeRefactoring" : {
+    "meanDensity" : 3.190476190476191,
+    "meanNumConcerns" : 1.6382271468144043,
+    "meanMetricsIntensity" : 0.05356597499015171,
+    "meanLackOfCohesion" : 0.5516677364702991
+  },
+  "population" : [ {
+    "solutionId" : "f219d946-6f7f-4253-8a37-6b2b7af24102",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0020290835306054,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.5518401439802981,
+      "MetricsIntensity" : 0.053399926139188966,
+      "Density" : 1.0
+    },
+    "euclideanDistance" : 9.127510141372676,
+    "generation" : 1,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.6379215035931458,
+      "LackOfCohesion" : 0.5518401439802981,
+      "MetricsIntensity" : 0.05339992613918895,
+      "Density" : 3.1829912023460407
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.springframework.security.web.access.intercept.FilterSecurityInterceptor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.springframework.security.web.access.intercept.FilterSecurityInterceptor.securityMetadataSource], extractedMethods=[org.springframework.security.web.access.intercept.FilterSecurityInterceptor.setSecurityMetadataSource(FilterInvocationSecurityMetadataSource), org.springframework.security.web.access.intercept.FilterSecurityInterceptor.getSecurityMetadataSource()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.anyRequest(), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.antMatchers(String...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.setApplicationContext(ApplicationContext), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.dispatcherTypeMatchers(HttpMethod, DispatcherType...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.getApplicationContext(), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.requestMatchers(RequestMatcher...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.dispatcherTypeMatchers(DispatcherType...)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder.encode(CharSequence)', targetType='org.springframework.security.web.access.intercept.FilterSecurityInterceptor'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.authentication.dao.DaoAuthenticationProvider",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.authentication.dao.DaoAuthenticationProvider.createSuccessAuthentication(Object, Authentication, UserDetails)', targetType='org.springframework.security.oauth2.client.ReactiveOAuth2AuthorizedClientProviderBuilder.PasswordGrantBuilder'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager.getHttpServletRequestOrDefault(Map<String,Object>)', targetType='org.springframework.security.oauth2.core.endpoint.OAuth2AuthorizationRequest.Builder'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.FilterInvocation",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.web.FilterInvocation.getResponse(), org.springframework.security.web.FilterInvocation.getFullRequestUrl(), org.springframework.security.web.FilterInvocation.getChain(), org.springframework.security.web.FilterInvocation.getHttpRequest(), org.springframework.security.web.FilterInvocation.getRequest(), org.springframework.security.web.FilterInvocation.toString(), org.springframework.security.web.FilterInvocation.getHttpResponse()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.access.channel.AbstractRetryEntryPoint",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.access.channel.AbstractRetryEntryPoint.commence(HttpServletRequest, HttpServletResponse)', targetType='org.springframework.security.access.vote.ConsensusBased'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.authentication.AbstractAuthenticationTargetUrlRequestHandler",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.authentication.AbstractAuthenticationTargetUrlRequestHandler.setRedirectStrategy(RedirectStrategy)', targetType='org.springframework.security.web.session.SessionInformationExpiredEvent'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.server.util.matcher.MediaTypeServerWebExchangeMatcher",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.web.server.util.matcher.MediaTypeServerWebExchangeMatcher.setUseEquals(boolean)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "00075584-4744-4c64-bc77-2f7c468d49bd",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0023672641190395,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.5518365245972515,
+      "MetricsIntensity" : 0.05335829986398569,
+      "Density" : 1.000184263865856
+    },
+    "euclideanDistance" : 9.12756700068021,
+    "generation" : 1,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.6384742951907132,
+      "LackOfCohesion" : 0.5518365245972515,
+      "MetricsIntensity" : 0.05335829986398569,
+      "Density" : 3.1835777126099707
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.springframework.security.web.access.intercept.FilterSecurityInterceptor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.springframework.security.web.access.intercept.FilterSecurityInterceptor.securityMetadataSource], extractedMethods=[org.springframework.security.web.access.intercept.FilterSecurityInterceptor.setSecurityMetadataSource(FilterInvocationSecurityMetadataSource), org.springframework.security.web.access.intercept.FilterSecurityInterceptor.getSecurityMetadataSource()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.anyRequest(), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.antMatchers(String...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.setApplicationContext(ApplicationContext), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.dispatcherTypeMatchers(HttpMethod, DispatcherType...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.getApplicationContext(), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.requestMatchers(RequestMatcher...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.dispatcherTypeMatchers(DispatcherType...)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder.encode(CharSequence)', targetType='org.springframework.security.web.access.intercept.FilterSecurityInterceptor'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.authentication.dao.DaoAuthenticationProvider",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.authentication.dao.DaoAuthenticationProvider.createSuccessAuthentication(Object, Authentication, UserDetails)', targetType='org.springframework.security.oauth2.client.ReactiveOAuth2AuthorizedClientProviderBuilder.PasswordGrantBuilder'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager.authorize(OAuth2AuthorizeRequest)', targetType='org.springframework.security.oauth2.core.converter.ObjectToURLConverter'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.FilterInvocation",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.web.FilterInvocation.getResponse(), org.springframework.security.web.FilterInvocation.getFullRequestUrl(), org.springframework.security.web.FilterInvocation.getChain(), org.springframework.security.web.FilterInvocation.getHttpRequest(), org.springframework.security.web.FilterInvocation.getRequest(), org.springframework.security.web.FilterInvocation.toString(), org.springframework.security.web.FilterInvocation.getHttpResponse()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.access.channel.AbstractRetryEntryPoint",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.access.channel.AbstractRetryEntryPoint.commence(HttpServletRequest, HttpServletResponse)', targetType='org.springframework.security.access.vote.ConsensusBased'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.authentication.AbstractAuthenticationTargetUrlRequestHandler",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.authentication.AbstractAuthenticationTargetUrlRequestHandler.setRedirectStrategy(RedirectStrategy)', targetType='org.springframework.security.web.session.SessionInformationExpiredEvent'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.server.util.matcher.MediaTypeServerWebExchangeMatcher",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.web.server.util.matcher.MediaTypeServerWebExchangeMatcher.setUseEquals(boolean)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "3d46d81b-749a-43b4-bde6-c1558a7c201d",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0027054447074737,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.5517746989541202,
+      "MetricsIntensity" : 0.053428025377273244,
+      "Density" : 1.0012898470609914
+    },
+    "euclideanDistance" : 9.127722029015512,
+    "generation" : 1,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.6390270867882806,
+      "LackOfCohesion" : 0.5517746989541202,
+      "MetricsIntensity" : 0.05342802537727323,
+      "Density" : 3.187096774193548
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.springframework.security.web.access.intercept.FilterSecurityInterceptor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.springframework.security.web.access.intercept.FilterSecurityInterceptor.securityMetadataSource], extractedMethods=[org.springframework.security.web.access.intercept.FilterSecurityInterceptor.setSecurityMetadataSource(FilterInvocationSecurityMetadataSource), org.springframework.security.web.access.intercept.FilterSecurityInterceptor.getSecurityMetadataSource()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.anyRequest(), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.antMatchers(String...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.setApplicationContext(ApplicationContext), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.dispatcherTypeMatchers(HttpMethod, DispatcherType...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.getApplicationContext(), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.requestMatchers(RequestMatcher...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.dispatcherTypeMatchers(DispatcherType...)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder.encode(CharSequence)', targetType='org.springframework.security.web.access.intercept.FilterSecurityInterceptor'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.authentication.dao.DaoAuthenticationProvider",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.authentication.dao.DaoAuthenticationProvider.createSuccessAuthentication(Object, Authentication, UserDetails)', targetType='org.springframework.security.oauth2.client.ReactiveOAuth2AuthorizedClientProviderBuilder.PasswordGrantBuilder'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager.getHttpServletRequestOrDefault(Map<String,Object>)', targetType='org.springframework.security.oauth2.core.endpoint.OAuth2AuthorizationRequest.Builder'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.FilterInvocation",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.web.FilterInvocation.getResponse(), org.springframework.security.web.FilterInvocation.getFullRequestUrl(), org.springframework.security.web.FilterInvocation.getChain(), org.springframework.security.web.FilterInvocation.getHttpRequest(), org.springframework.security.web.FilterInvocation.getRequest(), org.springframework.security.web.FilterInvocation.toString(), org.springframework.security.web.FilterInvocation.getHttpResponse()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.access.channel.AbstractRetryEntryPoint",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.access.channel.AbstractRetryEntryPoint.getMappedPort(Integer)', targetType='org.springframework.security.oauth2.jwt.NimbusJwtDecoder.SecretKeyJwtDecoderBuilder'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.authentication.AbstractAuthenticationTargetUrlRequestHandler",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.authentication.AbstractAuthenticationTargetUrlRequestHandler.setRedirectStrategy(RedirectStrategy)', targetType='org.springframework.security.web.session.SessionInformationExpiredEvent'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.server.util.matcher.MediaTypeServerWebExchangeMatcher",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.web.server.util.matcher.MediaTypeServerWebExchangeMatcher.setUseEquals(boolean)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "1203488a-170b-4a2c-8cd6-2d9abbcb9b47",
+    "objectives" : {
+      "NumberOfConcerns" : 1.003043625295908,
+      "NumberOfRefactorings" : 9.0,
+      "LackOfCohesion" : 0.5517710795710735,
+      "MetricsIntensity" : 0.05338639910206995,
+      "Density" : 1.0014741109268472
+    },
+    "euclideanDistance" : 9.127778937998203,
+    "generation" : 1,
+    "numberOfRefactorings" : 9,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.6395798783858484,
+      "LackOfCohesion" : 0.5517710795710735,
+      "MetricsIntensity" : 0.05338639910206995,
+      "Density" : 3.187683284457478
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.springframework.security.web.access.intercept.FilterSecurityInterceptor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.springframework.security.web.access.intercept.FilterSecurityInterceptor.securityMetadataSource], extractedMethods=[org.springframework.security.web.access.intercept.FilterSecurityInterceptor.setSecurityMetadataSource(FilterInvocationSecurityMetadataSource), org.springframework.security.web.access.intercept.FilterSecurityInterceptor.getSecurityMetadataSource()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.anyRequest(), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.antMatchers(String...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.setApplicationContext(ApplicationContext), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.dispatcherTypeMatchers(HttpMethod, DispatcherType...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.getApplicationContext(), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.requestMatchers(RequestMatcher...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.dispatcherTypeMatchers(DispatcherType...)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder.encode(CharSequence)', targetType='org.springframework.security.web.access.intercept.FilterSecurityInterceptor'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.authentication.dao.DaoAuthenticationProvider",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.authentication.dao.DaoAuthenticationProvider.createSuccessAuthentication(Object, Authentication, UserDetails)', targetType='org.springframework.security.oauth2.client.ReactiveOAuth2AuthorizedClientProviderBuilder.PasswordGrantBuilder'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager.authorize(OAuth2AuthorizeRequest)', targetType='org.springframework.security.oauth2.core.converter.ObjectToURLConverter'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.FilterInvocation",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.web.FilterInvocation.getResponse(), org.springframework.security.web.FilterInvocation.getFullRequestUrl(), org.springframework.security.web.FilterInvocation.getChain(), org.springframework.security.web.FilterInvocation.getHttpRequest(), org.springframework.security.web.FilterInvocation.getRequest(), org.springframework.security.web.FilterInvocation.toString(), org.springframework.security.web.FilterInvocation.getHttpResponse()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.access.channel.AbstractRetryEntryPoint",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.access.channel.AbstractRetryEntryPoint.getMappedPort(Integer)', targetType='org.springframework.security.oauth2.jwt.NimbusJwtDecoder.SecretKeyJwtDecoderBuilder'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.authentication.AbstractAuthenticationTargetUrlRequestHandler",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.authentication.AbstractAuthenticationTargetUrlRequestHandler.setRedirectStrategy(RedirectStrategy)', targetType='org.springframework.security.web.session.SessionInformationExpiredEvent'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.server.util.matcher.MediaTypeServerWebExchangeMatcher",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.web.server.util.matcher.MediaTypeServerWebExchangeMatcher.setUseEquals(boolean)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "a590f448-a5eb-4c27-b06c-8c1f80901498",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0006763611768685,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.5514868249330747,
+      "MetricsIntensity" : 0.05335653584710757,
+      "Density" : 0.9990786806707205
+    },
+    "euclideanDistance" : 10.114667371099323,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.6357103372028747,
+      "LackOfCohesion" : 0.5514868249330747,
+      "MetricsIntensity" : 0.05335653584710756,
+      "Density" : 3.1819248826291084
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.springframework.security.web.access.intercept.FilterSecurityInterceptor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.springframework.security.web.access.intercept.FilterSecurityInterceptor.securityMetadataSource], extractedMethods=[org.springframework.security.web.access.intercept.FilterSecurityInterceptor.setSecurityMetadataSource(FilterInvocationSecurityMetadataSource), org.springframework.security.web.access.intercept.FilterSecurityInterceptor.getSecurityMetadataSource(), org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(ServletRequest, ServletResponse, FilterChain)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.anyRequest(), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.antMatchers(String...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.setApplicationContext(ApplicationContext), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.dispatcherTypeMatchers(HttpMethod, DispatcherType...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.getApplicationContext(), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.requestMatchers(RequestMatcher...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.dispatcherTypeMatchers(DispatcherType...)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder.encode(CharSequence)', targetType='org.springframework.security.web.access.intercept.FilterSecurityInterceptor'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.authentication.dao.DaoAuthenticationProvider",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.authentication.dao.DaoAuthenticationProvider.createSuccessAuthentication(Object, Authentication, UserDetails)', targetType='org.springframework.security.oauth2.client.ReactiveOAuth2AuthorizedClientProviderBuilder.PasswordGrantBuilder'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager.getHttpServletRequestOrDefault(Map<String,Object>)', targetType='org.springframework.security.oauth2.core.endpoint.OAuth2AuthorizationRequest.Builder'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager.authorize(OAuth2AuthorizeRequest)', targetType='org.springframework.security.oauth2.core.converter.ObjectToURLConverter'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.FilterInvocation",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.web.FilterInvocation.getResponse(), org.springframework.security.web.FilterInvocation.getFullRequestUrl(), org.springframework.security.web.FilterInvocation.getChain(), org.springframework.security.web.FilterInvocation.getHttpRequest(), org.springframework.security.web.FilterInvocation.getRequest(), org.springframework.security.web.FilterInvocation.toString(), org.springframework.security.web.FilterInvocation.getHttpResponse()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.access.channel.AbstractRetryEntryPoint",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.access.channel.AbstractRetryEntryPoint.commence(HttpServletRequest, HttpServletResponse)', targetType='org.springframework.security.access.vote.ConsensusBased'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.authentication.AbstractAuthenticationTargetUrlRequestHandler",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.authentication.AbstractAuthenticationTargetUrlRequestHandler.setRedirectStrategy(RedirectStrategy)', targetType='org.springframework.security.web.session.SessionInformationExpiredEvent'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.server.util.matcher.MediaTypeServerWebExchangeMatcher",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.web.server.util.matcher.MediaTypeServerWebExchangeMatcher.setUseEquals(boolean)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "b07a8e55-87d2-4e7d-9d2d-744fc29e0112",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0016909029421712,
+      "NumberOfRefactorings" : 10.0,
+      "LackOfCohesion" : 0.551820109788611,
+      "MetricsIntensity" : 0.053356535847107554,
+      "Density" : 0.9996314722682882
+    },
+    "euclideanDistance" : 10.11484058692331,
+    "generation" : 1,
+    "numberOfRefactorings" : 10,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.637368711995578,
+      "LackOfCohesion" : 0.551820109788611,
+      "MetricsIntensity" : 0.053356535847107554,
+      "Density" : 3.181818181818183
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.springframework.security.web.access.intercept.FilterSecurityInterceptor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.springframework.security.web.access.intercept.FilterSecurityInterceptor.securityMetadataSource], extractedMethods=[org.springframework.security.web.access.intercept.FilterSecurityInterceptor.setSecurityMetadataSource(FilterInvocationSecurityMetadataSource), org.springframework.security.web.access.intercept.FilterSecurityInterceptor.getSecurityMetadataSource()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.anyRequest(), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.antMatchers(String...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.setApplicationContext(ApplicationContext), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.dispatcherTypeMatchers(HttpMethod, DispatcherType...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.getApplicationContext(), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.requestMatchers(RequestMatcher...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.dispatcherTypeMatchers(DispatcherType...)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder.encode(CharSequence)', targetType='org.springframework.security.web.access.intercept.FilterSecurityInterceptor'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.authentication.dao.DaoAuthenticationProvider",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.authentication.dao.DaoAuthenticationProvider.createSuccessAuthentication(Object, Authentication, UserDetails)', targetType='org.springframework.security.oauth2.client.ReactiveOAuth2AuthorizedClientProviderBuilder.PasswordGrantBuilder'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager.getHttpServletRequestOrDefault(Map<String,Object>)', targetType='org.springframework.security.oauth2.core.endpoint.OAuth2AuthorizationRequest.Builder'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager.authorize(OAuth2AuthorizeRequest)', targetType='org.springframework.security.oauth2.core.converter.ObjectToURLConverter'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.FilterInvocation",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.web.FilterInvocation.getResponse(), org.springframework.security.web.FilterInvocation.getFullRequestUrl(), org.springframework.security.web.FilterInvocation.getChain(), org.springframework.security.web.FilterInvocation.getHttpRequest(), org.springframework.security.web.FilterInvocation.getRequest(), org.springframework.security.web.FilterInvocation.toString(), org.springframework.security.web.FilterInvocation.getHttpResponse()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.access.channel.AbstractRetryEntryPoint",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.access.channel.AbstractRetryEntryPoint.commence(HttpServletRequest, HttpServletResponse)', targetType='org.springframework.security.access.vote.ConsensusBased'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.authentication.AbstractAuthenticationTargetUrlRequestHandler",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.authentication.AbstractAuthenticationTargetUrlRequestHandler.setRedirectStrategy(RedirectStrategy)', targetType='org.springframework.security.web.session.SessionInformationExpiredEvent'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.server.util.matcher.MediaTypeServerWebExchangeMatcher",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.web.server.util.matcher.MediaTypeServerWebExchangeMatcher.setUseEquals(boolean)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "4a53f5c9-5410-4b3d-b12f-e57a9ad5f5cc",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0016909029421712,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.5518455606321248,
+      "MetricsIntensity" : 0.053356535847107554,
+      "Density" : 0.9994472084024323
+    },
+    "euclideanDistance" : 11.104488274122653,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.6373687119955778,
+      "LackOfCohesion" : 0.5518455606321248,
+      "MetricsIntensity" : 0.05335653584710756,
+      "Density" : 3.1812316715542526
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.springframework.security.web.access.intercept.FilterSecurityInterceptor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.springframework.security.web.access.intercept.FilterSecurityInterceptor.securityMetadataSource], extractedMethods=[org.springframework.security.web.access.intercept.FilterSecurityInterceptor.setSecurityMetadataSource(FilterInvocationSecurityMetadataSource), org.springframework.security.web.access.intercept.FilterSecurityInterceptor.getSecurityMetadataSource()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.anyRequest(), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.antMatchers(String...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.setApplicationContext(ApplicationContext), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.dispatcherTypeMatchers(HttpMethod, DispatcherType...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.getApplicationContext(), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.requestMatchers(RequestMatcher...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.dispatcherTypeMatchers(DispatcherType...)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder.encode(CharSequence)', targetType='org.springframework.security.web.access.intercept.FilterSecurityInterceptor'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.authentication.dao.DaoAuthenticationProvider",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.authentication.dao.DaoAuthenticationProvider.createSuccessAuthentication(Object, Authentication, UserDetails)', targetType='org.springframework.security.oauth2.client.ReactiveOAuth2AuthorizedClientProviderBuilder.PasswordGrantBuilder'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager.getHttpServletRequestOrDefault(Map<String,Object>)', targetType='org.springframework.security.oauth2.core.endpoint.OAuth2AuthorizationRequest.Builder'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager.authorize(OAuth2AuthorizeRequest)', targetType='org.springframework.security.oauth2.core.converter.ObjectToURLConverter'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.FilterInvocation",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.web.FilterInvocation.getResponse(), org.springframework.security.web.FilterInvocation.getFullRequestUrl(), org.springframework.security.web.FilterInvocation.getChain(), org.springframework.security.web.FilterInvocation.getHttpRequest(), org.springframework.security.web.FilterInvocation.getRequest(), org.springframework.security.web.FilterInvocation.toString(), org.springframework.security.web.FilterInvocation.getHttpResponse()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.access.channel.AbstractRetryEntryPoint",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.access.channel.AbstractRetryEntryPoint.getMappedPort(Integer)', targetType='org.springframework.security.oauth2.jwt.NimbusJwtDecoder.SecretKeyJwtDecoderBuilder'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.access.channel.AbstractRetryEntryPoint.commence(HttpServletRequest, HttpServletResponse)', targetType='org.springframework.security.access.vote.ConsensusBased'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.authentication.AbstractAuthenticationTargetUrlRequestHandler",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.authentication.AbstractAuthenticationTargetUrlRequestHandler.setRedirectStrategy(RedirectStrategy)', targetType='org.springframework.security.web.session.SessionInformationExpiredEvent'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.server.util.matcher.MediaTypeServerWebExchangeMatcher",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.web.server.util.matcher.MediaTypeServerWebExchangeMatcher.setUseEquals(boolean)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "572e0180-dd56-415e-bd5b-10f37c0efbf7",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0016909029421712,
+      "NumberOfRefactorings" : 11.0,
+      "LackOfCohesion" : 0.5517953003156062,
+      "MetricsIntensity" : 0.05335653584710755,
+      "Density" : 0.9996314722682882
+    },
+    "euclideanDistance" : 11.104502362499382,
+    "generation" : 1,
+    "numberOfRefactorings" : 11,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.6373687119955778,
+      "LackOfCohesion" : 0.5517953003156062,
+      "MetricsIntensity" : 0.053356535847107554,
+      "Density" : 3.1818181818181825
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.springframework.security.web.access.intercept.FilterSecurityInterceptor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.springframework.security.web.access.intercept.FilterSecurityInterceptor.securityMetadataSource], extractedMethods=[org.springframework.security.web.access.intercept.FilterSecurityInterceptor.setSecurityMetadataSource(FilterInvocationSecurityMetadataSource), org.springframework.security.web.access.intercept.FilterSecurityInterceptor.getSecurityMetadataSource()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.anyRequest(), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.antMatchers(String...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.setApplicationContext(ApplicationContext), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.dispatcherTypeMatchers(HttpMethod, DispatcherType...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.getApplicationContext(), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.requestMatchers(RequestMatcher...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.dispatcherTypeMatchers(DispatcherType...)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder.encode(CharSequence)', targetType='org.springframework.security.web.access.intercept.FilterSecurityInterceptor'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.authentication.dao.DaoAuthenticationProvider",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.authentication.dao.DaoAuthenticationProvider.createSuccessAuthentication(Object, Authentication, UserDetails)', targetType='org.springframework.security.oauth2.client.ReactiveOAuth2AuthorizedClientProviderBuilder.PasswordGrantBuilder'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager.getHttpServletRequestOrDefault(Map<String,Object>)', targetType='org.springframework.security.oauth2.core.endpoint.OAuth2AuthorizationRequest.Builder'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager.setContextAttributesMapper(Function<OAuth2AuthorizeRequest,Map<String,Object>>)', targetType='org.springframework.security.oauth2.core.endpoint.OAuth2AuthorizationRequest.Builder'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager.authorize(OAuth2AuthorizeRequest)', targetType='org.springframework.security.oauth2.core.converter.ObjectToURLConverter'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.FilterInvocation",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.web.FilterInvocation.getResponse(), org.springframework.security.web.FilterInvocation.getFullRequestUrl(), org.springframework.security.web.FilterInvocation.getChain(), org.springframework.security.web.FilterInvocation.getHttpRequest(), org.springframework.security.web.FilterInvocation.getRequest(), org.springframework.security.web.FilterInvocation.toString(), org.springframework.security.web.FilterInvocation.getHttpResponse()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.access.channel.AbstractRetryEntryPoint",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.access.channel.AbstractRetryEntryPoint.commence(HttpServletRequest, HttpServletResponse)', targetType='org.springframework.security.access.vote.ConsensusBased'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.authentication.AbstractAuthenticationTargetUrlRequestHandler",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.authentication.AbstractAuthenticationTargetUrlRequestHandler.setRedirectStrategy(RedirectStrategy)', targetType='org.springframework.security.web.session.SessionInformationExpiredEvent'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.server.util.matcher.MediaTypeServerWebExchangeMatcher",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.web.server.util.matcher.MediaTypeServerWebExchangeMatcher.setUseEquals(boolean)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "fba00f10-1d4c-4b8c-956f-dd4a7c5c6757",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0016909029421712,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 0.5518363333082101,
+      "MetricsIntensity" : 0.0533409365747768,
+      "Density" : 0.9992629445365764
+    },
+    "euclideanDistance" : 12.095837287746338,
+    "generation" : 1,
+    "numberOfRefactorings" : 12,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.6373687119955778,
+      "LackOfCohesion" : 0.5518363333082101,
+      "MetricsIntensity" : 0.0533409365747768,
+      "Density" : 3.180645161290323
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.springframework.security.web.access.intercept.FilterSecurityInterceptor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.springframework.security.web.access.intercept.FilterSecurityInterceptor.securityMetadataSource], extractedMethods=[org.springframework.security.web.access.intercept.FilterSecurityInterceptor.setSecurityMetadataSource(FilterInvocationSecurityMetadataSource), org.springframework.security.web.access.intercept.FilterSecurityInterceptor.getSecurityMetadataSource()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.anyRequest(), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.antMatchers(String...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.setApplicationContext(ApplicationContext), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.dispatcherTypeMatchers(HttpMethod, DispatcherType...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.getApplicationContext(), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.requestMatchers(RequestMatcher...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.dispatcherTypeMatchers(DispatcherType...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.createMvcMatchers(HttpMethod, String...)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder.encode(CharSequence)', targetType='org.springframework.security.web.access.intercept.FilterSecurityInterceptor'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.authentication.dao.DaoAuthenticationProvider",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.authentication.dao.DaoAuthenticationProvider.createSuccessAuthentication(Object, Authentication, UserDetails)', targetType='org.springframework.security.oauth2.client.ReactiveOAuth2AuthorizedClientProviderBuilder.PasswordGrantBuilder'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager.getHttpServletRequestOrDefault(Map<String,Object>)', targetType='org.springframework.security.oauth2.core.endpoint.OAuth2AuthorizationRequest.Builder'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager.setContextAttributesMapper(Function<OAuth2AuthorizeRequest,Map<String,Object>>)', targetType='org.springframework.security.oauth2.core.endpoint.OAuth2AuthorizationRequest.Builder'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager.authorize(OAuth2AuthorizeRequest)', targetType='org.springframework.security.oauth2.core.converter.ObjectToURLConverter'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.FilterInvocation",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.web.FilterInvocation.getResponse(), org.springframework.security.web.FilterInvocation.getFullRequestUrl(), org.springframework.security.web.FilterInvocation.getChain(), org.springframework.security.web.FilterInvocation.getHttpRequest(), org.springframework.security.web.FilterInvocation.getRequest(), org.springframework.security.web.FilterInvocation.toString(), org.springframework.security.web.FilterInvocation.getHttpResponse()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.access.channel.AbstractRetryEntryPoint",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.access.channel.AbstractRetryEntryPoint.getMappedPort(Integer)', targetType='org.springframework.security.oauth2.jwt.NimbusJwtDecoder.SecretKeyJwtDecoderBuilder'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.access.channel.AbstractRetryEntryPoint.commence(HttpServletRequest, HttpServletResponse)', targetType='org.springframework.security.access.vote.ConsensusBased'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.authentication.AbstractAuthenticationTargetUrlRequestHandler",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.authentication.AbstractAuthenticationTargetUrlRequestHandler.setRedirectStrategy(RedirectStrategy)', targetType='org.springframework.security.web.session.SessionInformationExpiredEvent'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.server.util.matcher.MediaTypeServerWebExchangeMatcher",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.web.server.util.matcher.MediaTypeServerWebExchangeMatcher.setUseEquals(boolean)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "a0ac8c01-dc45-4365-acf9-76579487fc63",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0016909029421712,
+      "NumberOfRefactorings" : 12.0,
+      "LackOfCohesion" : 0.5518207511591202,
+      "MetricsIntensity" : 0.053356535847107554,
+      "Density" : 0.9994472084024323
+    },
+    "euclideanDistance" : 12.095851869494265,
+    "generation" : 1,
+    "numberOfRefactorings" : 12,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.6373687119955778,
+      "LackOfCohesion" : 0.5518207511591202,
+      "MetricsIntensity" : 0.05335653584710756,
+      "Density" : 3.181231671554253
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.springframework.security.web.access.intercept.FilterSecurityInterceptor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.springframework.security.web.access.intercept.FilterSecurityInterceptor.securityMetadataSource], extractedMethods=[org.springframework.security.web.access.intercept.FilterSecurityInterceptor.setSecurityMetadataSource(FilterInvocationSecurityMetadataSource), org.springframework.security.web.access.intercept.FilterSecurityInterceptor.getSecurityMetadataSource()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.anyRequest(), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.antMatchers(String...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.setApplicationContext(ApplicationContext), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.dispatcherTypeMatchers(HttpMethod, DispatcherType...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.getApplicationContext(), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.requestMatchers(RequestMatcher...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.dispatcherTypeMatchers(DispatcherType...)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder.encode(CharSequence)', targetType='org.springframework.security.web.access.intercept.FilterSecurityInterceptor'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.authentication.dao.DaoAuthenticationProvider",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.authentication.dao.DaoAuthenticationProvider.createSuccessAuthentication(Object, Authentication, UserDetails)', targetType='org.springframework.security.oauth2.client.ReactiveOAuth2AuthorizedClientProviderBuilder.PasswordGrantBuilder'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager.getHttpServletRequestOrDefault(Map<String,Object>)', targetType='org.springframework.security.oauth2.core.endpoint.OAuth2AuthorizationRequest.Builder'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager.setContextAttributesMapper(Function<OAuth2AuthorizeRequest,Map<String,Object>>)', targetType='org.springframework.security.oauth2.core.endpoint.OAuth2AuthorizationRequest.Builder'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager.authorize(OAuth2AuthorizeRequest)', targetType='org.springframework.security.oauth2.core.converter.ObjectToURLConverter'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.FilterInvocation",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.web.FilterInvocation.getResponse(), org.springframework.security.web.FilterInvocation.getFullRequestUrl(), org.springframework.security.web.FilterInvocation.getChain(), org.springframework.security.web.FilterInvocation.getHttpRequest(), org.springframework.security.web.FilterInvocation.getRequest(), org.springframework.security.web.FilterInvocation.toString(), org.springframework.security.web.FilterInvocation.getHttpResponse()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.access.channel.AbstractRetryEntryPoint",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.access.channel.AbstractRetryEntryPoint.getMappedPort(Integer)', targetType='org.springframework.security.oauth2.jwt.NimbusJwtDecoder.SecretKeyJwtDecoderBuilder'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.access.channel.AbstractRetryEntryPoint.commence(HttpServletRequest, HttpServletResponse)', targetType='org.springframework.security.access.vote.ConsensusBased'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.authentication.AbstractAuthenticationTargetUrlRequestHandler",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.authentication.AbstractAuthenticationTargetUrlRequestHandler.setRedirectStrategy(RedirectStrategy)', targetType='org.springframework.security.web.session.SessionInformationExpiredEvent'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.server.util.matcher.MediaTypeServerWebExchangeMatcher",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.web.server.util.matcher.MediaTypeServerWebExchangeMatcher.setUseEquals(boolean)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "d041c1b7-5455-42be-ac7d-06791132a9f5",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0003381805884342,
+      "NumberOfRefactorings" : 15.0,
+      "LackOfCohesion" : 0.5517038386252194,
+      "MetricsIntensity" : 0.05340415590273627,
+      "Density" : 0.9983416252072969
+    },
+    "euclideanDistance" : 15.076624012211287,
+    "generation" : 1,
+    "numberOfRefactorings" : 15,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.635157545605307,
+      "LackOfCohesion" : 0.5517038386252194,
+      "MetricsIntensity" : 0.05340415590273626,
+      "Density" : 3.177712609970674
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.springframework.security.web.access.intercept.FilterSecurityInterceptor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.springframework.security.web.access.intercept.FilterSecurityInterceptor.securityMetadataSource], extractedMethods=[org.springframework.security.web.access.intercept.FilterSecurityInterceptor.setSecurityMetadataSource(FilterInvocationSecurityMetadataSource), org.springframework.security.web.access.intercept.FilterSecurityInterceptor.getSecurityMetadataSource()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.anyRequest(), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.antMatchers(String...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.setApplicationContext(ApplicationContext), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.dispatcherTypeMatchers(HttpMethod, DispatcherType...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.getApplicationContext(), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.requestMatchers(RequestMatcher...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.dispatcherTypeMatchers(DispatcherType...)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder.encode(CharSequence)', targetType='org.springframework.security.web.access.intercept.FilterSecurityInterceptor'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.authentication.dao.DaoAuthenticationProvider",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(UserDetails, UsernamePasswordAuthenticationToken)', targetType='org.springframework.security.web.server.authentication.AuthenticationWebFilter'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.authentication.dao.DaoAuthenticationProvider.getPasswordEncoder()', targetType='org.springframework.security.oauth2.client.ReactiveOAuth2AuthorizedClientProviderBuilder.PasswordGrantBuilder'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.authentication.dao.DaoAuthenticationProvider.setPasswordEncoder(PasswordEncoder)', targetType='org.springframework.security.oauth2.client.ReactiveOAuth2AuthorizedClientProviderBuilder.PasswordGrantBuilder'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager.setAuthorizationSuccessHandler(OAuth2AuthorizationSuccessHandler)', targetType='org.springframework.security.config.web.server.ServerHttpSecurity.HeaderSpec.XssProtectionSpec'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager.getHttpServletRequestOrDefault(Map<String,Object>)', targetType='org.springframework.security.oauth2.core.endpoint.OAuth2AuthorizationRequest.Builder'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager.authorize(OAuth2AuthorizeRequest)', targetType='org.springframework.security.oauth2.core.converter.ObjectToURLConverter'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.FilterInvocation",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.web.FilterInvocation.getResponse(), org.springframework.security.web.FilterInvocation.getFullRequestUrl(), org.springframework.security.web.FilterInvocation.getChain(), org.springframework.security.web.FilterInvocation.getHttpRequest(), org.springframework.security.web.FilterInvocation.getRequest(), org.springframework.security.web.FilterInvocation.toString(), org.springframework.security.web.FilterInvocation.getHttpResponse()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.access.channel.AbstractRetryEntryPoint",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.access.channel.AbstractRetryEntryPoint.getMappedPort(Integer)', targetType='org.springframework.security.oauth2.jwt.NimbusJwtDecoder.SecretKeyJwtDecoderBuilder'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.access.channel.AbstractRetryEntryPoint.commence(HttpServletRequest, HttpServletResponse)', targetType='org.springframework.security.access.vote.ConsensusBased'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.access.channel.AbstractRetryEntryPoint.getPortResolver()', targetType='org.springframework.security.config.annotation.web.configurers.saml2.Saml2LoginConfigurer.AuthenticationRequestEndpointConfig'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.authentication.AbstractAuthenticationTargetUrlRequestHandler",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.authentication.AbstractAuthenticationTargetUrlRequestHandler.setRedirectStrategy(RedirectStrategy)', targetType='org.springframework.security.web.session.SessionInformationExpiredEvent'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.server.util.matcher.MediaTypeServerWebExchangeMatcher",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.web.server.util.matcher.MediaTypeServerWebExchangeMatcher.setUseEquals(boolean), org.springframework.security.web.server.util.matcher.MediaTypeServerWebExchangeMatcher.matches(ServerWebExchange)]"
+      } ]
+    } ]
+  }, {
+    "solutionId" : "3dfe08ff-46b9-4856-ae9b-35a5236eefbd",
+    "objectives" : {
+      "NumberOfConcerns" : 1.0010145417653027,
+      "NumberOfRefactorings" : 15.0,
+      "LackOfCohesion" : 0.5513048941322212,
+      "MetricsIntensity" : 0.05342386507592904,
+      "Density" : 0.9992629445365764
+    },
+    "euclideanDistance" : 15.076715416190732,
+    "generation" : 1,
+    "numberOfRefactorings" : 15,
+    "additionalInformation" : {
+      "NumberOfConcerns" : 1.6362631288004423,
+      "LackOfCohesion" : 0.5513048941322212,
+      "MetricsIntensity" : 0.05342386507592905,
+      "Density" : 3.180645161290323
+    },
+    "sequences" : [ {
+      "refactoredTypeName" : "org.springframework.security.web.access.intercept.FilterSecurityInterceptor",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[org.springframework.security.web.access.intercept.FilterSecurityInterceptor.securityMetadataSource], extractedMethods=[org.springframework.security.web.access.intercept.FilterSecurityInterceptor.setSecurityMetadataSource(FilterInvocationSecurityMetadataSource), org.springframework.security.web.access.intercept.FilterSecurityInterceptor.getSecurityMetadataSource(), org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterInvocation)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.anyRequest(), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.antMatchers(String...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.setApplicationContext(ApplicationContext), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.dispatcherTypeMatchers(HttpMethod, DispatcherType...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.getApplicationContext(), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.requestMatchers(RequestMatcher...), org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.dispatcherTypeMatchers(DispatcherType...)]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder.matches(CharSequence, String)', targetType='org.springframework.security.crypto.factory.PasswordEncoderFactories'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.authentication.dao.DaoAuthenticationProvider",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(UserDetails, UsernamePasswordAuthenticationToken)', targetType='org.springframework.security.web.server.authentication.AuthenticationWebFilter'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.authentication.dao.DaoAuthenticationProvider.setPasswordEncoder(PasswordEncoder)', targetType='org.springframework.security.oauth2.client.ReactiveOAuth2AuthorizedClientProviderBuilder.PasswordGrantBuilder'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.authentication.dao.DaoAuthenticationProvider.createSuccessAuthentication(Object, Authentication, UserDetails)', targetType='org.springframework.security.oauth2.client.ReactiveOAuth2AuthorizedClientProviderBuilder.PasswordGrantBuilder'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager.setContextAttributesMapper(Function<OAuth2AuthorizeRequest,Map<String,Object>>)', targetType='org.springframework.security.oauth2.core.endpoint.OAuth2AuthorizationRequest.Builder'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.FilterInvocation",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.web.FilterInvocation.getResponse(), org.springframework.security.web.FilterInvocation.getFullRequestUrl(), org.springframework.security.web.FilterInvocation.getChain(), org.springframework.security.web.FilterInvocation.getHttpRequest(), org.springframework.security.web.FilterInvocation.getRequest(), org.springframework.security.web.FilterInvocation.toString(), org.springframework.security.web.FilterInvocation.getHttpResponse()]"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.access.channel.AbstractRetryEntryPoint",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.access.channel.AbstractRetryEntryPoint.setRedirectStrategy(RedirectStrategy)', targetType='org.springframework.security.web.server.csrf.CsrfWebFilter'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.access.channel.AbstractRetryEntryPoint.getMappedPort(Integer)', targetType='org.springframework.security.oauth2.jwt.NimbusJwtDecoder.SecretKeyJwtDecoderBuilder'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.access.channel.AbstractRetryEntryPoint.commence(HttpServletRequest, HttpServletResponse)', targetType='org.springframework.security.access.vote.ConsensusBased'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.access.channel.AbstractRetryEntryPoint.setPortResolver(PortResolver)', targetType='org.springframework.security.config.annotation.web.configurers.saml2.Saml2LoginConfigurer.AuthenticationRequestEndpointConfig'"
+      }, {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.access.channel.AbstractRetryEntryPoint.getPortResolver()', targetType='org.springframework.security.config.annotation.web.configurers.saml2.Saml2LoginConfigurer.AuthenticationRequestEndpointConfig'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.authentication.AbstractAuthenticationTargetUrlRequestHandler",
+      "refactorings" : [ {
+        "refactoringKind" : "Move Method",
+        "change" : "method='org.springframework.security.web.authentication.AbstractAuthenticationTargetUrlRequestHandler.setRedirectStrategy(RedirectStrategy)', targetType='org.springframework.security.web.session.SessionInformationExpiredEvent'"
+      } ]
+    }, {
+      "refactoredTypeName" : "org.springframework.security.web.server.util.matcher.MediaTypeServerWebExchangeMatcher",
+      "refactorings" : [ {
+        "refactoringKind" : "Extract Class",
+        "change" : "extractedFields=[], extractedMethods=[org.springframework.security.web.server.util.matcher.MediaTypeServerWebExchangeMatcher.setUseEquals(boolean)]"
+      } ]
+    } ]
+  } ]
+}
